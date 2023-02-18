@@ -1,0 +1,11 @@
+.Text {
+	color: #61e913;
+	font-size: 100;
+	cursor: pointer;
+}
+
+.Item-Img {
+	width: 90%;
+	margin: 0;
+	padding: 0;
+}
