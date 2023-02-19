@@ -14,7 +14,8 @@ function GetColor (damage: number)
 
 export default function WeaponTable(props: Props) {
   return (
-    <div id="content">
+    <div id="content" style={{paddingTop: '45%',overflow: 'scroll'}}>
+
         <table cellSpacing={0}  className="wikitable sortable jquery-tablesorter Table">
             <thead>
                 <tr>

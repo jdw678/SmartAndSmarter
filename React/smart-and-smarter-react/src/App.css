@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100vw;
 }
 
 .App-logo {
@@ -8,10 +9,30 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url('images/kenny-eliason-uc7JVq80PgQ-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  width: 100vw;
+ min-height: 100vh;
 }
 
 .App-link {
   color: #61dafb;
+}
+body { 
+  
+  
+    color: #575e75;
+    font-family: var(--font-family);
+    font-size: 16px;
+    cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursor.webp?00824) 4 4,auto
+}
+a {
+  cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;
+  color: rgb(var(--link-color))
+}
+
+area { cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;
+  color: rgb(var(--link-color))
 }
