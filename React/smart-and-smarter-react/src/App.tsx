@@ -8,10 +8,9 @@ import ItemBox from './Components/ItemBox';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{display: 'flex', flexDirection: 'column'}}>
         <Temptop/>
         <WeaponTable/>
-        <ItemBox/>
       </header>
     </div>
   );
