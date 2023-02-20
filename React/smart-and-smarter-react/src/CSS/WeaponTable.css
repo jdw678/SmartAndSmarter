@@ -5,11 +5,11 @@ color:#eee;
 background-color: rgb(220,220,220,0.2);
 text-align:center;
 vertical-align:middle;
-width:7%
+width:100vh
 }
 
 .Table {
-    width:95%;
+    width:100vh;
     color:#eee;
     background:transparent;
     text-align:center;
