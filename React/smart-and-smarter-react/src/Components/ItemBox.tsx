@@ -1,5 +1,6 @@
 import React from 'react'
-import '../CSS/ItemBox.css'
+import '../CSS/ItemBox.css';
+
 type Props = {}
 
 

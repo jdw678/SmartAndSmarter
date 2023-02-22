@@ -42,3 +42,7 @@ width:100vh
     color: #eee;
     border-spacing: 0px
 }
+
+td a {
+    color: rgb(221, 149, 42);
+}
