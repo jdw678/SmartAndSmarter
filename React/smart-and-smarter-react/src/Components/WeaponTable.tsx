@@ -1,79 +1,123 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState, useEffect } from 'react'
 import '../CSS/WeaponTable.css';
+import { ApiCalls, Weapon, WeaponList } from './PureTSX/ApiCalls';
+import WeaponADM from './WeaponTableComponents/WeaponADM';
+import WeaponAttackSpeed from './WeaponTableComponents/WeaponAttackSpeed';
+import WeaponAttackType from './WeaponTableComponents/WeaponAttackType';
+import WeaponClasses from './WeaponTableComponents/WeaponClasses';
+import WeaponDamage from './WeaponTableComponents/WeaponDamage';
+import WeaponTableRecord from './WeaponTableComponents/WeaponTableRecord';
+import '../CSS/WeaponTable.css';
+//draw attack damage multiplier string based on if the damage is null or not
 
-type Props = {
-    name?: string
-}
 
-function GetColor (damage: number)
-{
-    if(damage > 22 && damage <= 34) return "#006900";
-    if(damage > 34) return "#FF0789";
-}
+export default function WeaponTable() {
 
+    
 
-export default function WeaponTable(props: Props) {
-  return (
-    <div id="content" style={{ overflow:'auto1',float:'left', backgroundColor: 'rgba(0,0,0,.5)', margin:'1%'}}>
+    const api = new ApiCalls();
+    const devMode = true;
 
-        <table cellSpacing={0}  className="wikitable sortable jquery-tablesorter Table">
-            <thead>
-                <tr>
-                    <th className="Th" tabIndex={0} title="Sort ascending" style={{color: GetColor(32)}}>Name</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Class Name</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Attributes</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Damage</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Movement Speed</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Combo</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Attack Speed</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Sweet/Sour Spot</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Weapon Reach/Hitbox</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Action Movement Speed</th>
-                    <th className="Th" tabIndex={0} title="Sort ascending">Unique</th>
-                </tr>
-            </thead>
-            <tbody>
+    //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
+    const [isLoading, setLoading] = useState(true);
+    const [weaponList, setWeaponList] = useState<WeaponList>();
 
-                <tr>
-                    <td> <div><div className="rarity2 rounded relative"><a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword" title="Arming Sword"><img alt="Arming Sword" src="https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/b4/Arming_Sword_2.png/60px-Arming_Sword_2.png" decoding="async" width="60" height="180" srcSet="https://darkanddarker.wiki.spellsandguns.com/images/b/b4/Arming_Sword_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><br /><a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword" title="Arming Sword"><strong>Arming Sword <br />(Main Hand)</strong></a></div> </td>
-                    <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Fighter" title="Fighter">Fighter</a>, <a href="https://darkanddarker.wiki.spellsandguns.com/Ranger" title="Ranger">Ranger</a> </td>
-                    <td>
-                        <a>Attribute 1</a>
-                        <input style={{borderRadius: 10}}></input>
-                        <a>Attribute 2</a>
-                        <input style={{borderRadius: 10}}></input>
-                        <a>Attribute 3</a>
-                        <input style={{borderRadius: 10}}></input>
-                        <a>Attribute 4</a>
-                        <input style={{borderRadius: 10}}></input>
-                    </td>
-                    <td> <span className="colorrarity0">22</span> <br /> <span className="colorrarity1">25 ~ 26</span> <br /> <span className="colorrarity2">27 ~ 29</span> <br /> <span className="colorrarity3">29 ~ 31</span> <br /> <span className="colorrarity4">31 ~ 34</span> <br /> <span className="colorrarity5">34 ~ 37</span> <br /> <span className="colorrarity6">37 ~ 40</span> <br /> <span className="colorrarity7">40 ~ 42</span> <br />  </td>
-                    <td></td>
-                    <td> Slash/Slash/Pierce <br /> 100%/100%/100% </td>
-                    <td> 0.66s/0.62s/0.81s </td>
-                    <td> 100%/90%/70% </td>
-                    <td></td>
-                    <td> Attack: -25%  </td>
-                    <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword#Unique" title="Arming Sword">Kuma's Claw</a></td>
-                </tr>
+    //api calls
+    useEffect(() => {
+        //if devMode (possibly no db) use hard data
+        if(devMode)
+        {
+            setWeaponList([api.GetAllWeaponsNoDB()]);
+            setLoading(false);
+        }
+        //call db
+        else
+        {
+                
+            const call = api.GetAllWeapons();
+            call.then((response) => {
+                setWeaponList(response.data);
+                setLoading(false);
+            })
+            .catch((response) =>
+            {
+                console.log(response);
+            })
 
-                <tr>
-                    <td> <div><div className="rarity2 rounded relative"><a href="https://darkanddarker.wiki.spellsandguns.com/Falchion" title="Falchion"><img alt="Falchion" src="https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/70/Falchion_2.png/60px-Falchion_2.png" decoding="async" width="60" height="180" srcSet="https://darkanddarker.wiki.spellsandguns.com/images/7/70/Falchion_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><br /><a href="https://darkanddarker.wiki.spellsandguns.com/Falchion" title="Falchion"><strong>Falchion</strong></a></div> </td>
-                    <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Fighter" title="Fighter">Fighter</a> </td>
-                    <td> 1-Handed<br />Main-Hand </td>
-                    <td> <span className="colorrarity0">30</span> <br /> <span className="colorrarity1">34 ~ 35</span> <br /> <span className="colorrarity2">36 ~ 39</span> <br /> <span className="colorrarity3">39 ~ 42</span> <br /> <span className="colorrarity4">42 ~ 46</span> <br /> <span className="colorrarity5">46 ~ 50</span> <br /> <span className="colorrarity6">50 ~ 53</span> <br /> <span className="colorrarity7">53 ~ 55</span> <br />  </td>
-                    <td> -25 </td>
-                    <td> Slash/Slash/Slash <br /> 100%/100%/100% </td>
-                    <td> 0.88s/0.8s/0.95s </td>
-                    <td> 100%/90% </td>
-                    <td> Height: 51.07 <br /> Width: 10.71 </td>
-                    <td> Attack: -30%  </td>
-                    <td> None </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-  )
+        }
+    }, [])
+
+    //if not finished loading from api calls return this
+    if(isLoading) return (<div>Loading...</div>)
+    else
+    //return this after api calls finish
+    return (
+        <div id="content" style={{ overflow:'auto1', float:'left', backgroundColor: 'rgba(0,0,0,.5)', margin:'1%', marginRight: '2%'}}>
+            <table cellSpacing={0}  className="wikitable sortable jquery-tablesorter Table">
+                <thead>
+                    <tr>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Name</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Class Name</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Attributes</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Damage</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Movement Speed</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Combo</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Attack Speed</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Sweet/Sour Spot</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Weapon Reach/Hitbox</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Action Movement Speed</th>
+                        <th className="Th" tabIndex={0} title="Sort ascending">Unique</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {weaponList ? weaponList.map((weapon: Weapon) => {
+                        return <WeaponTableRecord weapon={weapon} key={weapon.name}/>
+                    }): null}
+                    
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        <td><div><div className="rarity2 rounded relative"><a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword" title="Arming Sword"><img alt="Arming Sword" src="https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/b4/Arming_Sword_2.png/60px-Arming_Sword_2.png" decoding="async" width="60" height="180" srcSet="https://darkanddarker.wiki.spellsandguns.com/images/b/b4/Arming_Sword_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><br /><a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword" title="Arming Sword"><strong>Arming Sword <br />(Main Hand)</strong></a></div> </td>
+                        <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Fighter" title="Fighter">Fighter</a>, <a href="https://darkanddarker.wiki.spellsandguns.com/Ranger" title="Ranger">Ranger</a> </td>
+                        <td>
+                            <a>Attribute 1</a>
+                            <input style={{borderRadius: 10}}></input>
+                            <a>Attribute 2</a>
+                            <input style={{borderRadius: 10}}></input>
+                            <a>Attribute 3</a>
+                            <input style={{borderRadius: 10}}></input>
+                            <a>Attribute 4</a>
+                            <input style={{borderRadius: 10}}></input>
+                        </td>
+                        <td> <span className="colorrarity0">22</span> <br /> <span className="colorrarity1">25 ~ 26</span> <br /> <span className="colorrarity2">27 ~ 29</span> <br /> <span className="colorrarity3">29 ~ 31</span> <br /> <span className="colorrarity4">31 ~ 34</span> <br /> <span className="colorrarity5">34 ~ 37</span> <br /> <span className="colorrarity6">37 ~ 40</span> <br /> <span className="colorrarity7">40 ~ 42</span> <br />  </td>
+                        <td></td>
+                        <td> Slash/Slash/Pierce <br /> 100%/100%/100% </td>
+                        <td> 0.66s/0.62s/0.81s </td>
+                        <td> 100%/90%/70% </td>
+                        <td></td>
+                        <td> Attack: -25%  </td>
+                        <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword#Unique" title="Arming Sword">Kuma's Claw</a></td>
+                    </tr>
+
+                    <tr>
+                        <td> <div><div className="rarity2 rounded relative"><a href="https://darkanddarker.wiki.spellsandguns.com/Falchion" title="Falchion"><img alt="Falchion" src="https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/70/Falchion_2.png/60px-Falchion_2.png" decoding="async" width="60" height="180" srcSet="https://darkanddarker.wiki.spellsandguns.com/images/7/70/Falchion_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><br /><a href="https://darkanddarker.wiki.spellsandguns.com/Falchion" title="Falchion"><strong>Falchion</strong></a></div> </td>
+                        <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Fighter" title="Fighter">Fighter</a> </td>
+                        <td> 1-Handed<br />Main-Hand </td>
+                        <td> <span className="colorrarity0">30</span> <br /> <span className="colorrarity1">34 ~ 35</span> <br /> <span className="colorrarity2">36 ~ 39</span> <br /> <span className="colorrarity3">39 ~ 42</span> <br /> <span className="colorrarity4">42 ~ 46</span> <br /> <span className="colorrarity5">46 ~ 50</span> <br /> <span className="colorrarity6">50 ~ 53</span> <br /> <span className="colorrarity7">53 ~ 55</span> <br />  </td>
+                        <td> -25 </td>
+                        <td> Slash/Slash/Slash <br /> 100%/100%/100% </td>
+                        <td> 0.88s/0.8s/0.95s </td>
+                        <td> 100%/90% </td>
+                        <td> Height: 51.07 <br /> Width: 10.71 </td>
+                        <td> Attack: -30%  </td>
+                        <td> None </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    )
 }
 
 /*
