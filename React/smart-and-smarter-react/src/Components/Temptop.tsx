@@ -14,7 +14,7 @@ export default function Temptop({}: Props) {
   <div>
     
     
-    <img src={invt} alt="Workplace" useMap="#workmap" style={{margin:'1%', float: 'left'}}/>
+    <img src={invt} alt="Workplace" useMap="#workmap" style={{margin: '1%', backgroundColor: 'rgba(0,0,0,.5)',border:'solid',borderColor:'#000000',}}/>
     <map name="workmap">
     <area shape="rect" coords="25,48,105,144" alt="1wp" onClick={() => AreaClicked("Weapon1")}/>
     <area shape="rect" coords="290,172,333,250" alt="Phone" onClick={() => AreaClicked("Phone")}/>
