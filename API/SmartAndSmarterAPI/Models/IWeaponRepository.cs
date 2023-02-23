@@ -10,5 +10,6 @@
 
         Weapon Update(Weapon weaponChanges);
         Weapon Delete(int id);
+        Weapon UpdateOrCreateByName(Weapon weapon);
     }
 }

@@ -162,3 +162,4 @@ G:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\
 G:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\ref\SmartAndSmaterAPI.dll
 G:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\SmartAndSmaterAPI.pdb
 G:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\SmartAndSmaterAPI.genruntimeconfig.cache
+G:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\bin\Debug\net6.0\HtmlAgilityPack.dll
