@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fwQEVYe7VUR7wUA7PSbItbIewL4K6dWpiMt2fWOkJf9tJwe9VHcc6llTkiOxv3EgTYwxStoQa5QlijSBCmxKbQ==",
+  "dgSpecHash": "mnq3Cg1jX8jPscK1SCmOe8tWh0LX8JQfKR0ThbALQRgC8XFNtGkMDuZk+UFZbL+2KuSBGuh0Ew5JpWQBYWUJMg==",
   "success": true,
   "projectFilePath": "G:\\Programming\\Projects\\SmartAndSmarter\\API\\SmartAndSmarterAPI\\SmartAndSmaterAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josh\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\josh\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\josh\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
     "C:\\Users\\josh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\josh\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\josh\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

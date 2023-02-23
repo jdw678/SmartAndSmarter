@@ -25,14 +25,14 @@ namespace SmartAndSmaterAPI.Controllers
         }
 
         [HttpGet("{id}"), ActionName("GetWeaponById")]
-        public IActionResult GetWeaponById(int id)
+        public ActionResult<Weapon> GetWeaponById(int id)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
 
             try
             {
-                _weaponRepository.GetWeapon(id);
+                return _weaponRepository.GetWeapon(id);
             }
             catch
             {
@@ -97,5 +97,33 @@ namespace SmartAndSmaterAPI.Controllers
             }
             return Ok();
         }
+
+
+        
+        [HttpPost, ActionName("ScrapeTable")]
+        public async Task<ActionResult<IEnumerable<Weapon>>> ScrapeTable()
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+
+            List<Weapon> weapons = await WeaponTableHTML.ParseTable();
+
+            try
+            {
+                foreach (Weapon weapon in weapons)
+                {
+                    _weaponRepository.UpdateOrCreateByName(weapon);
+                }
+
+            }
+            catch
+            {
+                return StatusCode(500);
+            }
+
+            return new ActionResult<IEnumerable<Weapon>>(_weaponRepository.GetAllWeapons());
+        }
+
     }
 }

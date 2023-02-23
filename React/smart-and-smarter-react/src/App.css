@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  width: 100vw;
 }
 
 .App-logo {
@@ -9,9 +8,12 @@
 }
 
 .App-header {
-  
-  width: auto;
- min-height: 100vh;
+  background-image: url('images/kenny-eliason-uc7JVq80PgQ-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .App-link {

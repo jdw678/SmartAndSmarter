@@ -26,9 +26,9 @@ export default function WeaponTableRecord(props: Props) {
         <tr>
             <td>
                 <div>
-                    <div className="rarity2 rounded relative">
+                    <div>
                         <a href={props.weapon.imageLocation} title="Arming Sword">
-                            <img alt="Arming Sword" src={props.weapon.imageLocation} decoding="async" width="60" height="180" srcSet={props.weapon.imageLocation + " 1.5x"} data-file-width="90" data-file-height="270" />
+                            <img alt="Arming Sword" src={props.weapon.imageLocation} decoding="async" srcSet={props.weapon.imageLocation + " 1.5x"} data-file-width="90" data-file-height="270" />
                         </a>
                     </div>
                     <br />

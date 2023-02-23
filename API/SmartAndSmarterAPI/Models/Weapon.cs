@@ -78,23 +78,23 @@ namespace SmartAndSmaterAPI.Models
         //attack type (slash / pierce etc)
         //must have atleast one
         [Column(TypeName = "varchar(32)"), Required]
-        public AttackType Attack1Type { get; set; }
+        public WeaponAttackType Attack1Type { get; set; }
 
 
         [Column(TypeName = "varchar(32)")]
-        public AttackType? Attack2Type { get; set; }
+        public WeaponAttackType? Attack2Type { get; set; }
 
 
         [Column(TypeName = "varchar(32)")]
-        public AttackType? Attack3Type { get; set; }
+        public WeaponAttackType? Attack3Type { get; set; }
 
 
         [Column(TypeName = "varchar(32)")]
-        public AttackType? Attack4Type { get; set; }
+        public WeaponAttackType? Attack4Type { get; set; }
 
 
         [Column(TypeName = "varchar(32)")]
-        public AttackType? Attack5Type { get; set; }
+        public WeaponAttackType? Attack5Type { get; set; }
 
 
         //attack damage multipliers
@@ -141,13 +141,21 @@ namespace SmartAndSmaterAPI.Models
         [Column(TypeName ="varchar(64)")]
         public string? SweetSpot { get; set; }
 
+        //for bows only
+        public int? ClipSize { get; set; }
+
+        public float? ReloadSpeed { get; set; }
+
     }
 
-    public enum AttackType
+    public enum WeaponAttackType
     {
         Slash,
         Pierce,
-        Blunt
+        Blunt,
+        Bow,
+        Block,
+        GroundDeployment
 
     }
 

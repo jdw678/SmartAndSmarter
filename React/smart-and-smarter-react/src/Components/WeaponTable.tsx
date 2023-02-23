@@ -17,7 +17,7 @@ export default function WeaponTable() {
     
 
     const api = new ApiCalls();
-    const devMode = true;
+    const devMode = false;
 
     //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
     const [isLoading, setLoading] = useState(true);
@@ -53,7 +53,9 @@ export default function WeaponTable() {
     else
     //return this after api calls finish
     return (
-        <div id="content" style={{ overflow:'auto1', float:'left', backgroundColor: 'rgba(0,0,0,.75)', margin:'1%', marginRight: '2%'}}>
+
+        <div id="content" style={{ overflow:'auto1', float:'left', backgroundColor: 'rgba(0,0,0,.5)', margin:'1%', marginRight: '1%'}}>
+
             <table cellSpacing={0}  className="wikitable sortable jquery-tablesorter Table">
                 <thead>
                     <tr>
