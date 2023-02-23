@@ -55,5 +55,14 @@
                 return null;
             }
         }
+
+        public Weapon UpdateOrCreateByName(Weapon weapon)
+        {
+            //true if weapon already exists
+            if(context.Weapons.Where(w => w.Name == weapon.Name).FirstOrDefault() != null)
+                return Update(weapon);
+            else
+                return Add(weapon);
+        }
     }
 }

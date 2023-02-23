@@ -153,7 +153,9 @@ namespace SmartAndSmaterAPI.Models
         Slash,
         Pierce,
         Blunt,
-        Bow
+        Bow,
+        Block,
+        GroundDeployment
 
     }
 
