@@ -1,0 +1,11 @@
+Name
+ Class
+Slot
+Damage
+Movement Speed
+Combo
+Attack Speed
+Impact Zones
+Weapon Reach/Hitbox
+Action Movement Speed
+Unique

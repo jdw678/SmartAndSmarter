@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Weapons - Dark and Darker Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e025b6248afb73c4c33e06a3","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Weapons","wgTitle":"Weapons","wgCurRevisionId":8126,"wgRevisionId":8126,"wgArticleId":19,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Weapons","wgRelevantArticleId":19,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},
+"simpleBatchUploadMaxFilesPerBatch":{"*":1000},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgEditSubmitButtonLabelPublish":false,"CommentStreams":{"canComment":true,"moderatorEdit":false,"moderatorDelete":false,"moderatorFastDelete":0,"showLabels":1,"newestStreamsOnTop":1,"initiallyCollapsed":false,"enableVoting":0,"enableWatchlist":0,"comments":[{"pageid":2115,"commentblockname":null,"associatedid":19,"commenttitle":"Morningstar radius","wikitext":"is 19.3 a typo or does Morningstar truly have a higher radius than everything except the double axe?","html":"\u003Cp\u003Eis 19.3 a typo or does Morningstar truly have a higher radius than everything except the double axe?\n\u003C/p\u003E","username":"107.2.172.123","numreplies":2,"userdisplayname":"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 9 at 3:09 pm","created_timestamp":"1675955343","modified":null,"children":[{"pageid":2148,
+"parentid":2115,"wikitext":"Maces usually have high radius hitboxes on the head part.","html":"\u003Cp\u003EMaces usually have high radius hitboxes on the head part.\n\u003C/p\u003E","username":"Ta1ha","userdisplayname":"Ta1ha","avatar":null,"moderated":null,"created":"Feb 10 at 2:52 am","created_timestamp":"1675997548","modified":null},{"pageid":2237,"parentid":2115,"wikitext":"It certainly feels that easy to hit with in-game.","html":"\u003Cp\u003EIt certainly feels that easy to hit with in-game.\n\u003C/p\u003E","username":"67.162.55.212","userdisplayname":"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 15 at 12:26 am","created_timestamp":"1676420797","modified":null}]},{"pageid":2146,"commentblockname":null,"associatedid":19,"commenttitle":"Sweet/Sour spot?","wikitext":
+"Hey this might be obvious to some players, but I'm sure there are plenty of us who have no idea what this means. It sounds like maybe hitting with the hilt/handle instead of blade of axe or whatever. Or is it the place in the arc where you hit connects? Like on an overhead attack you pull back, swing over your head (first part) then you arc past the eyeline or chest height (Or more likely this is still part of the first \u0026quot;sweet spot\u0026quot;) and maybe you have a back swing or a follow through to say the ground that could count as a lesser hit (So the sour spot?)? Some have 2 %s and some have 3. And they all seem to be better early. ","html":
+"\u003Cp\u003EHey this might be obvious to some players, but I'm sure there are plenty of us who have no idea what this means. It sounds like maybe hitting with the hilt/handle instead of blade of axe or whatever. Or is it the place in the arc where you hit connects? Like on an overhead attack you pull back, swing over your head (first part) then you arc past the eyeline or chest height (Or more likely this is still part of the first \"sweet spot\") and maybe you have a back swing or a follow through to say the ground that could count as a lesser hit (So the sour spot?)? Some have 2 %s and some have 3. And they all seem to be better early. \n\u003C/p\u003E","username":"70.106.210.115","numreplies":2,"userdisplayname":"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 10 at 2:40 am","created_timestamp":"1675996858","modified":null,"children":[{"pageid":2147,"parentid":2146,"wikitext":
+"Most melee weapons operate on a Sweet/Sour Spot system, meaning hitting an enemy with the tip of the weapon will deal the most damage and hitting further down on the blade/haft will deal less damage. The number of sour spots vary between weapons.\n\nCloser you are, worse the long range weapons become. This can affect Polearms badly. On the other hand, daggers always do their 100% damage.","html":"\u003Cp\u003EMost melee weapons operate on a Sweet/Sour Spot system, meaning hitting an enemy with the tip of the weapon will deal the most damage and hitting further down on the blade/haft will deal less damage. The number of sour spots vary between weapons.\n\u003C/p\u003E\u003Cp\u003ECloser you are, worse the long range weapons become. This can affect Polearms badly. On the other hand, daggers always do their 100% damage.\n\u003C/p\u003E","username":"Ta1ha","userdisplayname":"Ta1ha","avatar":null,"moderated":null,"created":"Feb 10 at 2:50 am","created_timestamp":"1675997410","modified":
+"Feb 10 at 2:50 am"},{"pageid":2231,"parentid":2146,"wikitext":"Thanks that answers my question perfectly. And that makes even more sense than my guesses.","html":"\u003Cp\u003EThanks that answers my question perfectly. And that makes even more sense than my guesses.\n\u003C/p\u003E","username":"70.106.210.115","userdisplayname":"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 14 at 3:21 pm","created_timestamp":"1676388107","modified":null}]},{"pageid":2174,"commentblockname":null,"associatedid":19,"commenttitle":"Short sword","wikitext":"Short sword is a secondary weapon (aka off-hand). At least that's what I can see in a tooltip and in practice as a ranger.","html":"\u003Cp\u003EShort sword is a secondary weapon (aka off-hand). At least that's what I can see in a tooltip and in practice as a ranger.\n\u003C/p\u003E","username":"37.47.161.250","numreplies":1,"userdisplayname":
+"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 12 at 10:06 pm","created_timestamp":"1676239607","modified":null,"children":[{"pageid":2251,"parentid":2174,"wikitext":"I must have missed it, thanks for the info","html":"\u003Cp\u003EI must have missed it, thanks for the info\n\u003C/p\u003E","username":"Ta1ha","userdisplayname":"Ta1ha","avatar":null,"moderated":null,"created":"Feb 15 at 9:24 pm","created_timestamp":"1676496271","modified":null}]},{"pageid":2233,"commentblockname":null,"associatedid":19,"commenttitle":"Named unique items","wikitext":"There are many named unique items that have certain effects (Fulgor, life after death, aegis, elven bow of truth etc.), I think they should either be included here or there should be a page about Named unique items and their effects that could be linked on this page","html":
+"\u003Cp\u003EThere are many named unique items that have certain effects (Fulgor, life after death, aegis, elven bow of truth etc.), I think they should either be included here or there should be a page about Named unique items and their effects that could be linked on this page\n\u003C/p\u003E","username":"Vitrex","numreplies":1,"userdisplayname":"Vitrex","avatar":null,"moderated":null,"created":"Feb 14 at 5:38 pm","created_timestamp":"1676396298","modified":null,"children":[{"pageid":2291,"parentid":2233,"wikitext":"Created the page [[Uniques]]","html":"\u003Cp\u003ECreated the page \u003Ca href=\"/Uniques\" title=\"Uniques\"\u003EUniques\u003C/a\u003E\n\u003C/p\u003E","username":"Ta1ha","userdisplayname":"Ta1ha","avatar":null,"moderated":null,"created":"Feb 17 at 3:19 am","created_timestamp":"1676603953","modified":null}]},{"pageid":2250,"commentblockname":null,"associatedid":19,"commenttitle":"Height Width","wikitext":"Where did you find the Height and Width in the game files ?",
+"html":"\u003Cp\u003EWhere did you find the Height and Width in the game files\u0026#160;?\n\u003C/p\u003E","username":"89.152.244.227","numreplies":0,"userdisplayname":"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 15 at 11:10 am","created_timestamp":"1676459402","modified":null},{"pageid":2260,"commentblockname":null,"associatedid":19,"commenttitle":"Quarterstaff","wikitext":"Damage numbers are wrong and should be lower, also it's considered a Mace not a Polearm.","html":"\u003Cp\u003EDamage numbers are wrong and should be lower, also it's considered a Mace not a Polearm.\n\u003C/p\u003E","username":"89.64.114.20","numreplies":0,"userdisplayname":"\u003Cspan class=\"cs-comment-author-anonymous\"\u003Eanonymous\u003C/span\u003E","avatar":null,"moderated":null,"created":"Feb 16 at 12:20 pm","created_timestamp":"1676550027","modified":null}]}};RLSTATE={"site.styles":"ready","user.styles":"ready","user":
+"ready","user.options":"loading","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","mediawiki.skinning.interface":"ready","skins.scratchwikiskin2":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.CommentStreams"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cmediawiki.skinning.interface%7Cskins.scratchwikiskin2&amp;only=styles&amp;skin=scratchwikiskin2"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=scratchwikiskin2"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=scratchwikiskin2"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="Dark and Darker Wiki Weapons Guide to Stats, Damage, Effects, Rarity, Classes"/>
+<meta name="viewport" content="width=1000"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+<link rel="icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Dark and Darker Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://darkanddarker.wiki.spellsandguns.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Dark and Darker Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9D0E95N2SG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9D0E95N2SG');
+</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Weapons rootpage-Weapons skin-scratchwikiskin2 action-view">		<style>
+			/* Styling generated by PHP file rather than main.css */
+			.wikilogo {
+				background-image: url(/resources/logo.webp);
+			}
+
+			#navigation,
+			.dropdown {
+				background-color: #191D23;
+			}
+		</style>
+		
+		<div id="navigation" role="banner">
+			<div class="inner">
+				<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=scratchwikiskin2&version=0.4">
+				<ul>
+					<li class="link"><a class="jump-to" href="#logo" tabindex="0"><span>Jump to sidebar</span></a></li>
+					<li class="link"><a class="jump-to" href="#firstHeading" tabindex="1"><span>Jump to content</span></a></li>
+					<li class="logo"><a aria-label="Spells&Guns" href="https://www.spellsandguns.com/">
+							<img alt="Dark and Darker Wiki" src="/skins/ScratchWikiSkin2/resources/logo.png" height="70" width="70">
+						</a></li>
+					<li class="link menu">
+						<a class="dropdown-toggle" style="font-size:1.8rem;text-align:center;">&equiv;</a>
+						<ul class="dropdown">
+							<li><a href="/"><span>Home</span></a></li>
+							<li><a href="/Getting Started"><span>Getting Started</span></a></li>
+							<li><a href="/Classes"><span>Classes</span></a></li>
+							<li><a href="/Stats"><span>Stats</span></a></li>
+							<li><a href="/Dungeon"><span>Dungeon</span></a></li>
+							<li><a href="/Trading"><span>Trading</span></a></li>
+							<li><a href="/Weapons"><span>Weapons</span></a></li>
+							<li><a href="/Armors"><span>Armors</span></a></li>
+							<li><a href="/Jewelry"><span>Jewelry</span></a></li>
+							<li><a href="/Consumables"><span>Consumables</span></a></li>
+							<li><a href="/Utility"><span>Utility</span></a></li>
+							<li><a href="/Materials"><span>Materials</span></a></li>
+							<li><a href="/Monsters"><span>Monsters</span></a></li>
+							<li><a href="https://darkanddarker.map.spellsandguns.com/" target="_blank"><span>Map</span></a></li>
+							<li><a href="/Lootables"><span>Lootables</span></a></li>
+							<li><a href="/Enchantments"><span>Enchantments</span></a></li>
+						</ul>
+					</li>
+					<li class="link about">
+						<a a href="/"><span>Home</span></a>
+					</li>
+					<li class="link create">
+						<a class="dropdown-toggle"><span>General</span></a>
+						<ul class="dropdown">
+							<li><a href="/Getting Started"><span>Getting Started</span></a></li>
+							<li><a href="/Classes"><span>Classes</span></a></li>
+							<li><a href="/Stats"><span>Stats</span></a></li>
+							<li><a href="/Dungeon"><span>Dungeon</span></a></li>
+							<li><a href="/Trading"><span>Trading</span></a></li>
+						</ul>
+					</li>
+					<li class="link create">
+						<a class="dropdown-toggle"><span>Items</span></a>
+						<ul class="dropdown">
+							<li><a href="/Weapons"><span>Weapons</span></a></li>
+							<li><a href="/Armors"><span>Armors</span></a></li>
+							<li><a href="/Jewelry"><span>Jewelry</span></a></li>
+							<li><a href="/Consumables"><span>Consumables</span></a></li>
+							<li><a href="/Utility"><span>Utility</span></a></li>
+							<li><a href="/Materials"><span>Materials</span></a></li>
+						</ul>
+					</li>
+					<li class="link about">
+						<a a href="/Monsters"><span>Monsters</span></a>
+					</li>
+					<li class="link about">
+						<a a href="/Lootables"><span>Lootables</span></a>
+					</li>
+					<li class="link about">
+						<a a href="https://darkanddarker.map.spellsandguns.com/" target="_blank"><span>Map</span></a>
+					</li>
+					<li class="link about">
+						<a a href="/Enchantments"><span>Enchantments</span></a>
+					</li>
+
+					<li class="search">
+						<form class="form" action="/index.php" role="search" aria-label="Search the Wiki">
+							<button class="button btn-search" tabindex="-1"></button>
+							<div class="form-group row no-label">
+								<div class="col-sm-9">
+									<input type="text" class="input" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]" name="search" autocomplete="off" placeholder="Search the Wiki" />
+									<input type="hidden" value="Special:Search" name="title" />
+								</div>
+							</div>
+						</form>
+					</li>
+					<li class="link right content-actions">
+						<a class="dropdown-toggle" href="?action=edit">
+							<div></div>
+						</a>
+						<ul class="dropdown">
+															<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Weapons" title="View the content page [c]" accesskey="c">Page</a></li>
+															<li id="ca-talk" class="new mw-list-item"><a href="/index.php?title=Talk:Weapons&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li>
+															<li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=Weapons&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+															<li id="ca-history" class="mw-list-item"><a href="/index.php?title=Weapons&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+														<li><a href="/Wiki_Editing"><span>Wiki Editing Guide</span></a></li>
+
+						</ul>
+					</li>
+					<li class="link right account-nav">
+						<a class="dropdown-toggle" href="/Special:UserLogin">
+							<span class="profile-name">Not logged in</span>
+						</a>
+						<ul class="dropdown">
+															<li id="ca-createaccount" class="mw-list-item"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Weapons" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+															<li id="ca-login" class="mw-list-item"><a href="/index.php?title=Special:UserLogin&amp;returnto=Weapons" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+							
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="not-nav">
+			<div class="logoheader">
+				<div class="logopart" href="/Dark_and_Darker_Wiki" title="Dark and Darker Wiki">
+					<a href="/Dark_and_Darker_Wiki">
+						<img src="/resources/logo.png" style="height:150px;" title="Dark and Darker Wiki">
+					</a>
+				</div>
+			</div>
+
+			<div id="view">
+				<div class="splash">
+					<div class="inner mod-splash">
+						<div class="left">
+															<div class="box" role="navigation" aria-label="Navigation">
+									<div class="box-header">
+										<h4>Navigation</h4>
+									</div>
+									<div class="box-content">
+																					<ul>
+																									<li id="n-mainpage-description" class="mw-list-item"><a href="/Dark_and_Darker_Wiki" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+																									<li id="n-recentchanges" class="mw-list-item"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+																									<li id="n-randompage" class="mw-list-item"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+																									<li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li>
+												
+											</ul>
+																			</div>
+								</div>
+															<div class="box" role="navigation" aria-label="Tools">
+									<div class="box-header">
+										<h4>Tools</h4>
+									</div>
+									<div class="box-content">
+																					<ul>
+																									<li id="t-whatlinkshere" class="mw-list-item"><a href="/Special:WhatLinksHere/Weapons" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+																									<li id="t-recentchangeslinked" class="mw-list-item"><a href="/Special:RecentChangesLinked/Weapons" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																									<li id="t-specialpages" class="mw-list-item"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+																									<li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+																									<li id="t-permalink" class="mw-list-item"><a href="/index.php?title=Weapons&amp;oldid=8126" title="Permanent link to this revision of this page">Permanent link</a></li>
+																									<li id="t-info" class="mw-list-item"><a href="/index.php?title=Weapons&amp;action=info" title="More information about this page">Page information</a></li>
+																									<li id="t-cite" class="mw-list-item"><a href="/index.php?title=Special:CiteThisPage&amp;page=Weapons&amp;id=8126&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li>
+												
+											</ul>
+																			</div>
+								</div>
+																				</div>
+						<div class="right">
+																					<div class="box">
+								<div class="box-header">
+									<div class="mw-indicators">
+</div>
+									<h1 id="firstHeading" class="firstHeading"><span class="mw-page-title-main">Weapons</span></h1>
+								</div>
+								<div class="box-content" id="content" role="main">
+									<p id="siteSub">From Dark and Darker Wiki</p>
+																											<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p><br />
+In Dark and Darker, Weapons are a significant aspect of gameplay that require strategic consideration as players are given the opportunity to discover and utilize different types of weapons to suit their playstyle and preferences. In addition to the standard melee weapons like swords, maces, daggers, polearms, and axes, there are also ranged weapons like bows and crossbows that allow for combat from a distance. The game also features magical weapons that can be used to cast spells, as well as shields that can be used for defense.
+</p><p>Weapons have different properties and parameters that affect their performance in combat, including attack damage, attack speed, range, attack animations. 
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Rarity"><span class="tocnumber">1</span> <span class="toctext">Rarity</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Stat_Randomization"><span class="tocnumber">2</span> <span class="toctext">Stat Randomization</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Weapon_Properties"><span class="tocnumber">3</span> <span class="toctext">Weapon Properties</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Impact_Zones"><span class="tocnumber">4</span> <span class="toctext">Impact Zones</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Weapon_Categories"><span class="tocnumber">5</span> <span class="toctext">Weapon Categories</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Swords"><span class="tocnumber">5.1</span> <span class="toctext">Swords</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Maces"><span class="tocnumber">5.2</span> <span class="toctext">Maces</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Daggers"><span class="tocnumber">5.3</span> <span class="toctext">Daggers</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Polearms"><span class="tocnumber">5.4</span> <span class="toctext">Polearms</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Axes"><span class="tocnumber">5.5</span> <span class="toctext">Axes</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Bows"><span class="tocnumber">5.6</span> <span class="toctext">Bows</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Crossbows"><span class="tocnumber">5.7</span> <span class="toctext">Crossbows</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Magical_Weapons"><span class="tocnumber">5.8</span> <span class="toctext">Magical Weapons</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Shields"><span class="tocnumber">5.9</span> <span class="toctext">Shields</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Rarity">Rarity</span></h2>
+<p>Weapons can improve and become stronger as their rarity level increases. A weapon's rarity typically reflects its level of power, with higher rarity weapons providing more damage output and other attributes that can enhance the player's performance in combat.
+</p><p>There are 8 rarities in the game.
+</p><p><span class="colorrarity0">Junk</span> | <span class="colorrarity1">Poor</span> | <span class="colorrarity2">Common</span> | <span class="colorrarity3">Uncommon </span> | <span class="colorrarity4">Rare</span> | <span class="colorrarity5">Epic</span> | <span class="colorrarity6">Legendary</span> | <span class="colorrarity7">Unique</span>
+</p><p>Rarity <span class="colorrarity3">Uncommon</span> and above adds an extra random <a href="/Enchantments" title="Enchantments">Enchantment</a>.
+</p><p><span class="colorrarity3">Uncommon </span> rarity adds up to 1 new  <a href="/Enchantments" title="Enchantments">enchantment</a>
+</p><p><span class="colorrarity4">Rare</span> rarity adds up to 2 new  <a href="/Enchantments" title="Enchantments">enchantments</a>
+</p><p><span class="colorrarity5">Epic</span> rarity adds up to 3 new  <a href="/Enchantments" title="Enchantments">enchantments</a>
+</p><p><span class="colorrarity6">Legendary</span> rarity adds up to 4 new  <a href="/Enchantments" title="Enchantments">enchantments</a>
+</p><p><span class="colorrarity7">Unique</span> rarity adds up to 5 new  <a href="/Enchantments" title="Enchantments">enchantments</a>
+</p>
+<h2><span class="mw-headline" id="Stat_Randomization">Stat Randomization</span></h2>
+<p>Not only are the <a href="/Enchantments" title="Enchantments">enchantments</a> a gear piece is imbued with randomized, but some of it's base stats are also randomized.
+</p><p>In general, only the damage values on weapons and the armor rating on armors are variable.
+</p><p>As such, 2 gear pieces of the same rarity can have different base stats.
+</p><p>There are some exceptions like the Lightfoot Boots, these also have randomized movement speed values based on rarity. 
+</p><p>For example, a <span class="colorrarity5">Epic</span> rarity Armet can have a 36 ~ 38 Armor Rating, which means that stat can roll between 36 to 38.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Weapon_Properties">Weapon Properties</span></h2>
+<p>Some weapons also have special properties, for example, the Castillion Dagger's and the Stiletto Dagger's 3rd hit deals 40% more damage.
+</p><p>The Felling Axe's attack can be chained infinitely as long as the attack doesn't miss or get's interrupted.
+</p><p>The Zweihander's secondary move set is also special since it's a 2-Hit attack, meaning 1 right click does a 2-Hit attack animation.
+</p><p>The "Combo" column reflects a weapon's attack animation during it's attack string, this description will be the in-game one, as those reflect the attack's coded damage type.
+</p><p>Melee Damage types such as "Thrust, Slash, Pierce" are not yet implemented in the game.
+</p><p>As for the Weapon's reach/hitbox" column, weapon's length doesn't necessarily determine a weapon's reach, more so the weapon's hitbox length, due to different attack animations, some shorter weapons could have better reach than longer weapons.
+</p>
+<h2><span class="mw-headline" id="Impact_Zones">Impact Zones</span></h2>
+<p>Most melee weapons operate on a impact zones system, meaning hitting an enemy with the tip of the weapon will deal the most damage and hitting further down on the blade/haft will deal less damage.
+The number of impact spots vary between weapons.
+</p><p>Lets look at impact zones of <a href="/Arming_Sword" title="Arming Sword">Arming Sword</a>:
+</p>
+<div style="display:flex;align-items: center;">
+<div>
+<p><a href="/Arming_Sword#Hitbox" title="Arming Sword"><img alt="Arming Sword Hitbox.png" src="/images/thumb/8/89/Arming_Sword_Hitbox.png/67px-Arming_Sword_Hitbox.png" decoding="async" width="67" height="300" srcset="/images/thumb/8/89/Arming_Sword_Hitbox.png/101px-Arming_Sword_Hitbox.png 1.5x, /images/8/89/Arming_Sword_Hitbox.png 2x" data-file-width="128" data-file-height="566" /></a>
+</p>
+</div>
+<div><span style="color:green;">Green Zone deals 100% damage</span><br /><br /><span style="color:orange;">Orange Zone deals 90% damage</span><br /><br /><span style="color:red;">Red Zone deals 70% damage</span></div>
+</div>
+<p>As <a href="/Sword" class="mw-redirect" title="Sword">Swords</a> overall balanced wepaons and are less punished by the impact zones, weapons like <a href="/Spear" title="Spear">Spear</a> are affected a lot more.
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Weapon_Categories">Weapon Categories</span></h1>
+<h2><span class="mw-headline" id="Swords">Swords</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Impact Zones</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Arming_Sword" title="Arming Sword"><img alt="Arming Sword" src="/images/thumb/b/b4/Arming_Sword_2.png/60px-Arming_Sword_2.png" decoding="async" width="60" height="180" srcset="/images/b/b4/Arming_Sword_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Arming_Sword" title="Arming Sword"><strong>Arming Sword</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Ranger" title="Ranger">Ranger</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">22</span> <br /> <span class="colorrarity1">25 ~ 26</span> <br /> <span class="colorrarity2">27 ~ 29</span> <br /> <span class="colorrarity3">29 ~ 31</span> <br /> <span class="colorrarity4">31 ~ 34</span> <br /> <span class="colorrarity5">34 ~ 37</span> <br /> <span class="colorrarity6">37 ~ 40</span> <br /> <span class="colorrarity7">40 ~ 42</span> <br />  </td>
+        <td> -20 </td>
+        <td> Slash/Slash/Pierce <br /> 100%/100%/100% </td>
+        <td> 0.66s/0.62s/0.81s </td>
+        <td> 100%/90%/70% </td>
+        <td> Height: 54.78 <br /> Width: 11.6 </td>
+        <td> Attack: -25%  </td>
+        <td> <a href="/Arming_Sword#Unique" title="Arming Sword">Kuma's Claw</a></td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Falchion" title="Falchion"><img alt="Falchion" src="/images/thumb/7/70/Falchion_2.png/60px-Falchion_2.png" decoding="async" width="60" height="180" srcset="/images/7/70/Falchion_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Falchion" title="Falchion"><strong>Falchion</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">30</span> <br /> <span class="colorrarity1">34 ~ 35</span> <br /> <span class="colorrarity2">36 ~ 39</span> <br /> <span class="colorrarity3">39 ~ 42</span> <br /> <span class="colorrarity4">42 ~ 46</span> <br /> <span class="colorrarity5">46 ~ 50</span> <br /> <span class="colorrarity6">50 ~ 53</span> <br /> <span class="colorrarity7">53 ~ 55</span> <br />  </td>
+        <td> -25 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100% </td>
+        <td> 0.88s/0.8s/0.95s </td>
+        <td> 100%/90% </td>
+        <td> Height: 51.07 <br /> Width: 10.71 </td>
+        <td> Attack: -30%  </td>
+        <td> <a href="/Falchion#Unique" title="Falchion">Kuma's Fang</a> </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Longsword" title="Longsword"><img alt="Longsword" src="/images/thumb/f/fa/Longsword_2.png/60px-Longsword_2.png" decoding="async" width="60" height="240" srcset="/images/f/fa/Longsword_2.png 1.5x" data-file-width="90" data-file-height="360" /></a></div><a href="/Longsword" title="Longsword"><strong>Longsword</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">29</span> <br /> <span class="colorrarity1">33 ~ 34</span> <br /> <span class="colorrarity2">35 ~ 38</span> <br /> <span class="colorrarity3">38 ~ 41</span> <br /> <span class="colorrarity4">41 ~ 45</span> <br /> <span class="colorrarity5">45 ~ 49</span> <br /> <span class="colorrarity6">49 ~ 52</span> <br /> <span class="colorrarity7">52 ~ 54</span> <br />  </td>
+        <td> -40 </td>
+        <td> Pierce/Slash/Slash <br /> 100%/100%/100%<br /> <br /> Riposte: Slash/Slash <br /> 150%/150% </td>
+        <td> 1.22s/0.97s/1.05s<br /><br />0.5s/0.57s </td>
+        <td> 100%/80%/60% </td>
+        <td> Height: 73.15 <br /> Width: 13.27 </td>
+        <td> Attack: -35% <br /> Blockreaction: -3% <br /> Riposte: -30% <br /> Riposteattack: -30%  </td>
+        <td> <a href="/Longsword#Unique" title="Longsword">Fulgor</a></td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Rapier" title="Rapier"><img alt="Rapier" src="/images/thumb/8/89/Rapier_2.png/60px-Rapier_2.png" decoding="async" width="60" height="180" srcset="/images/8/89/Rapier_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Rapier" title="Rapier"><strong>Rapier</strong></a></div> </td>
+        <td> <a href="/Ranger" title="Ranger">Ranger</a>, <a href="/Rogue" title="Rogue">Rogue</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">14 ~ 15</span> <br /> <span class="colorrarity1">16 ~ 17</span> <br /> <span class="colorrarity2">18 ~ 19</span> <br /> <span class="colorrarity3">20 ~ 21</span> <br /> <span class="colorrarity4">22 ~ 23</span> <br /> <span class="colorrarity5">24 ~ 25</span> <br /> <span class="colorrarity6">26 ~ 27</span> <br /> <span class="colorrarity7">28 ~ 29</span> <br />  </td>
+        <td> -17 </td>
+        <td> Pierce/Pierce/Pierce/Pierce <br /> 100%/100%/100%/100% </td>
+        <td> 0.56s/0.81s/0.79s/0.74s </td>
+        <td> 100% </td>
+        <td> Height: 56.53 <br /> Width: 13.48 </td>
+        <td> Attack: -25%  </td>
+        <td> <a href="/Rapier#Unique" title="Rapier">Viola</a></td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Short_Sword" title="Short Sword"><img alt="Short Sword" src="/images/thumb/e/ef/Short_Sword_2.png/60px-Short_Sword_2.png" decoding="async" width="60" height="180" srcset="/images/e/ef/Short_Sword_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Short_Sword" title="Short Sword"><strong>Short Sword</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Ranger" title="Ranger">Ranger</a>, <a href="/Rogue" title="Rogue">Rogue</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">15</span> <br /> <span class="colorrarity1">18 ~ 19</span> <br /> <span class="colorrarity2">20 ~ 22</span> <br /> <span class="colorrarity3">22 ~ 24</span> <br /> <span class="colorrarity4">24 ~ 27</span> <br /> <span class="colorrarity5">27 ~ 30</span> <br /> <span class="colorrarity6">30 ~ 33</span> <br /> <span class="colorrarity7">33 ~ 35</span> <br />  </td>
+        <td> -10 </td>
+        <td> Slash/Slash/Pierce <br /> 100%/100%/100% </td>
+        <td> 0.73s/0.81s/1.0s </td>
+        <td> 100%/80% </td>
+        <td> Height: 37.88 <br /> Width: 8.01 </td>
+        <td> Attack: -9%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Zweihander" title="Zweihander"><img alt="Zweihander" src="/images/thumb/2/28/Zweihander_2.png/60px-Zweihander_2.png" decoding="async" width="60" height="240" srcset="/images/2/28/Zweihander_2.png 1.5x" data-file-width="90" data-file-height="360" /></a></div><a href="/Zweihander" title="Zweihander"><strong>Zweihander</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">33</span> <br /> <span class="colorrarity1">37 ~ 39</span> <br /> <span class="colorrarity2">40 ~ 44</span> <br /> <span class="colorrarity3">44 ~ 48</span> <br /> <span class="colorrarity4">48 ~ 53</span> <br /> <span class="colorrarity5">53 ~ 58</span> <br /> <span class="colorrarity6">58 ~ 62</span> <br /> <span class="colorrarity7">62 ~ 65</span> <br />  </td>
+        <td> -50 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100%<br /> <br /> Slash <br /> 100% </td>
+        <td> 1.23s/1.09s/1.26s<br /><br />1.4s </td>
+        <td> 100%/80% </td>
+        <td> Height: 80.96 <br /> Width: 18.22 </td>
+        <td> Attack: -35%  </td>
+        <td> None </td>
+    </tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Maces">Maces</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Impact Zones</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Flanged_Mace" title="Flanged Mace"><img alt="Flanged Mace" src="/images/thumb/2/26/Flanged_Mace_2.png/60px-Flanged_Mace_2.png" decoding="async" width="60" height="180" srcset="/images/2/26/Flanged_Mace_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Flanged_Mace" title="Flanged Mace"><strong>Flanged Mace</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">26</span> <br /> <span class="colorrarity1">30 ~ 31</span> <br /> <span class="colorrarity2">32 ~ 35</span> <br /> <span class="colorrarity3">35 ~ 38</span> <br /> <span class="colorrarity4">38 ~ 42</span> <br /> <span class="colorrarity5">42 ~ 46</span> <br /> <span class="colorrarity6">46 ~ 49</span> <br /> <span class="colorrarity7">49 ~ 51</span> <br />  </td>
+        <td> -25 </td>
+        <td> Blunt/Blunt/Blunt <br /> 100%/100%/100% </td>
+        <td> 0.93s/0.98s/1.13s </td>
+        <td> 100%/70% </td>
+        <td> Height: 41.76 <br /> Width: 7.74 </td>
+        <td> Attack: -30%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Morning_Star" title="Morning Star"><img alt="Morning Star" src="/images/thumb/9/9d/Morning_Star_2.png/60px-Morning_Star_2.png" decoding="async" width="60" height="180" srcset="/images/9/9d/Morning_Star_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Morning_Star" title="Morning Star"><strong>Morning Star</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">28</span> <br /> <span class="colorrarity1">32 ~ 33</span> <br /> <span class="colorrarity2">34 ~ 37</span> <br /> <span class="colorrarity3">37 ~ 40</span> <br /> <span class="colorrarity4">40 ~ 44</span> <br /> <span class="colorrarity5">44 ~ 48</span> <br /> <span class="colorrarity6">48 ~ 51</span> <br /> <span class="colorrarity7">51 ~ 53</span> <br />  </td>
+        <td> -25 </td>
+        <td> Blunt/Blunt/Blunt <br /> 100%/100%/100% </td>
+        <td> 0.96s/1.07s/1.13s </td>
+        <td> 100%/70% </td>
+        <td> Height: 42.75 <br /> Width: 9.9 </td>
+        <td> Attack: -30%  </td>
+        <td> <a href="/Morning_Star#Unique" title="Morning Star">Pulverizing Prayer</a></td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Quarterstaff" title="Quarterstaff"><img alt="Quarterstaff" src="/images/thumb/d/db/Quarterstaff_2.png/60px-Quarterstaff_2.png" decoding="async" width="60" height="240" srcset="/images/d/db/Quarterstaff_2.png 1.5x" data-file-width="90" data-file-height="360" /></a></div><a href="/Quarterstaff" title="Quarterstaff"><strong>Quarterstaff</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a>, <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">24</span> <br /> <span class="colorrarity1">28 ~ 29</span> <br /> <span class="colorrarity2">30 ~ 33</span> <br /> <span class="colorrarity3">33 ~ 36</span> <br /> <span class="colorrarity4">36 ~ 40</span> <br /> <span class="colorrarity5">40 ~ 44</span> <br /> <span class="colorrarity6">44 ~ 47</span> <br /> <span class="colorrarity7">47 ~ 49</span> <br />  </td>
+        <td> -10 </td>
+        <td> Blunt/Blunt/Blunt/Blunt <br /> 100%/100%/100%/100%<br /> <br /> Block </td>
+        <td> 0.89s/0.96s/0.86s/0.93s </td>
+        <td> 100%/80%/60%/60% </td>
+        <td> Height: 86.99 <br /> Width: 4.31 </td>
+        <td> Attack: -30% <br /> Blockreaction: -35% <br /> Defensemode: -35%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/War_Maul" title="War Maul"><img alt="War Maul" src="/images/thumb/0/01/War_Maul_2.png/60px-War_Maul_2.png" decoding="async" width="60" height="120" srcset="/images/thumb/0/01/War_Maul_2.png/90px-War_Maul_2.png 1.5x, /images/thumb/0/01/War_Maul_2.png/120px-War_Maul_2.png 2x" data-file-width="180" data-file-height="360" /></a></div><a href="/War_Maul" title="War Maul"><strong>War Maul</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a>, <a href="/Cleric" title="Cleric">Cleric</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">45</span> <br /> <span class="colorrarity1">49 ~ 52</span> <br /> <span class="colorrarity2">53 ~ 58</span> <br /> <span class="colorrarity3">58 ~ 63</span> <br /> <span class="colorrarity4">63 ~ 69</span> <br /> <span class="colorrarity5">69 ~ 75</span> <br /> <span class="colorrarity6">75 ~ 79</span> <br /> <span class="colorrarity7">79 ~ 82</span> <br />  </td>
+        <td> -55 </td>
+        <td> Blunt/Blunt/Blunt <br /> 100%/100%/100%<br /><br /> Blunt/Blunt/Blunt <br /> 100%/100% </td>
+        <td> 1.39s/1.26s/1.26s<br /><br />1.03s/1.36s </td>
+        <td> 100%/70% </td>
+        <td> Height: 62.38 <br /> Width: 16.34 </td>
+        <td> Attack: -40%  </td>
+        <td> None </td>
+    </tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Daggers">Daggers</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Impact Zones</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Castillon_Dagger" title="Castillon Dagger"><img alt="Castillon Dagger" src="/images/thumb/4/48/Castillon_Dagger_2.png/60px-Castillon_Dagger_2.png" decoding="async" width="60" height="120" srcset="/images/4/48/Castillon_Dagger_2.png 1.5x" data-file-width="90" data-file-height="180" /></a></div><a href="/Castillon_Dagger" title="Castillon Dagger"><strong>Castillon Dagger</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Rogue" title="Rogue">Rogue</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">16</span> <br /> <span class="colorrarity1">19 ~ 20</span> <br /> <span class="colorrarity2">21 ~ 23</span> <br /> <span class="colorrarity3">23 ~ 25</span> <br /> <span class="colorrarity4">25 ~ 28</span> <br /> <span class="colorrarity5">28 ~ 31</span> <br /> <span class="colorrarity6">31 ~ 34</span> <br /> <span class="colorrarity7">34 ~ 36</span> <br />  </td>
+        <td> -10 </td>
+        <td> Slash/Slash/Pierce <br /> 100%/100%/150% </td>
+        <td> 0.83s/0.63s/0.89s </td>
+        <td> 100% </td>
+        <td> Height: 28.14 <br /> Width: 6.59 </td>
+        <td> Attack: -15%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Kris_Dagger" title="Kris Dagger"><img alt="Kris Dagger" src="/images/thumb/d/d6/Kris_Dagger_2.png/60px-Kris_Dagger_2.png" decoding="async" width="60" height="120" srcset="/images/d/d6/Kris_Dagger_2.png 1.5x" data-file-width="90" data-file-height="180" /></a></div><a href="/Kris_Dagger" title="Kris Dagger"><strong>Kris Dagger</strong></a></div> </td>
+        <td> <a href="/Rogue" title="Rogue">Rogue</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">14</span> <br /> <span class="colorrarity1">17 ~ 18</span> <br /> <span class="colorrarity2">19 ~ 21</span> <br /> <span class="colorrarity3">21 ~ 23</span> <br /> <span class="colorrarity4">23 ~ 26</span> <br /> <span class="colorrarity5">26 ~ 29</span> <br /> <span class="colorrarity6">29 ~ 32</span> <br /> <span class="colorrarity7">32 ~ 34</span> <br />  </td>
+        <td> -10 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100% </td>
+        <td> 0.73s/0.57s/0.84s </td>
+        <td> 100% </td>
+        <td> Height: 25.28 <br /> Width: 5.4 </td>
+        <td> Attack: -15%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Rondel_Dagger" title="Rondel Dagger"><img alt="Rondel Dagger" src="/images/thumb/f/f4/Rondel_Dagger_2.png/60px-Rondel_Dagger_2.png" decoding="async" width="60" height="120" srcset="/images/f/f4/Rondel_Dagger_2.png 1.5x" data-file-width="90" data-file-height="180" /></a></div><a href="/Rondel_Dagger" title="Rondel Dagger"><strong>Rondel Dagger</strong></a></div> </td>
+        <td> <a href="/Rogue" title="Rogue">Rogue</a>, <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">14</span> <br /> <span class="colorrarity1">17 ~ 18</span> <br /> <span class="colorrarity2">19 ~ 21</span> <br /> <span class="colorrarity3">21 ~ 23</span> <br /> <span class="colorrarity4">23 ~ 26</span> <br /> <span class="colorrarity5">26 ~ 29</span> <br /> <span class="colorrarity6">29 ~ 32</span> <br /> <span class="colorrarity7">32 ~ 34</span> <br />  </td>
+        <td> -10 </td>
+        <td> Pierce/Pierce/Pierce <br /> 100%/100%/100% </td>
+        <td> 0.74s/0.46s/0.56s </td>
+        <td> 100% </td>
+        <td> Height: 26.34 <br /> Width: 3.39 </td>
+        <td> Attack: -15%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Stiletto_Dagger" title="Stiletto Dagger"><img alt="Stiletto Dagger" src="/images/thumb/f/f2/Stiletto_Dagger_2.png/60px-Stiletto_Dagger_2.png" decoding="async" width="60" height="120" srcset="/images/f/f2/Stiletto_Dagger_2.png 1.5x" data-file-width="90" data-file-height="180" /></a></div><a href="/Stiletto_Dagger" title="Stiletto Dagger"><strong>Stiletto Dagger</strong></a></div> </td>
+        <td> <a href="/Rogue" title="Rogue">Rogue</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">15</span> <br /> <span class="colorrarity1">18 ~ 19</span> <br /> <span class="colorrarity2">20 ~ 22</span> <br /> <span class="colorrarity3">22 ~ 24</span> <br /> <span class="colorrarity4">24 ~ 27</span> <br /> <span class="colorrarity5">27 ~ 30</span> <br /> <span class="colorrarity6">30 ~ 33</span> <br /> <span class="colorrarity7">33 ~ 35</span> <br />  </td>
+        <td> -10 </td>
+        <td> Slash/Slash/Pierce <br /> 100%/100%/140% </td>
+        <td> 0.59s/0.58s/0.68s </td>
+        <td> 100% </td>
+        <td> Height: 26.07 <br /> Width: 4.84 </td>
+        <td> Attack: -15%  </td>
+        <td> None </td>
+    </tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Polearms">Polearms</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Impact Zones</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Bardiche" title="Bardiche"><img alt="Bardiche" src="/images/thumb/0/05/Bardiche_2.png/60px-Bardiche_2.png" decoding="async" width="60" height="150" srcset="/images/thumb/0/05/Bardiche_2.png/90px-Bardiche_2.png 1.5x, /images/thumb/0/05/Bardiche_2.png/120px-Bardiche_2.png 2x" data-file-width="180" data-file-height="450" /></a></div><a href="/Bardiche" title="Bardiche"><strong>Bardiche</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">39</span> <br /> <span class="colorrarity1">43 ~ 45</span> <br /> <span class="colorrarity2">46 ~ 50</span> <br /> <span class="colorrarity3">50 ~ 54</span> <br /> <span class="colorrarity4">54 ~ 59</span> <br /> <span class="colorrarity5">59 ~ 64</span> <br /> <span class="colorrarity6">64 ~ 68</span> <br /> <span class="colorrarity7">68 ~ 71</span> <br />  </td>
+        <td> -50 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100%<br /> <br /> Block </td>
+        <td> 1.28s/0.92s/1.39s </td>
+        <td> 100%/60% </td>
+        <td> Height: 100.5 <br /> Width: 12.08 </td>
+        <td> Attack: -35% <br /> Blockreaction: -35% <br /> Defensemode: -35%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Halberd" title="Halberd"><img alt="Halberd" src="/images/thumb/5/5b/Halberd_2.png/60px-Halberd_2.png" decoding="async" width="60" height="150" srcset="/images/thumb/5/5b/Halberd_2.png/90px-Halberd_2.png 1.5x, /images/thumb/5/5b/Halberd_2.png/120px-Halberd_2.png 2x" data-file-width="180" data-file-height="450" /></a></div><a href="/Halberd" title="Halberd"><strong>Halberd</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">37</span> <br /> <span class="colorrarity1">41 ~ 43</span> <br /> <span class="colorrarity2">44 ~ 48</span> <br /> <span class="colorrarity3">48 ~ 52</span> <br /> <span class="colorrarity4">52 ~ 57</span> <br /> <span class="colorrarity5">57 ~ 62</span> <br /> <span class="colorrarity6">62 ~ 66</span> <br /> <span class="colorrarity7">66 ~ 69</span> <br />  </td>
+        <td> -50 </td>
+        <td> Slash/Pierce/Slash <br /> 100%/100%/100%<br /> <br /> Slash/Slash <br /> 100%/100% </td>
+        <td> 1.13s/0.99s/1.31s<br /><br />1.19s/1.36s </td>
+        <td> 100%/60%/40% </td>
+        <td> Height: 120.08 <br /> Width: 16.24 </td>
+        <td> Attack: -35%  </td>
+        <td> <a href="/Halberd#Unique" title="Halberd">Cinder</a> </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Spear" title="Spear"><img alt="Spear" src="/images/thumb/2/23/Spear_2.png/60px-Spear_2.png" decoding="async" width="60" height="150" srcset="/images/thumb/2/23/Spear_2.png/90px-Spear_2.png 1.5x, /images/thumb/2/23/Spear_2.png/120px-Spear_2.png 2x" data-file-width="180" data-file-height="450" /></a></div><a href="/Spear" title="Spear"><strong>Spear</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">29</span> <br /> <span class="colorrarity1">33 ~ 34</span> <br /> <span class="colorrarity2">35 ~ 38</span> <br /> <span class="colorrarity3">38 ~ 41</span> <br /> <span class="colorrarity4">41 ~ 45</span> <br /> <span class="colorrarity5">45 ~ 49</span> <br /> <span class="colorrarity6">49 ~ 52</span> <br /> <span class="colorrarity7">52 ~ 54</span> <br />  </td>
+        <td> -40 </td>
+        <td> Pierce/Pierce/Pierce <br /> 100%/100%/100%<br /> <br /> Block </td>
+        <td> 0.86s/0.91s/1.0s </td>
+        <td> 100%/60% </td>
+        <td> Height: 112.84 <br /> Width: 6.73 </td>
+        <td> Attack: -35% <br /> Blockreaction: -35% <br /> Defensemode: -35%  </td>
+        <td> None </td>
+    </tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Axes">Axes</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Impact Zones</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Battle_Axe" title="Battle Axe"><img alt="Battle Axe" src="/images/thumb/3/33/Battle_Axe_2.png/60px-Battle_Axe_2.png" decoding="async" width="60" height="120" srcset="/images/thumb/3/33/Battle_Axe_2.png/90px-Battle_Axe_2.png 1.5x, /images/thumb/3/33/Battle_Axe_2.png/120px-Battle_Axe_2.png 2x" data-file-width="180" data-file-height="360" /></a></div><a href="/Battle_Axe" title="Battle Axe"><strong>Battle Axe</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">35</span> <br /> <span class="colorrarity1">39 ~ 41</span> <br /> <span class="colorrarity2">42 ~ 46</span> <br /> <span class="colorrarity3">46 ~ 50</span> <br /> <span class="colorrarity4">50 ~ 55</span> <br /> <span class="colorrarity5">55 ~ 60</span> <br /> <span class="colorrarity6">60 ~ 64</span> <br /> <span class="colorrarity7">64 ~ 67</span> <br />  </td>
+        <td> -45 </td>
+        <td> Slash/Slash <br /> 100%/100%<br /> <br /> Slash <br /> 100% </td>
+        <td> 1.2s/1.33s<br /><br />1.13s </td>
+        <td> 100%/60% </td>
+        <td> Height: 69.1 <br /> Width: 15.29 </td>
+        <td> Attack: -30%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Double_Axe" title="Double Axe"><img alt="Double Axe" src="/images/thumb/a/a4/Double_Axe_2.png/60px-Double_Axe_2.png" decoding="async" width="60" height="120" srcset="/images/thumb/a/a4/Double_Axe_2.png/90px-Double_Axe_2.png 1.5x, /images/thumb/a/a4/Double_Axe_2.png/120px-Double_Axe_2.png 2x" data-file-width="180" data-file-height="360" /></a></div><a href="/Double_Axe" title="Double Axe"><strong>Double Axe</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">40</span> <br /> <span class="colorrarity1">44 ~ 47</span> <br /> <span class="colorrarity2">48 ~ 53</span> <br /> <span class="colorrarity3">53 ~ 58</span> <br /> <span class="colorrarity4">58 ~ 64</span> <br /> <span class="colorrarity5">64 ~ 70</span> <br /> <span class="colorrarity6">70 ~ 74</span> <br /> <span class="colorrarity7">74 ~ 77</span> <br />  </td>
+        <td> -45 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100%<br /><br /> Slash <br /> 100% </td>
+        <td> 1.18s/1.26s/1.33s<br /><br />1.39s </td>
+        <td> 100%/60% </td>
+        <td> Height: 74.49 <br /> Width: 23.25 </td>
+        <td> Attack: -30%  </td>
+        <td> <a href="/Double_Axe#Unique" title="Double Axe">Life after Death</a> </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Felling_Axe" title="Felling Axe"><img alt="Felling Axe" src="/images/thumb/8/87/Felling_Axe_2.png/60px-Felling_Axe_2.png" decoding="async" width="60" height="120" srcset="/images/thumb/8/87/Felling_Axe_2.png/90px-Felling_Axe_2.png 1.5x, /images/thumb/8/87/Felling_Axe_2.png/120px-Felling_Axe_2.png 2x" data-file-width="180" data-file-height="360" /></a></div><a href="/Felling_Axe" title="Felling Axe"><strong>Felling Axe</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">33</span> <br /> <span class="colorrarity1">37 ~ 39</span> <br /> <span class="colorrarity2">40 ~ 44</span> <br /> <span class="colorrarity3">44 ~ 48</span> <br /> <span class="colorrarity4">48 ~ 53</span> <br /> <span class="colorrarity5">53 ~ 58</span> <br /> <span class="colorrarity6">58 ~ 62</span> <br /> <span class="colorrarity7">62 ~ 65</span> <br />  </td>
+        <td> -40 </td>
+        <td> Slash <br /> 100% </td>
+        <td> 0.92s </td>
+        <td> 100%/60% </td>
+        <td> Height: 56.77 <br /> Width: 13.54 </td>
+        <td> Attack: -35%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Hatchet" title="Hatchet"><img alt="Hatchet" src="/images/thumb/e/e7/Hatchet_2.png/60px-Hatchet_2.png" decoding="async" width="60" height="180" srcset="/images/e/e7/Hatchet_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Hatchet" title="Hatchet"><strong>Hatchet</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">15</span> <br /> <span class="colorrarity1">18 ~ 19</span> <br /> <span class="colorrarity2">20 ~ 22</span> <br /> <span class="colorrarity3">22 ~ 24</span> <br /> <span class="colorrarity4">24 ~ 27</span> <br /> <span class="colorrarity5">27 ~ 30</span> <br /> <span class="colorrarity6">30 ~ 33</span> <br /> <span class="colorrarity7">33 ~ 35</span> <br />  </td>
+        <td> -25 </td>
+        <td> Slash/Slash/Pierce <br /> 100%/100%/100% </td>
+        <td> 0.74s/0.73s/0.73s </td>
+        <td> 100%/80%/60% </td>
+        <td> Height: 40.57 <br /> Width: 11.4 </td>
+        <td> Attack: -25%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Horsemans_Axe" title="Horsemans Axe"><img alt="Horsemans Axe" src="/images/thumb/b/b4/Horsemans_Axe_2.png/60px-Horsemans_Axe_2.png" decoding="async" width="60" height="180" srcset="/images/b/b4/Horsemans_Axe_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Horsemans_Axe" title="Horsemans Axe"><strong>Horsemans Axe</strong></a></div> </td>
+        <td> <a href="/Barbarian" title="Barbarian">Barbarian</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Main-Hand </td>
+        <td> <span class="colorrarity0">19</span> <br /> <span class="colorrarity1">22 ~ 23</span> <br /> <span class="colorrarity2">24 ~ 26</span> <br /> <span class="colorrarity3">26 ~ 28</span> <br /> <span class="colorrarity4">28 ~ 31</span> <br /> <span class="colorrarity5">31 ~ 34</span> <br /> <span class="colorrarity6">34 ~ 37</span> <br /> <span class="colorrarity7">37 ~ 39</span> <br />  </td>
+        <td> -30 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100% </td>
+        <td> 0.79s/0.78s/0.82s </td>
+        <td> 100%/80% </td>
+        <td> Height: 47.94 <br /> Width: 10.97 </td>
+        <td> Attack: -25%  </td>
+        <td> <a href="/Horsemans_Axe#Unique" title="Horsemans Axe">Famine</a> </td>
+    </tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Bows">Bows</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Reload Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Quiver Size</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Longbow" title="Longbow"><img alt="Longbow" src="/images/thumb/9/9a/Longbow_2.png/60px-Longbow_2.png" decoding="async" width="60" height="240" srcset="/images/9/9a/Longbow_2.png 1.5x" data-file-width="90" data-file-height="360" /></a></div><a href="/Longbow" title="Longbow"><strong>Longbow</strong></a></div> </td>
+        <td> <a href="/Ranger" title="Ranger">Ranger</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">30</span> <br /> <span class="colorrarity1">34 ~ 36</span> <br /> <span class="colorrarity2">37 ~ 41</span> <br /> <span class="colorrarity3">41 ~ 45</span> <br /> <span class="colorrarity4">45 ~ 50</span> <br /> <span class="colorrarity5">50 ~ 55</span> <br /> <span class="colorrarity6">55 ~ 59</span> <br /> <span class="colorrarity7">59 ~ 62</span> <br />  </td>
+        <td> -50 </td>
+        <td> 2.03s </td>
+        <td> 2.98s </td>
+        <td> Attack: -44% <br /> Reload: -60%  </td>
+        <td> 5 </td>
+        <td> <a href="/Longbow#Unique" title="Longbow">Nipalan</a></td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Recurve_Bow" title="Recurve Bow"><img alt="Recurve Bow" src="/images/thumb/8/8c/Recurve_Bow_2.png/60px-Recurve_Bow_2.png" decoding="async" width="60" height="180" srcset="/images/8/8c/Recurve_Bow_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Recurve_Bow" title="Recurve Bow"><strong>Recurve Bow</strong></a></div> </td>
+        <td> <a href="/Ranger" title="Ranger">Ranger</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">24</span> <br /> <span class="colorrarity1">28 ~ 29</span> <br /> <span class="colorrarity2">30 ~ 33</span> <br /> <span class="colorrarity3">33 ~ 36</span> <br /> <span class="colorrarity4">36 ~ 40</span> <br /> <span class="colorrarity5">40 ~ 44</span> <br /> <span class="colorrarity6">44 ~ 47</span> <br /> <span class="colorrarity7">47 ~ 49</span> <br />  </td>
+        <td> -40 </td>
+        <td> 1.3s </td>
+        <td> 2.98s </td>
+        <td> Attack: -35% <br /> Reload: -50%  </td>
+        <td> 6 </td>
+        <td> <a href="/Recurve_Bow#Unique" title="Recurve Bow">Pestilence</a></td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Survival_Bow" title="Survival Bow"><img alt="Survival Bow" src="/images/thumb/6/6f/Survival_Bow_2.png/60px-Survival_Bow_2.png" decoding="async" width="60" height="180" srcset="/images/6/6f/Survival_Bow_2.png 1.5x" data-file-width="90" data-file-height="270" /></a></div><a href="/Survival_Bow" title="Survival Bow"><strong>Survival Bow</strong></a></div> </td>
+        <td> <a href="/Ranger" title="Ranger">Ranger</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">13</span> <br /> <span class="colorrarity1">14 ~ 15</span> <br /> <span class="colorrarity2">16 ~ 18</span> <br /> <span class="colorrarity3">18 ~ 20</span> <br /> <span class="colorrarity4">20 ~ 22</span> <br /> <span class="colorrarity5">22 ~ 24</span> <br /> <span class="colorrarity6">24 ~ 26</span> <br /> <span class="colorrarity7">26 ~ 27</span> <br />  </td>
+        <td> -30 </td>
+        <td> 1.23s </td>
+        <td> 2.98s </td>
+        <td> Attack: -25% <br /> Reload: -40%  </td>
+        <td> 7 </td>
+        <td> <a href="/Survival_Bow#Unique" title="Survival Bow">Elven Bow of Truth</a></td>
+    </tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Crossbows">Crossbows</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Reload Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Crossbow" title="Crossbow"><img alt="Crossbow" src="/images/thumb/0/01/Crossbow_2.png/60px-Crossbow_2.png" decoding="async" width="60" height="80" srcset="/images/thumb/0/01/Crossbow_2.png/90px-Crossbow_2.png 1.5x, /images/thumb/0/01/Crossbow_2.png/120px-Crossbow_2.png 2x" data-file-width="270" data-file-height="360" /></a></div><a href="/Crossbow" title="Crossbow"><strong>Crossbow</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Ranger" title="Ranger">Ranger</a>, <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">39</span> <br /> <span class="colorrarity1">43 ~ 45</span> <br /> <span class="colorrarity2">46 ~ 50</span> <br /> <span class="colorrarity3">50 ~ 54</span> <br /> <span class="colorrarity4">54 ~ 59</span> <br /> <span class="colorrarity5">59 ~ 64</span> <br /> <span class="colorrarity6">64 ~ 68</span> <br /> <span class="colorrarity7">68 ~ 71</span> <br />  </td>
+        <td> -50 </td>
+        <td> 3.47s </td>
+        <td> Attack: -44% <br /> Reload: -100% <br /> Mastery: 50%  </td>
+        <td> None  </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Windlass_Crossbow" title="Windlass Crossbow"><img alt="Windlass Crossbow" src="/images/thumb/2/2a/Windlass_Crossbow_2.png/60px-Windlass_Crossbow_2.png" decoding="async" width="60" height="120" srcset="/images/thumb/2/2a/Windlass_Crossbow_2.png/90px-Windlass_Crossbow_2.png 1.5x, /images/thumb/2/2a/Windlass_Crossbow_2.png/120px-Windlass_Crossbow_2.png 2x" data-file-width="180" data-file-height="360" /></a></div><a href="/Windlass_Crossbow" title="Windlass Crossbow"><strong>Windlass Crossbow</strong></a></div> </td>
+        <td> <a href="/Ranger" title="Ranger">Ranger</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">44</span> <br /> <span class="colorrarity1">48 ~ 51</span> <br /> <span class="colorrarity2">52 ~ 57</span> <br /> <span class="colorrarity3">57 ~ 62</span> <br /> <span class="colorrarity4">62 ~ 68</span> <br /> <span class="colorrarity5">68 ~ 74</span> <br /> <span class="colorrarity6">74 ~ 78</span> <br /> <span class="colorrarity7">78 ~ 81</span> <br />  </td>
+        <td> -60 </td>
+        <td> 7.48s </td>
+        <td> Attack: -44% <br /> Reload: -100%  </td>
+        <td> None  </td>
+    </tr>
+</tbody></table>   
+<h2><span class="mw-headline" id="Magical_Weapons">Magical Weapons</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Damage</th>
+		<th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Magical Damage</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Attack Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Impact Zones</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:7%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Crystal_Ball" title="Crystal Ball"><img alt="Crystal Ball" src="/images/thumb/1/19/Crystal_Ball_2.png/60px-Crystal_Ball_2.png" decoding="async" width="60" height="60" srcset="/images/thumb/1/19/Crystal_Ball_2.png/90px-Crystal_Ball_2.png 1.5x, /images/thumb/1/19/Crystal_Ball_2.png/120px-Crystal_Ball_2.png 2x" data-file-width="180" data-file-height="180" /></a></div><a href="/Crystal_Ball" title="Crystal Ball"><strong>Crystal Ball</strong></a></div> </td>
+        <td> <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td>  </td>
+        <td> <span class="colorrarity0">1</span> <br /> <span class="colorrarity1">2</span> <br /> <span class="colorrarity2">3</span> <br /> <span class="colorrarity3">4</span> <br /> <span class="colorrarity4">5</span> <br /> <span class="colorrarity5">6</span> <br /> <span class="colorrarity6">7</span> <br /> <span class="colorrarity7">8</span> <br />  </td>
+        <td> -25 </td>
+        <td> Spell Cast </td>
+        <td>  </td>
+        <td>  </td>
+        <td> Height: 9.25 <br /> Width: 9.25 </td>
+        <td> Casting: -30%  </td>
+        <td> None  </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Crystal_Sword" title="Crystal Sword"><img alt="Crystal Sword" src="/images/thumb/7/78/Crystal_Sword_2.png/60px-Crystal_Sword_2.png" decoding="async" width="60" height="240" srcset="/images/7/78/Crystal_Sword_2.png 1.5x" data-file-width="90" data-file-height="360" /></a></div><a href="/Crystal_Sword" title="Crystal Sword"><strong>Crystal Sword</strong></a></div> </td>
+        <td> <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">6 ~ 7</span> <br /> <span class="colorrarity1">9 ~ 10</span> <br /> <span class="colorrarity2">11 ~ 12</span> <br /> <span class="colorrarity3">13 ~ 14</span> <br /> <span class="colorrarity4">15 ~ 16</span> <br /> <span class="colorrarity5">17 ~ 18</span> <br /> <span class="colorrarity6">19 ~ 20</span> <br /> <span class="colorrarity7">21 ~ 22</span> <br />  </td>
+        <td>  </td>
+        <td> -30 </td>
+        <td> Slash/Slash/Slash <br /> 100%/100%/100%<br /> <br /> Spell Cast </td>
+        <td> 0.74s/1.21s/1.12s </td>
+        <td> 100%/90%/70% </td>
+        <td> Height: 54.78 <br /> Width: 10.5 </td>
+        <td> Attack: -30% <br /> Casting: -35%  </td>
+        <td> None  </td>
+    </tr>
+    
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Spellbook" title="Spellbook"><img alt="Spellbook" src="/images/thumb/e/e9/Spellbook_2.png/60px-Spellbook_2.png" decoding="async" width="60" height="60" srcset="/images/thumb/e/e9/Spellbook_2.png/90px-Spellbook_2.png 1.5x, /images/thumb/e/e9/Spellbook_2.png/120px-Spellbook_2.png 2x" data-file-width="180" data-file-height="180" /></a></div><a href="/Spellbook" title="Spellbook"><strong>Spellbook</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 2-Handed </td>
+        <td>  </td>
+        <td> <span class="colorrarity0">1</span> <br /> <span class="colorrarity1">2</span> <br /> <span class="colorrarity2">3</span> <br /> <span class="colorrarity3">4</span> <br /> <span class="colorrarity4">5</span> <br /> <span class="colorrarity5">6</span> <br /> <span class="colorrarity6">7</span> <br /> <span class="colorrarity7">8</span> <br />  </td>
+        <td> -10 </td>
+        <td> Spell Cast </td>
+        <td>  </td>
+        <td>  </td>
+        <td> Height: 12.8 <br /> Width: 21.65 </td>
+        <td> Casting: -30%  </td>
+        <td> None  </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Wizard_Staff" title="Wizard Staff"><img alt="Wizard Staff" src="/images/thumb/9/9c/Wizard_Staff_2.png/60px-Wizard_Staff_2.png" decoding="async" width="60" height="240" srcset="/images/9/9c/Wizard_Staff_2.png 1.5x" data-file-width="90" data-file-height="360" /></a></div><a href="/Wizard_Staff" title="Wizard Staff"><strong>Wizard Staff</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Wizard" title="Wizard">Wizard</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">19</span> <br /> <span class="colorrarity1">22 ~ 23</span> <br /> <span class="colorrarity2">24 ~ 26</span> <br /> <span class="colorrarity3">26 ~ 28</span> <br /> <span class="colorrarity4">28 ~ 31</span> <br /> <span class="colorrarity5">31 ~ 34</span> <br /> <span class="colorrarity6">34 ~ 37</span> <br /> <span class="colorrarity7">37 ~ 39</span> <br />  </td>
+        <td>  </td>
+        <td> -20 </td>
+        <td> Blunt/Blunt <br /> 100%/100%<br /> <br /> Spell Cast </td>
+        <td> 0.69s/1.07s </td>
+        <td> 100%/80%/60% </td>
+        <td> Height: 82.26 <br /> Width: 6.75 </td>
+        <td> Attack: -30% <br /> Casting: -35%  </td>
+        <td> None  </td>
+    </tr>
+</tbody></table>   
+<h2><span class="mw-headline" id="Shields">Shields</span></h2>
+<p><br />
+</p>
+<table cellspacing="0" class="wikitable sortable jquery-tablesorter" style="width:95%;color:#eee; background:transparent; text-align:center; vertical-align:middle;">
+    <tbody><tr>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Class</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Armor Rating</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
+        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Buckler" title="Buckler"><img alt="Buckler" src="/images/thumb/a/a5/Buckler_2.png/60px-Buckler_2.png" decoding="async" width="60" height="60" srcset="/images/thumb/a/a5/Buckler_2.png/90px-Buckler_2.png 1.5x, /images/thumb/a/a5/Buckler_2.png/120px-Buckler_2.png 2x" data-file-width="180" data-file-height="180" /></a></div><a href="/Buckler" title="Buckler"><strong>Buckler</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">6</span> <br /> <span class="colorrarity1">9</span> <br /> <span class="colorrarity2">12</span> <br /> <span class="colorrarity3">13 ~ 14</span> <br /> <span class="colorrarity4">14 ~ 15</span> <br /> <span class="colorrarity5">16 ~ 17</span> <br /> <span class="colorrarity6">18 ~ 19</span> <br /> <span class="colorrarity7">20 ~ 21</span> <br />  </td>
+        <td> -7 </td>
+        <td> Block </td>
+        <td> Height: 26.07 <br /> Width: 26.07 </td>
+        <td> Blockreaction: -1% <br /> Guard: -9%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Heater_Shield" title="Heater Shield"><img alt="Heater Shield" src="/images/thumb/b/b1/Heater_Shield_2.png/60px-Heater_Shield_2.png" decoding="async" width="60" height="80" srcset="/images/thumb/b/b1/Heater_Shield_2.png/90px-Heater_Shield_2.png 1.5x, /images/thumb/b/b1/Heater_Shield_2.png/120px-Heater_Shield_2.png 2x" data-file-width="270" data-file-height="360" /></a></div><a href="/Heater_Shield" title="Heater Shield"><strong>Heater Shield</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">15</span> <br /> <span class="colorrarity1">23</span> <br /> <span class="colorrarity2">30</span> <br /> <span class="colorrarity3">31 ~ 34</span> <br /> <span class="colorrarity4">35 ~ 38</span> <br /> <span class="colorrarity5">38 ~ 41</span> <br /> <span class="colorrarity6">42 ~ 45</span> <br /> <span class="colorrarity7">46 ~ 49</span> <br />  </td>
+        <td> -15 </td>
+        <td> Block </td>
+        <td> Height: 39.81 <br /> Width: 31.8 </td>
+        <td> Blockreaction: -3% <br /> Guard: -35%  </td>
+        <td> <a href="/Heater_Shield#Unique" title="Heater Shield">Aegis</a> </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Pavise" title="Pavise"><img alt="Pavise" src="/images/thumb/c/ce/Pavise_2.png/60px-Pavise_2.png" decoding="async" width="60" height="80" srcset="/images/thumb/c/ce/Pavise_2.png/90px-Pavise_2.png 1.5x, /images/thumb/c/ce/Pavise_2.png/120px-Pavise_2.png 2x" data-file-width="270" data-file-height="360" /></a></div><a href="/Pavise" title="Pavise"><strong>Pavise</strong></a></div> </td>
+        <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Ranger" title="Ranger">Ranger</a> </td>
+        <td> 2-Handed </td>
+        <td> <span class="colorrarity0">24</span> <br /> <span class="colorrarity1">36</span> <br /> <span class="colorrarity2">48</span> <br /> <span class="colorrarity3">49 ~ 54</span> <br /> <span class="colorrarity4">55 ~ 60</span> <br /> <span class="colorrarity5">61 ~ 66</span> <br /> <span class="colorrarity6">67 ~ 72</span> <br /> <span class="colorrarity7">73 ~ 79</span> <br />  </td>
+        <td> -65 </td>
+        <td> Block <br /><br /> Ground Deployment </td>
+        <td> Height: 69.7 <br /> Width: 40.69 </td>
+        <td> Blockreaction: -3% <br /> Guard: -40%  </td>
+        <td> None </td>
+    </tr>
+
+    <tr>
+        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Round_Shield" title="Round Shield"><img alt="Round Shield" src="/images/thumb/4/43/Round_Shield_2.png/60px-Round_Shield_2.png" decoding="async" width="60" height="90" srcset="/images/thumb/4/43/Round_Shield_2.png/90px-Round_Shield_2.png 1.5x, /images/thumb/4/43/Round_Shield_2.png/120px-Round_Shield_2.png 2x" data-file-width="180" data-file-height="270" /></a></div><a href="/Round_Shield" title="Round Shield"><strong>Round Shield</strong></a></div> </td>
+        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
+        <td> 1-Handed<br />Off-Hand </td>
+        <td> <span class="colorrarity0">13</span> <br /> <span class="colorrarity1">19</span> <br /> <span class="colorrarity2">26</span> <br /> <span class="colorrarity3">26 ~ 29</span> <br /> <span class="colorrarity4">29 ~ 32</span> <br /> <span class="colorrarity5">32 ~ 35</span> <br /> <span class="colorrarity6">35 ~ 38</span> <br /> <span class="colorrarity7">38 ~ 41</span> <br />  </td>
+        <td> -12 </td>
+        <td> Block </td>
+        <td> Height: 34.42 <br /> Width: 34.42 </td>
+        <td> Blockreaction: -3% <br /> Guard: -25%  </td>
+        <td> None </td>
+    </tr>
+</tbody></table>   
+<p><br />
+</p>
+<div class="cs-comments"></div>
+<!-- 
+NewPP limit report
+Cached time: 20230223003519
+Cache expiry: 0
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.180 seconds
+Real time usage: 0.184 seconds
+Preprocessor visited node count: 2255/1000000
+Post‐expand include size: 80505/2097152 bytes
+Template argument size: 2105/2097152 bytes
+Highest expansion depth: 7/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 31/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   37.701      1 -total
+ 42.46%   16.009     35 Template:Iconbox
+ 27.60%   10.406      1 Swords
+ 10.74%    4.049      1 Axes
+  9.57%    3.608      1 Shields
+  9.51%    3.587      1 Maces
+  9.43%    3.555      1 Magical_Weapons
+  9.06%    3.416      1 Daggers
+  8.41%    3.170      1 Bows
+  7.82%    2.947      1 Polearms
+-->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="http:///index.php?title=Weapons&amp;oldid=8126">http:///index.php?title=Weapons&amp;oldid=8126</a>"</div>
+																		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>									<div id="feet" style="margin: 0; display: none"></div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer" role="contentinfo">
+				<div class="inner">
+						<ul id="feet">
+															<li> This page was last edited on 19 February 2023, at 02:41.</li>
+															<li><a href="/Dark_and_Darker_Wiki:Privacy_policy">Privacy policy</a></li>
+															<li><a href="/Dark_and_Darker_Wiki:About">About Dark and Darker Wiki</a></li>
+															<li><a href="/Dark_and_Darker_Wiki:General_disclaimer">Disclaimers</a></li>
+																				</ul>
+					<div class="lists" style="font-weight:bold;margin-bottom:10px">
+						<span>
+							<a href="https://discord.gg/wqRBSytTmP">Questions or feedback? Join the discussion on the dedicated Discord!</a>
+							
+						</span>	
+					</div>
+					<div class="lists">
+						<span>
+							<a href="/">Wiki Home</a> |
+							<a href="https://www.youtube.com/channel/UCpTRuIbbXl0C3503l-GT7Ug">Youtube</a> |
+							<a href="https://discord.spellsandguns.com">Discord</a> |
+							<a href="/About">About The Wiki</a> |
+							<a href="https://spellsandguns.com/">Gaming Wikis</a> |
+							<a href="/Term_of_Use">Terms of Use</a> |
+							<a href="https://creativecommons.org/licenses/by-sa/4.0/">Copyright Policy</a> |
+							<a href="/Special:RecentChanges">Recent Changes</a>
+							
+						</span>					
+																	<ul>
+																									<li id="t-whatlinkshere" class="mw-list-item"><a href="/Special:WhatLinksHere/Weapons" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+																									<li id="t-recentchangeslinked" class="mw-list-item"><a href="/Special:RecentChangesLinked/Weapons" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																									<li id="t-specialpages" class="mw-list-item"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+																									<li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+																									<li id="t-permalink" class="mw-list-item"><a href="/index.php?title=Weapons&amp;oldid=8126" title="Permanent link to this revision of this page">Permanent link</a></li>
+																									<li id="t-info" class="mw-list-item"><a href="/index.php?title=Weapons&amp;action=info" title="More information about this page">Page information</a></li>
+																									<li id="t-cite" class="mw-list-item"><a href="/index.php?title=Special:CiteThisPage&amp;page=Weapons&amp;id=8126&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li>
+												
+											</ul>
+															</div>
+				</div>
+			</div>		</div>
+		<script>
+			/*
+ScratchWikiSkin script
+*/
+
+			//get an element from a query selector, with functions to write, add, show, hide, addclass, delclass
+			function mod(el) {
+				if (!el) return el;
+				el.addclass = function(c) {
+					this.classList.add(c);
+				};
+				el.delclass = function(c) {
+					this.classList.remove(c);
+				};
+				el.hasclass = function(c) {
+					return this.classList.contains(c);
+				};
+				return el;
+			}
+			var body = mod(document.body);
+			/* if (
+				window.matchMedia
+				&& window.matchMedia('(prefers-color-scheme: dark)').matches
+				&& !body.hasclass('dark-theme')
+			) {
+				body.addclass('dark-theme');
+				document.querySelector('div#feet').style.display = '';
+			} */
+			(function() {
+				let selected = document.querySelectorAll('#navigation a.dropdown-toggle');
+				for (var i = 0; i < selected.length; i++) {
+					let btn = selected[i];
+					let dropdown = btn.nextElementSibling;
+					mod(btn);
+					mod(dropdown);
+					btn.removeAttribute('href');
+					btn.onclick = function() {
+						if (!dropdown.classList.contains('open')) {
+							btn.addclass('open');
+							dropdown.addclass('open');
+						} else {
+							btn.delclass('open');
+							dropdown.delclass('open');
+						}
+					};
+					btn.parentElement.onmouseout = function(e) {
+						if (!e) e = window.event;
+						if (!e.toElement) e.toElement = e.relatedTarget;
+						if (!e.toElement) return;
+						if (
+							!btn.parentElement.contains(e.toElement) &&
+							!document.querySelector('.suggestions')?.contains(e.toElement)
+						) {
+							if (btn.hasclass('open')) {
+								if (e.toElement.matches('#navigation .dropdown-toggle, #navigation .dropdown-toggle>a, #navigation .dropdown-toggle>a *')) {
+									e.toElement.click();
+								}
+							}
+							btn.delclass('open');
+							dropdown.delclass('open');
+						}
+					};
+				};
+			})();
+			var searchExpanded = false;
+			document.querySelector('#searchInput').onfocus = function() {
+				let selected = document.querySelectorAll('#navigation .link');
+				for (var i = 0; i < selected.length; i++) {
+					let link = selected[i];
+					if (!link.classList.contains('right')) {
+						link.style.display = 'none';
+					}
+				}
+				searchExpanded = true;
+			};
+			window.addEventListener('click', function(e) {
+				if (!searchExpanded) return;
+				if (document.querySelector('#navigation .search').contains(e.target)) return;
+				let selected = document.querySelectorAll('#navigation .link');
+				for (var i = 0; i < selected.length; i++) {
+					let link = selected[i];
+					if (!link.classList.contains('right')) {
+						link.style.display = '';
+					}
+				}
+				searchExpanded = false;
+			});
+		</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.log.warn("This page is using the deprecated ResourceLoader module \"mediawiki.skinning.interface\".\n[1.37] The use of the `content` feature with ResourceLoaderSkinModule is deprecated. Use `content-media` instead. [1.37] The use of the `legacy` feature with ResourceLoaderSkinModule is deprecated(T89981) and is a NOOP since 1.39 (T304325). This should be urgently omited to retain compatibility with future MediaWiki versionsMore information can be found at [[mw:Manual:ResourceLoaderSkinModule]]. ");mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.180","walltime":"0.184","ppvisitednodes":{"value":2255,"limit":1000000},"postexpandincludesize":{"value":80505,"limit":2097152},"templateargumentsize":{"value":2105,"limit":2097152},"expansiondepth":{"value":7,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":31,"limit":5000000},"timingprofile":["100.00%   37.701      1 -total"," 42.46%   16.009     35 Template:Iconbox"," 27.60%   10.406      1 Swords"," 10.74%    4.049      1 Axes","  9.57%    3.608      1 Shields","  9.51%    3.587      1 Maces","  9.43%    3.555      1 Magical_Weapons","  9.06%    3.416      1 Daggers","  8.41%    3.170      1 Bows","  7.82%    2.947      1 Polearms"]},"cachereport":{"timestamp":"20230223003519","ttl":0,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":338});});</script>
+</body>
+</html>

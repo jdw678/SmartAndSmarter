@@ -97,5 +97,22 @@ namespace SmartAndSmaterAPI.Controllers
             }
             return Ok();
         }
+        
+        [HttpPost, ActionName("ScrapeTable")]
+        public async Task<IActionResult> ScrapeTable([FromBody]string html)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            WeaponTableHTML wth = new WeaponTableHTML();
+            string htmlStr = await wth.LoadData(html);
+            //Console.WriteLine("----------\n" + htmlStr);
+
+            wth.ParseData(htmlStr);
+            
+
+            return Ok();
+        }
+
     }
 }
