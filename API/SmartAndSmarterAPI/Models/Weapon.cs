@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace SmartAndSmaterAPI.Models
 {
@@ -77,23 +78,23 @@ namespace SmartAndSmaterAPI.Models
 
         //attack type (slash / pierce etc)
         //must have atleast one
-        [Column(TypeName = "varchar(32)"), Required]
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)), Required]
         public WeaponAttackType Attack1Type { get; set; }
 
 
-        [Column(TypeName = "varchar(32)")]
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
         public WeaponAttackType? Attack2Type { get; set; }
 
 
-        [Column(TypeName = "varchar(32)")]
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
         public WeaponAttackType? Attack3Type { get; set; }
 
 
-        [Column(TypeName = "varchar(32)")]
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
         public WeaponAttackType? Attack4Type { get; set; }
 
 
-        [Column(TypeName = "varchar(32)")]
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
         public WeaponAttackType? Attack5Type { get; set; }
 
 

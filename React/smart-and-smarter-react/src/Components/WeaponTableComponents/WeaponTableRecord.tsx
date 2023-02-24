@@ -21,7 +21,6 @@ export function Capitalize(str: string | undefined)
 
 export default function WeaponTableRecord(props: Props) {
 
-    console.log(props.weapon);
   return(
         <tr>
             <td>
@@ -86,7 +85,7 @@ export default function WeaponTableRecord(props: Props) {
           <td> {props.weapon.sweetSpot} </td>
           <td> {props.weapon.reach} </td>
           <td> {props.weapon.actionMovementSpeed} </td>
-          <td> <a href="https://darkanddarker.wiki.spellsandguns.com/Arming_Sword#Unique" title="Arming Sword">Kuma's Claw</a></td>
+          <td> <a href={props.weapon.uniqueLink} title={props.weapon.name}>{props.weapon.uniqueName}</a></td>
       </tr>
   )
 

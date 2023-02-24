@@ -3,12 +3,14 @@ using System.Net;
 using System;
 using System.Collections.Generic;
 using System.Text.Json;
+using System.Reflection;
 
 namespace SmartAndSmaterAPI.Models
 {
     public static class WeaponTableHTML
     {
-        static string folder = "G:\\Programming\\Projects\\SmartAndSmarter\\API\\SmartAndSmarterAPI\\TestHTML\\";
+        static string folder = Directory.GetCurrentDirectory() + "\\HardData\\";
+        static string reactFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.ToString() + "\\React\\smart-and-smarter-react\\src\\HardData\\";
 
         public static async Task<List<Weapon>> ParseTable()
         {
@@ -24,7 +26,8 @@ namespace SmartAndSmaterAPI.Models
             doc.LoadHtml(html);
             doc.OptionEmptyCollection = true;
 
-            File.Delete($"{folder}WeaponOBJS.txt");
+            File.Delete($"{folder}Weapons.json");
+            File.Delete($"{reactFolder}Weapons.json");
 
             string wikiUrl = "https://darkanddarker.wiki.spellsandguns.com";
 
@@ -32,7 +35,7 @@ namespace SmartAndSmaterAPI.Models
 
             foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table/tbody").ToList())
             {
-                File.WriteAllText(folder + "HTML", table.InnerHtml);
+                File.WriteAllText(folder + "HTML.txt", table.InnerHtml);
 
                 foreach (HtmlNode row in table.SelectNodes("tr"))
                 {
@@ -80,7 +83,7 @@ namespace SmartAndSmaterAPI.Models
                         actionMovementSpeed = cells[10];
                         unique = cells[11];
                     }
-                    //sword table
+                    //melee weapons table
                     else if (cells.Count == 11)
                     {
                         weapon.ClipSize = null;
@@ -403,7 +406,7 @@ namespace SmartAndSmaterAPI.Models
                             if (combos[0].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack1Type = WeaponAttackType.Blunt;
                             if (combos[0].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack1Type = WeaponAttackType.Bow;
                             if (combos[0].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack1Type = WeaponAttackType.Block;
-                            if (combos[0].Item1.Contains(WeaponAttackType.GroundDeployment.ToString())) weapon.Attack1Type = WeaponAttackType.GroundDeployment;
+                            if (combos[0].Item1.Contains("Ground")) weapon.Attack1Type = WeaponAttackType.GroundDeployment;
 
                             //first weapon must have an attack damage multiplier
                             if (combos[0].Item2 != null)
@@ -419,7 +422,7 @@ namespace SmartAndSmaterAPI.Models
                             if (combos[1].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack2Type = WeaponAttackType.Blunt;
                             if (combos[1].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack2Type = WeaponAttackType.Bow;
                             if (combos[1].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack2Type = WeaponAttackType.Block;
-                            if (combos[1].Item1.Contains(WeaponAttackType.GroundDeployment.ToString())) weapon.Attack2Type = WeaponAttackType.GroundDeployment;
+                            if (combos[1].Item1.Contains("Ground")) weapon.Attack2Type = WeaponAttackType.GroundDeployment;
 
                             weapon.Attack2DamageMultiplier = combos[1].Item2;
                         }
@@ -432,7 +435,7 @@ namespace SmartAndSmaterAPI.Models
                             if (combos[2].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack3Type = WeaponAttackType.Blunt;
                             if (combos[2].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack3Type = WeaponAttackType.Bow;
                             if (combos[2].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack3Type = WeaponAttackType.Block;
-                            if (combos[2].Item1.Contains(WeaponAttackType.GroundDeployment.ToString())) weapon.Attack3Type = WeaponAttackType.GroundDeployment;
+                            if (combos[2].Item1.Contains("Ground")) weapon.Attack3Type = WeaponAttackType.GroundDeployment;
 
                             weapon.Attack3DamageMultiplier = combos[2].Item2;
                         }
@@ -445,7 +448,7 @@ namespace SmartAndSmaterAPI.Models
                             if (combos[3].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack4Type = WeaponAttackType.Blunt;
                             if (combos[3].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack4Type = WeaponAttackType.Bow;
                             if (combos[3].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack4Type = WeaponAttackType.Block;
-                            if (combos[3].Item1.Contains(WeaponAttackType.GroundDeployment.ToString())) weapon.Attack4Type = WeaponAttackType.GroundDeployment;
+                            if (combos[3].Item1.Contains("Ground")) weapon.Attack4Type = WeaponAttackType.GroundDeployment;
 
                             weapon.Attack4DamageMultiplier = combos[3].Item2;
                         }
@@ -458,7 +461,7 @@ namespace SmartAndSmaterAPI.Models
                             if (combos[4].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack5Type = WeaponAttackType.Blunt;
                             if (combos[4].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack5Type = WeaponAttackType.Bow;
                             if (combos[4].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack5Type = WeaponAttackType.Block;
-                            if (combos[4].Item1.Contains(WeaponAttackType.GroundDeployment.ToString())) weapon.Attack5Type = WeaponAttackType.GroundDeployment;
+                            if (combos[4].Item1.Contains("Ground")) weapon.Attack5Type = WeaponAttackType.GroundDeployment;
 
                             weapon.Attack5DamageMultiplier = combos[4].Item2;
                         }
@@ -550,6 +553,9 @@ namespace SmartAndSmaterAPI.Models
 
                     #endregion
 
+                    //sweet spot
+                    if (sweetSpot != null) weapon.SweetSpot = sweetSpot.InnerText.Trim().TrimEnd();
+
                     //reach cell
                     if (reach != null) weapon.Reach = reach.InnerText.Trim().TrimEnd();
 
@@ -557,6 +563,8 @@ namespace SmartAndSmaterAPI.Models
                     //actionMovementSpeed cell
                     if(actionMovementSpeed != null) weapon.ActionMovementSpeed = actionMovementSpeed.InnerText.Trim().TrimEnd();
 
+                    //movementSpeed
+                    if (movementSpeed != null) weapon.MovementSpeedWhileEquiped = float.Parse(movementSpeed.InnerText);
 
                     //unique cell
                     if (unique != null)
@@ -586,7 +594,15 @@ namespace SmartAndSmaterAPI.Models
 
             }
 
-            File.AppendAllText($"{folder}WeaponOBJS.txt", JsonSerializer.Serialize(weapons));
+            JsonSerializerOptions options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
+
+            File.AppendAllText($"{folder}Weapons.json", JsonSerializer.Serialize(weapons, options));
+            File.AppendAllText($"{reactFolder}Weapons.json", JsonSerializer.Serialize(weapons, options));
+            Console.WriteLine(reactFolder);
 
 
             return weapons;
