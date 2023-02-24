@@ -53,7 +53,9 @@ export default function WeaponTable() {
     else
     //return this after api calls finish
     return (
+
         <div id="content" style={{ overflow:'auto1', float:'left', backgroundColor: 'rgba(0,0,0,.5)', margin:'1%', marginRight: '1%'}}>
+
             <table cellSpacing={0}  className="wikitable sortable jquery-tablesorter Table">
                 <thead>
                     <tr>

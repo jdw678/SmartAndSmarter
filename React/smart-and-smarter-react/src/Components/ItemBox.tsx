@@ -61,21 +61,21 @@ export default function ItemBox({}: Props) {
     
     <div className="stats-container" style={{clear: 'both', padding: '0 0 -75px 0'}}>
       <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>Health</div>
-      <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>130 / 130</div>
+      <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>130</div>
     </div>
 
     <div className="stats-container" style={{clear: 'both', padding: '10px 0 -75px 0'}}>
-      <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>Weight Limit</div>
-      <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>0 / 0</div>
+      <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>WeightLimit</div>
+      <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>0</div>
     </div>
 
     <div className="stats-container" style={{clear: 'both', padding: '10px 0 -75px 0'}}>
-      <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>Spell Memory</div>
-      <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>0 / 6</div>
+      <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>SpellMemory</div>
+      <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>6</div>
     </div>
 
     <div className="stats-container" style={{clear: 'both', padding: '10px 0 -75px 0'}}>
-      <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>Utility Effectiveness</div>
+      <div style={{float: 'left', width: '30%', fontWeight: 'bold', color: 'rgb(221,149,42)'}}>UtilityEffectiveness</div>
       <div style={{float: 'right', width: '20%', textAlignLast: 'right', fontWeight: 'bold'}}>0</div>
     </div>
 
