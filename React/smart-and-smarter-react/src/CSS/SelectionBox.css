@@ -42,31 +42,27 @@ Responsive Image gallery Style rules
   .image-gallery > li {
     flex-basis: 350px; /*width: 350px;*/
     position: relative;
-    cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;
+    
   }
   
-  .image-gallery::after {
-    content: "";
-    flex-basis: 350px;
-  }
+ 
   
   .image-gallery li img {
     object-fit: absolute;
     max-width: 100%;
     height: auto;
-    vertical-align: middle;
+    vertical-align: baseline;
     border-radius: 5px;
     position: relative;
-    cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;
+   
   }
   
   .overlay {
     position: absolute;
-    width: 100%;
+    width: 33%;
     height: 100%;
-    background: rgba(57, 57, 57, 0.502);
     top: 0;
-    left: 0;
+    left: 50;
     transform: scale(0);
     transition: all 0.1s 0.05s ease-in-out;
     color: #fff;
@@ -74,7 +70,7 @@ Responsive Image gallery Style rules
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: 2px solid blue
+    
   }
   
   /* hover */
@@ -86,7 +82,7 @@ Responsive Image gallery Style rules
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
   }
   
   .column {
@@ -128,3 +124,32 @@ Responsive Image gallery Style rules
   margin: 0;
   display: inline-block
 }
+.image-button {
+  background-color: transparent;
+  border: none;
+  cursor:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+.image-button div {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+button{
+  cursor:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;;
+  box-shadow: 0 0 5px whitesmoke,
+  0 0 25px whitesmoke; 
+  }
+  
+  button:hover {
+   
+  cursor:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;;
+  box-shadow: 0 0 5px black,
+  0 0 25px green, 0 0 50px blue, 
+  0 0 100px violet, 0 0 200px orange; 
+  }
