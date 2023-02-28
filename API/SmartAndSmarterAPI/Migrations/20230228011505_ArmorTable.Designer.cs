@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmartAndSmaterAPI.Models;
 
@@ -11,9 +12,11 @@ using SmartAndSmaterAPI.Models;
 namespace SmartAndSmaterAPI.Migrations
 {
     [DbContext(typeof(SASDbContext))]
-    partial class SASDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230228011505_ArmorTable")]
+    partial class ArmorTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,6 +103,7 @@ namespace SmartAndSmaterAPI.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Stats")
+                        .IsRequired()
                         .HasColumnType("varchar(1024)");
 
                     b.Property<float>("WhiteArmorMax")

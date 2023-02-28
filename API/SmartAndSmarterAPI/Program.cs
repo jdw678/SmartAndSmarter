@@ -22,6 +22,7 @@ builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 }));
 
 builder.Services.AddScoped<IWeaponRepository, SQLWeaponRepository>();
+builder.Services.AddScoped<IArmorRepository, SQLArmorRepository>();
 
 var app = builder.Build();
 
