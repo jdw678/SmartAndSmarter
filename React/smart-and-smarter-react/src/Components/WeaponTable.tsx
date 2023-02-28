@@ -17,7 +17,7 @@ export default function WeaponTable() {
     
 
     const api = new ApiCalls();
-    const devMode = false;
+    const devMode = true;
 
     //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
     const [isLoading, setLoading] = useState(true);

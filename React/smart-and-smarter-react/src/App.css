@@ -8,10 +8,6 @@
 }
 
 .App-header {
-  background-image: url('images/kenny-eliason-uc7JVq80PgQ-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
   width: 100%;
   min-height: 100vh;
 }
@@ -19,10 +15,11 @@
 .App-link {
   color: #61dafb;
 }
+
 body { 
   display: block;
   margin: 0;
-  background-image: url('images/teodor-skrebnev-EWs6t1co55Q-unsplash.jpg');
+  background-image: url('images/kenny-eliason-uc7JVq80PgQ-unsplash.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
