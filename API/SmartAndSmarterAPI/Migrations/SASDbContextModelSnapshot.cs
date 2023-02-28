@@ -22,6 +22,100 @@ namespace SmartAndSmaterAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SmartAndSmaterAPI.Models.Armor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("BarbarianCanUse")
+                        .HasColumnType("bit");
+
+                    b.Property<float?>("BlackArmorMax")
+                        .IsRequired()
+                        .HasColumnType("real");
+
+                    b.Property<float>("BlackArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<float>("BlueArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("BlueArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<bool>("ClericCanUse")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("FighterCanUse")
+                        .HasColumnType("bit");
+
+                    b.Property<float>("GoldArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("GoldArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<float>("GreenArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("GreenArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<float>("GreyArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("GreyArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<string>("ImageLocation")
+                        .IsRequired()
+                        .HasColumnType("varchar(1024)");
+
+                    b.Property<float>("MovementSpeed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<float>("OrangeArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("OrangeArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<float>("PurpleArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("PurpleArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<bool>("RangerCanUse")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("RogueCanUse")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Stats")
+                        .HasColumnType("varchar(1024)");
+
+                    b.Property<float>("WhiteArmorMax")
+                        .HasColumnType("real");
+
+                    b.Property<float>("WhiteArmorMin")
+                        .HasColumnType("real");
+
+                    b.Property<bool>("WizardCanUse")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Armors");
+                });
+
             modelBuilder.Entity("SmartAndSmaterAPI.Models.Weapon", b =>
                 {
                     b.Property<int>("Id")

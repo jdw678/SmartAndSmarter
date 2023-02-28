@@ -1,0 +1,27 @@
+<tr>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Armor Rating</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Stats</th>
+                </tr>
+
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity4 rounded relative"><a href="/Lightfoot_Boots" title="Lightfoot Boots"><img alt="Lightfoot Boots" src="/images/thumb/5/54/Cobalt_Lightfoot_Boots.png/60px-Cobalt_Lightfoot_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/5/54/Cobalt_Lightfoot_Boots.png/90px-Cobalt_Lightfoot_Boots.png 1.5x, /images/thumb/5/54/Cobalt_Lightfoot_Boots.png/120px-Cobalt_Lightfoot_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Lightfoot_Boots" title="Lightfoot Boots"><strong>Lightfoot Boots</strong></a></div> </td>
+            <td>  </td>
+            <td> <span class="colorrarity4">5</span> <br> </td>
+            <td> 10 </td>
+            <td>  </td>
+        </tr>
+
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity4 rounded relative"><a href="/Plate_Boots" title="Plate Boots"><img alt="Plate Boots" src="/images/thumb/e/e7/Cobalt_Plate_Boots.png/60px-Cobalt_Plate_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/e/e7/Cobalt_Plate_Boots.png/90px-Cobalt_Plate_Boots.png 1.5x, /images/thumb/e/e7/Cobalt_Plate_Boots.png/120px-Cobalt_Plate_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Plate_Boots" title="Plate Boots"><strong>Plate Boots</strong></a></div> </td>
+            <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Cleric" title="Cleric">Cleric</a> </td>
+            <td> <span class="colorrarity4">24 ~ 25</span> <br> </td>
+            <td> 2 </td>
+            <td> 5% Projectile Reduction
+<p>-5 Magic Resistance
+</p><p>1 Strength
+</p>
+ </td>
+        </tr>

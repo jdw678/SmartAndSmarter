@@ -10,5 +10,6 @@ namespace SmartAndSmaterAPI.Models
         }
 
         public DbSet<Weapon> Weapons { get; set; }
+        public DbSet<Armor> Armors { get; set; }
     }
 }
