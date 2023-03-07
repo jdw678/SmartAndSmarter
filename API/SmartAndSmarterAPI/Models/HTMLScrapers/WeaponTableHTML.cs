@@ -46,7 +46,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
 
                     //skip header
                     if (row.SelectNodes("td").Count == 0) continue;
-                    WeaponType type = WeaponType.Melee;
+                    Weapon weapon = new Weapon();
                     HtmlNodeCollection cells = row.SelectNodes("td");
 
                     #region CellSetup
@@ -68,7 +68,6 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     HtmlNode sweetSpot = null;
 
 
-                    Weapon weapon = new Weapon();
 
                     //only used in magic table
                     HtmlNode magicDamage = null;
@@ -78,7 +77,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     if (cells.Count == 12)
                     {
                         weapon = new MagicWeapon();
-                        type = WeaponType.Magic;
+                        weapon.WeaponType = WeaponType.Magic;
 
                         damage = cells[3];
                         magicDamage = cells[4];
@@ -94,7 +93,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     else if (cells.Count == 11)
                     {
                         weapon = new MeleeWeapon();
-                        type = WeaponType.Melee;
+                        weapon.WeaponType = WeaponType.Melee;
 
                         damage = cells[3];
                         movementSpeed = cells[4];
@@ -109,7 +108,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     else if (cells.Count == 10)
                     {
                         weapon = new Bow();
-                        type = WeaponType.Bow;
+                        weapon.WeaponType = WeaponType.Bow;
 
                         damage = cells[3];
                         movementSpeed = cells[4];
@@ -123,7 +122,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     else if (cells.Count == 9)
                     {
                         weapon = new Sheild();
-                        type = WeaponType.Sheild;
+                        weapon.WeaponType = WeaponType.Sheild;
 
                         //armor rating acts the same, stored in damage for berevity
                         damage = cells[3];
@@ -137,7 +136,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     else if (cells.Count == 8)
                     {
                         weapon = new Bow();
-                        type = WeaponType.Bow;
+                        weapon.WeaponType = WeaponType.Bow;
 
                         damage = cells[3];
                         movementSpeed = cells[4];
@@ -149,11 +148,10 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     #endregion
 
 
-
-
                     //name cell of the table, innerText is name and has <img> tag with the image
                     weapon.Name = name.InnerText.Trim().TrimEnd();
                     weapon.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
+
 
 
 
@@ -511,7 +509,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                         }
 
 
-                    if(type == WeaponType.Bow)
+                    if(weapon.WeaponType == WeaponType.Bow)
                     {
                         //reload speed cell
                         if (reloadSpeed != null)
@@ -541,23 +539,17 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
             JsonSerializerOptions options = new JsonSerializerOptions
             {
                 WriteIndented = true,
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                
             };
 
-            File.AppendAllText($"{folder}Weapons.json", JsonSerializer.Serialize(weapons, options));
-            File.AppendAllText($"{reactFolder}Weapons.json", JsonSerializer.Serialize(weapons, options));
+            File.AppendAllText($"{folder}Weapons.json", JsonSerializer.Serialize(weapons.Cast<object>(), options));
+            File.AppendAllText($"{reactFolder}Weapons.json", JsonSerializer.Serialize(weapons.Cast<object>(), options));
             Console.WriteLine(reactFolder);
 
 
             return weapons;
         }
 
-        private enum WeaponType
-        {
-            Bow,
-            Sheild,
-            Magic,
-            Melee
-        }
     }
 }

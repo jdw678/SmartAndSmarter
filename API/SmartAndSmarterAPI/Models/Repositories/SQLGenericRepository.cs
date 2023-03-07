@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SmartAndSmaterAPI.Models.WeaponInterfaces;
 
 namespace SmartAndSmaterAPI.Models.Repositories
 {
@@ -43,7 +44,8 @@ namespace SmartAndSmaterAPI.Models.Repositories
 
         public T Update(T itemChanges)
         {
-            Console.WriteLine("UPDATING UPDATING UPDATING UPDATING UPDATING UPDATING UPDATING UPDATING ");
+
+
             try
             {
 
@@ -63,10 +65,29 @@ namespace SmartAndSmaterAPI.Models.Repositories
         {
 
 
+
             //true if weapon already exists
-            //w => w.Name == weapon.Name
+            //item passed does not always have the proper ID. Get it from db, set it, then update
             if (context.Set<T>().FirstOrDefault(predicate) != null)
-                return Update(context.Set<T>().FirstOrDefault(predicate));
+            {
+                //get the corresponding item from the db
+                T dbItem = context.Set<T>().FirstOrDefault(predicate);
+
+                //make sure it implements IIdentifiable (GetId and SetId)
+                if (!(dbItem is IIdentifiable))
+                    throw new Exception("Item passed does not implement IIdentifiable.");
+
+                //create a temp item as IIdentifiable from the passed item in order to update it's Id
+                //update the temp item's Id and re-cast it as the passed item
+                var tempItem = (IIdentifiable)item;
+                tempItem.SetId(((IIdentifiable)dbItem).GetId());
+                item = (T)tempItem;
+
+                context.Entry(dbItem).State = EntityState.Detached;
+
+                //finally, update the item
+                return Update(item);
+            }
             else
                 return Add(item);
         }

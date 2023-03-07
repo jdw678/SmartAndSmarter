@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+using SmartAndSmaterAPI.Models.WeaponInterfaces;
 
 namespace SmartAndSmaterAPI.Models
 {
 
     //has name, image, class, hand (slot), damage, movement speed, action movement speed, unique
-    public class Weapon
+    public class Weapon: IIdentifiable
     {   
         ///////necissary elements
         [Key]
@@ -17,6 +19,9 @@ namespace SmartAndSmaterAPI.Models
 
         [Column(TypeName = "varchar(1024)"), Required]
         public string ImageLocation { get; set; }
+
+        [Required, JsonConverter(typeof(JsonStringEnumConverter))]
+        public WeaponType WeaponType { get; set; }
 
         //damages, all required
         [Required]
@@ -96,6 +101,21 @@ namespace SmartAndSmaterAPI.Models
         //maind hand / off hand / two handed
         [Column(TypeName = "varchar(64)")]
         public string? Hand { get; set; }
+
+        public int GetId()
+        {
+            return Id;
+        }
+
+        public void SetId(int id)
+        {
+            Id = id;
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 
 
@@ -109,5 +129,13 @@ namespace SmartAndSmaterAPI.Models
         GroundDeployment,
         SpellCast
 
+    }
+
+    public enum WeaponType
+    {
+        Bow,
+        Sheild,
+        Melee,
+        Magic
     }
 }
