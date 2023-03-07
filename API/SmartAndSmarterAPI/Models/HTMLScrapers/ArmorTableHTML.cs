@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Reflection;
 
-namespace SmartAndSmaterAPI.Models
+namespace SmartAndSmaterAPI.Models.HTMLScrapers
 {
     public static class ArmorTableHTML
     {
         static string folder = Directory.GetCurrentDirectory() + "\\HardData\\";
         static string reactFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.ToString() + "\\React\\smart-and-smarter-react\\src\\HardData\\";
+
 
         public static async Task<List<Armor>> ParseTable()
         {
@@ -33,9 +34,15 @@ namespace SmartAndSmaterAPI.Models
 
             List<Armor> armors = new List<Armor>();
 
-            foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table/tbody").ToList())
+            foreach (HtmlNode article in doc.DocumentNode.SelectNodes("//article").ToList())
             {
-                File.WriteAllText(folder + "HTML.txt", table.InnerHtml);
+                string dataTitle = article.GetAttributeValue("data-title", "").Trim().TrimEnd();
+
+                HtmlNode table = article.SelectNodes("table").First().SelectNodes("tbody").First();
+
+                if (dataTitle == "Rubysilver" || dataTitle == "Cobalt") continue;
+
+
 
                 foreach (HtmlNode row in table.SelectNodes("tr"))
                 {
@@ -59,6 +66,27 @@ namespace SmartAndSmaterAPI.Models
                     //name cell of the table, innerText is name and has <img> tag with the image
                     armor.Name = name.InnerText.Trim().TrimEnd();
                     armor.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
+
+                    //set armor type based on table index
+                    switch (dataTitle)
+                    {
+                        case "Head Armors":
+                            armor.armorType = ArmorType.Head;
+                            break;
+                        case "Chest Armors":
+                            armor.armorType = ArmorType.Chest;
+                            break;
+                        case "Legs Armors":
+                            armor.armorType = ArmorType.Legs;
+                            break;
+                        case "Hands Armors":
+                            armor.armorType = ArmorType.Hands;
+                            break;
+                        case "Foot Armors":
+                            armor.armorType = ArmorType.Feet;
+                            break;
+                    }
+
 
                     //wiki table is messed up for lightfoot boots, enter this record manually
                     if (armor.Name.Contains("Lightfoot"))
@@ -95,8 +123,8 @@ namespace SmartAndSmaterAPI.Models
                     }
 
 
-                        //class cell of the table, can have multiple classes, all wrapped in individual <a> tags
-                        classes.SelectNodes("a").ToList().ForEach(a =>
+                    //class cell of the table, can have multiple classes, all wrapped in individual <a> tags
+                    classes.SelectNodes("a").ToList().ForEach(a =>
                     {
                         if (a.InnerText.Contains("Fighter")) armor.FighterCanUse = true;
                         if (a.InnerText.Contains("Barbarian")) armor.FighterCanUse = true;
@@ -137,11 +165,6 @@ namespace SmartAndSmaterAPI.Models
                         //make sure there is some data
                         if (armorRatingStrings.Count > 0)
                         {
-                            //skip all ruby / cobalts
-                            if(armorRatingStrings.Count == 1)
-                            {
-                                continue;
-                            }
 
                             //black armorRating
                             //parse armorRating into float array of either length 1 or length 2
