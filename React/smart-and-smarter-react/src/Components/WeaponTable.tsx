@@ -11,49 +11,14 @@ import WeaponTableRecord from './WeaponTableComponents/WeaponTableRecord';
 import '../CSS/WeaponTable.css';
 //draw attack damage multiplier string based on if the damage is null or not
 
+type Props = {
+    weaponList: WeaponList | undefined
+}
 
-export default function WeaponTable() {
+
+export default function WeaponTable(props: Props) {
 
     
-
-    const api = new ApiCalls();
-    const devMode = true;
-
-    //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
-    const [isLoading, setLoading] = useState(true);
-    const [weaponList, setWeaponList] = useState<WeaponList>();
-
-    //api calls
-    useEffect(() => {
-        //if devMode (possibly no db) use hard data
-        if(devMode)
-        {
-
-
-            setWeaponList(api.GetAllWeaponsNoDB());
-            setLoading(false);
-        }
-        //call db
-        else
-        {
-                
-            const call = api.GetAllWeapons();
-            call.then((response) => {
-                console.log(response.data);
-                setWeaponList(response.data);
-                setLoading(false);
-            })
-            .catch((response) =>
-            {
-                console.log(response);
-            })
-
-        }
-    }, [])
-
-    //if not finished loading from api calls return this
-    if(isLoading) return (<div>Loading...</div>)
-    else
     //return this after api calls finish
     return (
 
@@ -76,7 +41,7 @@ export default function WeaponTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {weaponList ? weaponList.map((weapon: Weapon) => {
+                    {props.weaponList ? props.weaponList.map((weapon: Weapon) => {
                         return <WeaponTableRecord weapon={weapon} key={weapon.name}/>
                     }): null}
                     

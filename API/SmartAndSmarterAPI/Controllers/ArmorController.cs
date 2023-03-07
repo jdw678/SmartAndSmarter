@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SmartAndSmaterAPI.Models;
+using SmartAndSmaterAPI.Models.HTMLScrapers;
+using SmartAndSmaterAPI.Models.Repositories;
 using System.Net;
 
 namespace SmartAndSmaterAPI.Controllers
@@ -40,7 +42,6 @@ namespace SmartAndSmaterAPI.Controllers
                 return StatusCode(500);
             }
 
-            return Ok();
         }
 
         // GET: Armor/Create
@@ -108,7 +109,6 @@ namespace SmartAndSmaterAPI.Controllers
 
 
             List<Armor> armors = await ArmorTableHTML.ParseTable();
-
             try
             {
                 foreach (Armor armor in armors)

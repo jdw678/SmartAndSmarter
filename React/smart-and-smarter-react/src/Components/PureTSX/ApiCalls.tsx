@@ -2,6 +2,7 @@ import React from 'react'
 import axios, { AxiosResponse } from 'axios'
 import { config } from 'process';
 import Weapons from '../../HardData/Weapons.json';
+import Armors from '../../HardData/Armors.json';
 
 export enum AttackType {
     Slash = "Slash",
@@ -72,7 +73,76 @@ export type Weapon = {
     reloadSpeed?: number
 }
 
+export type Armor = {
+    id: bigint,
+    name: string,
+    imageLocation: string,
+    blackArmourMin: number,
+    blackArmourMax: number,
+    greyArmourMin: number,
+    greyArmourMax: number,
+    whiteArmourMin: number,
+    whiteArmourMax: number,
+    greenArmourMin: number,
+    greenArmourMax: number,
+    blueArmourMin: number,
+    blueArmourMax: number,
+    purpleArmourMin: number,
+    purpleArmourMax: number,
+    orangeArmourMin: number,
+    orangeArmourMax: number,
+    goldArmourMin: number,
+    goldArmourMax: number,
+    barbarianCanUse: boolean,
+    fighterCanUse: boolean,
+    clericCanUse: boolean,
+    rangerCanUse: boolean,
+    wizardCanUse: boolean,
+    rogueCanUse: boolean,
+    movementSpeed?: number,
+    stats: string
+}
+
 export type WeaponList = Weapon[];
+export type ArmorList = Weapon[];
+
+
+export enum ItemClass {
+    Weapon,
+    Armor
+}
+
+export enum WeaponType {
+    Bow,
+    Magic,
+    Melee,
+    Sheild
+}
+
+//all possible gear types
+export enum ArmorType {
+    Chest,
+    Feet,
+    Hands,
+    Head,
+    Legs,
+    Neck,
+    Ring
+}
+
+//all possible rarities
+export enum Rarity
+{
+    Black,
+    Grey,
+    White,
+    Green,
+    Blue,
+    Purple,
+    Orange,
+    Gold
+}
+
 
 export class ApiCalls {
 
@@ -86,8 +156,19 @@ export class ApiCalls {
         
     }
 
+    public async GetAllArmors(): Promise<AxiosResponse>
+    {   
+        return await axios.get<WeaponList>(this.url + "Armor/GetAllArmors")
+        
+    }
+
     public GetAllWeaponsNoDB() : WeaponList
     {
         return JSON.parse(JSON.stringify(Weapons));
+    }
+
+    public GetAllArmorsNoDB() : WeaponList
+    {
+        return JSON.parse(JSON.stringify(Armors));
     }
 }

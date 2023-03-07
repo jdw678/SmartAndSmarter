@@ -1,4 +1,4 @@
-﻿namespace SmartAndSmaterAPI.Models
+﻿namespace SmartAndSmaterAPI.Models.Repositories
 {
     public interface IArmorRepository
     {

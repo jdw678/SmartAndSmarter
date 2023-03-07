@@ -1,4 +1,4 @@
-﻿namespace SmartAndSmaterAPI.Models
+﻿namespace SmartAndSmaterAPI.Models.Repositories
 {
     public class SQLArmorRepository : IArmorRepository
     {
@@ -19,7 +19,7 @@
         public Armor Delete(int id)
         {
             Armor armor = context.Armors.Find(id);
-            if(armor != null)
+            if (armor != null)
             {
                 context.Armors.Remove(armor);
                 context.SaveChanges();
@@ -59,8 +59,8 @@
         public Armor UpdateOrCreateByName(Armor armor)
         {
             //true if armor already exists
-            if(context.Armors.Where(w => w.Name == armor.Name).FirstOrDefault() != null)
-                return Update(armor);
+            if (context.Armors.Where(w => w.Name == armor.Name).FirstOrDefault() != null)
+                return Update(context.Armors.Where(w => w.Name == armor.Name).First());
             else
                 return Add(armor);
         }
