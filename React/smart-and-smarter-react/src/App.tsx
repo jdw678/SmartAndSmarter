@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
-import WeaponTable from './Components/WeaponTable';
 import Temptop from './Components/Temptop';
-import Itembox from './Components/ItemBox'
 import SelectionBox from './Components/SelectionBox';
-import Testingbutton from './Components/Testingbutton';
-import { ApiCalls, ArmorList, WeaponList } from './Components/PureTSX/ApiCalls';
+import { ApiCalls} from './Components/PureTSX/ApiCalls';
+import CompleteTable from './Components/CompleteTable';
+import { ArmorList, WeaponList } from './Components/PureTSX/WeaponAndArmorTypes';
 
 
-//TODO: Foundation is layed for GearPopUp. Pass it the proper lists as props and use them.
+
+export const WikiUrl = "https://darkanddarker.wiki.spellsandguns.com/";
 
 function App() {
-  const devMode = true;
+  const devMode = false;
+  const debug = true;
 
   
   const api = new ApiCalls();
@@ -43,7 +43,7 @@ function App() {
           //get all armors
           var call = api.GetAllArmors();
           call.then((response) => {
-            if(devMode) console.log(response.data);
+            if(debug) console.log(response.data);
             setArmorList(response.data);
             setArmorLoading(false);
           })
@@ -53,10 +53,10 @@ function App() {
           })
 
           //get all weapons    
-          call = api.GetAllWeapons();
-          call.then((response) => {
-            if(devMode) console.log(response.data);
-            setWeaponList(response.data);
+          var weaponsCall = api.GetAllWeapons();
+          weaponsCall.then((response) => {
+            if(debug) console.log(response);
+            setWeaponList(response);
             setWeaponLoading(false);
           })
           .catch((response) =>
@@ -74,7 +74,7 @@ function App() {
         
         {!isWeaponLoading && !isArmorLoading ? <SelectionBox armorList={armorList} weaponList={weaponList}/> : null}
         <Temptop/>
-        {!isArmorLoading ? <WeaponTable weaponList={weaponList}/> : null }
+        {(!isWeaponLoading && weaponList) ? <CompleteTable weaponList={weaponList}/> : null }
         
       </header>
     </div>

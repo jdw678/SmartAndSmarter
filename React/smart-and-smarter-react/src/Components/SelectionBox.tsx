@@ -6,7 +6,7 @@ import Weapon_2 from '../images/Weapon_2.png'
 import '../CSS/ItemBox.css';
 import SelectionBoxItem from './SelectionBoxComponents/SelectionBoxItem'
 import GearPopOut, { GearPopUpData } from './SelectionBoxComponents/GearPopUp'
-import { ApiCalls, ArmorList, ArmorType, ItemClass, WeaponList } from './PureTSX/ApiCalls'
+import { ArmorList, ArmorType, ItemClass, WeaponList } from './PureTSX/WeaponAndArmorTypes';
 
 type Props = {
   armorList: ArmorList | undefined,

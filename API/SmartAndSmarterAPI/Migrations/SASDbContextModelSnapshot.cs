@@ -206,6 +206,9 @@ namespace SmartAndSmaterAPI.Migrations
                     b.Property<bool>("RogueCanUse")
                         .HasColumnType("bit");
 
+                    b.Property<int>("SpecificWeaponType")
+                        .HasColumnType("int");
+
                     b.Property<string>("UniqueLink")
                         .HasColumnType("varchar(1024)");
 
@@ -390,6 +393,12 @@ namespace SmartAndSmaterAPI.Migrations
 
                     b.ToTable("Weapons", t =>
                         {
+                            t.Property("Attack1Type")
+                                .HasColumnName("MeleeWeapon_Attack1Type");
+
+                            t.Property("Attack2Type")
+                                .HasColumnName("MeleeWeapon_Attack2Type");
+
                             t.Property("Reach")
                                 .HasColumnName("MeleeWeapon_Reach");
                         });
@@ -397,14 +406,21 @@ namespace SmartAndSmaterAPI.Migrations
                     b.HasDiscriminator().HasValue("MeleeWeapon");
                 });
 
-            modelBuilder.Entity("SmartAndSmaterAPI.Models.Sheild", b =>
+            modelBuilder.Entity("SmartAndSmaterAPI.Models.Shield", b =>
                 {
                     b.HasBaseType("SmartAndSmaterAPI.Models.Weapon");
+
+                    b.Property<string>("Attack1Type")
+                        .IsRequired()
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<string>("Attack2Type")
+                        .HasColumnType("varchar(32)");
 
                     b.Property<string>("Reach")
                         .HasColumnType("varchar(64)");
 
-                    b.HasDiscriminator().HasValue("Sheild");
+                    b.HasDiscriminator().HasValue("Shield");
                 });
 #pragma warning restore 612, 618
         }

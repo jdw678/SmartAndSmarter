@@ -11,11 +11,11 @@ namespace SmartAndSmaterAPI.Controllers
     public class ScraperController : ControllerBase
     {
         private readonly IGenericRepository<MagicWeapon> _magicRepository;
-        private readonly IGenericRepository<Sheild> _sheildRepository;
+        private readonly IGenericRepository<Shield> _sheildRepository;
         private readonly IGenericRepository<Bow> _bowRepository;
         private readonly IGenericRepository<MeleeWeapon> _meleeRepository;
 
-        public ScraperController(IGenericRepository<MagicWeapon> magicRepository, IGenericRepository<MeleeWeapon> meleeRepository, IGenericRepository<Sheild> sheildRepository, IGenericRepository<Bow> bowRepository)
+        public ScraperController(IGenericRepository<MagicWeapon> magicRepository, IGenericRepository<MeleeWeapon> meleeRepository, IGenericRepository<Shield> sheildRepository, IGenericRepository<Bow> bowRepository)
         {
             _magicRepository = magicRepository;
             _sheildRepository = sheildRepository;
@@ -44,8 +44,8 @@ namespace SmartAndSmaterAPI.Controllers
                     if (weapon is MeleeWeapon)
                         _meleeRepository.UpdateOrCreateByIdentifier((MeleeWeapon)weapon, w => w.Name == weapon.Name);
 
-                    if (weapon is Sheild)
-                        _sheildRepository.UpdateOrCreateByIdentifier((Sheild)weapon, w => w.Name == weapon.Name);
+                    if (weapon is Shield)
+                        _sheildRepository.UpdateOrCreateByIdentifier((Shield)weapon, w => w.Name == weapon.Name);
 
                     if (weapon is Bow)
                         _bowRepository.UpdateOrCreateByIdentifier((Bow)weapon, w => w.Name == weapon.Name);

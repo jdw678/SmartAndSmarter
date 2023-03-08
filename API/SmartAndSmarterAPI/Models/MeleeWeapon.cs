@@ -89,7 +89,7 @@ namespace SmartAndSmaterAPI.Models
                 Attack5Speed = attackSpeeds[4];
             }
         }
-
+        /*
         public void SetCombos(List<Tuple<string, float?>> combos)
         {
             if (combos.Count > 0)
@@ -157,6 +157,37 @@ namespace SmartAndSmaterAPI.Models
                 if (combos[4].Item1.Contains(WeaponAttackType.Block.ToString())) Attack5Type = WeaponAttackType.Block;
                 if (combos[4].Item1.Contains("Ground")) Attack5Type = WeaponAttackType.GroundDeployment;
 
+                Attack5DamageMultiplier = combos[4].Item2;
+            }
+        }
+        */
+        public void SetCombos(List<Tuple<WeaponAttackType, float?>> combos)
+        {
+            Attack1Type = combos[0].Item1;
+
+            //first weapon must have an attack damage multiplier
+            if (combos[0].Item2 != null)
+                Attack1DamageMultiplier = (float)combos[0].Item2;
+            else Attack1DamageMultiplier = 0;
+
+            if(combos.Count > 1)
+            {
+                Attack2Type = combos[1].Item1;
+                Attack2DamageMultiplier = combos[1].Item2;
+            }
+            if (combos.Count > 2)
+            {
+                Attack3Type = combos[2].Item1;
+                Attack3DamageMultiplier = combos[2].Item2;
+            }
+            if (combos.Count > 3)
+            {
+                Attack4Type = combos[3].Item1;
+                Attack4DamageMultiplier = combos[3].Item2;
+            }
+            if (combos.Count > 4)
+            {
+                Attack5Type = combos[4].Item1;
                 Attack5DamageMultiplier = combos[4].Item2;
             }
         }

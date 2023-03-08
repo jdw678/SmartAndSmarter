@@ -28,12 +28,13 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
             doc.LoadHtml(html);
             doc.OptionEmptyCollection = true;
 
-            File.Delete($"{folder}Weapons.json");
-            File.Delete($"{reactFolder}Weapons.json");
-
             string wikiUrl = "https://darkanddarker.wiki.spellsandguns.com";
 
             List<Weapon> weapons = new List<Weapon>();
+            List<Bow> bows = new List<Bow>();
+            List<Shield> sheilds = new List<Shield>();
+            List<MeleeWeapon> meleeWeapons = new List<MeleeWeapon>();
+            List<MagicWeapon> magicWeapons = new List<MagicWeapon>();
 
             foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table/tbody").ToList())
             {
@@ -121,7 +122,7 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     //sheild table
                     else if (cells.Count == 9)
                     {
-                        weapon = new Sheild();
+                        weapon = new Shield();
                         weapon.WeaponType = WeaponType.Sheild;
 
                         //armor rating acts the same, stored in damage for berevity
@@ -152,7 +153,111 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     weapon.Name = name.InnerText.Trim().TrimEnd();
                     weapon.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
 
+                    #region SpecificWeaponType
+                    string[] swords =
+                    {
+                        "Arming Sword",
+                        "Falchion",
+                        "Longsword",
+                        "Rapier",
+                        "Short Sword",
+                        "Zweihander"
+                    };
 
+                    string[] maces =
+                    {
+                        "Flanged Mace",
+                        "Morning Star",
+                        "Quarterstaff",
+                        "War Maul"
+                    };
+
+                    string[] daggers =
+                    {
+                        "Castillon Dagger",
+                        "Kris Dagger",
+                        "Rondel Dagger",
+                        "Stiletto Dagger"
+                    };
+
+                    string[] polearms =
+                    {
+                        "Bardiche",
+                        "Halberd",
+                        "Spear"
+                    };
+
+                    string[] axes =
+                    {
+                        "Battle Axe",
+                        "Double Axe",
+                        "Felling Axe",
+                        "Hatchet",
+                        "Horsemans Axe"
+                    };
+
+                    string[] bowStrings =
+                    {
+                        "Longbow",
+                        "Recurve Bow",
+                        "Survival Bow"
+                    };
+
+                    string[] crossbows =
+                    {
+                        "Crossbow",
+                        "Windlass Crossbow"
+                    };
+
+                    string[] magicalWeapons =
+                    {
+                        "Crystal Ball",
+                        "Crystal Sword",
+                        "Spellbook",
+                        "Wizard Staff"
+                    };
+
+                    string[] shields =
+                    {
+                        "Buckler",
+                        "Heater Shield",
+                        "Pavise",
+                        "Round Shield"
+                    };
+
+                    string[][] itemsArrays =
+                    {
+                        swords,
+                        maces,
+                        daggers,
+                        polearms,
+                        axes,
+                        magicalWeapons,
+                        bowStrings,
+                        crossbows,
+                        shields
+                    };
+
+
+                    void CheckItem(string[] items, SpecificWeaponType type)
+                    {
+
+                        foreach (string item in items)
+                            if (weapon.Name.Equals(item))
+                                weapon.SpecificWeaponType = type;
+                    }
+
+                    CheckItem(swords, SpecificWeaponType.Sword);
+                    CheckItem(maces, SpecificWeaponType.Mace);
+                    CheckItem(daggers, SpecificWeaponType.Dagger);
+                    CheckItem(polearms, SpecificWeaponType.Polearm);
+                    CheckItem(axes, SpecificWeaponType.Axe);
+                    CheckItem(magicalWeapons, SpecificWeaponType.Magical);
+                    CheckItem(bowStrings, SpecificWeaponType.Bow);
+                    CheckItem(crossbows, SpecificWeaponType.Crossbow);
+                    CheckItem(shields, SpecificWeaponType.Shield);
+
+                    #endregion
 
 
                     //class cell of the table, can have multiple classes, all wrapped in individual <a> tags
@@ -415,12 +520,28 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     {
 
                         List<Tuple<string, float?>> combos = ComboParse(combo.InnerHtml);
+                        List<Tuple<WeaponAttackType, float?>> combosParsed = new List<Tuple<WeaponAttackType, float?>>();
+
+                        foreach(Tuple<string, float?> badCombo in combos)
+                        {
+                            Console.WriteLine($"{weapon.Name} {badCombo.Item1}");
+                            if (badCombo.Item1.Contains(WeaponAttackType.Slash.ToString())) combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Slash, badCombo.Item2));
+                            if (badCombo.Item1.Contains(WeaponAttackType.Pierce.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Pierce, badCombo.Item2));
+                            if (badCombo.Item1.Contains(WeaponAttackType.Blunt.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Blunt, badCombo.Item2));
+                            if (badCombo.Item1.Contains(WeaponAttackType.Bow.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Bow, badCombo.Item2));
+                            if (badCombo.Item1.Contains(WeaponAttackType.Block.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Block, badCombo.Item2));
+                            if (badCombo.Item1.Contains("Spell")) combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.SpellCast, badCombo.Item2));
+                            if (badCombo.Item1.Contains("Ground"))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.GroundDeployment, badCombo.Item2));
+                        }
 
 
-                        if(weapon is ICombo)
+
+
+
+                        if (weapon is ICombo)
                         {
                             ICombo wep = (ICombo)weapon;
-                            wep.SetCombos(combos);
+                            wep.SetCombos(combosParsed);
                             weapon = (Weapon)wep;
                         }
 
@@ -532,20 +653,35 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     
 
                     weapons.Add(weapon);
+
+                    if(weapon is Bow) bows.Add((Bow)weapon);
+                    if(weapon is Shield) sheilds.Add((Shield)weapon);
+                    if(weapon is MagicWeapon) magicWeapons.Add((MagicWeapon)weapon);
+                    if(weapon is MeleeWeapon) meleeWeapons.Add((MeleeWeapon)weapon);
                 }
 
             }
 
-            JsonSerializerOptions options = new JsonSerializerOptions
-            {
-                WriteIndented = true,
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                
-            };
 
-            File.AppendAllText($"{folder}Weapons.json", JsonSerializer.Serialize(weapons.Cast<object>(), options));
-            File.AppendAllText($"{reactFolder}Weapons.json", JsonSerializer.Serialize(weapons.Cast<object>(), options));
-            Console.WriteLine(reactFolder);
+            void WriteAll<T>(List<T> items, string fileName)
+            {
+
+                JsonSerializerOptions options = new JsonSerializerOptions
+                {
+                    WriteIndented = true,
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+
+                };
+
+                File.WriteAllText($"{folder}{fileName}.json", JsonSerializer.Serialize(items.Cast<object>(), options));
+                File.WriteAllText($"{reactFolder}{fileName}.json", JsonSerializer.Serialize(items.Cast<object>(), options));
+            }
+
+            WriteAll(weapons, "Weapons");
+            WriteAll(bows, "Bows");
+            WriteAll(sheilds, "Sheilds");
+            WriteAll(magicWeapons, "MagicWeapons");
+            WriteAll(meleeWeapons, "MeleeWeapons");
 
 
             return weapons;

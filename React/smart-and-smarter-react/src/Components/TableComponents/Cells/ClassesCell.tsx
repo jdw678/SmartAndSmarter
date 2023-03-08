@@ -10,7 +10,7 @@ type Props = {
 
 
 
-export default function WeaponClasses(props: Props) {
+export default function ClassesCell(props: Props) {
     function BuildStrings()
     {
         var strings: string[] = [];

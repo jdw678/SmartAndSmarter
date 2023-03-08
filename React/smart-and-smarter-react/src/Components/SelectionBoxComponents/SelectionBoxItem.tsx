@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArmorType, ItemClass } from '../PureTSX/ApiCalls';
+import { ArmorType, ItemClass } from '../PureTSX/WeaponAndArmorTypes';
 import GearPopOut, { GearPopUpData } from './GearPopUp';
 
 type Props = {

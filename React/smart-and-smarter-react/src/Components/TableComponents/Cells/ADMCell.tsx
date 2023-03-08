@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../CSS/WeaponTable.css';
+import '../../../CSS/CompleteTable.css';
 
 type Props = {
     ADM1: number,
@@ -10,7 +10,7 @@ type Props = {
 
 }
 
-export default function WeaponADM(props: Props) {
+export default function ADMCell(props: Props) {
 
     function BuildStrings()
     {

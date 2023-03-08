@@ -254,3 +254,7 @@ H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\
 H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\SmartAndSmaterAPI.genruntimeconfig.cache
 H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\obj\Debug\net6.0\ref\SmartAndSmaterAPI.dll
 H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\bin\Debug\net6.0\HardData\Armors.json
+H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\bin\Debug\net6.0\HardData\Bows.json
+H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\bin\Debug\net6.0\HardData\MagicWeapons.json
+H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\bin\Debug\net6.0\HardData\MeleeWeapons.json
+H:\Programming\Projects\SmartAndSmarter\API\SmartAndSmarterAPI\bin\Debug\net6.0\HardData\Sheilds.json

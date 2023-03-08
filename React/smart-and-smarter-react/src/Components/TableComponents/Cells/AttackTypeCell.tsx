@@ -1,5 +1,5 @@
 import React from 'react'
-import { AttackType } from '../PureTSX/ApiCalls';
+import { AttackType } from '../../PureTSX/WeaponAndArmorTypes';
 
 type Props = {
     type1: AttackType,
@@ -10,7 +10,7 @@ type Props = {
 
 }
 
-export default function WeaponAttackType(props: Props) {
+export default function AttackTypeCell(props: Props) {
     function BuildStrings()
     {
         var strings: string[] = [];

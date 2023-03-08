@@ -24,7 +24,7 @@ builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 
 builder.Services.AddScoped<IGenericRepository<MeleeWeapon>, SQLGenericRepository<MeleeWeapon>>();
 builder.Services.AddScoped<IGenericRepository<MagicWeapon>, SQLGenericRepository<MagicWeapon>>();
-builder.Services.AddScoped<IGenericRepository<Sheild>, SQLGenericRepository<Sheild>>();
+builder.Services.AddScoped<IGenericRepository<Shield>, SQLGenericRepository<Shield>>();
 builder.Services.AddScoped<IGenericRepository<Bow>, SQLGenericRepository<Bow>>();
 builder.Services.AddScoped<IArmorRepository, SQLArmorRepository>();
 

@@ -47,7 +47,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": "Kuma\u0027s Claw",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.88,
@@ -97,7 +98,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": "Kuma\u0027s Fang",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 1.22,
@@ -147,7 +149,8 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -3%  Riposte: -30%  Riposteattack: -30%",
     "uniqueName": "Fulgor",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.56,
@@ -197,7 +200,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": "Viola",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.73,
@@ -247,7 +251,8 @@
     "actionMovementSpeed": "Attack: -9%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 1.23,
@@ -297,7 +302,8 @@
     "actionMovementSpeed": "Attack: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.93,
@@ -347,7 +353,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 0.96,
@@ -397,7 +404,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": "Pulverizing Prayer",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Maces-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 0.89,
@@ -447,7 +455,8 @@
     "actionMovementSpeed": "Attack: -30%  Blockreaction: -35%  Defensemode: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 1.39,
@@ -497,7 +506,8 @@
     "actionMovementSpeed": "Attack: -40%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 0.83,
@@ -547,7 +557,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 0.73,
@@ -597,7 +608,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 0.74,
@@ -647,7 +659,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 0.59,
@@ -697,7 +710,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 1.28,
@@ -747,7 +761,8 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -35%  Defensemode: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Polearm"
   },
   {
     "attack1Speed": 1.13,
@@ -797,7 +812,8 @@
     "actionMovementSpeed": "Attack: -35%",
     "uniqueName": "Cinder",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Polearms-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Polearm"
   },
   {
     "attack1Speed": 0.86,
@@ -847,7 +863,8 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -35%  Defensemode: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Polearm"
   },
   {
     "attack1Speed": 1.2,
@@ -897,7 +914,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 1.18,
@@ -947,7 +965,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": "Life after Death",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 0.92,
@@ -997,7 +1016,8 @@
     "actionMovementSpeed": "Attack: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 0.74,
@@ -1047,7 +1067,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 0.79,
@@ -1097,7 +1118,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": "Famine",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 2.03,
@@ -1133,7 +1155,8 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -60%",
     "uniqueName": "Nipalan",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Bow"
   },
   {
     "attack1Speed": 1.3,
@@ -1169,7 +1192,8 @@
     "actionMovementSpeed": "Attack: -35%  Reload: -50%",
     "uniqueName": "Pestilence",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Bow"
   },
   {
     "attack1Speed": 1.23,
@@ -1205,7 +1229,8 @@
     "actionMovementSpeed": "Attack: -25%  Reload: -40%",
     "uniqueName": "Elven Bow of Truth",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Bow"
   },
   {
     "attack1Speed": 0,
@@ -1241,7 +1266,8 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -100%  Mastery: 50%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Crossbow"
   },
   {
     "attack1Speed": 0,
@@ -1277,7 +1303,8 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -100%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Crossbow"
   },
   {
     "attack1Speed": 0,
@@ -1294,7 +1321,7 @@
     "id": 0,
     "name": "Crystal Ball",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/1/19/Crystal_Ball_2.png/60px-Crystal_Ball_2.png",
-    "weaponType": "Bow",
+    "weaponType": "Magic",
     "blackDamageMin": 1,
     "blackDamageMax": 1,
     "greyDamageMin": 2,
@@ -1321,7 +1348,8 @@
     "actionMovementSpeed": "Casting: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
     "attack1Speed": 0.74,
@@ -1338,7 +1366,7 @@
     "id": 0,
     "name": "Crystal Sword",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/78/Crystal_Sword_2.png/60px-Crystal_Sword_2.png",
-    "weaponType": "Bow",
+    "weaponType": "Magic",
     "blackDamageMin": 6,
     "blackDamageMax": 7,
     "greyDamageMin": 9,
@@ -1365,7 +1393,8 @@
     "actionMovementSpeed": "Attack: -30%  Casting: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
     "attack1Speed": 0,
@@ -1382,7 +1411,7 @@
     "id": 0,
     "name": "Spellbook",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/e/e9/Spellbook_2.png/60px-Spellbook_2.png",
-    "weaponType": "Bow",
+    "weaponType": "Magic",
     "blackDamageMin": 1,
     "blackDamageMax": 1,
     "greyDamageMin": 2,
@@ -1409,7 +1438,8 @@
     "actionMovementSpeed": "Casting: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
     "attack1Speed": 0.69,
@@ -1426,7 +1456,7 @@
     "id": 0,
     "name": "Wizard Staff",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9c/Wizard_Staff_2.png/60px-Wizard_Staff_2.png",
-    "weaponType": "Bow",
+    "weaponType": "Magic",
     "blackDamageMin": 19,
     "blackDamageMax": 19,
     "greyDamageMin": 22,
@@ -1453,9 +1483,12 @@
     "actionMovementSpeed": "Attack: -30%  Casting: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
+    "attack1Type": "Block",
+    "attack2Type": null,
     "reach": "Height: 26.07  Width: 26.07",
     "id": 0,
     "name": "Buckler",
@@ -1487,9 +1520,12 @@
     "actionMovementSpeed": "Blockreaction: -1%  Guard: -9%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   },
   {
+    "attack1Type": "Block",
+    "attack2Type": null,
     "reach": "Height: 39.81  Width: 31.8",
     "id": 0,
     "name": "Heater Shield",
@@ -1521,9 +1557,12 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -35%",
     "uniqueName": "Aegis",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Shields-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   },
   {
+    "attack1Type": "Block",
+    "attack2Type": "GroundDeployment",
     "reach": "Height: 69.7  Width: 40.69",
     "id": 0,
     "name": "Pavise",
@@ -1555,9 +1594,12 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -40%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   },
   {
+    "attack1Type": "Block",
+    "attack2Type": null,
     "reach": "Height: 34.42  Width: 34.42",
     "id": 0,
     "name": "Round Shield",
@@ -1589,6 +1631,7 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -25%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   }
 ]

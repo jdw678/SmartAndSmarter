@@ -102,6 +102,10 @@ namespace SmartAndSmaterAPI.Models
         [Column(TypeName = "varchar(64)")]
         public string? Hand { get; set; }
 
+
+        [Required, JsonConverter(typeof(JsonStringEnumConverter))]
+        public SpecificWeaponType SpecificWeaponType { get; set; }
+
         public int GetId()
         {
             return Id;
@@ -137,5 +141,18 @@ namespace SmartAndSmaterAPI.Models
         Sheild,
         Melee,
         Magic
+    }
+
+    public enum SpecificWeaponType
+    {
+        Sword,
+        Mace,
+        Dagger,
+        Polearm,
+        Axe,
+        Bow,
+        Crossbow,
+        Magical,
+        Shield
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface ICombo
     {
-        void SetCombos(List<Tuple<string, float?>> combos);
+        void SetCombos(List<Tuple<WeaponAttackType, float?>> combos);
     }
 }

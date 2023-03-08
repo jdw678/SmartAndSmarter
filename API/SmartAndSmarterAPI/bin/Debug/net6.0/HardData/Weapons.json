@@ -21,6 +21,7 @@
     "name": "Arming Sword",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/b4/Arming_Sword_2.png/60px-Arming_Sword_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 22,
     "blackDamageMax": 22,
     "greyDamageMin": 25,
     "greyDamageMax": 26,
@@ -46,7 +47,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": "Kuma\u0027s Claw",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.88,
@@ -70,6 +72,7 @@
     "name": "Falchion",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/70/Falchion_2.png/60px-Falchion_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 30,
     "blackDamageMax": 30,
     "greyDamageMin": 34,
     "greyDamageMax": 35,
@@ -95,7 +98,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": "Kuma\u0027s Fang",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 1.22,
@@ -119,6 +123,7 @@
     "name": "Longsword",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/f/fa/Longsword_2.png/60px-Longsword_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 29,
     "blackDamageMax": 29,
     "greyDamageMin": 33,
     "greyDamageMax": 34,
@@ -144,7 +149,8 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -3%  Riposte: -30%  Riposteattack: -30%",
     "uniqueName": "Fulgor",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.56,
@@ -168,6 +174,7 @@
     "name": "Rapier",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/8/89/Rapier_2.png/60px-Rapier_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 14,
     "blackDamageMax": 15,
     "greyDamageMin": 16,
     "greyDamageMax": 17,
@@ -193,7 +200,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": "Viola",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.73,
@@ -217,6 +225,7 @@
     "name": "Short Sword",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/e/ef/Short_Sword_2.png/60px-Short_Sword_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 15,
     "blackDamageMax": 15,
     "greyDamageMin": 18,
     "greyDamageMax": 19,
@@ -242,7 +251,8 @@
     "actionMovementSpeed": "Attack: -9%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 1.23,
@@ -266,6 +276,7 @@
     "name": "Zweihander",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/2/28/Zweihander_2.png/60px-Zweihander_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 33,
     "blackDamageMax": 33,
     "greyDamageMin": 37,
     "greyDamageMax": 39,
@@ -291,7 +302,8 @@
     "actionMovementSpeed": "Attack: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Sword"
   },
   {
     "attack1Speed": 0.93,
@@ -315,6 +327,7 @@
     "name": "Flanged Mace",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/2/26/Flanged_Mace_2.png/60px-Flanged_Mace_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 26,
     "blackDamageMax": 26,
     "greyDamageMin": 30,
     "greyDamageMax": 31,
@@ -340,7 +353,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 0.96,
@@ -364,6 +378,7 @@
     "name": "Morning Star",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9d/Morning_Star_2.png/60px-Morning_Star_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 28,
     "blackDamageMax": 28,
     "greyDamageMin": 32,
     "greyDamageMax": 33,
@@ -389,7 +404,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": "Pulverizing Prayer",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Maces-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 0.89,
@@ -413,6 +429,7 @@
     "name": "Quarterstaff",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/db/Quarterstaff_2.png/60px-Quarterstaff_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 24,
     "blackDamageMax": 24,
     "greyDamageMin": 28,
     "greyDamageMax": 29,
@@ -438,7 +455,8 @@
     "actionMovementSpeed": "Attack: -30%  Blockreaction: -35%  Defensemode: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 1.39,
@@ -462,6 +480,7 @@
     "name": "War Maul",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/0/01/War_Maul_2.png/60px-War_Maul_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 45,
     "blackDamageMax": 45,
     "greyDamageMin": 49,
     "greyDamageMax": 52,
@@ -487,7 +506,8 @@
     "actionMovementSpeed": "Attack: -40%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Mace"
   },
   {
     "attack1Speed": 0.83,
@@ -511,6 +531,7 @@
     "name": "Castillon Dagger",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/4/48/Castillon_Dagger_2.png/60px-Castillon_Dagger_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 16,
     "blackDamageMax": 16,
     "greyDamageMin": 19,
     "greyDamageMax": 20,
@@ -536,7 +557,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 0.73,
@@ -560,6 +582,7 @@
     "name": "Kris Dagger",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/d6/Kris_Dagger_2.png/60px-Kris_Dagger_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 14,
     "blackDamageMax": 14,
     "greyDamageMin": 17,
     "greyDamageMax": 18,
@@ -585,7 +608,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 0.74,
@@ -609,6 +633,7 @@
     "name": "Rondel Dagger",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/f/f4/Rondel_Dagger_2.png/60px-Rondel_Dagger_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 14,
     "blackDamageMax": 14,
     "greyDamageMin": 17,
     "greyDamageMax": 18,
@@ -634,7 +659,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 0.59,
@@ -658,6 +684,7 @@
     "name": "Stiletto Dagger",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/f/f2/Stiletto_Dagger_2.png/60px-Stiletto_Dagger_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 15,
     "blackDamageMax": 15,
     "greyDamageMin": 18,
     "greyDamageMax": 19,
@@ -683,7 +710,8 @@
     "actionMovementSpeed": "Attack: -15%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Dagger"
   },
   {
     "attack1Speed": 1.28,
@@ -707,6 +735,7 @@
     "name": "Bardiche",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/0/05/Bardiche_2.png/60px-Bardiche_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 39,
     "blackDamageMax": 39,
     "greyDamageMin": 43,
     "greyDamageMax": 45,
@@ -732,7 +761,8 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -35%  Defensemode: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Polearm"
   },
   {
     "attack1Speed": 1.13,
@@ -756,6 +786,7 @@
     "name": "Halberd",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/5/5b/Halberd_2.png/60px-Halberd_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 37,
     "blackDamageMax": 37,
     "greyDamageMin": 41,
     "greyDamageMax": 43,
@@ -781,7 +812,8 @@
     "actionMovementSpeed": "Attack: -35%",
     "uniqueName": "Cinder",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Polearms-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Polearm"
   },
   {
     "attack1Speed": 0.86,
@@ -805,6 +837,7 @@
     "name": "Spear",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/2/23/Spear_2.png/60px-Spear_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 29,
     "blackDamageMax": 29,
     "greyDamageMin": 33,
     "greyDamageMax": 34,
@@ -830,7 +863,8 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -35%  Defensemode: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Polearm"
   },
   {
     "attack1Speed": 1.2,
@@ -854,6 +888,7 @@
     "name": "Battle Axe",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/3/33/Battle_Axe_2.png/60px-Battle_Axe_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 35,
     "blackDamageMax": 35,
     "greyDamageMin": 39,
     "greyDamageMax": 41,
@@ -879,7 +914,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 1.18,
@@ -903,6 +939,7 @@
     "name": "Double Axe",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/a/a4/Double_Axe_2.png/60px-Double_Axe_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 40,
     "blackDamageMax": 40,
     "greyDamageMin": 44,
     "greyDamageMax": 47,
@@ -928,7 +965,8 @@
     "actionMovementSpeed": "Attack: -30%",
     "uniqueName": "Life after Death",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 0.92,
@@ -952,6 +990,7 @@
     "name": "Felling Axe",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/8/87/Felling_Axe_2.png/60px-Felling_Axe_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 33,
     "blackDamageMax": 33,
     "greyDamageMin": 37,
     "greyDamageMax": 39,
@@ -977,7 +1016,8 @@
     "actionMovementSpeed": "Attack: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 0.74,
@@ -1001,6 +1041,7 @@
     "name": "Hatchet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/e/e7/Hatchet_2.png/60px-Hatchet_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 15,
     "blackDamageMax": 15,
     "greyDamageMin": 18,
     "greyDamageMax": 19,
@@ -1026,7 +1067,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 0.79,
@@ -1050,6 +1092,7 @@
     "name": "Horsemans Axe",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/b4/Horsemans_Axe_2.png/60px-Horsemans_Axe_2.png",
     "weaponType": "Melee",
+    "blackDamageMin": 19,
     "blackDamageMax": 19,
     "greyDamageMin": 22,
     "greyDamageMax": 23,
@@ -1075,7 +1118,8 @@
     "actionMovementSpeed": "Attack: -25%",
     "uniqueName": "Famine",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Axe"
   },
   {
     "attack1Speed": 2.03,
@@ -1085,6 +1129,7 @@
     "name": "Longbow",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9a/Longbow_2.png/60px-Longbow_2.png",
     "weaponType": "Bow",
+    "blackDamageMin": 30,
     "blackDamageMax": 30,
     "greyDamageMin": 34,
     "greyDamageMax": 36,
@@ -1110,7 +1155,8 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -60%",
     "uniqueName": "Nipalan",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Bow"
   },
   {
     "attack1Speed": 1.3,
@@ -1120,6 +1166,7 @@
     "name": "Recurve Bow",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/8/8c/Recurve_Bow_2.png/60px-Recurve_Bow_2.png",
     "weaponType": "Bow",
+    "blackDamageMin": 24,
     "blackDamageMax": 24,
     "greyDamageMin": 28,
     "greyDamageMax": 29,
@@ -1145,7 +1192,8 @@
     "actionMovementSpeed": "Attack: -35%  Reload: -50%",
     "uniqueName": "Pestilence",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Bow"
   },
   {
     "attack1Speed": 1.23,
@@ -1155,6 +1203,7 @@
     "name": "Survival Bow",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/6/6f/Survival_Bow_2.png/60px-Survival_Bow_2.png",
     "weaponType": "Bow",
+    "blackDamageMin": 13,
     "blackDamageMax": 13,
     "greyDamageMin": 14,
     "greyDamageMax": 15,
@@ -1180,7 +1229,8 @@
     "actionMovementSpeed": "Attack: -25%  Reload: -40%",
     "uniqueName": "Elven Bow of Truth",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Bow"
   },
   {
     "attack1Speed": 0,
@@ -1190,6 +1240,7 @@
     "name": "Crossbow",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/0/01/Crossbow_2.png/60px-Crossbow_2.png",
     "weaponType": "Bow",
+    "blackDamageMin": 39,
     "blackDamageMax": 39,
     "greyDamageMin": 43,
     "greyDamageMax": 45,
@@ -1215,7 +1266,8 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -100%  Mastery: 50%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Crossbow"
   },
   {
     "attack1Speed": 0,
@@ -1225,6 +1277,7 @@
     "name": "Windlass Crossbow",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/2/2a/Windlass_Crossbow_2.png/60px-Windlass_Crossbow_2.png",
     "weaponType": "Bow",
+    "blackDamageMin": 44,
     "blackDamageMax": 44,
     "greyDamageMin": 48,
     "greyDamageMax": 51,
@@ -1250,7 +1303,8 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -100%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Crossbow"
   },
   {
     "attack1Speed": 0,
@@ -1268,6 +1322,7 @@
     "name": "Crystal Ball",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/1/19/Crystal_Ball_2.png/60px-Crystal_Ball_2.png",
     "weaponType": "Magic",
+    "blackDamageMin": 1,
     "blackDamageMax": 1,
     "greyDamageMin": 2,
     "greyDamageMax": 2,
@@ -1293,7 +1348,8 @@
     "actionMovementSpeed": "Casting: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
     "attack1Speed": 0.74,
@@ -1311,6 +1367,7 @@
     "name": "Crystal Sword",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/78/Crystal_Sword_2.png/60px-Crystal_Sword_2.png",
     "weaponType": "Magic",
+    "blackDamageMin": 6,
     "blackDamageMax": 7,
     "greyDamageMin": 9,
     "greyDamageMax": 10,
@@ -1336,7 +1393,8 @@
     "actionMovementSpeed": "Attack: -30%  Casting: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
     "attack1Speed": 0,
@@ -1354,6 +1412,7 @@
     "name": "Spellbook",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/e/e9/Spellbook_2.png/60px-Spellbook_2.png",
     "weaponType": "Magic",
+    "blackDamageMin": 1,
     "blackDamageMax": 1,
     "greyDamageMin": 2,
     "greyDamageMax": 2,
@@ -1379,7 +1438,8 @@
     "actionMovementSpeed": "Casting: -30%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
     "attack1Speed": 0.69,
@@ -1397,6 +1457,7 @@
     "name": "Wizard Staff",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9c/Wizard_Staff_2.png/60px-Wizard_Staff_2.png",
     "weaponType": "Magic",
+    "blackDamageMin": 19,
     "blackDamageMax": 19,
     "greyDamageMin": 22,
     "greyDamageMax": 23,
@@ -1422,14 +1483,18 @@
     "actionMovementSpeed": "Attack: -30%  Casting: -35%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Magical"
   },
   {
+    "attack1Type": "Slash",
+    "attack2Type": null,
     "reach": "Height: 26.07  Width: 26.07",
     "id": 0,
     "name": "Buckler",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/a/a5/Buckler_2.png/60px-Buckler_2.png",
     "weaponType": "Sheild",
+    "blackDamageMin": 6,
     "blackDamageMax": 6,
     "greyDamageMin": 9,
     "greyDamageMax": 9,
@@ -1455,14 +1520,18 @@
     "actionMovementSpeed": "Blockreaction: -1%  Guard: -9%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   },
   {
+    "attack1Type": "Slash",
+    "attack2Type": null,
     "reach": "Height: 39.81  Width: 31.8",
     "id": 0,
     "name": "Heater Shield",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/b1/Heater_Shield_2.png/60px-Heater_Shield_2.png",
     "weaponType": "Sheild",
+    "blackDamageMin": 15,
     "blackDamageMax": 15,
     "greyDamageMin": 23,
     "greyDamageMax": 23,
@@ -1488,14 +1557,18 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -35%",
     "uniqueName": "Aegis",
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Shields-0",
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   },
   {
+    "attack1Type": "Slash",
+    "attack2Type": null,
     "reach": "Height: 69.7  Width: 40.69",
     "id": 0,
     "name": "Pavise",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/c/ce/Pavise_2.png/60px-Pavise_2.png",
     "weaponType": "Sheild",
+    "blackDamageMin": 24,
     "blackDamageMax": 24,
     "greyDamageMin": 36,
     "greyDamageMax": 36,
@@ -1521,14 +1594,18 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -40%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   },
   {
+    "attack1Type": "Slash",
+    "attack2Type": null,
     "reach": "Height: 34.42  Width: 34.42",
     "id": 0,
     "name": "Round Shield",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/4/43/Round_Shield_2.png/60px-Round_Shield_2.png",
     "weaponType": "Sheild",
+    "blackDamageMin": 13,
     "blackDamageMax": 13,
     "greyDamageMin": 19,
     "greyDamageMax": 19,
@@ -1554,6 +1631,7 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -25%",
     "uniqueName": null,
     "uniqueLink": null,
-    "hand": "Both"
+    "hand": "Both",
+    "specificWeaponType": "Shield"
   }
 ]

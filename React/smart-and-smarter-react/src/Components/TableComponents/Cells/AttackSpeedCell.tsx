@@ -8,7 +8,7 @@ type Props = {
     attack5Speed?: number
 }
 
-export default function WeaponAttackSpeed(props: Props) {
+export default function AttackSpeedCell(props: Props) {
     var str: string = "" + props.attack1Speed + "s";
 
     if(props.attack2Speed != null) str += "/" + props.attack2Speed + "s";

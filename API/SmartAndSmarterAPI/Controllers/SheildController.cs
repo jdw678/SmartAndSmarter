@@ -10,9 +10,9 @@ namespace SmartAndSmaterAPI.Controllers
     [ApiController]
     public class SheildController : ControllerBase
     {
-        private readonly IGenericRepository<Sheild> _repository;
+        private readonly IGenericRepository<Shield> _repository;
 
-        public SheildController(IGenericRepository<Sheild> repository)
+        public SheildController(IGenericRepository<Shield> repository)
         {
             _repository = repository;
         }
@@ -20,13 +20,13 @@ namespace SmartAndSmaterAPI.Controllers
 
         // GET: Sheild
         [HttpGet, ActionName("GetAllSheilds")]
-        public IEnumerable<Sheild> GetAllSheilds()
+        public IEnumerable<Shield> GetAllSheilds()
         {
             return _repository.GetAll();
         }
 
         [HttpGet("{id}"), ActionName("GetSheildById")]
-        public ActionResult<Sheild> GetSheildById(int id)
+        public ActionResult<Shield> GetSheildById(int id)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
@@ -45,7 +45,7 @@ namespace SmartAndSmaterAPI.Controllers
 
         // GET: Sheild/Create
         [HttpPost, ActionName("CreateSheild")]
-        public IActionResult CreateSheild([FromBody] Sheild sheild)
+        public IActionResult CreateSheild([FromBody] Shield sheild)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
@@ -64,13 +64,13 @@ namespace SmartAndSmaterAPI.Controllers
         }
 
         [HttpPut, ActionName("UpdateSheild")]
-        public IActionResult UpdateSheild([FromBody] Sheild sheild)
+        public IActionResult UpdateSheild([FromBody] Shield sheild)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
 
 
-            Sheild responseSheild = _repository.Update(sheild);
+            Shield responseSheild = _repository.Update(sheild);
             if (responseSheild == null)
             {
                 return StatusCode(500);
