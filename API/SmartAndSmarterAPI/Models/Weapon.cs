@@ -1,14 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using SmartAndSmaterAPI.Models.WeaponInterfaces;
 
 namespace SmartAndSmaterAPI.Models
 {
-
-    //has name, image, class, hand (slot), damage, movement speed, action movement speed, unique
-    public class Weapon: IIdentifiable
+    public class Weapon
     {   
         ///////necissary elements
         [Key]
@@ -22,6 +19,9 @@ namespace SmartAndSmaterAPI.Models
 
         [Required, JsonConverter(typeof(JsonStringEnumConverter))]
         public WeaponType WeaponType { get; set; }
+
+        [Required, JsonConverter(typeof(JsonStringEnumConverter))]
+        public SpecificWeaponType SpecificWeaponType { get; set; }
 
         //damages, all required
         [Required]
@@ -72,6 +72,47 @@ namespace SmartAndSmaterAPI.Models
         [Required]
         public float GoldDamageMax { get; set; }
 
+        //attack speeds
+        //must have atleast one
+        [Required]
+        public float Attack1Speed { get; set; }
+        public float? Attack2Speed { get; set; }
+        public float? Attack3Speed { get; set; }
+        public float? Attack4Speed { get; set; }
+        public float? Attack5Speed { get; set; }
+
+
+        //attack type (slash / pierce etc)
+        //must have atleast one
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)), Required]
+        public WeaponAttackType Attack1Type { get; set; }
+
+
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
+        public WeaponAttackType? Attack2Type { get; set; }
+
+
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
+        public WeaponAttackType? Attack3Type { get; set; }
+
+
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
+        public WeaponAttackType? Attack4Type { get; set; }
+
+
+        [Column(TypeName = "varchar(32)"), JsonConverter(typeof(JsonStringEnumConverter)),]
+        public WeaponAttackType? Attack5Type { get; set; }
+
+
+        //attack damage multipliers
+        //must have atleast one
+        [Required]
+        public float Attack1DamageMultiplier { get; set; }
+        public float? Attack2DamageMultiplier { get; set; }
+        public float? Attack3DamageMultiplier { get; set; }
+        public float? Attack4DamageMultiplier { get; set; }
+        public float? Attack5DamageMultiplier { get; set; }
+        
 
         /////////not completely essential stuff but still nice to have
         //classes
@@ -82,13 +123,16 @@ namespace SmartAndSmaterAPI.Models
         public bool RogueCanUse { get; set; }
         public bool WizardCanUse { get; set; }
 
-
         //movement speed effects
         public float MovementSpeedWhileEquiped { get; set; }
 
         [Column(TypeName = "varchar(128)")]
         public string? ActionMovementSpeed { get; set; }
 
+        //weapon reach / hitbox
+
+        [Column(TypeName = "varchar(64)")]
+        public string? Reach { get; set; }
 
         //uniques
         [Column(TypeName = "varchar(64)")]
@@ -97,31 +141,19 @@ namespace SmartAndSmaterAPI.Models
         [Column(TypeName = "varchar(1024)")]
         public string? UniqueLink { get; set; }
 
-
         //maind hand / off hand / two handed
         [Column(TypeName = "varchar(64)")]
         public string? Hand { get; set; }
 
+        [Column(TypeName ="varchar(64)")]
+        public string? SweetSpot { get; set; }
 
-        [Required, JsonConverter(typeof(JsonStringEnumConverter))]
-        public SpecificWeaponType SpecificWeaponType { get; set; }
+        //for bows only
+        public int? QuiverSize { get; set; }
 
-        public int GetId()
-        {
-            return Id;
-        }
+        public float? ReloadSpeed { get; set; }
 
-        public void SetId(int id)
-        {
-            Id = id;
-        }
-
-        public override string ToString()
-        {
-            return Name;
-        }
     }
-
 
     public enum WeaponAttackType
     {
@@ -130,29 +162,31 @@ namespace SmartAndSmaterAPI.Models
         Blunt,
         Bow,
         Block,
-        GroundDeployment,
-        SpellCast
+        GroundDeployment
 
     }
 
     public enum WeaponType
     {
         Bow,
-        Sheild,
-        Melee,
-        Magic
+        Shield,
+        Magic,
+        Melee
     }
 
     public enum SpecificWeaponType
     {
-        Sword,
-        Mace,
-        Dagger,
-        Polearm,
         Axe,
         Bow,
         Crossbow,
-        Magical,
-        Shield
+        Dagger,
+        Polearm,
+        Shield,
+        Sword,
+        Mace,
+        Magic
+
     }
+
+
 }

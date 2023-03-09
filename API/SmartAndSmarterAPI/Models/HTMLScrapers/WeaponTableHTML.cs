@@ -4,10 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Reflection;
-using SmartAndSmaterAPI.Models.WeaponInterfaces;
-using System.Text.Json.Serialization;
 
-namespace SmartAndSmaterAPI.Models.HTMLScrapers
+namespace SmartAndSmaterAPI.Models
 {
     public static class WeaponTableHTML
     {
@@ -28,13 +26,12 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
             doc.LoadHtml(html);
             doc.OptionEmptyCollection = true;
 
+            File.Delete($"{folder}Weapons.json");
+            File.Delete($"{reactFolder}Weapons.json");
+
             string wikiUrl = "https://darkanddarker.wiki.spellsandguns.com";
 
             List<Weapon> weapons = new List<Weapon>();
-            List<Bow> bows = new List<Bow>();
-            List<Shield> sheilds = new List<Shield>();
-            List<MeleeWeapon> meleeWeapons = new List<MeleeWeapon>();
-            List<MagicWeapon> magicWeapons = new List<MagicWeapon>();
 
             foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table/tbody").ToList())
             {
@@ -42,8 +39,6 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
 
                 foreach (HtmlNode row in table.SelectNodes("tr"))
                 {
-
-
 
                     //skip header
                     if (row.SelectNodes("td").Count == 0) continue;
@@ -64,11 +59,9 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     HtmlNode reach = null;
                     HtmlNode actionMovementSpeed = null;
                     HtmlNode unique = null;
-                    HtmlNode clipSize = null;
+                    HtmlNode quiverSize = null;
                     HtmlNode reloadSpeed = null;
                     HtmlNode sweetSpot = null;
-
-
 
                     //only used in magic table
                     HtmlNode magicDamage = null;
@@ -77,8 +70,9 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     //magic table
                     if (cells.Count == 12)
                     {
-                        weapon = new MagicWeapon();
                         weapon.WeaponType = WeaponType.Magic;
+                        weapon.QuiverSize = null;
+                        weapon.ReloadSpeed = null;
 
                         damage = cells[3];
                         magicDamage = cells[4];
@@ -93,8 +87,9 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     //melee weapons table
                     else if (cells.Count == 11)
                     {
-                        weapon = new MeleeWeapon();
                         weapon.WeaponType = WeaponType.Melee;
+                        weapon.QuiverSize = null;
+                        weapon.ReloadSpeed = null;
 
                         damage = cells[3];
                         movementSpeed = cells[4];
@@ -106,38 +101,51 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                         unique = cells[10];
                     }
                     //bow table
-                    else if (cells.Count == 10)
+                    else if(cells.Count == 10)
                     {
-                        weapon = new Bow();
                         weapon.WeaponType = WeaponType.Bow;
+                        weapon.Attack1Type = WeaponAttackType.Bow;
+                        weapon.Attack1DamageMultiplier = 100;
+                        weapon.SweetSpot = null;
+                        weapon.Reach = null;
 
                         damage = cells[3];
                         movementSpeed = cells[4];
                         attackSpeed = cells[5];
                         reloadSpeed = cells[6];
                         actionMovementSpeed = cells[7];
-                        clipSize = cells[8];
+                        quiverSize = cells[8];
                         unique = cells[9];
                     }
-                    //sheild table
-                    else if (cells.Count == 9)
+                    //shield table
+                    else if(cells.Count == 9)
                     {
-                        weapon = new Shield();
-                        weapon.WeaponType = WeaponType.Sheild;
+                        weapon.WeaponType = WeaponType.Shield;
+                        weapon.Attack1DamageMultiplier = 100;
+                        weapon.Attack1Speed = 0;
+                        weapon.SweetSpot = null;
+                        weapon.QuiverSize = null;
+                        weapon.ReloadSpeed = null;
+                        weapon.Reach = null;
 
                         //armor rating acts the same, stored in damage for berevity
                         damage = cells[3];
                         movementSpeed = cells[4];
                         combo = cells[5];
                         reach = cells[6];
-                        actionMovementSpeed = cells[7];
+                        actionMovementSpeed= cells[7];
                         unique = cells[8];
                     }
                     //crossbow table
-                    else if (cells.Count == 8)
+                    else if(cells.Count == 8)
                     {
-                        weapon = new Bow();
                         weapon.WeaponType = WeaponType.Bow;
+                        weapon.Attack1Type = WeaponAttackType.Bow;
+                        weapon.Attack1DamageMultiplier = 100;
+                        weapon.SweetSpot = null;
+                        weapon.QuiverSize = null;
+                        weapon.ReloadSpeed = null;
+                        weapon.Reach = null;
 
                         damage = cells[3];
                         movementSpeed = cells[4];
@@ -148,10 +156,10 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     }
                     #endregion
 
-
                     //name cell of the table, innerText is name and has <img> tag with the image
                     weapon.Name = name.InnerText.Trim().TrimEnd();
                     weapon.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
+
 
                     #region SpecificWeaponType
                     string[] swords =
@@ -252,32 +260,29 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     CheckItem(daggers, SpecificWeaponType.Dagger);
                     CheckItem(polearms, SpecificWeaponType.Polearm);
                     CheckItem(axes, SpecificWeaponType.Axe);
-                    CheckItem(magicalWeapons, SpecificWeaponType.Magical);
+                    CheckItem(magicalWeapons, SpecificWeaponType.Magic);
                     CheckItem(bowStrings, SpecificWeaponType.Bow);
                     CheckItem(crossbows, SpecificWeaponType.Crossbow);
                     CheckItem(shields, SpecificWeaponType.Shield);
 
                     #endregion
 
-
                     //class cell of the table, can have multiple classes, all wrapped in individual <a> tags
                     classes.SelectNodes("a").ToList().ForEach(a =>
                     {
                         if (a.InnerText.Contains("Fighter")) weapon.FighterCanUse = true;
-                        if (a.InnerText.Contains("Barbarian")) weapon.BarbarianCanUse = true;
-                        if (a.InnerText.Contains("Cleric")) weapon.ClericCanUse = true;
-                        if (a.InnerText.Contains("Wizard")) weapon.WizardCanUse = true;
-                        if (a.InnerText.Contains("Rogue")) weapon.RogueCanUse = true;
-                        if (a.InnerText.Contains("Ranger")) weapon.RangerCanUse = true;
+                        if (a.InnerText.Contains("Barbarian")) weapon.FighterCanUse = true;
+                        if (a.InnerText.Contains("Cleric")) weapon.FighterCanUse = true;
+                        if (a.InnerText.Contains("Wizard")) weapon.FighterCanUse = true;
+                        if (a.InnerText.Contains("Rogue")) weapon.FighterCanUse = true;
+                        if (a.InnerText.Contains("Ranger")) weapon.FighterCanUse = true;
                     });
-
-
-
 
                     //slot cell of the table
                     if (slot.InnerText.Contains("Main")) weapon.Hand = "Main";
                     if (slot.InnerText.Contains("Off")) weapon.Hand = "Off";
                     if (slot.InnerText.Contains("Handed")) weapon.Hand = "Both";
+
 
                     #region damage
                     if (damage != null)
@@ -423,25 +428,6 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     }
                     #endregion
 
-
-                    //actionMovementSpeed cell
-                    if (actionMovementSpeed != null) weapon.ActionMovementSpeed = actionMovementSpeed.InnerText.Trim().TrimEnd();
-
-                    //movementSpeed
-                    if (movementSpeed != null) weapon.MovementSpeedWhileEquiped = float.Parse(movementSpeed.InnerText);
-
-                    //unique cell
-                    if (unique != null)
-                    {
-                        if (!(unique.InnerText.Trim().TrimEnd() == "None"))
-                        {
-
-                            weapon.UniqueName = unique.InnerText.Trim().TrimEnd();
-                            weapon.UniqueLink = wikiUrl + unique.SelectNodes("a").First().GetAttributeValue("href", "");
-                        }
-                    }
-
-
                     #region combo
                     //combo cell
 
@@ -457,10 +443,10 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                         List<Tuple<string, float?>> combos = new List<Tuple<string, float?>>();
 
                         //default to innerHtml, will be over wrote if there is a top and bottom type / ADM split (ex. first td in top comment vs last td in top comment)
-                        string[] topAndBottomSplit = new string[] { innerHtml };
+                        string[] topAndBottomSplit = new string[] {innerHtml};
 
                         //there is a top attackType / ADM and a bottom type / ADM if this is true
-                        if (innerHtml.Contains("<br> <br>"))
+                        if(innerHtml.Contains("<br> <br>"))
                         {
                             topAndBottomSplit = innerHtml.Split("<br> <br>");
                         }
@@ -472,13 +458,13 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
 
 
                         //each type / ADM section (max 2, 1 top 1 bottom)
-                        foreach (string typeADM in topAndBottomSplit)
+                        foreach(string typeADM in topAndBottomSplit)
                         {
                             //default to typeADM, will be over wrote if there is both a type and an ADM, otherwise it will be only the type innerText (ADM may not exist)
-                            string[] typeADMSplit = new string[] { typeADM };
+                            string[] typeADMSplit = new string[] {typeADM};
 
                             //true if there is both a type and an ADM
-                            if (typeADM.Contains("<br>"))
+                            if(typeADM.Contains("<br>"))
                             {
                                 typeADMSplit = typeADM.Split("<br>");
                             }
@@ -488,13 +474,13 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                             string[] types = typeADMSplit[0].Split("/");
 
                             //calculate all AMDs if they exist
-                            if (typeADMSplit.Length > 1)
+                            if(typeADMSplit.Length > 1)
                             {
                                 //calculate all the adms
                                 string[] ADMs = typeADMSplit[1].Split("/");
 
                                 //add all the combos
-                                for (int i = 0; i < ADMs.Length; i++)
+                                for(int i = 0; i < ADMs.Length; i++)
                                 {
 
                                     string type = types[i].Trim().TrimEnd();
@@ -516,35 +502,80 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                     //use above method to calculate a list of tuples where the first item is the type and the second item is it's corresponding attackDamageMuiltiplier (if there is one)
                     //pass it all of the innerHtml of the td of the combo cell
 
-                    if (combo != null)
+                    if(combo != null)
                     {
 
                         List<Tuple<string, float?>> combos = ComboParse(combo.InnerHtml);
-                        List<Tuple<WeaponAttackType, float?>> combosParsed = new List<Tuple<WeaponAttackType, float?>>();
-
-                        foreach(Tuple<string, float?> badCombo in combos)
+                        
+                        if(combos.Count > 0)
                         {
-                            Console.WriteLine($"{weapon.Name} {badCombo.Item1}");
-                            if (badCombo.Item1.Contains(WeaponAttackType.Slash.ToString())) combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Slash, badCombo.Item2));
-                            if (badCombo.Item1.Contains(WeaponAttackType.Pierce.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Pierce, badCombo.Item2));
-                            if (badCombo.Item1.Contains(WeaponAttackType.Blunt.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Blunt, badCombo.Item2));
-                            if (badCombo.Item1.Contains(WeaponAttackType.Bow.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Bow, badCombo.Item2));
-                            if (badCombo.Item1.Contains(WeaponAttackType.Block.ToString()))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.Block, badCombo.Item2));
-                            if (badCombo.Item1.Contains("Spell")) combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.SpellCast, badCombo.Item2));
-                            if (badCombo.Item1.Contains("Ground"))  combosParsed.Add(new Tuple<WeaponAttackType, float?>(WeaponAttackType.GroundDeployment, badCombo.Item2));
+
+                            if (combos[0].Item1.Contains(WeaponAttackType.Slash.ToString())) weapon.Attack1Type = WeaponAttackType.Slash;
+                            if (combos[0].Item1.Contains(WeaponAttackType.Pierce.ToString())) weapon.Attack1Type = WeaponAttackType.Pierce;
+                            if (combos[0].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack1Type = WeaponAttackType.Blunt;
+                            if (combos[0].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack1Type = WeaponAttackType.Bow;
+                            if (combos[0].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack1Type = WeaponAttackType.Block;
+                            if (combos[0].Item1.Contains("Ground")) weapon.Attack1Type = WeaponAttackType.GroundDeployment;
+
+                            //first weapon must have an attack damage multiplier
+                            if (combos[0].Item2 != null)
+                                weapon.Attack1DamageMultiplier = (float)combos[0].Item2;
+                            else weapon.Attack1DamageMultiplier = 0;
                         }
 
-
-
-
-
-                        if (weapon is ICombo)
+                        if (combos.Count > 1)
                         {
-                            ICombo wep = (ICombo)weapon;
-                            wep.SetCombos(combosParsed);
-                            weapon = (Weapon)wep;
+
+                            if (combos[1].Item1.Contains(WeaponAttackType.Slash.ToString())) weapon.Attack2Type = WeaponAttackType.Slash;
+                            if (combos[1].Item1.Contains(WeaponAttackType.Pierce.ToString())) weapon.Attack2Type = WeaponAttackType.Pierce;
+                            if (combos[1].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack2Type = WeaponAttackType.Blunt;
+                            if (combos[1].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack2Type = WeaponAttackType.Bow;
+                            if (combos[1].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack2Type = WeaponAttackType.Block;
+                            if (combos[1].Item1.Contains("Ground")) weapon.Attack2Type = WeaponAttackType.GroundDeployment;
+
+                            weapon.Attack2DamageMultiplier = combos[1].Item2;
                         }
 
+                        if (combos.Count > 2)
+                        {
+
+                            if (combos[2].Item1.Contains(WeaponAttackType.Slash.ToString())) weapon.Attack3Type = WeaponAttackType.Slash;
+                            if (combos[2].Item1.Contains(WeaponAttackType.Pierce.ToString())) weapon.Attack3Type = WeaponAttackType.Pierce;
+                            if (combos[2].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack3Type = WeaponAttackType.Blunt;
+                            if (combos[2].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack3Type = WeaponAttackType.Bow;
+                            if (combos[2].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack3Type = WeaponAttackType.Block;
+                            if (combos[2].Item1.Contains("Ground")) weapon.Attack3Type = WeaponAttackType.GroundDeployment;
+
+                            weapon.Attack3DamageMultiplier = combos[2].Item2;
+                        }
+
+                        if (combos.Count > 3)
+                        {
+
+                            if (combos[3].Item1.Contains(WeaponAttackType.Slash.ToString())) weapon.Attack4Type = WeaponAttackType.Slash;
+                            if (combos[3].Item1.Contains(WeaponAttackType.Pierce.ToString())) weapon.Attack4Type = WeaponAttackType.Pierce;
+                            if (combos[3].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack4Type = WeaponAttackType.Blunt;
+                            if (combos[3].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack4Type = WeaponAttackType.Bow;
+                            if (combos[3].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack4Type = WeaponAttackType.Block;
+                            if (combos[3].Item1.Contains("Ground")) weapon.Attack4Type = WeaponAttackType.GroundDeployment;
+
+                            weapon.Attack4DamageMultiplier = combos[3].Item2;
+                        }
+
+                        if (combos.Count > 4)
+                        {
+
+                            if (combos[4].Item1.Contains(WeaponAttackType.Slash.ToString())) weapon.Attack5Type = WeaponAttackType.Slash;
+                            if (combos[4].Item1.Contains(WeaponAttackType.Pierce.ToString())) weapon.Attack5Type = WeaponAttackType.Pierce;
+                            if (combos[4].Item1.Contains(WeaponAttackType.Blunt.ToString())) weapon.Attack5Type = WeaponAttackType.Blunt;
+                            if (combos[4].Item1.Contains(WeaponAttackType.Bow.ToString())) weapon.Attack5Type = WeaponAttackType.Bow;
+                            if (combos[4].Item1.Contains(WeaponAttackType.Block.ToString())) weapon.Attack5Type = WeaponAttackType.Block;
+                            if (combos[4].Item1.Contains("Ground")) weapon.Attack5Type = WeaponAttackType.GroundDeployment;
+
+                            weapon.Attack5DamageMultiplier = combos[4].Item2;
+                        }
+
+                        
                     }
 
 
@@ -578,18 +609,18 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
                             }
 
                             //cycle through top and bottom (if bottom exists) and parse out the strings at the slashes, then remove the 's', and turn into floats
-                            foreach (string line in topAndBottom)
+                            foreach(string line in topAndBottom)
                             {
                                 //initialize to line, overwrite if there are multiple attack speeds (contains "/")
                                 string[] attackSpeedStrings = new string[] { line };
 
-                                if (line.Contains("/"))
+                                if(line.Contains("/"))
                                 {
                                     attackSpeedStrings = line.Split("/");
                                 }
 
                                 //add to float list
-                                foreach (string attackSpeed in attackSpeedStrings)
+                                foreach(string attackSpeed in attackSpeedStrings)
                                 {
                                     attackSpeeds.Add(float.Parse(attackSpeed.Replace("s", "").Trim().TrimEnd()));
                                 }
@@ -600,88 +631,87 @@ namespace SmartAndSmaterAPI.Models.HTMLScrapers
 
                         List<float> attackSpeeds = ParseAttackSpeed(attackSpeed.InnerHtml);
 
-                        if (weapon is IAttackSpeed)
+                        //can be null for crystal ball and other magical items / shields
+                        if(attackSpeeds.Count == 0)
                         {
-                            IAttackSpeed wep = ((IAttackSpeed)weapon);
-                            wep.SetAttackSpeeds(attackSpeeds);
-                            weapon = (Weapon)wep;
-                            
+                            weapon.Attack1Speed = 0;
                         }
+                        if(attackSpeeds.Count > 0)
+                        {
+                            weapon.Attack1Speed = attackSpeeds[0];
+                        }
+                        if (attackSpeeds.Count > 1)
+                        {
+                            weapon.Attack2Speed = attackSpeeds[1];
+                        }
+                        if (attackSpeeds.Count > 2)
+                        {
+                            weapon.Attack3Speed = attackSpeeds[2];
+                        }
+                        if (attackSpeeds.Count > 3)
+                        {
+                            weapon.Attack4Speed = attackSpeeds[3];
+                        }
+                        if (attackSpeeds.Count > 4)
+                        {
+                            weapon.Attack5Speed = attackSpeeds[4];
+                        }
+
                     }
+
 
                     #endregion
 
                     //sweet spot
-                    if (sweetSpot != null)
-                        if (weapon is ISweetSpot)
-                        {
-                            ISweetSpot wep = ((ISweetSpot)weapon);
-                            wep.SetSweetSpot(sweetSpot.InnerText.Trim().TrimEnd());
-                            weapon = (Weapon)wep;
-                        }
+                    if (sweetSpot != null) weapon.SweetSpot = sweetSpot.InnerText.Trim().TrimEnd();
 
                     //reach cell
-                    if (reach != null)
-                        if (weapon is IReach)
-                        {
-                            IReach wep = ((IReach)weapon);
-                            wep.SetReach(reach.InnerText.Trim().TrimEnd());
-                            weapon = (Weapon)wep;
-                        }
+                    if (reach != null) weapon.Reach = reach.InnerText.Trim().TrimEnd();
 
 
-                    if(weapon.WeaponType == WeaponType.Bow)
+                    //actionMovementSpeed cell
+                    if(actionMovementSpeed != null) weapon.ActionMovementSpeed = actionMovementSpeed.InnerText.Trim().TrimEnd();
+
+                    //movementSpeed
+                    if (movementSpeed != null) weapon.MovementSpeedWhileEquiped = float.Parse(movementSpeed.InnerText);
+
+                    //unique cell
+                    if (unique != null)
                     {
-                        //reload speed cell
-                        if (reloadSpeed != null)
-                        {
-                            IReloadable wep = ((IReloadable)weapon);
-                            wep.SetReloadSpeed(float.Parse(reloadSpeed.InnerText.Replace("s", "")));
-                            weapon = (Weapon)wep;
-                        }
-
-                        //clip size cell
-                        if (clipSize != null)
+                        if(!(unique.InnerText.Trim().TrimEnd() == "None"))
                         {
 
-                            IReloadable wep = ((IReloadable)weapon);
-                            wep.SetQuiverSize(int.Parse(clipSize.InnerText));
-                            weapon = (Weapon)wep;
+                            weapon.UniqueName = unique.InnerText.Trim().TrimEnd();
+                            weapon.UniqueLink = wikiUrl + unique.SelectNodes("a").First().GetAttributeValue("href", "");
                         }
                     }
 
-                    
+                    //reload speed cell
+                    if (reloadSpeed != null)
+                    {
+                        weapon.ReloadSpeed = float.Parse(reloadSpeed.InnerText.Replace("s", ""));
+                    }
+
+                    //clip size cell
+                    if(quiverSize != null)
+                    {
+                        weapon.QuiverSize = int.Parse(quiverSize.InnerText);
+                    }
 
                     weapons.Add(weapon);
-
-                    if(weapon is Bow) bows.Add((Bow)weapon);
-                    if(weapon is Shield) sheilds.Add((Shield)weapon);
-                    if(weapon is MagicWeapon) magicWeapons.Add((MagicWeapon)weapon);
-                    if(weapon is MeleeWeapon) meleeWeapons.Add((MeleeWeapon)weapon);
                 }
 
             }
 
-
-            void WriteAll<T>(List<T> items, string fileName)
+            JsonSerializerOptions options = new JsonSerializerOptions
             {
+                WriteIndented = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
 
-                JsonSerializerOptions options = new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-
-                };
-
-                File.WriteAllText($"{folder}{fileName}.json", JsonSerializer.Serialize(items.Cast<object>(), options));
-                File.WriteAllText($"{reactFolder}{fileName}.json", JsonSerializer.Serialize(items.Cast<object>(), options));
-            }
-
-            WriteAll(weapons, "Weapons");
-            WriteAll(bows, "Bows");
-            WriteAll(sheilds, "Sheilds");
-            WriteAll(magicWeapons, "MagicWeapons");
-            WriteAll(meleeWeapons, "MeleeWeapons");
+            File.AppendAllText($"{folder}Weapons.json", JsonSerializer.Serialize(weapons, options));
+            File.AppendAllText($"{reactFolder}Weapons.json", JsonSerializer.Serialize(weapons, options));
+            Console.WriteLine(reactFolder);
 
 
             return weapons;

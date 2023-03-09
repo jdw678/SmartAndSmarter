@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmartAndSmaterAPI.Models;
 
@@ -11,9 +12,11 @@ using SmartAndSmaterAPI.Models;
 namespace SmartAndSmaterAPI.Migrations
 {
     [DbContext(typeof(SASDbContext))]
-    partial class SASDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230309170610_RevertToSingleWeaponsTable")]
+    partial class RevertToSingleWeaponsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -192,6 +195,9 @@ namespace SmartAndSmaterAPI.Migrations
                     b.Property<bool>("ClericCanUse")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("ClipSize")
+                        .HasColumnType("int");
+
                     b.Property<bool>("FighterCanUse")
                         .HasColumnType("bit");
 
@@ -239,9 +245,6 @@ namespace SmartAndSmaterAPI.Migrations
                     b.Property<float>("PurpleDamageMin")
                         .HasColumnType("real");
 
-                    b.Property<int?>("QuiverSize")
-                        .HasColumnType("int");
-
                     b.Property<bool>("RangerCanUse")
                         .HasColumnType("bit");
 
@@ -254,9 +257,6 @@ namespace SmartAndSmaterAPI.Migrations
                     b.Property<bool>("RogueCanUse")
                         .HasColumnType("bit");
 
-                    b.Property<int>("SpecificWeaponType")
-                        .HasColumnType("int");
-
                     b.Property<string>("SweetSpot")
                         .HasColumnType("varchar(64)");
 
@@ -265,9 +265,6 @@ namespace SmartAndSmaterAPI.Migrations
 
                     b.Property<string>("UniqueName")
                         .HasColumnType("varchar(64)");
-
-                    b.Property<int>("WeaponType")
-                        .HasColumnType("int");
 
                     b.Property<float>("WhiteDamageMax")
                         .HasColumnType("real");
