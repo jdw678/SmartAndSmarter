@@ -59,7 +59,7 @@ namespace SmartAndSmaterAPI.Models
                     HtmlNode reach = null;
                     HtmlNode actionMovementSpeed = null;
                     HtmlNode unique = null;
-                    HtmlNode clipSize = null;
+                    HtmlNode quiverSize = null;
                     HtmlNode reloadSpeed = null;
                     HtmlNode sweetSpot = null;
 
@@ -70,7 +70,8 @@ namespace SmartAndSmaterAPI.Models
                     //magic table
                     if (cells.Count == 12)
                     {
-                        weapon.ClipSize = null;
+                        weapon.WeaponType = WeaponType.Magic;
+                        weapon.QuiverSize = null;
                         weapon.ReloadSpeed = null;
 
                         damage = cells[3];
@@ -86,7 +87,8 @@ namespace SmartAndSmaterAPI.Models
                     //melee weapons table
                     else if (cells.Count == 11)
                     {
-                        weapon.ClipSize = null;
+                        weapon.WeaponType = WeaponType.Melee;
+                        weapon.QuiverSize = null;
                         weapon.ReloadSpeed = null;
 
                         damage = cells[3];
@@ -101,6 +103,7 @@ namespace SmartAndSmaterAPI.Models
                     //bow table
                     else if(cells.Count == 10)
                     {
+                        weapon.WeaponType = WeaponType.Bow;
                         weapon.Attack1Type = WeaponAttackType.Bow;
                         weapon.Attack1DamageMultiplier = 100;
                         weapon.SweetSpot = null;
@@ -111,16 +114,17 @@ namespace SmartAndSmaterAPI.Models
                         attackSpeed = cells[5];
                         reloadSpeed = cells[6];
                         actionMovementSpeed = cells[7];
-                        clipSize = cells[8];
+                        quiverSize = cells[8];
                         unique = cells[9];
                     }
-                    //sheild table
+                    //shield table
                     else if(cells.Count == 9)
                     {
+                        weapon.WeaponType = WeaponType.Shield;
                         weapon.Attack1DamageMultiplier = 100;
                         weapon.Attack1Speed = 0;
                         weapon.SweetSpot = null;
-                        weapon.ClipSize = null;
+                        weapon.QuiverSize = null;
                         weapon.ReloadSpeed = null;
                         weapon.Reach = null;
 
@@ -135,11 +139,11 @@ namespace SmartAndSmaterAPI.Models
                     //crossbow table
                     else if(cells.Count == 8)
                     {
-
+                        weapon.WeaponType = WeaponType.Bow;
                         weapon.Attack1Type = WeaponAttackType.Bow;
                         weapon.Attack1DamageMultiplier = 100;
                         weapon.SweetSpot = null;
-                        weapon.ClipSize = null;
+                        weapon.QuiverSize = null;
                         weapon.ReloadSpeed = null;
                         weapon.Reach = null;
 
@@ -584,9 +588,9 @@ namespace SmartAndSmaterAPI.Models
                     }
 
                     //clip size cell
-                    if(clipSize != null)
+                    if(quiverSize != null)
                     {
-                        weapon.ClipSize = int.Parse(clipSize.InnerText);
+                        weapon.QuiverSize = int.Parse(quiverSize.InnerText);
                     }
 
                     weapons.Add(weapon);

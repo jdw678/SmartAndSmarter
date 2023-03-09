@@ -43,7 +43,7 @@
             try
             {
 
-                Console.WriteLine(weaponChanges.Id);
+                Console.WriteLine(weaponChanges.Name);
                 var weapon = context.Weapons.Attach(weaponChanges);
                 weapon.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 context.SaveChanges();
@@ -60,7 +60,13 @@
         {
             //true if weapon already exists
             if(context.Weapons.Where(w => w.Name == weapon.Name).FirstOrDefault() != null)
+            {
+                //get weapon in db, use its id, then detach and update
+                Weapon tempWeapon = context.Weapons.Where(w => w.Name == weapon.Name).FirstOrDefault();
+                weapon.Id = tempWeapon.Id;
+                context.Entry(tempWeapon).State = Microsoft.EntityFrameworkCore.EntityState.Detached;
                 return Update(weapon);
+            }
             else
                 return Add(weapon);
         }

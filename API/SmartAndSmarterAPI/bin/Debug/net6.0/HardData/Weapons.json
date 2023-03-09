@@ -44,10 +44,10 @@
     "actionMovementSpeed": "Attack: -25%",
     "reach": "Height: 54.78  Width: 11.6",
     "uniqueName": "Kuma\u0027s Claw",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Arming_Sword#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%/90%/70%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -95,10 +95,10 @@
     "actionMovementSpeed": "Attack: -30%",
     "reach": "Height: 51.07  Width: 10.71",
     "uniqueName": "Kuma\u0027s Fang",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Falchion#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%/90%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -146,10 +146,10 @@
     "actionMovementSpeed": "Attack: -35%  Blockreaction: -3%  Riposte: -30%  Riposteattack: -30%",
     "reach": "Height: 73.15  Width: 13.27",
     "uniqueName": "Fulgor",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Longsword#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%/80%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -197,10 +197,10 @@
     "actionMovementSpeed": "Attack: -25%",
     "reach": "Height: 56.53  Width: 13.48",
     "uniqueName": "Viola",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Rapier#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -251,7 +251,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -302,7 +302,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -353,7 +353,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/70%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -401,10 +401,10 @@
     "actionMovementSpeed": "Attack: -30%",
     "reach": "Height: 42.75  Width: 9.9",
     "uniqueName": "Pulverizing Prayer",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Morning_Star#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Maces-0",
     "hand": "Both",
     "sweetSpot": "100%/70%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -455,7 +455,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%/60%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -506,7 +506,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/70%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -557,7 +557,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -608,7 +608,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -659,7 +659,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -710,7 +710,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -761,7 +761,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -809,10 +809,10 @@
     "actionMovementSpeed": "Attack: -35%",
     "reach": "Height: 120.08  Width: 16.24",
     "uniqueName": "Cinder",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Halberd#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Polearms-0",
     "hand": "Both",
     "sweetSpot": "100%/60%/40%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -863,7 +863,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -914,7 +914,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -962,10 +962,10 @@
     "actionMovementSpeed": "Attack: -30%",
     "reach": "Height: 74.49  Width: 23.25",
     "uniqueName": "Life after Death",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Double_Axe#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1016,7 +1016,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1067,7 +1067,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1115,10 +1115,10 @@
     "actionMovementSpeed": "Attack: -25%",
     "reach": "Height: 47.94  Width: 10.97",
     "uniqueName": "Famine",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Horsemans_Axe#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
     "hand": "Both",
     "sweetSpot": "100%/80%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1166,10 +1166,10 @@
     "actionMovementSpeed": "Attack: -44%  Reload: -60%",
     "reach": null,
     "uniqueName": "Nipalan",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Longbow#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": 5,
+    "quiverSize": 5,
     "reloadSpeed": 2.98
   },
   {
@@ -1217,10 +1217,10 @@
     "actionMovementSpeed": "Attack: -35%  Reload: -50%",
     "reach": null,
     "uniqueName": "Pestilence",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Recurve_Bow#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": 6,
+    "quiverSize": 6,
     "reloadSpeed": 2.98
   },
   {
@@ -1268,10 +1268,10 @@
     "actionMovementSpeed": "Attack: -25%  Reload: -40%",
     "reach": null,
     "uniqueName": "Elven Bow of Truth",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Survival_Bow#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": 7,
+    "quiverSize": 7,
     "reloadSpeed": 2.98
   },
   {
@@ -1322,7 +1322,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": 3.47
   },
   {
@@ -1373,7 +1373,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": 7.48
   },
   {
@@ -1424,7 +1424,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1475,7 +1475,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/90%/70%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1526,7 +1526,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1577,7 +1577,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%/60%",
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1628,7 +1628,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1676,10 +1676,10 @@
     "actionMovementSpeed": "Blockreaction: -3%  Guard: -35%",
     "reach": "Height: 39.81  Width: 31.8",
     "uniqueName": "Aegis",
-    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Heater_Shield#Unique",
+    "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Shields-0",
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1730,7 +1730,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   },
   {
@@ -1781,7 +1781,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "clipSize": null,
+    "quiverSize": null,
     "reloadSpeed": null
   }
 ]

@@ -17,6 +17,12 @@ namespace SmartAndSmaterAPI.Models
         [Column(TypeName = "varchar(1024)"), Required]
         public string ImageLocation { get; set; }
 
+        [Required, JsonConverter(typeof(JsonStringEnumConverter))]
+        public WeaponType WeaponType { get; set; }
+
+        [Required, JsonConverter(typeof(JsonStringEnumConverter))]
+        public SpecificWeaponType SpecificWeaponType { get; set; }
+
         //damages, all required
         [Required]
         public float BlackDamageMin { get; set; }
@@ -143,7 +149,7 @@ namespace SmartAndSmaterAPI.Models
         public string? SweetSpot { get; set; }
 
         //for bows only
-        public int? ClipSize { get; set; }
+        public int? QuiverSize { get; set; }
 
         public float? ReloadSpeed { get; set; }
 
@@ -159,5 +165,28 @@ namespace SmartAndSmaterAPI.Models
         GroundDeployment
 
     }
+
+    public enum WeaponType
+    {
+        Bow,
+        Shield,
+        Magic,
+        Melee
+    }
+
+    public enum SpecificWeaponType
+    {
+        Axe,
+        Bow,
+        Crossbow,
+        Dagger,
+        Polearm,
+        Shield,
+        Sword,
+        Mace,
+        Magic
+
+    }
+
 
 }
