@@ -1,9 +1,10 @@
 import React from 'react'
-import { MeleeWeapon, MeleeWeaponList, SpecificWeaponType } from '../../PureTSX/WeaponAndArmorTypes'
+import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 import MeleeWeaponRecord from '../Records/MeleeWeaponRecord'
 
 type Props = {
-    weaponList: MeleeWeaponList}
+    weaponList: Weapon[]
+}
 
 export default function MeleeTable(props: Props) {
   return (
@@ -26,7 +27,7 @@ export default function MeleeTable(props: Props) {
         <tbody>
         {
         //map all swords
-        props.weaponList?.map((weapon: MeleeWeapon) => {
+        props.weaponList?.map((weapon: Weapon) => {
 
             return <MeleeWeaponRecord weapon={weapon} key={weapon.name}/>
         })}                    

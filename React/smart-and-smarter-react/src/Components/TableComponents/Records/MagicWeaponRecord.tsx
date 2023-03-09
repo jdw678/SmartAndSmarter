@@ -6,12 +6,12 @@ import WeaponClasses from '../Cells/ClassesCell'
 import WeaponDamage from '../Cells/DamageCell'
 import '../../../CSS/CompleteTable.css';
 import TableImage from '../Cells/ImageCell'
-import { MagicWeapon } from '../../PureTSX/WeaponAndArmorTypes'
 import { ParsePercentSplit, ParseSpaceSplit } from './MeleeWeaponRecord'
+import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 
 
 type Props = {
-  weapon: MagicWeapon
+  weapon: Weapon
 
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { WikiUrl } from '../../../App';
-import { Bow, Hand, MagicWeapon, MeleeWeapon, Sheild } from '../../PureTSX/WeaponAndArmorTypes';
+import { Hand, Weapon } from '../../PureTSX/WeaponAndArmorTypes';
 
 type Props = {
-    weapon: Bow | Sheild | MeleeWeapon | MagicWeapon
+    weapon: Weapon
 }
 
 export default function ImageCell(props: Props) {

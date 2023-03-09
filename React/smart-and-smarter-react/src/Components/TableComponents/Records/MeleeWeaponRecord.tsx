@@ -6,11 +6,11 @@ import WeaponClasses from '../Cells/ClassesCell'
 import WeaponDamage from '../Cells/DamageCell'
 import '../../../CSS/CompleteTable.css';
 import TableImage from '../Cells/ImageCell'
-import { MeleeWeapon } from '../../PureTSX/WeaponAndArmorTypes'
+import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 
 
 type Props = {
-  weapon: MeleeWeapon
+  weapon: Weapon
 
 }
 

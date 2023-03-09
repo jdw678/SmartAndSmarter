@@ -1,9 +1,9 @@
 import React from 'react'
-import { MagicWeapon, MagicWeaponList } from '../../PureTSX/WeaponAndArmorTypes'
+import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 import MagicWeaponRecord from '../Records/MagicWeaponRecord'
 
 type Props = {
-    weaponList: MagicWeaponList
+    weaponList: Weapon[]
 }
 
 export default function MagicTable(props: Props) {
@@ -25,7 +25,7 @@ export default function MagicTable(props: Props) {
             </tr>
         </thead>
         <tbody>
-        {props.weaponList?.map((weapon: MagicWeapon) => {
+        {props.weaponList?.map((weapon: Weapon) => {
             return <MagicWeaponRecord weapon={weapon} key={weapon.name}/>
         })}                    
         </tbody>

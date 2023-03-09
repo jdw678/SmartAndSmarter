@@ -1,9 +1,9 @@
 import React from 'react'
-import { Bow, BowList } from '../../PureTSX/WeaponAndArmorTypes'
+import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 import BowRecord from '../Records/BowRecord'
 
 type Props = {
-    weaponList: BowList
+    weaponList: Weapon[]
 }
 
 export default function BowTable(props: Props) {
@@ -23,7 +23,7 @@ export default function BowTable(props: Props) {
             </tr>
         </thead>
         <tbody>
-        {props.weaponList?.map((weapon: Bow) => {
+        {props.weaponList?.map((weapon: Weapon) => {
             return <BowRecord weapon={weapon} key={weapon.name}/>
         })}                    
         </tbody>

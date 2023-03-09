@@ -4,7 +4,7 @@ import Temptop from './Components/Temptop';
 import SelectionBox from './Components/SelectionBox';
 import { ApiCalls} from './Components/PureTSX/ApiCalls';
 import CompleteTable from './Components/CompleteTable';
-import { ArmorList, WeaponList } from './Components/PureTSX/WeaponAndArmorTypes';
+import { ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/WeaponAndArmorTypes';
 
 
 
@@ -32,9 +32,9 @@ function App() {
       if(devMode)
       {
 
-          setArmorList(api.GetAllArmorsNoDB());
-          setArmorLoading(false);
-          setWeaponList(api.GetAllWeaponsNoDB());
+          //setArmorList(api.GetAllArmorsNoDB());
+          //setArmorLoading(false);
+          parseAndSetWeaponList(api.GetAllWeaponsNoDB());
           setWeaponLoading(false);
       }
       //call db
@@ -56,7 +56,7 @@ function App() {
           var weaponsCall = api.GetAllWeapons();
           weaponsCall.then((response) => {
             if(debug) console.log(response);
-            setWeaponList(response);
+            parseAndSetWeaponList(response.data);
             setWeaponLoading(false);
           })
           .catch((response) =>
@@ -67,6 +67,21 @@ function App() {
 
       }
   }, [])
+
+  function parseAndSetWeaponList(weaponList: Weapon[])
+  {
+    var weaponListParsed: WeaponList;
+    
+    weaponList.forEach((weapon: Weapon) =>
+    {
+      if(weapon.weaponType == WeaponType.Melee) weaponListParsed.MeleeWeapons.push(weapon);
+      if(weapon.weaponType == WeaponType.Magic) weaponListParsed.MagicWeapons.push(weapon);
+      if(weapon.weaponType == WeaponType.Bow) weaponListParsed.Bows.push(weapon);
+      if(weapon.weaponType == WeaponType.Shield) weaponListParsed.Shields.push(weapon);
+      
+    })
+
+  }
 
   return (
     <div className="App">

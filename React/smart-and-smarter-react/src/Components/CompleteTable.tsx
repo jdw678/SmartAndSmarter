@@ -27,7 +27,7 @@ export default function WeaponTable(props: Props) {
             
             <h1>Shields</h1>
             <hr />
-            <ShieldTable weaponList={props.weaponList.Sheilds}/>
+            <ShieldTable weaponList={props.weaponList.Shields}/>
             
             <h1>Bows</h1>
             <hr />

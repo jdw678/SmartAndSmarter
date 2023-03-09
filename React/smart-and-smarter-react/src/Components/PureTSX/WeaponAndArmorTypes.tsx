@@ -14,91 +14,14 @@ export enum Hand {
     Both = "Both"
 }
 
-export type Bow = {
-    id: bigint,
-    name: string,
-    weaponType: WeaponType,
-    imageLocation: string,
-    blackDamageMin: number,
-    blackDamageMax: number,
-    greyDamageMin: number,
-    greyDamageMax: number,
-    whiteDamageMin: number,
-    whiteDamageMax: number,
-    greenDamageMin: number,
-    greenDamageMax: number,
-    blueDamageMin: number,
-    blueDamageMax: number,
-    purpleDamageMin: number,
-    purpleDamageMax: number,
-    orangeDamageMin: number,
-    orangeDamageMax: number,
-    goldDamageMin: number,
-    goldDamageMax: number,
-    barbarianCanUse: boolean,
-    fighterCanUse: boolean,
-    clericCanUse: boolean,
-    rangerCanUse: boolean,
-    wizardCanUse: boolean,
-    rogueCanUse: boolean,
-    movementSpeedWhileEquiped?: number,
-    actionMovementSpeed?: string,
-    uniqueName?: string,
-    uniqueLink?: string,
-    hand?: Hand,
-    specificWeaponType: SpecificWeaponType
-    
-    quiverSize?: bigint,
-    reloadSpeed?: number,
-    attack1Speed: number,
-    attack1Type: AttackType,
-    attack1DamageMultiplier: number
-}
+export type Weapon = {
 
-export type Sheild = {
-    id: bigint,
-    name: string,
-    weaponType: WeaponType,
-    imageLocation: string,
-    blackDamageMin: number,
-    blackDamageMax: number,
-    greyDamageMin: number,
-    greyDamageMax: number,
-    whiteDamageMin: number,
-    whiteDamageMax: number,
-    greenDamageMin: number,
-    greenDamageMax: number,
-    blueDamageMin: number,
-    blueDamageMax: number,
-    purpleDamageMin: number,
-    purpleDamageMax: number,
-    orangeDamageMin: number,
-    orangeDamageMax: number,
-    goldDamageMin: number,
-    goldDamageMax: number,
-    barbarianCanUse: boolean,
-    fighterCanUse: boolean,
-    clericCanUse: boolean,
-    rangerCanUse: boolean,
-    wizardCanUse: boolean,
-    rogueCanUse: boolean,
-    movementSpeedWhileEquiped?: number,
-    actionMovementSpeed?: string,
-    uniqueName?: string,
-    uniqueLink?: string,
-    hand?: Hand,
-    specificWeaponType: SpecificWeaponType
-    
-    reach?: string,
-    attack1Type: AttackType,
-    attack2Type?: AttackType,
-}
 
-export type MeleeWeapon = {
     id: bigint,
     name: string,
-    weaponType: WeaponType,
     imageLocation: string,
+    weaponType: WeaponType,
+    specificWeaponType: SpecificWeaponType,
     blackDamageMin: number,
     blackDamageMax: number,
     greyDamageMin: number,
@@ -115,21 +38,6 @@ export type MeleeWeapon = {
     orangeDamageMax: number,
     goldDamageMin: number,
     goldDamageMax: number,
-    barbarianCanUse: boolean,
-    fighterCanUse: boolean,
-    clericCanUse: boolean,
-    rangerCanUse: boolean,
-    wizardCanUse: boolean,
-    rogueCanUse: boolean,
-    movementSpeedWhileEquiped?: number,
-    actionMovementSpeed?: string,
-    uniqueName?: string,
-    uniqueLink?: string,
-    hand?: Hand,
-    specificWeaponType: SpecificWeaponType
-    
-    reach?: string,
-    sweetSpot?: string,
     attack1Speed: number,
     attack2Speed?: number,
     attack3Speed?: number,
@@ -145,29 +53,6 @@ export type MeleeWeapon = {
     attack3DamageMultiplier?: number,
     attack4DamageMultiplier?: number,
     attack5DamageMultiplier?: number,
-}
-
-export type MagicWeapon = {
-    id: bigint,
-    name: string,
-    weaponType: WeaponType,
-    imageLocation: string,
-    blackDamageMin: number,
-    blackDamageMax: number,
-    greyDamageMin: number,
-    greyDamageMax: number,
-    whiteDamageMin: number,
-    whiteDamageMax: number,
-    greenDamageMin: number,
-    greenDamageMax: number,
-    blueDamageMin: number,
-    blueDamageMax: number,
-    purpleDamageMin: number,
-    purpleDamageMax: number,
-    orangeDamageMin: number,
-    orangeDamageMax: number,
-    goldDamageMin: number,
-    goldDamageMax: number,
     barbarianCanUse: boolean,
     fighterCanUse: boolean,
     clericCanUse: boolean,
@@ -176,25 +61,21 @@ export type MagicWeapon = {
     rogueCanUse: boolean,
     movementSpeedWhileEquiped?: number,
     actionMovementSpeed?: string,
+    reach?: string,
     uniqueName?: string,
     uniqueLink?: string,
     hand?: Hand,
-    specificWeaponType: SpecificWeaponType
-
-    
-    attack1Speed: number,
-    attack2Speed?: number,
-    attack3Speed?: number,
-    attack1Type: AttackType,
-    attack2Type?: AttackType,
-    attack3Type?: AttackType,
-    attack1DamageMultiplier: number,
-    attack2DamageMultiplier?: number,
-    attack3DamageMultiplier?: number,
     sweetSpot?: string,
-    reach: string
+    quiverSize?: bigint,
+    reloadSpeed?: number
 }
 
+export type WeaponList = {
+    MeleeWeapons: Weapon[],
+    MagicWeapons: Weapon[],
+    Shields: Weapon[],
+    Bows: Weapon[]
+}
 
 
 
@@ -228,18 +109,6 @@ export type Armor = {
     stats: string
 }
 
-export type MeleeWeaponList = MeleeWeapon[];
-export type MagicWeaponList = MagicWeapon[];
-export type SheildList = Sheild[];
-export type BowList = Bow[];
-
-export type WeaponList = {
-    MeleeWeapons: MeleeWeaponList,
-    MagicWeapons: MagicWeaponList,
-    Sheilds: SheildList,
-    Bows: BowList
-}
-
 export type ArmorList = Armor[];
 
 
@@ -249,10 +118,10 @@ export enum ItemClass {
 }
 
 export enum WeaponType {
-    Bow,
-    Magic,
-    Melee,
-    Sheild
+    Bow = "Bow",
+    Magic = "Magic",
+    Melee = "Melee",
+    Shield = "Shield"
 }
 
 //all possible gear types
@@ -292,3 +161,4 @@ export enum SpecificWeaponType
     Magical = "Magical",
     Shield = "Shield"
 }
+

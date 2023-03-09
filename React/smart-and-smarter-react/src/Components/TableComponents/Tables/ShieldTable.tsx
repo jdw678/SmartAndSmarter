@@ -1,9 +1,9 @@
 import React from 'react'
-import { Sheild, SheildList } from '../../PureTSX/WeaponAndArmorTypes'
+import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 import SheildRecord from '../Records/ShieldRecord'
 
 type Props = {
-    weaponList: SheildList
+    weaponList: Weapon[]
 }
 
 export default function ShieldTable(props: Props) {
@@ -23,7 +23,7 @@ export default function ShieldTable(props: Props) {
                     </tr>
                 </thead>
                 <tbody>
-                {props.weaponList?.map((weapon: Sheild) => {
+                {props.weaponList?.map((weapon: Weapon) => {
                     return <SheildRecord weapon={weapon} key={weapon.name}/>
                 })}                    
                 </tbody>
