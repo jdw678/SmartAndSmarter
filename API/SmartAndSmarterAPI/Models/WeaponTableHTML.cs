@@ -161,6 +161,111 @@ namespace SmartAndSmaterAPI.Models
                     weapon.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
 
 
+                    #region SpecificWeaponType
+                    string[] swords =
+                    {
+                        "Arming Sword",
+                        "Falchion",
+                        "Longsword",
+                        "Rapier",
+                        "Short Sword",
+                        "Zweihander"
+                    };
+
+                    string[] maces =
+                    {
+                        "Flanged Mace",
+                        "Morning Star",
+                        "Quarterstaff",
+                        "War Maul"
+                    };
+
+                    string[] daggers =
+                    {
+                        "Castillon Dagger",
+                        "Kris Dagger",
+                        "Rondel Dagger",
+                        "Stiletto Dagger"
+                    };
+
+                    string[] polearms =
+                    {
+                        "Bardiche",
+                        "Halberd",
+                        "Spear"
+                    };
+
+                    string[] axes =
+                    {
+                        "Battle Axe",
+                        "Double Axe",
+                        "Felling Axe",
+                        "Hatchet",
+                        "Horsemans Axe"
+                    };
+
+                    string[] bowStrings =
+                    {
+                        "Longbow",
+                        "Recurve Bow",
+                        "Survival Bow"
+                    };
+
+                    string[] crossbows =
+                    {
+                        "Crossbow",
+                        "Windlass Crossbow"
+                    };
+
+                    string[] magicalWeapons =
+                    {
+                        "Crystal Ball",
+                        "Crystal Sword",
+                        "Spellbook",
+                        "Wizard Staff"
+                    };
+
+                    string[] shields =
+                    {
+                        "Buckler",
+                        "Heater Shield",
+                        "Pavise",
+                        "Round Shield"
+                    };
+
+                    string[][] itemsArrays =
+                    {
+                        swords,
+                        maces,
+                        daggers,
+                        polearms,
+                        axes,
+                        magicalWeapons,
+                        bowStrings,
+                        crossbows,
+                        shields
+                    };
+
+
+                    void CheckItem(string[] items, SpecificWeaponType type)
+                    {
+
+                        foreach (string item in items)
+                            if (weapon.Name.Equals(item))
+                                weapon.SpecificWeaponType = type;
+                    }
+
+                    CheckItem(swords, SpecificWeaponType.Sword);
+                    CheckItem(maces, SpecificWeaponType.Mace);
+                    CheckItem(daggers, SpecificWeaponType.Dagger);
+                    CheckItem(polearms, SpecificWeaponType.Polearm);
+                    CheckItem(axes, SpecificWeaponType.Axe);
+                    CheckItem(magicalWeapons, SpecificWeaponType.Magic);
+                    CheckItem(bowStrings, SpecificWeaponType.Bow);
+                    CheckItem(crossbows, SpecificWeaponType.Crossbow);
+                    CheckItem(shields, SpecificWeaponType.Shield);
+
+                    #endregion
 
                     //class cell of the table, can have multiple classes, all wrapped in individual <a> tags
                     classes.SelectNodes("a").ToList().ForEach(a =>
