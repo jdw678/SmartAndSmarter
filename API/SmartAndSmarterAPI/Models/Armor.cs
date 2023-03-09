@@ -1,12 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
-using SmartAndSmaterAPI.Models.WeaponInterfaces;
 
 namespace SmartAndSmaterAPI.Models
 {
-    public class Armor : IIdentifiable
+    public class Armor
     {
         //necissary stuff
         [Key]
@@ -17,9 +15,6 @@ namespace SmartAndSmaterAPI.Models
 
         [Column(TypeName = "varchar(1024)"), Required]
         public string ImageLocation { get; set; }
-
-        [JsonConverter(typeof(JsonStringEnumConverter)), Required]
-        public ArmorType armorType { get; set; }
 
 
         //armors, all required
@@ -87,24 +82,5 @@ namespace SmartAndSmaterAPI.Models
 
         [Column(TypeName = "varchar(1024)")]
         public string? Stats { get; set; }
-
-        public int GetId()
-        {
-            return Id;
-        }
-
-        public void SetId(int id)
-        {
-            Id = id;
-        }
-
-    }
-    public enum ArmorType
-    {
-        Chest,
-        Feet,
-        Hands,
-        Head,
-        Legs
     }
 }
