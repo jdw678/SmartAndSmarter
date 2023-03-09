@@ -70,7 +70,12 @@ function App() {
 
   function parseAndSetWeaponList(weaponList: Weapon[])
   {
-    var weaponListParsed: WeaponList;
+    var weaponListParsed: WeaponList = {
+      MeleeWeapons: [],
+      MagicWeapons: [],
+      Bows: [],
+      Shields: []
+    };
     
     weaponList.forEach((weapon: Weapon) =>
     {
@@ -80,7 +85,8 @@ function App() {
       if(weapon.weaponType == WeaponType.Shield) weaponListParsed.Shields.push(weapon);
       
     })
-
+    
+    setWeaponList(weaponListParsed);
   }
 
   return (

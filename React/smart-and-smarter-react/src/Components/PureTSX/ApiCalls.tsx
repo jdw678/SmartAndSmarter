@@ -24,7 +24,7 @@ export class ApiCalls {
 
     public async GetAllArmors(): Promise<AxiosResponse>
     {   
-        return await axios.get<ArmorList>(this.url + "Weapon/GetAllArmors")
+        return await axios.get<ArmorList>(this.url + "Armor/GetAllArmors")
         
     }
 

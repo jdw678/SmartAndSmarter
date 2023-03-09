@@ -13,31 +13,24 @@ type Props = {
 export default function AttackTypeCell(props: Props) {
     function BuildStrings()
     {
-        var strings: string[] = [];
+        var str = props.type1.toString();
 
-        strings.push(props.type1.toString());
+        function AddString(strToAdd: string)
+        {
+            str += "/" + strToAdd;
+        }
 
-        if(props.type2) strings.push(props.type2.toString());
-        if(props.type3) strings.push(props.type3.toString());
-        if(props.type4) strings.push(props.type4.toString());
-        if(props.type5) strings.push(props.type5.toString());
-        
-        return strings;
+        if(props.type2) AddString(props.type2.toString());
+        if(props.type3) AddString(props.type3.toString());
+        if(props.type4) AddString(props.type4.toString());
+        if(props.type5) AddString(props.type5.toString());
+        return str;
     }
 
-    const strings = BuildStrings();
+    const str = BuildStrings();
   return (
     <>
-        {strings[0]}
-        {
-            strings.map((str, index) =>
-            {
-                if(index !== 0)
-                    return(
-                        <>/{str}</>
-                    )
-            })
-        }
+        {str}
     </>
   )
 }

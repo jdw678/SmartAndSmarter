@@ -36,13 +36,12 @@ export function ParsePercentSplit(str: string | undefined)
     if(str == undefined) return;
 
     var split = str.split("% ");
-
     return (
         <>{split.map((str: string) => {
             if(!(str.charAt(str.length - 1) == "%"))
             {
 
-                return <>{str}%<br/><br/></>
+                return <div key={str}>{str}%<br/><br/></div>
             }
             return str
         })}
@@ -93,18 +92,18 @@ export default function MeleeWeaponRecord(props: Props) {
             <td key={props.weapon.name + " movement speed"}>
                 {props.weapon.movementSpeedWhileEquiped}
             </td>
-            <td>
+            <td key={props.weapon.name + " combo"}>
                 <WeaponAttackType type1={props.weapon.attack1Type} type2={props.weapon.attack2Type} type3={props.weapon.attack3Type} type4={props.weapon.attack4Type} type5={props.weapon.attack5Type}/>
                 <br />
                 <WeaponADM ADM1={props.weapon.attack1DamageMultiplier} ADM2={props.weapon.attack2DamageMultiplier} ADM3={props.weapon.attack3DamageMultiplier} ADM4={props.weapon.attack4DamageMultiplier} ADM5={props.weapon.attack5DamageMultiplier}/>
             </td>
-            <td> 
+            <td key={props.weapon.name + " attack speed"}> 
                 <WeaponAttackSpeed attack1Speed={props.weapon.attack1Speed} attack2Speed={props.weapon.attack2Speed} attack3Speed={props.weapon.attack3Speed} attack4Speed={props.weapon.attack4Speed} attack5Speed={props.weapon.attack5Speed} />
             </td>
-            <td> {props.weapon.sweetSpot} </td>
-            <td> {ParseSpaceSplit(props.weapon.reach)} </td>
-            <td> {ParsePercentSplit(props.weapon.actionMovementSpeed)} </td>
-            <td> 
+            <td key={props.weapon.name + " sweet spot"}> {props.weapon.sweetSpot} </td>
+            <td key={props.weapon.name + " reach"}> {ParseSpaceSplit(props.weapon.reach)} </td>
+            <td key={props.weapon.name + " action movement speed"}> {ParsePercentSplit(props.weapon.actionMovementSpeed)} </td>
+            <td key={props.weapon.name + " unique"}> 
             {
                 !props.weapon.uniqueName ? "None"
                 : <a href={props.weapon.uniqueLink} title={props.weapon.name}>{props.weapon.uniqueName}</a>
