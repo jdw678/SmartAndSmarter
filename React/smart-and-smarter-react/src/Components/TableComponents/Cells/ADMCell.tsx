@@ -14,7 +14,7 @@ export default function ADMCell(props: Props) {
 
     function BuildStrings()
     {
-        var str = props.ADM1.toString();
+        var str = props.ADM1.toString() + "%";
 
         function AddString(strToAdd: string)
         {

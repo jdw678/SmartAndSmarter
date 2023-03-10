@@ -113,8 +113,8 @@ export type ArmorList = Armor[];
 
 
 export enum ItemClass {
-    Weapon,
-    Armor
+    Weapon = "Weapon",
+    Armor = "Armor"
 }
 
 export enum WeaponType {

@@ -11,7 +11,7 @@ import { ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/
 export const WikiUrl = "https://darkanddarker.wiki.spellsandguns.com/";
 
 function App() {
-  const devMode = false;
+  const devMode = true;
   const debug = true;
 
   
@@ -24,7 +24,9 @@ function App() {
   
   //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
   const [isWeaponLoading, setWeaponLoading] = useState(true);
-  const [weaponList, setWeaponList] = useState<WeaponList>();
+  const [weaponList, setWeaponList] = useState<Weapon[]>();
+
+  const [weaponListParsed, setWeaponListParsed] = useState<WeaponList>();
 
     //api calls
     useEffect(() => {
@@ -32,8 +34,8 @@ function App() {
       if(devMode)
       {
 
-          //setArmorList(api.GetAllArmorsNoDB());
-          //setArmorLoading(false);
+          setArmorList(api.GetAllArmorsNoDB());
+          setArmorLoading(false);
           parseAndSetWeaponList(api.GetAllWeaponsNoDB());
           setWeaponLoading(false);
       }
@@ -57,6 +59,7 @@ function App() {
           weaponsCall.then((response) => {
             if(debug) console.log(response);
             parseAndSetWeaponList(response.data);
+            setWeaponList(response.data);
             setWeaponLoading(false);
           })
           .catch((response) =>
@@ -79,23 +82,23 @@ function App() {
     
     weaponList.forEach((weapon: Weapon) =>
     {
-      if(weapon.weaponType == WeaponType.Melee) weaponListParsed.MeleeWeapons.push(weapon);
-      if(weapon.weaponType == WeaponType.Magic) weaponListParsed.MagicWeapons.push(weapon);
-      if(weapon.weaponType == WeaponType.Bow) weaponListParsed.Bows.push(weapon);
-      if(weapon.weaponType == WeaponType.Shield) weaponListParsed.Shields.push(weapon);
+      if(weapon.weaponType === WeaponType.Melee) weaponListParsed.MeleeWeapons.push(weapon);
+      if(weapon.weaponType === WeaponType.Magic) weaponListParsed.MagicWeapons.push(weapon);
+      if(weapon.weaponType === WeaponType.Bow) weaponListParsed.Bows.push(weapon);
+      if(weapon.weaponType === WeaponType.Shield) weaponListParsed.Shields.push(weapon);
       
     })
     
-    setWeaponList(weaponListParsed);
+    setWeaponListParsed(weaponListParsed);
   }
 
   return (
     <div className="App">
       <header className="App-header">
         
-        {!isWeaponLoading && !isArmorLoading ? <SelectionBox armorList={armorList} weaponList={weaponList}/> : null}
+        {!isWeaponLoading && !isArmorLoading && weaponListParsed && armorList ? <SelectionBox armorList={armorList} weaponList={weaponListParsed}/> : null}
         <Temptop/>
-        {(!isWeaponLoading && weaponList) ? <CompleteTable weaponList={weaponList}/> : null }
+        {(!isWeaponLoading && weaponListParsed) ? <CompleteTable weaponList={weaponListParsed}/> : null }
         
       </header>
     </div>

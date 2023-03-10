@@ -1,44 +1,79 @@
-import React from 'react';
-import { Armor, ArmorList, ArmorType, ItemClass, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
+import React, { useState } from 'react';
+import { Armor, ArmorList, ArmorType, ItemClass, SpecificWeaponType, Weapon, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
 import '../../CSS/GearPopUp.css';
+import GearPopUpItem from './GearPopUpItem';
+import GearPopUpCondensedItem from './GearPopUpCondensedItem';
+import Arrow from '../../images/Arrow.png';
 
 //data expected
+//possibly null if item has not been set yet, but returnData must always be not null
 export type GearPopUpData = {
-    itemClass: ItemClass,
-    itemType: ArmorType | WeaponType,
-    item?: Armor,
-    returnData: (data: GearPopUpData) => void,
+    itemClass: ItemClass
+    item?: Armor | Weapon,
+    returnData: (data?: GearPopUpData) => void
 }
 
 
 type Props = {
     data: GearPopUpData,
     togglePopUp: (state: boolean) => void,
-    weaponList?: WeaponList,
-    armorList?: ArmorList
+    weaponList: WeaponList,
+    armorList: ArmorList
 }
 
 export default function GearPopUp(props: Props) {
 
-  if(props.data.itemType == null) console.log("Error displaying gear data. GearType not passed.");
-
-  //var weaponList: [Weapon];
-  var armorList: [Armor];
-
-  if(props.data.itemClass == ItemClass.Weapon)
+  
+  //check if weapon is of specific weapon type passed
+  function isWeaponType(weapon: Weapon, type: SpecificWeaponType)
   {
-    if(props.weaponList == null)
+    if(weapon.specificWeaponType === type) return weapon;
+  }
+
+  //create meleeprop obj based on string passed and specific weapon type passed
+  function CreateMeleeProp(name: string, type: SpecificWeaponType)
+  {
+    return(
     {
-      console.log("Weapons list was empty.");
-    }
+      name: name,
+      itemList: props.weaponList.MeleeWeapons.filter(weapon => isWeaponType(weapon, type)),
+      returnData: props.data.returnData,
+      itemClass: props.data.itemClass
+    })
+  }
+
+  //create array of meleeprop objs to be passed to the condenseditem for melee weapons
+  const meleeProps =
+  [
+    CreateMeleeProp('Axes', SpecificWeaponType.Axe),
+    CreateMeleeProp('Maces', SpecificWeaponType.Mace),
+    CreateMeleeProp('Daggers', SpecificWeaponType.Dagger),
+    CreateMeleeProp('Swords', SpecificWeaponType.Sword),
+    CreateMeleeProp('Polearms', SpecificWeaponType.Polearm),
+    
+  ]
+
+  function ReturnDataAndClose(data?: GearPopUpData)
+  {
+    props.data.returnData(data);
+    props.togglePopUp(false);
+
   }
 
   return (
-    <div className='Background' onClick={() => props.togglePopUp(false)}>
+    <div className='Background'>
         <div className='MainContainer'>
-          kjhalksjdh
-            <ul>
-            </ul>
+          {props.data.itemClass == ItemClass.Weapon ? 
+          <>
+            <div className='GearDropDownContainer'>
+              <h1 className='GearDropDownHeader GearFont' onClick={() => ReturnDataAndClose()}>None</h1>
+            </div>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Bows' itemList={props.weaponList.Bows}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Shields' itemList={props.weaponList.Shields}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Melee Weapons' children={meleeProps}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Magic Weapons' itemList={props.weaponList.MagicWeapons}/>
+          </>
+          : null}
         </div>
     </div>
   )

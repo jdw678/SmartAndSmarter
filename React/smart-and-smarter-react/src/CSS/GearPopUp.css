@@ -8,15 +8,105 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+:root {
+    --dropdown-background-color: rgb(77, 77, 77);
+}
+
 .MainContainer {
-    width: 50%;
-    height: 50%;
     left: 25vw;
-    margin-top: 25vh;
+    top: 20vh;
+    width: 25%;
+    min-width: 200px;
+    max-width: 700px;
     position: absolute;
-    background-color: rgb(87, 87, 87);
+    background-color: rgba(20, 20, 20, 0.836);
+    box-shadow: 0 0px 8px 6px var(--dropdown-background-color);
     color: black;
     text-align: center;
-    align-items: center;
-    border-radius: 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1%;
+    color: rgb(var(--text-orange));
+    text-align: left;
+    
+}
+
+
+.GearDropDownContainer{
+    display: grid;
+    width: 100%;
+    cursor: var(--cursor-blue);
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+/*the list title that shows the list when hovered over*/
+.GearDropDownHeader{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-align: left;
+    color: var(--text-orange);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ArrowImage {
+    width: 10px;
+    padding-top: 10px;
+    justify-self:flex-end;
+    
+}
+
+/*the ul list of drop down items*/
+.GearDropDownList{
+    position: absolute;
+    left: 90%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--text-orange);
+    background-color: rgba(20, 20, 20, 0.836) ;
+    box-shadow: 0 0px 10px 6px var(--dropdown-background-color);
+    display: none;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+.GearDropDownList ul {
+    left: 90%;
+}
+
+.GearDropDownContainer:hover{
+    background-color: var(--dropdown-background-color);
+}
+
+
+.GearDropDownHeader:hover + .GearDropDownList, .GearDropDownList:hover{
+    display: flex;
+}
+
+
+.GearLI {
+    margin-bottom: 4%;
+    padding: 2%;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.GearLI:hover{
+    background-color: var(--dropdown-background-color);
+}
+
+.GearFont {
+    font-size: 30px;
+    font-weight: 400;
 }
