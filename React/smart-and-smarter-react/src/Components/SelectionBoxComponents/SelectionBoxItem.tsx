@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArmorType, ItemClass } from '../PureTSX/ApiCalls';
+import { ArmorType, ItemClass, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
 import GearPopOut, { GearPopUpData } from './GearPopUp';
 
 type Props = {
@@ -7,10 +7,10 @@ type Props = {
     style: React.CSSProperties,
     text: string,
     useOverlay: boolean,
-    armorType: ArmorType,
+    itemType?: ArmorType,
     itemClass: ItemClass,
     
-    setPopUpActive: (gearData: GearPopUpData) => void
+    setPopUpActive: (gearData?: GearPopUpData) => void
 }
 
 export default function SelectionBoxItem(props: Props) {
@@ -19,23 +19,25 @@ export default function SelectionBoxItem(props: Props) {
     const className = props.useOverlay ? "overlay" : "";
 
     //state to hold gear pop up data
-    const [gearData, setGearData] = useState<GearPopUpData>({itemClass: props.itemClass, itemType: props.armorType, returnData: saveUpdatedGearData});
+    const [gearData, setGearData] = useState<GearPopUpData>();
 
     //toggle the GearPopUp component and pass it any stored data
     function togglePopUp() {
-        props.setPopUpActive(gearData);
+        props.setPopUpActive({...gearData, itemClass: props.itemClass, returnData: saveUpdatedGearData});
     }
 
     //save data passed from the GearPopUp component
-    function saveUpdatedGearData(data: GearPopUpData) {
+    function saveUpdatedGearData(data?: GearPopUpData) {
         setGearData(data);
+        console.log("Data Got!");
+        console.log(data);
     }
 
 
   return (
     <>
     <button onClick={togglePopUp}>
-        <img src={props.img} alt="9" style={props.style}/>
+        <img src={gearData ? gearData.item?.imageLocation : props.img} alt="9" style={props.style}/>
         <div className={className}>
             <span>{props.text}</span>
         </div>

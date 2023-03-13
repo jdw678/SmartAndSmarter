@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
-import WeaponTable from './Components/WeaponTable';
 import Temptop from './Components/Temptop';
-import Itembox from './Components/ItemBox'
 import SelectionBox from './Components/SelectionBox';
-import Testingbutton from './Components/Testingbutton';
-import { ApiCalls, ArmorList, WeaponList } from './Components/PureTSX/ApiCalls';
+import { ApiCalls} from './Components/PureTSX/ApiCalls';
+import CompleteTable from './Components/CompleteTable';
+import { ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/WeaponAndArmorTypes';
 
 
-//TODO: Foundation is layed for GearPopUp. Pass it the proper lists as props and use them.
+
+export const WikiUrl = "https://darkanddarker.wiki.spellsandguns.com/";
 
 function App() {
   const devMode = true;
+  const debug = true;
 
   
   const api = new ApiCalls();
@@ -24,7 +24,9 @@ function App() {
   
   //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
   const [isWeaponLoading, setWeaponLoading] = useState(true);
-  const [weaponList, setWeaponList] = useState<WeaponList>();
+  const [weaponList, setWeaponList] = useState<Weapon[]>();
+
+  const [weaponListParsed, setWeaponListParsed] = useState<WeaponList>();
 
     //api calls
     useEffect(() => {
@@ -34,7 +36,7 @@ function App() {
 
           setArmorList(api.GetAllArmorsNoDB());
           setArmorLoading(false);
-          setWeaponList(api.GetAllWeaponsNoDB());
+          parseAndSetWeaponList(api.GetAllWeaponsNoDB());
           setWeaponLoading(false);
       }
       //call db
@@ -43,7 +45,7 @@ function App() {
           //get all armors
           var call = api.GetAllArmors();
           call.then((response) => {
-            if(devMode) console.log(response.data);
+            if(debug) console.log(response.data);
             setArmorList(response.data);
             setArmorLoading(false);
           })
@@ -53,9 +55,10 @@ function App() {
           })
 
           //get all weapons    
-          call = api.GetAllWeapons();
-          call.then((response) => {
-            if(devMode) console.log(response.data);
+          var weaponsCall = api.GetAllWeapons();
+          weaponsCall.then((response) => {
+            if(debug) console.log(response);
+            parseAndSetWeaponList(response.data);
             setWeaponList(response.data);
             setWeaponLoading(false);
           })
@@ -68,13 +71,34 @@ function App() {
       }
   }, [])
 
+  function parseAndSetWeaponList(weaponList: Weapon[])
+  {
+    var weaponListParsed: WeaponList = {
+      MeleeWeapons: [],
+      MagicWeapons: [],
+      Bows: [],
+      Shields: []
+    };
+    
+    weaponList.forEach((weapon: Weapon) =>
+    {
+      if(weapon.weaponType === WeaponType.Melee) weaponListParsed.MeleeWeapons.push(weapon);
+      if(weapon.weaponType === WeaponType.Magic) weaponListParsed.MagicWeapons.push(weapon);
+      if(weapon.weaponType === WeaponType.Bow) weaponListParsed.Bows.push(weapon);
+      if(weapon.weaponType === WeaponType.Shield) weaponListParsed.Shields.push(weapon);
+      
+    })
+    
+    setWeaponListParsed(weaponListParsed);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         
-        {!isWeaponLoading && !isArmorLoading ? <SelectionBox armorList={armorList} weaponList={weaponList}/> : null}
+        {!isWeaponLoading && !isArmorLoading && weaponListParsed && armorList ? <SelectionBox armorList={armorList} weaponList={weaponListParsed}/> : null}
         <Temptop/>
-        {!isArmorLoading ? <WeaponTable weaponList={weaponList}/> : null }
+        {(!isWeaponLoading && weaponListParsed) ? <CompleteTable weaponList={weaponListParsed}/> : null }
         
       </header>
     </div>

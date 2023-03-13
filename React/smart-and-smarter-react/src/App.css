@@ -1,3 +1,9 @@
+
+:root {
+  --cursor-yellow:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursor.webp?00824) 4 4, auto;
+  --cursor-blue:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4, auto;
+}
+
 .App {
   text-align: center;
 }
@@ -29,13 +35,14 @@ body {
   color: #575e75;
   font-family: var(--font-family);
   font-size: 16px;
-  cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursor.webp?00824) 4 4,auto
+  cursor: var(--cursor-yellow);
 }
 a {
-  cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;
+  cursor: var(--cursor-blue);
   color: rgb(var(--link-color))
 }
 
-area { cursor: url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;
+area {
+  cursor: var(--cursor-blue);
   color: rgb(var(--link-color))
 }

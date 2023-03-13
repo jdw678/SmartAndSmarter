@@ -6,11 +6,12 @@ import Weapon_2 from '../images/Weapon_2.png'
 import '../CSS/ItemBox.css';
 import SelectionBoxItem from './SelectionBoxComponents/SelectionBoxItem'
 import GearPopOut, { GearPopUpData } from './SelectionBoxComponents/GearPopUp'
-import { ApiCalls, ArmorList, ArmorType, ItemClass, WeaponList } from './PureTSX/ApiCalls'
+import { ArmorList, ArmorType, ItemClass, Weapon, WeaponList, WeaponType } from './PureTSX/WeaponAndArmorTypes';
+import GearPopUp from './SelectionBoxComponents/GearPopUp'
 
 type Props = {
-  armorList: ArmorList | undefined,
-  weaponList: WeaponList | undefined
+  armorList: ArmorList,
+  weaponList: WeaponList
 }
 
 
@@ -41,11 +42,11 @@ export default function SelectionBox(props: Props) {
 
 
   const [popUpActive, setPopUpActive] = useState(false);
-  const [gearData, setGearData] = useState<GearPopUpData>({itemClass: ItemClass.Armor, itemType: ArmorType.Chest, returnData: () => {console.error("Error returning Gear data. Not initialized.")}});
+  const [gearData, setGearData] = useState<GearPopUpData>();
 
   //called by SelectionBoxItem(s), passes any stored data from the selection box to the pop up
-  function togglePopUp(data: GearPopUpData) {
-    setGearData(data);
+  function togglePopUp(data?: GearPopUpData) {
+    if(data) setGearData({...data});
     setPopUpActive(!popUpActive);
   }
 
@@ -60,23 +61,23 @@ export default function SelectionBox(props: Props) {
             <ul className="image-gallery">
                 
             <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Head} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Head"/>
+                <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Head} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Head"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Neck} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Neck"/>
+              <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Neck} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Neck"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Chest} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Chest"/>
+              <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Chest} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Chest"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Hands} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Hands"/>
+              <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Hands} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'left'}}  text="Hands"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Chest} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_1} style={{float: 'left'}}  text="Weapon 1"/>
+              <SelectionBoxItem itemClass={ItemClass.Weapon} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_1} style={{float: 'left'}}  text="Weapon 1"/>
             </li>
 
             </ul>
@@ -89,23 +90,23 @@ export default function SelectionBox(props: Props) {
             <ul className="image-gallery">
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Legs} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Legs"/>
+                <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Legs} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Legs"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Feet} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Boots"/>
+                <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Feet} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Boots"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Ring 1"/>
+                <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Ring 1"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Ring 2"/>
+                <SelectionBoxItem itemClass={ItemClass.Armor} itemType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} style={{float: 'right'}}  text="Ring 2"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Chest} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_2} style={{float: 'right'}}  text="Weapon 2"/>
+                <SelectionBoxItem itemClass={ItemClass.Weapon} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_2} style={{float: 'right'}}  text="Weapon 2"/>
               </li>
               
             </ul>
@@ -113,8 +114,8 @@ export default function SelectionBox(props: Props) {
           </div>
         </div>
         
-        {popUpActive ? //the pop up
-        <GearPopOut data={gearData} togglePopUp={setPopUpActive} weaponList={props.weaponList} armorList={props.armorList}/>
+        {popUpActive && gearData ? //the pop up
+        <GearPopUp data={gearData} togglePopUp={setPopUpActive} weaponList={props.weaponList} armorList={props.armorList} key={gearData.item?.name}/>
         :
         null
         }

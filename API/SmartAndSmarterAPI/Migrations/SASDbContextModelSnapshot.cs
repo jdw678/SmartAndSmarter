@@ -111,9 +111,6 @@ namespace SmartAndSmaterAPI.Migrations
                     b.Property<bool>("WizardCanUse")
                         .HasColumnType("bit");
 
-                    b.Property<int>("armorType")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Armors");
@@ -129,6 +126,52 @@ namespace SmartAndSmaterAPI.Migrations
 
                     b.Property<string>("ActionMovementSpeed")
                         .HasColumnType("varchar(128)");
+
+                    b.Property<float>("Attack1DamageMultiplier")
+                        .HasColumnType("real");
+
+                    b.Property<float>("Attack1Speed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Attack1Type")
+                        .IsRequired()
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<float?>("Attack2DamageMultiplier")
+                        .HasColumnType("real");
+
+                    b.Property<float?>("Attack2Speed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Attack2Type")
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<float?>("Attack3DamageMultiplier")
+                        .HasColumnType("real");
+
+                    b.Property<float?>("Attack3Speed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Attack3Type")
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<float?>("Attack4DamageMultiplier")
+                        .HasColumnType("real");
+
+                    b.Property<float?>("Attack4Speed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Attack4Type")
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<float?>("Attack5DamageMultiplier")
+                        .HasColumnType("real");
+
+                    b.Property<float?>("Attack5Speed")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Attack5Type")
+                        .HasColumnType("varchar(32)");
 
                     b.Property<bool>("BarbarianCanUse")
                         .HasColumnType("bit");
@@ -148,10 +191,6 @@ namespace SmartAndSmaterAPI.Migrations
 
                     b.Property<bool>("ClericCanUse")
                         .HasColumnType("bit");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("FighterCanUse")
                         .HasColumnType("bit");
@@ -200,17 +239,35 @@ namespace SmartAndSmaterAPI.Migrations
                     b.Property<float>("PurpleDamageMin")
                         .HasColumnType("real");
 
+                    b.Property<int?>("QuiverSize")
+                        .HasColumnType("int");
+
                     b.Property<bool>("RangerCanUse")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Reach")
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<float?>("ReloadSpeed")
+                        .HasColumnType("real");
+
                     b.Property<bool>("RogueCanUse")
                         .HasColumnType("bit");
+
+                    b.Property<int>("SpecificWeaponType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SweetSpot")
+                        .HasColumnType("varchar(64)");
 
                     b.Property<string>("UniqueLink")
                         .HasColumnType("varchar(1024)");
 
                     b.Property<string>("UniqueName")
                         .HasColumnType("varchar(64)");
+
+                    b.Property<int>("WeaponType")
+                        .HasColumnType("int");
 
                     b.Property<float>("WhiteDamageMax")
                         .HasColumnType("real");
@@ -224,184 +281,6 @@ namespace SmartAndSmaterAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Weapons");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Weapon");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("SmartAndSmaterAPI.Models.Bow", b =>
-                {
-                    b.HasBaseType("SmartAndSmaterAPI.Models.Weapon");
-
-                    b.Property<float>("Attack1Speed")
-                        .HasColumnType("real");
-
-                    b.Property<int>("QuiverSize")
-                        .HasColumnType("int");
-
-                    b.Property<float>("ReloadSpeed")
-                        .HasColumnType("real");
-
-                    b.ToTable("Weapons", t =>
-                        {
-                            t.Property("Attack1Speed")
-                                .HasColumnName("Bow_Attack1Speed");
-                        });
-
-                    b.HasDiscriminator().HasValue("Bow");
-                });
-
-            modelBuilder.Entity("SmartAndSmaterAPI.Models.MagicWeapon", b =>
-                {
-                    b.HasBaseType("SmartAndSmaterAPI.Models.Weapon");
-
-                    b.Property<float?>("Attack1DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack1Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack1Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<float?>("Attack2DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack2Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack2Type")
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<float?>("Attack3DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack3Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack3Type")
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<string>("Reach")
-                        .HasColumnType("varchar(64)");
-
-                    b.Property<string>("SweetSpot")
-                        .HasColumnType("varchar(64)");
-
-                    b.ToTable("Weapons", t =>
-                        {
-                            t.Property("Attack1DamageMultiplier")
-                                .HasColumnName("MagicWeapon_Attack1DamageMultiplier");
-
-                            t.Property("Attack1Speed")
-                                .HasColumnName("MagicWeapon_Attack1Speed");
-
-                            t.Property("Attack1Type")
-                                .HasColumnName("MagicWeapon_Attack1Type");
-
-                            t.Property("Attack2DamageMultiplier")
-                                .HasColumnName("MagicWeapon_Attack2DamageMultiplier");
-
-                            t.Property("Attack2Speed")
-                                .HasColumnName("MagicWeapon_Attack2Speed");
-
-                            t.Property("Attack2Type")
-                                .HasColumnName("MagicWeapon_Attack2Type");
-
-                            t.Property("Attack3DamageMultiplier")
-                                .HasColumnName("MagicWeapon_Attack3DamageMultiplier");
-
-                            t.Property("Attack3Speed")
-                                .HasColumnName("MagicWeapon_Attack3Speed");
-
-                            t.Property("Attack3Type")
-                                .HasColumnName("MagicWeapon_Attack3Type");
-
-                            t.Property("Reach")
-                                .HasColumnName("MagicWeapon_Reach");
-
-                            t.Property("SweetSpot")
-                                .HasColumnName("MagicWeapon_SweetSpot");
-                        });
-
-                    b.HasDiscriminator().HasValue("MagicWeapon");
-                });
-
-            modelBuilder.Entity("SmartAndSmaterAPI.Models.MeleeWeapon", b =>
-                {
-                    b.HasBaseType("SmartAndSmaterAPI.Models.Weapon");
-
-                    b.Property<float>("Attack1DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Attack1Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack1Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<float?>("Attack2DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack2Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack2Type")
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<float?>("Attack3DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack3Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack3Type")
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<float?>("Attack4DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack4Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack4Type")
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<float?>("Attack5DamageMultiplier")
-                        .HasColumnType("real");
-
-                    b.Property<float?>("Attack5Speed")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Attack5Type")
-                        .HasColumnType("varchar(32)");
-
-                    b.Property<string>("Reach")
-                        .HasColumnType("varchar(64)");
-
-                    b.Property<string>("SweetSpot")
-                        .HasColumnType("varchar(64)");
-
-                    b.ToTable("Weapons", t =>
-                        {
-                            t.Property("Reach")
-                                .HasColumnName("MeleeWeapon_Reach");
-                        });
-
-                    b.HasDiscriminator().HasValue("MeleeWeapon");
-                });
-
-            modelBuilder.Entity("SmartAndSmaterAPI.Models.Sheild", b =>
-                {
-                    b.HasBaseType("SmartAndSmaterAPI.Models.Weapon");
-
-                    b.Property<string>("Reach")
-                        .HasColumnType("varchar(64)");
-
-                    b.HasDiscriminator().HasValue("Sheild");
                 });
 #pragma warning restore 612, 618
         }

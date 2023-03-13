@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 
 namespace SmartAndSmaterAPI.Models
 {
@@ -16,9 +15,6 @@ namespace SmartAndSmaterAPI.Models
 
         [Column(TypeName = "varchar(1024)"), Required]
         public string ImageLocation { get; set; }
-
-        [JsonConverter(typeof(JsonStringEnumConverter)), Required]
-        public ArmorType armorType { get; set; }
 
 
         //armors, all required
@@ -86,15 +82,5 @@ namespace SmartAndSmaterAPI.Models
 
         [Column(TypeName = "varchar(1024)")]
         public string? Stats { get; set; }
-
-
-    }
-    public enum ArmorType
-    {
-        Chest,
-        Feet,
-        Hands,
-        Head,
-        Legs
     }
 }
