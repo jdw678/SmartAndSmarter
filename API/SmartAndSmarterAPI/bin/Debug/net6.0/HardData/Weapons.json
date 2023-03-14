@@ -49,7 +49,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%/90%/70%",
-    "slowDownOnHit": "-15%  Duration: 1s",
+    "slowDownOnHit": "-15%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -103,7 +103,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%/90%",
-    "slowDownOnHit": "-20%  Duration: 1s",
+    "slowDownOnHit": "-20%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -157,7 +157,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%/80%/60%",
-    "slowDownOnHit": "-17%  Duration: 1s",
+    "slowDownOnHit": "-17%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -211,7 +211,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Swords-0",
     "hand": "Both",
     "sweetSpot": "100%",
-    "slowDownOnHit": "-7%  Duration: 0.5s",
+    "slowDownOnHit": "-7%\nDuration: 0.5s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -265,7 +265,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%",
-    "slowDownOnHit": "-7%  Duration: 0.5s   Combo Finisher: -15%  Duration: 1s",
+    "slowDownOnHit": "-7%\nDuration: 0.5s\n\nCombo Finisher: -15%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -319,7 +319,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%",
-    "slowDownOnHit": "-25%  Duration: 1s",
+    "slowDownOnHit": "-25%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -373,7 +373,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/70%",
-    "slowDownOnHit": "-20%  Duration: 1s",
+    "slowDownOnHit": "-20%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -427,7 +427,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Maces-0",
     "hand": "Both",
     "sweetSpot": "100%/70%",
-    "slowDownOnHit": "-20%  Duration: 1s",
+    "slowDownOnHit": "-20%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -481,7 +481,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%/60%/60%",
-    "slowDownOnHit": "-20%  Duration: 0.7s",
+    "slowDownOnHit": "-20%\nDuration: 0.7s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -535,7 +535,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/70%",
-    "slowDownOnHit": "-45%  Duration: 1.5s",
+    "slowDownOnHit": "-45%\nDuration: 1.5s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -589,7 +589,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "slowDownOnHit": "-7%  Duration: 0.5s   Combo Finisher: -15%  Duration: 1s",
+    "slowDownOnHit": "-7%\nDuration: 0.5s\n\nCombo Finisher: -15%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -643,7 +643,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "slowDownOnHit": "-7%  Duration: 0.5s",
+    "slowDownOnHit": "-7%\nDuration: 0.5s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -697,7 +697,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "slowDownOnHit": "-7%  Duration: 0.5s",
+    "slowDownOnHit": "-7%\nDuration: 0.5s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -751,7 +751,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%",
-    "slowDownOnHit": "-7%  Duration: 0.5s   Combo Finisher: -15%  Duration: 1s",
+    "slowDownOnHit": "-7%\nDuration: 0.5s\n\nCombo Finisher: -15%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -805,7 +805,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "slowDownOnHit": "-30%  Duration: 1s",
+    "slowDownOnHit": "-30%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -859,7 +859,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Polearms-0",
     "hand": "Both",
     "sweetSpot": "100%/60%/40%",
-    "slowDownOnHit": "-30%  Duration: 1s",
+    "slowDownOnHit": "-30%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -913,7 +913,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "slowDownOnHit": "-25%  Duration: 1s",
+    "slowDownOnHit": "-25%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -967,7 +967,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "slowDownOnHit": "-25%  Duration: 1s",
+    "slowDownOnHit": "-25%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -1021,7 +1021,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "slowDownOnHit": "-30%  Duration: 1s",
+    "slowDownOnHit": "-30%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -1075,7 +1075,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/60%",
-    "slowDownOnHit": "-30%  Duration: 1s",
+    "slowDownOnHit": "-30%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -1129,7 +1129,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%/60%",
-    "slowDownOnHit": "-17%  Duration: 1s",
+    "slowDownOnHit": "-17%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -1183,7 +1183,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Axes-0",
     "hand": "Both",
     "sweetSpot": "100%/80%",
-    "slowDownOnHit": "-17%  Duration: 1s",
+    "slowDownOnHit": "-17%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -1237,7 +1237,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
     "hand": "Both",
     "sweetSpot": null,
-    "slowDownOnHit": "-35%  Duration: 1.5s",
+    "slowDownOnHit": "-35%\nDuration: 1.5s",
     "quiverSize": 5,
     "reloadSpeed": 2.98
   },
@@ -1291,7 +1291,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
     "hand": "Both",
     "sweetSpot": null,
-    "slowDownOnHit": "-25%  Duration: 1s",
+    "slowDownOnHit": "-25%\nDuration: 1s",
     "quiverSize": 6,
     "reloadSpeed": 2.98
   },
@@ -1345,7 +1345,7 @@
     "uniqueLink": "https://darkanddarker.wiki.spellsandguns.com/Uniques#Bows-0",
     "hand": "Both",
     "sweetSpot": null,
-    "slowDownOnHit": "-12%  Duration: 0.5s",
+    "slowDownOnHit": "-12%\nDuration: 0.5s",
     "quiverSize": 7,
     "reloadSpeed": 2.98
   },
@@ -1399,7 +1399,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "slowDownOnHit": "-35%  Duration: 1.5s",
+    "slowDownOnHit": "-35%\nDuration: 1.5s",
     "quiverSize": null,
     "reloadSpeed": 3.47
   },
@@ -1453,7 +1453,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": null,
-    "slowDownOnHit": "-55%  Duration: 2s",
+    "slowDownOnHit": "-55%\nDuration: 2s",
     "quiverSize": null,
     "reloadSpeed": 7.48
   },
@@ -1561,7 +1561,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/90%/70%",
-    "slowDownOnHit": "-15%  Duration: 1s",
+    "slowDownOnHit": "-15%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },
@@ -1669,7 +1669,7 @@
     "uniqueLink": null,
     "hand": "Both",
     "sweetSpot": "100%/80%/60%",
-    "slowDownOnHit": "-17%  Duration: 1s",
+    "slowDownOnHit": "-17%\nDuration: 1s",
     "quiverSize": null,
     "reloadSpeed": null
   },

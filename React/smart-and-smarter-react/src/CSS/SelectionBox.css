@@ -17,7 +17,7 @@ Responsive Image gallery Style rules
   }
   
   .heading-text {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     font-size: 2rem;
     text-align: center;
   }
@@ -153,3 +153,26 @@ button{
   0 0 25px green, 0 0 50px blue, 
   0 0 100px violet, 0 0 200px orange; 
   }
+
+
+.SmallSelectionBoxItem {
+  position: absolute;
+  left: 57px;
+  width: 50px;
+  top: 4px;
+}
+
+.MediumSelectionBoxItem {
+  position: absolute;
+  left: 57px;
+  width: 50px;
+  top: 6px;
+}
+
+.LargeSelectionBoxItem {
+  position: absolute;
+  left: 36px;
+  top: 12px;
+  height: 10px;
+  width: 50px;
+}

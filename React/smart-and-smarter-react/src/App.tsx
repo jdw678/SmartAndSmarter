@@ -4,7 +4,7 @@ import Temptop from './Components/Temptop';
 import SelectionBox from './Components/SelectionBox';
 import { ApiCalls} from './Components/PureTSX/ApiCalls';
 import CompleteTable from './Components/CompleteTable';
-import { ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/WeaponAndArmorTypes';
+import { Armor, ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/WeaponAndArmorTypes';
 import React from 'react';
 
 
@@ -21,6 +21,7 @@ function App() {
   //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
   const [isArmorLoading, setArmorLoading] = useState(true);
   const [armorList, setArmorList] = useState<ArmorList>();
+
 
   
   //set loading false until api calls finish, set weapon list in api calls to hold list of weapons
@@ -75,23 +76,24 @@ function App() {
   function parseAndSetWeaponList(weaponList: Weapon[])
   {
     var weaponListParsed: WeaponList = {
-      MeleeWeapons: [],
-      MagicWeapons: [],
-      Bows: [],
-      Shields: []
+      meleeWeapons: [],
+      magicWeapons: [],
+      bows: [],
+      shields: []
     };
     
     weaponList.forEach((weapon: Weapon) =>
     {
-      if(weapon.weaponType === WeaponType.Melee) weaponListParsed.MeleeWeapons.push(weapon);
-      if(weapon.weaponType === WeaponType.Magic) weaponListParsed.MagicWeapons.push(weapon);
-      if(weapon.weaponType === WeaponType.Bow) weaponListParsed.Bows.push(weapon);
-      if(weapon.weaponType === WeaponType.Shield) weaponListParsed.Shields.push(weapon);
+      if(weapon.weaponType === WeaponType.Melee) weaponListParsed.meleeWeapons.push(weapon);
+      if(weapon.weaponType === WeaponType.Magic) weaponListParsed.magicWeapons.push(weapon);
+      if(weapon.weaponType === WeaponType.Bow) weaponListParsed.bows.push(weapon);
+      if(weapon.weaponType === WeaponType.Shield) weaponListParsed.shields.push(weapon);
       
     })
     
     setWeaponListParsed(weaponListParsed);
   }
+
 
   return (
     <div className="App">

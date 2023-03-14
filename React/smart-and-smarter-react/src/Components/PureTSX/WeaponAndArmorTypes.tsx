@@ -72,10 +72,10 @@ export type Weapon = {
 }
 
 export type WeaponList = {
-    MeleeWeapons: Weapon[],
-    MagicWeapons: Weapon[],
-    Shields: Weapon[],
-    Bows: Weapon[]
+    meleeWeapons: Weapon[],
+    magicWeapons: Weapon[],
+    shields: Weapon[],
+    bows: Weapon[]
 }
 
 
@@ -107,7 +107,8 @@ export type Armor = {
     wizardCanUse: boolean,
     rogueCanUse: boolean,
     movementSpeed?: number,
-    stats: string
+    stats: string,
+    armorType: ArmorType
 }
 
 export type ArmorList = Armor[];
@@ -127,13 +128,13 @@ export enum WeaponType {
 
 //all possible gear types
 export enum ArmorType {
-    Chest,
-    Feet,
-    Hands,
-    Head,
-    Legs,
-    Neck,
-    Ring
+    Chest = "Chest",
+    Feet = "Feet",
+    Hands = "Hands",
+    Head = "Head",
+    Legs = "Legs",
+    Neck = "Neck",
+    Ring = "Ring"
 }
 
 //all possible rarities

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace SmartAndSmaterAPI.Models
 {
@@ -83,6 +84,7 @@ namespace SmartAndSmaterAPI.Models
         [Column(TypeName = "varchar(1024)")]
         public string? Stats { get; set; }
 
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public ArmorType ArmorType { get; set; }
 
     }

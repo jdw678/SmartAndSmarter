@@ -4,10 +4,11 @@ import GearPopOut, { GearPopUpData } from './GearPopUp';
 
 type Props = {
     img: string,
-    style: React.CSSProperties,
+    backgroundImgStyle: React.CSSProperties,
+    itemImgSize?: "small" | "medium" | "large",
     text: string,
     useOverlay: boolean,
-    itemType?: ArmorType,
+    armorType?: ArmorType,
     itemClass: ItemClass,
     
     setPopUpActive: (gearData?: GearPopUpData) => void
@@ -23,7 +24,7 @@ export default function SelectionBoxItem(props: Props) {
 
     //toggle the GearPopUp component and pass it any stored data
     function togglePopUp() {
-        props.setPopUpActive({...gearData, itemClass: props.itemClass, returnData: saveUpdatedGearData});
+        props.setPopUpActive({...gearData, itemClass: props.itemClass, returnData: saveUpdatedGearData, armorType: props.armorType});
     }
 
     //save data passed from the GearPopUp component
@@ -33,13 +34,31 @@ export default function SelectionBoxItem(props: Props) {
         console.log(data);
     }
 
+    function getItemImageSize()
+    {
+        if(props.itemImgSize === 'small')
+            return "SmallSelectionBoxItem";
+        
+        
+        if(props.itemImgSize === 'medium')
+            return "MediumSelectionBoxItem";
+
+    
+        if(props.itemImgSize === 'large')
+            return "LargeSelectionBoxItem";
+
+        return "";
+    }
 
   return (
     <>
-    <button onClick={togglePopUp}>
-        <img src={gearData ? gearData.item?.imageLocation : props.img} alt="9" style={props.style}/>
+    <button onClick={togglePopUp} style={{background: 'transparent'}}>
+        <div>
+            <img src={props.img} alt={props.text} style={props.backgroundImgStyle}/>
+            {gearData ? <img src={gearData.item?.imageLocation} className={getItemImageSize()} style={{position:'absolute'}}/> : null}
+        </div>
         <div className={className}>
-            <span>{props.text}</span>
+            <span style={{color:"white"}}>{props.text}</span>
         </div>
     </button>
 
