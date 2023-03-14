@@ -19,19 +19,19 @@ export default function WeaponTable(props: Props) {
 
         <div id="content" style={{ overflow:'auto1', float:'left', backgroundColor: 'rgba(0,0,0,.7)', padding:'2%', paddingTop: '0', marginRight: '2%', margin: '1%', borderRadius: '5px'}}>
 
-            <CompleteMeleeTable weaponList={props.weaponList.MeleeWeapons}/>
+            <CompleteMeleeTable weaponList={props.weaponList.meleeWeapons}/>
 
             <h1 >Magic Weapons</h1>
             <hr />
-            <MagicTable weaponList={props.weaponList.MagicWeapons}/>
+            <MagicTable weaponList={props.weaponList.magicWeapons}/>
             
             <h1>Shields</h1>
             <hr />
-            <ShieldTable weaponList={props.weaponList.Shields}/>
+            <ShieldTable weaponList={props.weaponList.shields}/>
             
             <h1>Bows</h1>
             <hr />
-            <BowTable weaponList={props.weaponList.Bows}/>
+            <BowTable weaponList={props.weaponList.bows}/>
             
         </div>
     )

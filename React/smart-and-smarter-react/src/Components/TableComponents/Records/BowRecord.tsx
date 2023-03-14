@@ -5,6 +5,7 @@ import '../../../CSS/CompleteTable.css';
 import TableImage from '../Cells/ImageCell'
 import { ParsePercentSplit } from './MeleeWeaponRecord';
 import { Weapon } from '../../PureTSX/WeaponAndArmorTypes';
+import SDOHCell from '../Cells/SDOHCell';
 
 
 type Props = {
@@ -58,6 +59,7 @@ export default function BowRecord(props: Props) {
                 {props.weapon.quiverSize ? props.weapon.quiverSize.toString() : "1"}
             </td>
             <td> {ParsePercentSplit(props.weapon.actionMovementSpeed)} </td>
+            <td key={props.weapon.name + "slow down on hit"}><SDOHCell text={props.weapon.slowDownOnHit}/></td>
             <td> 
             {
                 !props.weapon.uniqueName ? "None"

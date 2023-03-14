@@ -148,10 +148,14 @@ namespace SmartAndSmaterAPI.Models
         [Column(TypeName ="varchar(64)")]
         public string? SweetSpot { get; set; }
 
+        public string? SlowDownOnHit { get; set; }
+
         //for bows only
         public int? QuiverSize { get; set; }
 
         public float? ReloadSpeed { get; set; }
+
+
 
     }
 

@@ -12,7 +12,7 @@ export default function GearPopUpItem(props: Props) {
 
   //onclick return whatever item this is
   return (
-    <li className='GearLI' onClick={() => {props.returnData({itemClass: props.itemClass, item: props.item, returnData: props.returnData})}}>
+    <li className='GearLI GearFont' onClick={() => {props.returnData({itemClass: props.itemClass, item: props.item, returnData: props.returnData})}}>
       {props.item.name}
     </li>
   )

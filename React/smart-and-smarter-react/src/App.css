@@ -46,3 +46,16 @@ area {
   cursor: var(--cursor-blue);
   color: rgb(var(--link-color))
 }
+
+
+::-webkit-scrollbar
+{
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(transparent,rgb(221,149,42),transparent);
+  border-radius: 6px;
+
+} 

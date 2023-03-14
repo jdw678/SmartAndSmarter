@@ -3,13 +3,13 @@ import { Armor, ArmorList, ArmorType, ItemClass, SpecificWeaponType, Weapon, Wea
 import '../../CSS/GearPopUp.css';
 import GearPopUpItem from './GearPopUpItem';
 import GearPopUpCondensedItem from './GearPopUpCondensedItem';
-import Arrow from '../../images/Arrow.png';
 
 //data expected
 //possibly null if item has not been set yet, but returnData must always be not null
 export type GearPopUpData = {
-    itemClass: ItemClass
+    itemClass: ItemClass,
     item?: Armor | Weapon,
+    armorType?: ArmorType,
     returnData: (data?: GearPopUpData) => void
 }
 
@@ -36,7 +36,7 @@ export default function GearPopUp(props: Props) {
     return(
     {
       name: name,
-      itemList: props.weaponList.MeleeWeapons.filter(weapon => isWeaponType(weapon, type)),
+      itemList: props.weaponList.meleeWeapons.filter(weapon => isWeaponType(weapon, type)),
       returnData: props.data.returnData,
       itemClass: props.data.itemClass
     })
@@ -68,12 +68,23 @@ export default function GearPopUp(props: Props) {
             <div className='GearDropDownContainer'>
               <h1 className='GearDropDownHeader GearFont' onClick={() => ReturnDataAndClose()}>None</h1>
             </div>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Bows' itemList={props.weaponList.Bows}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Shields' itemList={props.weaponList.Shields}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Bows' itemList={props.weaponList.bows}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Shields' itemList={props.weaponList.shields}/>
             <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Melee Weapons' children={meleeProps}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Magic Weapons' itemList={props.weaponList.MagicWeapons}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Magic Weapons' itemList={props.weaponList.magicWeapons}/>
           </>
-          : null}
+          :
+          <ul>
+            <li className='GearLI GearFont' onClick={() => ReturnDataAndClose()}>None</li>
+            {props.armorList.filter(armor => armor.armorType == props.data.armorType).map(armor =>
+              {
+                return(
+                  <GearPopUpItem itemClass={ItemClass.Armor} item={armor} returnData={ReturnDataAndClose}/>
+                )
+              })
+            }
+          </ul>
+          }
         </div>
     </div>
   )

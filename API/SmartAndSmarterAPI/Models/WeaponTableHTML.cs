@@ -45,6 +45,8 @@ namespace SmartAndSmaterAPI.Models
                     Weapon weapon = new Weapon();
                     HtmlNodeCollection cells = row.SelectNodes("td");
 
+
+
                     #region CellSetup
                     //cells that exist on every table
                     HtmlNode name = cells[0];
@@ -62,13 +64,22 @@ namespace SmartAndSmaterAPI.Models
                     HtmlNode quiverSize = null;
                     HtmlNode reloadSpeed = null;
                     HtmlNode sweetSpot = null;
+                    HtmlNode slowDownOnHit = null;
 
                     //only used in magic table
                     HtmlNode magicDamage = null;
 
+
+                    //name cell of the table, innerText is name and has <img> tag with the image, before cell set up because name is needed to discern between shields and crossbows
+                    weapon.Name = name.InnerText.Trim();
+                    if (weapon.Name == "Bare Hands") break;
+
+                    //image cell of the table
+                    weapon.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
+
                     //determine what cells should exist
                     //magic table
-                    if (cells.Count == 12)
+                    if (cells.Count == 13)
                     {
                         weapon.WeaponType = WeaponType.Magic;
                         weapon.QuiverSize = null;
@@ -82,10 +93,11 @@ namespace SmartAndSmaterAPI.Models
                         sweetSpot = cells[8];
                         reach = cells[9];
                         actionMovementSpeed = cells[10];
-                        unique = cells[11];
+                        slowDownOnHit = cells[11];
+                        unique = cells[12];
                     }
                     //melee weapons table
-                    else if (cells.Count == 11)
+                    else if (cells.Count == 12)
                     {
                         weapon.WeaponType = WeaponType.Melee;
                         weapon.QuiverSize = null;
@@ -98,10 +110,11 @@ namespace SmartAndSmaterAPI.Models
                         sweetSpot = cells[7];
                         reach = cells[8];
                         actionMovementSpeed = cells[9];
-                        unique = cells[10];
+                        slowDownOnHit = cells[10];
+                        unique = cells[11];
                     }
                     //bow table
-                    else if(cells.Count == 10)
+                    else if(cells.Count == 11)
                     {
                         weapon.WeaponType = WeaponType.Bow;
                         weapon.Attack1Type = WeaponAttackType.Bow;
@@ -114,51 +127,57 @@ namespace SmartAndSmaterAPI.Models
                         attackSpeed = cells[5];
                         reloadSpeed = cells[6];
                         actionMovementSpeed = cells[7];
-                        quiverSize = cells[8];
-                        unique = cells[9];
+                        slowDownOnHit = cells[8];
+                        quiverSize = cells[9];
+                        unique = cells[10];
                     }
-                    //shield table
                     else if(cells.Count == 9)
                     {
-                        weapon.WeaponType = WeaponType.Shield;
-                        weapon.Attack1DamageMultiplier = 100;
-                        weapon.Attack1Speed = 0;
-                        weapon.SweetSpot = null;
-                        weapon.QuiverSize = null;
-                        weapon.ReloadSpeed = null;
-                        weapon.Reach = null;
+                        //shield table
+                        if (!weapon.Name.ToLower().Contains("bow"))
+                        {
 
-                        //armor rating acts the same, stored in damage for berevity
-                        damage = cells[3];
-                        movementSpeed = cells[4];
-                        combo = cells[5];
-                        reach = cells[6];
-                        actionMovementSpeed= cells[7];
-                        unique = cells[8];
+                            weapon.WeaponType = WeaponType.Shield;
+                            weapon.Attack1DamageMultiplier = 100;
+                            weapon.Attack1Speed = 0;
+                            weapon.SweetSpot = null;
+                            weapon.QuiverSize = null;
+                            weapon.ReloadSpeed = null;
+                            weapon.Reach = null;
+
+                            //armor rating acts the same, stored in damage for berevity
+                            damage = cells[3];
+                            movementSpeed = cells[4];
+                            combo = cells[5];
+                            reach = cells[6];
+                            actionMovementSpeed= cells[7];
+                            unique = cells[8];
+
+                        }
+
+                        //crossbow table
+                        else
+                        {
+                            weapon.WeaponType = WeaponType.Bow;
+                            weapon.Attack1Type = WeaponAttackType.Bow;
+                            weapon.Attack1DamageMultiplier = 100;
+                            weapon.SweetSpot = null;
+                            weapon.QuiverSize = null;
+                            weapon.ReloadSpeed = null;
+                            weapon.Reach = null;
+
+                            damage = cells[3];
+                            movementSpeed = cells[4];
+                            reloadSpeed = cells[5];
+                            actionMovementSpeed = cells[6];
+                            slowDownOnHit = cells[7];
+                            unique = cells[8];
+
+                        }
                     }
-                    //crossbow table
-                    else if(cells.Count == 8)
-                    {
-                        weapon.WeaponType = WeaponType.Bow;
-                        weapon.Attack1Type = WeaponAttackType.Bow;
-                        weapon.Attack1DamageMultiplier = 100;
-                        weapon.SweetSpot = null;
-                        weapon.QuiverSize = null;
-                        weapon.ReloadSpeed = null;
-                        weapon.Reach = null;
-
-                        damage = cells[3];
-                        movementSpeed = cells[4];
-                        reloadSpeed = cells[5];
-                        actionMovementSpeed = cells[6];
-                        unique = cells[7];
-
-                    }
+                    
                     #endregion
 
-                    //name cell of the table, innerText is name and has <img> tag with the image
-                    weapon.Name = name.InnerText.Trim().TrimEnd();
-                    weapon.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
 
 
                     #region SpecificWeaponType
@@ -483,7 +502,7 @@ namespace SmartAndSmaterAPI.Models
                                 for(int i = 0; i < ADMs.Length; i++)
                                 {
 
-                                    string type = types[i].Trim().TrimEnd();
+                                    string type = types[i].Trim();
                                     combos.Add(new Tuple<string, float?>(type, float.Parse(ADMs[i].Replace("%", ""))));
                                 }
                             }
@@ -491,7 +510,7 @@ namespace SmartAndSmaterAPI.Models
                             else
                             {
                                 for (int i = 0; i < types.Length; i++)
-                                    combos.Add(new Tuple<string, float?>(types[i].Trim().TrimEnd(), null));
+                                    combos.Add(new Tuple<string, float?>(types[i].Trim(), null));
                             }
                         }
 
@@ -591,6 +610,7 @@ namespace SmartAndSmaterAPI.Models
                         //parse the inner html of the attack speed cell, in the format displayed above
                         List<float> ParseAttackSpeed(string innerHtml)
                         {
+                            Console.WriteLine($"{weapon.Name} {innerHtml}");
                             if (innerHtml.Trim() == "") return new List<float>();
                             List<float> attackSpeeds = new List<float>();
 
@@ -622,7 +642,7 @@ namespace SmartAndSmaterAPI.Models
                                 //add to float list
                                 foreach(string attackSpeed in attackSpeedStrings)
                                 {
-                                    attackSpeeds.Add(float.Parse(attackSpeed.Replace("s", "").Trim().TrimEnd()));
+                                    attackSpeeds.Add(float.Parse(attackSpeed.Replace("s", "").Trim()));
                                 }
                             }
 
@@ -663,14 +683,14 @@ namespace SmartAndSmaterAPI.Models
                     #endregion
 
                     //sweet spot
-                    if (sweetSpot != null) weapon.SweetSpot = sweetSpot.InnerText.Trim().TrimEnd();
+                    if (sweetSpot != null) weapon.SweetSpot = sweetSpot.InnerText.Trim();
 
                     //reach cell
-                    if (reach != null) weapon.Reach = reach.InnerText.Trim().TrimEnd();
+                    if (reach != null) weapon.Reach = reach.InnerText.Trim();
 
 
                     //actionMovementSpeed cell
-                    if(actionMovementSpeed != null) weapon.ActionMovementSpeed = actionMovementSpeed.InnerText.Trim().TrimEnd();
+                    if(actionMovementSpeed != null) weapon.ActionMovementSpeed = actionMovementSpeed.InnerText.Trim();
 
                     //movementSpeed
                     if (movementSpeed != null) weapon.MovementSpeedWhileEquiped = float.Parse(movementSpeed.InnerText);
@@ -678,10 +698,10 @@ namespace SmartAndSmaterAPI.Models
                     //unique cell
                     if (unique != null)
                     {
-                        if(!(unique.InnerText.Trim().TrimEnd() == "None"))
+                        if(!(unique.InnerText.Trim() == "None"))
                         {
 
-                            weapon.UniqueName = unique.InnerText.Trim().TrimEnd();
+                            weapon.UniqueName = unique.InnerText.Trim();
                             weapon.UniqueLink = wikiUrl + unique.SelectNodes("a").First().GetAttributeValue("href", "");
                         }
                     }
@@ -698,7 +718,28 @@ namespace SmartAndSmaterAPI.Models
                         weapon.QuiverSize = int.Parse(quiverSize.InnerText);
                     }
 
+
+                    //slow down on hit cell
+                    #region SlowDownOnHit
+
+
+                    if (slowDownOnHit != null)
+                    {
+                        string sdoh = slowDownOnHit.InnerText;
+                        sdoh = sdoh.Trim();
+                        sdoh = sdoh.Replace("   ", "\n\n");
+                        sdoh = sdoh.Replace("  ", "\n");
+                        weapon.SlowDownOnHit = sdoh;
+
+
+
+                    }
+                    
+                    
+                    
+                    #endregion
                     weapons.Add(weapon);
+
                 }
 
             }

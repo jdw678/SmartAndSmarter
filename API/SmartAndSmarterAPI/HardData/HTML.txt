@@ -1,59 +1,80 @@
 <tr>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Class</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Slot</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Armor Rating</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Combo</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Weapon Reach/Hitbox</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Action Movement Speed</th>
-        <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Unique</th>
-    </tr>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"> Class</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Armor Rating</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Movement Speed</th>
+                    <th style="font-weight:bold; color:#eee; background-color: rgb(220,220,220,0.2); text-align:center; vertical-align:middle; width:10%" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Stats</th>
+                </tr>
 
-    <tr>
-        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Buckler" title="Buckler"><img alt="Buckler" src="/images/thumb/a/a5/Buckler_2.png/60px-Buckler_2.png" decoding="async" width="60" height="60" srcset="/images/thumb/a/a5/Buckler_2.png/90px-Buckler_2.png 1.5x, /images/thumb/a/a5/Buckler_2.png/120px-Buckler_2.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Buckler" title="Buckler"><strong>Buckler</strong></a></div> </td>
-        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
-        <td> 1-Handed<br>Off-Hand </td>
-        <td> <span class="colorrarity0">6</span> <br> <span class="colorrarity1">9</span> <br> <span class="colorrarity2">12</span> <br> <span class="colorrarity3">13 ~ 14</span> <br> <span class="colorrarity4">14 ~ 15</span> <br> <span class="colorrarity5">16 ~ 17</span> <br> <span class="colorrarity6">18 ~ 19</span> <br> <span class="colorrarity7">20 ~ 21</span> <br>  </td>
-        <td> -7 </td>
-        <td> Block </td>
-        <td> Height: 26.07 <br> Width: 26.07 </td>
-        <td> Blockreaction: -1% <br> Guard: -9%  </td>
-        <td> None </td>
-    </tr>
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Adventurer_Boots" title="Adventurer Boots"><img alt="Adventurer Boots" src="/images/thumb/3/30/Adventurer_Boots.png/60px-Adventurer_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/3/30/Adventurer_Boots.png/90px-Adventurer_Boots.png 1.5x, /images/thumb/3/30/Adventurer_Boots.png/120px-Adventurer_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Adventurer_Boots" title="Adventurer Boots"><strong>Adventurer Boots</strong></a></div> </td>
+            <td>  </td>
+            <td> <span class="colorrarity0">6</span> <br><span class="colorrarity1">7</span> <br><span class="colorrarity2">8</span> <br><span class="colorrarity3">9 ~ 10</span> <br><span class="colorrarity4">11 ~ 12</span> <br><span class="colorrarity5">13 ~ 14</span> <br><span class="colorrarity6">14 ~ 15</span> <br><span class="colorrarity7">15 ~ 16</span> <br> </td>
+            <td> 5 </td>
+            <td> 5 Magic Resistance
+ </td>
+        </tr>
 
-    <tr>
-        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Heater_Shield" title="Heater Shield"><img alt="Heater Shield" src="/images/thumb/b/b1/Heater_Shield_2.png/60px-Heater_Shield_2.png" decoding="async" width="60" height="80" srcset="/images/thumb/b/b1/Heater_Shield_2.png/90px-Heater_Shield_2.png 1.5x, /images/thumb/b/b1/Heater_Shield_2.png/120px-Heater_Shield_2.png 2x" data-file-width="270" data-file-height="360"></a></div><a href="/Heater_Shield" title="Heater Shield"><strong>Heater Shield</strong></a></div> </td>
-        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
-        <td> 1-Handed<br>Off-Hand </td>
-        <td> <span class="colorrarity0">15</span> <br> <span class="colorrarity1">23</span> <br> <span class="colorrarity2">30</span> <br> <span class="colorrarity3">31 ~ 34</span> <br> <span class="colorrarity4">35 ~ 38</span> <br> <span class="colorrarity5">38 ~ 41</span> <br> <span class="colorrarity6">42 ~ 45</span> <br> <span class="colorrarity7">46 ~ 49</span> <br>  </td>
-        <td> -15 </td>
-        <td> Block </td>
-        <td> Height: 39.81 <br> Width: 31.8 </td>
-        <td> Blockreaction: -3% <br> Guard: -35%  </td>
-        <td> <a href="/Uniques#Shields-0" title="Uniques">Aegis</a> </td>
-    </tr>
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Heavy_Boots" title="Heavy Boots"><img alt="Heavy Boots" src="/images/thumb/5/51/Heavy_Boots.png/60px-Heavy_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/5/51/Heavy_Boots.png/90px-Heavy_Boots.png 1.5x, /images/thumb/5/51/Heavy_Boots.png/120px-Heavy_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Heavy_Boots" title="Heavy Boots"><strong>Heavy Boots</strong></a></div> </td>
+            <td>  </td>
+            <td> <span class="colorrarity0">10</span> <br><span class="colorrarity1">11</span> <br><span class="colorrarity2">12</span> <br><span class="colorrarity3">13 ~ 14</span> <br><span class="colorrarity4">15 ~ 16</span> <br><span class="colorrarity5">17 ~ 18</span> <br><span class="colorrarity6">18 ~ 19</span> <br><span class="colorrarity7">19 ~ 20</span> <br> </td>
+            <td> 5 </td>
+            <td> 5 Magic Resistance
+ </td>
+        </tr>
 
-    <tr>
-        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Pavise" title="Pavise"><img alt="Pavise" src="/images/thumb/c/ce/Pavise_2.png/60px-Pavise_2.png" decoding="async" width="60" height="80" srcset="/images/thumb/c/ce/Pavise_2.png/90px-Pavise_2.png 1.5x, /images/thumb/c/ce/Pavise_2.png/120px-Pavise_2.png 2x" data-file-width="270" data-file-height="360"></a></div><a href="/Pavise" title="Pavise"><strong>Pavise</strong></a></div> </td>
-        <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Ranger" title="Ranger">Ranger</a> </td>
-        <td> 2-Handed </td>
-        <td> <span class="colorrarity0">24</span> <br> <span class="colorrarity1">36</span> <br> <span class="colorrarity2">48</span> <br> <span class="colorrarity3">49 ~ 54</span> <br> <span class="colorrarity4">55 ~ 60</span> <br> <span class="colorrarity5">61 ~ 66</span> <br> <span class="colorrarity6">67 ~ 72</span> <br> <span class="colorrarity7">73 ~ 79</span> <br>  </td>
-        <td> -65 </td>
-        <td> Block <br><br> Ground Deployment </td>
-        <td> Height: 69.7 <br> Width: 40.69 </td>
-        <td> Blockreaction: -3% <br> Guard: -40%  </td>
-        <td> None </td>
-    </tr>
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Laced_Turnshoe" title="Laced Turnshoe"><img alt="Laced Turnshoe" src="/images/thumb/d/df/Laced_Turnshoe.png/60px-Laced_Turnshoe.png" decoding="async" width="60" height="60" srcset="/images/thumb/d/df/Laced_Turnshoe.png/90px-Laced_Turnshoe.png 1.5x, /images/thumb/d/df/Laced_Turnshoe.png/120px-Laced_Turnshoe.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Laced_Turnshoe" title="Laced Turnshoe"><strong>Laced Turnshoe</strong></a></div> </td>
+            <td>  </td>
+            <td> <span class="colorrarity0">5</span> <br><span class="colorrarity1">6</span> <br><span class="colorrarity2">7</span> <br><span class="colorrarity3">8</span> <br><span class="colorrarity4">9</span> <br><span class="colorrarity5">10</span> <br><span class="colorrarity6">11</span> <br><span class="colorrarity7">12</span> <br> </td>
+            <td> 3 </td>
+            <td> 5 Magic Resistance
+ </td>
+        </tr>
 
-    <tr>
-        <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Round_Shield" title="Round Shield"><img alt="Round Shield" src="/images/thumb/4/43/Round_Shield_2.png/60px-Round_Shield_2.png" decoding="async" width="60" height="90" srcset="/images/thumb/4/43/Round_Shield_2.png/90px-Round_Shield_2.png 1.5x, /images/thumb/4/43/Round_Shield_2.png/120px-Round_Shield_2.png 2x" data-file-width="180" data-file-height="270"></a></div><a href="/Round_Shield" title="Round Shield"><strong>Round Shield</strong></a></div> </td>
-        <td> <a href="/Cleric" title="Cleric">Cleric</a>, <a href="/Fighter" title="Fighter">Fighter</a> </td>
-        <td> 1-Handed<br>Off-Hand </td>
-        <td> <span class="colorrarity0">13</span> <br> <span class="colorrarity1">19</span> <br> <span class="colorrarity2">26</span> <br> <span class="colorrarity3">26 ~ 29</span> <br> <span class="colorrarity4">29 ~ 32</span> <br> <span class="colorrarity5">32 ~ 35</span> <br> <span class="colorrarity6">35 ~ 38</span> <br> <span class="colorrarity7">38 ~ 41</span> <br>  </td>
-        <td> -12 </td>
-        <td> Block </td>
-        <td> Height: 34.42 <br> Width: 34.42 </td>
-        <td> Blockreaction: -3% <br> Guard: -25%  </td>
-        <td> None </td>
-    </tr>
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Lightfoot_Boots" title="Lightfoot Boots"><img alt="Lightfoot Boots" src="/images/thumb/9/9e/Lightfoot_Boots.png/60px-Lightfoot_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/9/9e/Lightfoot_Boots.png/90px-Lightfoot_Boots.png 1.5x, /images/thumb/9/9e/Lightfoot_Boots.png/120px-Lightfoot_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Lightfoot_Boots" title="Lightfoot Boots"><strong>Lightfoot Boots</strong></a></div> </td>
+            <td>  </td>
+            <td> 5  </td>
+            <td><span class="colorrarity0">6</span> <br><span class="colorrarity1">7</span> <br><span class="colorrarity2">8</span> <br><span class="colorrarity3">9</span> <br><span class="colorrarity4">10</span> <br><span class="colorrarity5">11</span> <br><span class="colorrarity6">12</span> <br><span class="colorrarity7">13</span> <br> </td>
+            <td>  </td>
+        </tr>
+
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Old_Shoes" title="Old Shoes"><img alt="Old Shoes" src="/images/thumb/9/9a/Old_Shoes.png/60px-Old_Shoes.png" decoding="async" width="60" height="60" srcset="/images/thumb/9/9a/Old_Shoes.png/90px-Old_Shoes.png 1.5x, /images/thumb/9/9a/Old_Shoes.png/120px-Old_Shoes.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Old_Shoes" title="Old Shoes"><strong>Old Shoes</strong></a></div> </td>
+            <td>  </td>
+            <td> <span class="colorrarity0">2</span> <br><span class="colorrarity1">3</span> <br><span class="colorrarity2">4</span> <br><span class="colorrarity3">5</span> <br><span class="colorrarity4">6</span> <br><span class="colorrarity5">7</span> <br><span class="colorrarity6">8</span> <br><span class="colorrarity7">9</span> <br> </td>
+            <td> 3 </td>
+            <td>  </td>
+        </tr>
+
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Plate_Boots" title="Plate Boots"><img alt="Plate Boots" src="/images/thumb/8/8a/Plate_Boots.png/60px-Plate_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/8/8a/Plate_Boots.png/90px-Plate_Boots.png 1.5x, /images/thumb/8/8a/Plate_Boots.png/120px-Plate_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Plate_Boots" title="Plate Boots"><strong>Plate Boots</strong></a></div> </td>
+            <td> <a href="/Fighter" title="Fighter">Fighter</a>, <a href="/Cleric" title="Cleric">Cleric</a> </td>
+            <td> <span class="colorrarity0">16 ~ 17</span> <br><span class="colorrarity1">18 ~ 19</span> <br><span class="colorrarity2">20 ~ 21</span> <br><span class="colorrarity3">22 ~ 23</span> <br><span class="colorrarity4">24 ~ 25</span> <br><span class="colorrarity5">26 ~ 27</span> <br><span class="colorrarity6">28 ~ 29</span> <br><span class="colorrarity7">30 ~ 31</span> <br> </td>
+            <td> 2 </td>
+            <td> 5% Projectile Reduction
+<p>-5 Magic Resistance
+</p><p>1 Strength
+</p>
+ </td>
+        </tr>
+
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Rugged_Boots" title="Rugged Boots"><img alt="Rugged Boots" src="/images/thumb/d/de/Rugged_Boots.png/60px-Rugged_Boots.png" decoding="async" width="60" height="60" srcset="/images/thumb/d/de/Rugged_Boots.png/90px-Rugged_Boots.png 1.5x, /images/thumb/d/de/Rugged_Boots.png/120px-Rugged_Boots.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Rugged_Boots" title="Rugged Boots"><strong>Rugged Boots</strong></a></div> </td>
+            <td>  </td>
+            <td> <span class="colorrarity0">6</span> <br><span class="colorrarity1">7</span> <br><span class="colorrarity2">8</span> <br><span class="colorrarity3">9 ~ 10</span> <br><span class="colorrarity4">11 ~ 12</span> <br><span class="colorrarity5">13 ~ 14</span> <br><span class="colorrarity6">14 ~ 15</span> <br><span class="colorrarity7">15 ~ 16</span> <br> </td>
+            <td> 5 </td>
+            <td> 10 Magic Resistance
+ </td>
+        </tr>
+
+        <tr>
+            <td> <div class="iconbox" style="display:inline-flex;width:max-content;max-width:initial; flex-direction: column;align-items: center;flex-wrap: wrap; white-space: pre-wrap;"><div class="rarity2 rounded relative"><a href="/Wizard_Shoes" title="Wizard Shoes"><img alt="Wizard Shoes" src="/images/thumb/7/7d/Wizard_Shoes.png/60px-Wizard_Shoes.png" decoding="async" width="60" height="60" srcset="/images/thumb/7/7d/Wizard_Shoes.png/90px-Wizard_Shoes.png 1.5x, /images/thumb/7/7d/Wizard_Shoes.png/120px-Wizard_Shoes.png 2x" data-file-width="180" data-file-height="180"></a></div><a href="/Wizard_Shoes" title="Wizard Shoes"><strong>Wizard Shoes</strong></a></div> </td>
+            <td> <a href="/Wizard" title="Wizard">Wizard</a> </td>
+            <td> <span class="colorrarity0">1</span> <br><span class="colorrarity1">2</span> <br><span class="colorrarity2">3</span> <br><span class="colorrarity3">4</span> <br><span class="colorrarity4">5</span> <br><span class="colorrarity5">6</span> <br><span class="colorrarity6">7</span> <br><span class="colorrarity7">8</span> <br> </td>
+            <td> 5 </td>
+            <td> 10 Magic Resistance
+ </td>
+        </tr>

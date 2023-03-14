@@ -59,8 +59,14 @@
         public Armor UpdateOrCreateByName(Armor armor)
         {
             //true if armor already exists
-            if(context.Armors.Where(w => w.Name == armor.Name).FirstOrDefault() != null)
+            if (context.Armors.Where(w => w.Name == armor.Name).FirstOrDefault() != null)
+            {
+                //get armor in db, use its id, then detach and update
+                Armor tempArmor = context.Armors.Where(w => w.Name == armor.Name).FirstOrDefault();
+                armor.Id = tempArmor.Id;
+                context.Entry(tempArmor).State = Microsoft.EntityFrameworkCore.EntityState.Detached;
                 return Update(armor);
+            }
             else
                 return Add(armor);
         }
