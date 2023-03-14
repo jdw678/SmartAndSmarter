@@ -82,5 +82,17 @@ namespace SmartAndSmaterAPI.Models
 
         [Column(TypeName = "varchar(1024)")]
         public string? Stats { get; set; }
+
+        public ArmorType ArmorType { get; set; }
+
+    }
+
+    public enum ArmorType
+    {
+        Chest,
+        Feet,
+        Hands,
+        Head,
+        Legs
     }
 }

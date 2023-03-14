@@ -5,6 +5,7 @@ import SelectionBox from './Components/SelectionBox';
 import { ApiCalls} from './Components/PureTSX/ApiCalls';
 import CompleteTable from './Components/CompleteTable';
 import { ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/WeaponAndArmorTypes';
+import React from 'react';
 
 
 

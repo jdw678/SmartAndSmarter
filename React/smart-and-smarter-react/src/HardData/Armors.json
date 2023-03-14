@@ -3,7 +3,6 @@
     "id": 0,
     "name": "Armet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/5/5b/Armet.png/60px-Armet.png",
-    "armorType": "Head",
     "blackArmorMin": 24,
     "blackArmorMax": 24,
     "greyArmorMin": 25,
@@ -27,13 +26,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -12,
-    "stats": "18.0% Headshot Reduction\n\u003Cp\u003E7% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "18.0% Headshot Reduction\n\u003Cp\u003E7% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Barbuta Helmet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/a/ad/Barbuta_Helmet.png/60px-Barbuta_Helmet.png",
-    "armorType": "Head",
     "blackArmorMin": 19,
     "blackArmorMax": 19,
     "greyArmorMin": 20,
@@ -57,13 +56,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Chapel De Fer",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/a/a3/Chapel_De_Fer.png/60px-Chapel_De_Fer.png",
-    "armorType": "Head",
     "blackArmorMin": 15,
     "blackArmorMax": 15,
     "greyArmorMin": 16,
@@ -87,13 +86,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Chaperon",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/0/01/Chaperon.png/60px-Chaperon.png",
-    "armorType": "Head",
     "blackArmorMin": 4,
     "blackArmorMax": 4,
     "greyArmorMin": 5,
@@ -117,13 +116,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "5.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "5.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Gjermundbu",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/1/14/Gjermundbu.png/60px-Gjermundbu.png",
-    "armorType": "Head",
     "blackArmorMin": 17,
     "blackArmorMax": 17,
     "greyArmorMin": 18,
@@ -147,13 +146,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E15 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E15 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Kettle Hat",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/d1/Kettle_Hat.png/60px-Kettle_Hat.png",
-    "armorType": "Head",
     "blackArmorMin": 15,
     "blackArmorMax": 15,
     "greyArmorMin": 16,
@@ -177,13 +176,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Leather Cap",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/b5/Leather_Cap.png/60px-Leather_Cap.png",
-    "armorType": "Head",
     "blackArmorMin": 12,
     "blackArmorMax": 12,
     "greyArmorMin": 13,
@@ -207,13 +206,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "7.0% Headshot Reduction"
+    "stats": "7.0% Headshot Reduction",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Ranger Hood",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/7e/Ranger_Hood.png/60px-Ranger_Hood.png",
-    "armorType": "Head",
     "blackArmorMin": 10,
     "blackArmorMax": 10,
     "greyArmorMin": 11,
@@ -237,13 +236,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "4.0% Headshot Reduction"
+    "stats": "4.0% Headshot Reduction",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Rogue Cowl",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/1/1b/Rogue_Cowl.png/60px-Rogue_Cowl.png",
-    "armorType": "Head",
     "blackArmorMin": 8,
     "blackArmorMax": 8,
     "greyArmorMin": 9,
@@ -267,13 +266,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "4.0% Headshot Reduction"
+    "stats": "4.0% Headshot Reduction",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Viking Helmet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/72/Viking_Helmet.png/60px-Viking_Helmet.png",
-    "armorType": "Head",
     "blackArmorMin": 19,
     "blackArmorMax": 19,
     "greyArmorMin": 20,
@@ -297,13 +296,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E"
+    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Visored Barbuta Helmet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/a/a3/Visored_Barbuta_Helmet.png/60px-Visored_Barbuta_Helmet.png",
-    "armorType": "Head",
     "blackArmorMin": 19,
     "blackArmorMax": 19,
     "greyArmorMin": 20,
@@ -327,13 +326,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "13.0% Headshot Reduction\n\u003Cp\u003E6% Projectile Reduction\n\u003C/p\u003E"
+    "stats": "13.0% Headshot Reduction\n\u003Cp\u003E6% Projectile Reduction\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Wizard Hat",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/98/Wizard_Hat.png/60px-Wizard_Hat.png",
-    "armorType": "Head",
     "blackArmorMin": 5,
     "blackArmorMax": 5,
     "greyArmorMin": 6,
@@ -357,13 +356,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "2.5% Headshot Reduction\n\u003Cp\u003E5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "2.5% Headshot Reduction\n\u003Cp\u003E5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
     "name": "Dark Plate Armor",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/a/a8/Dark_Plate_Armor.png/60px-Dark_Plate_Armor.png",
-    "armorType": "Chest",
     "blackArmorMin": 47,
     "blackArmorMax": 47,
     "greyArmorMin": 48,
@@ -387,13 +386,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -30,
-    "stats": "12% Projectile Reduction\n\u003Cp\u003E40 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12% Projectile Reduction\n\u003Cp\u003E40 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Doublet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/8/8d/Doublet.png/60px-Doublet.png",
-    "armorType": "Chest",
     "blackArmorMin": 17,
     "blackArmorMax": 17,
     "greyArmorMin": 18,
@@ -417,13 +416,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": ""
+    "stats": "",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Fine Cuirass",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/6/65/Fine_Cuirass.png/60px-Fine_Cuirass.png",
-    "armorType": "Chest",
     "blackArmorMin": 60,
     "blackArmorMax": 60,
     "greyArmorMin": 61,
@@ -447,13 +446,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -35,
-    "stats": "12% Projectile Reduction\n\u003Cp\u003E-10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12% Projectile Reduction\n\u003Cp\u003E-10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Frock",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/1/17/Frock.png/60px-Frock.png",
-    "armorType": "Chest",
     "blackArmorMin": 15,
     "blackArmorMax": 15,
     "greyArmorMin": 16,
@@ -477,13 +476,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "20 Magic Resistance"
+    "stats": "20 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Marauder Outfit",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/bc/Marauder_Outfit.png/60px-Marauder_Outfit.png",
-    "armorType": "Chest",
     "blackArmorMin": 28,
     "blackArmorMax": 28,
     "greyArmorMin": 29,
@@ -507,13 +506,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Mystic Vestments",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/d8/Mystic_Vestments.png/60px-Mystic_Vestments.png",
-    "armorType": "Chest",
     "blackArmorMin": 24,
     "blackArmorMax": 24,
     "greyArmorMin": 25,
@@ -537,13 +536,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "1 Will"
+    "stats": "1 Will",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Northern Full Tunic",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/3/38/Northern_Full_Tunic.png/60px-Northern_Full_Tunic.png",
-    "armorType": "Chest",
     "blackArmorMin": 43,
     "blackArmorMax": 43,
     "greyArmorMin": 44,
@@ -567,13 +566,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -15,
-    "stats": "20 Magic Resistance"
+    "stats": "20 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Oracle Robe",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/7e/Oracle_Robe.png/60px-Oracle_Robe.png",
-    "armorType": "Chest",
     "blackArmorMin": 21,
     "blackArmorMax": 21,
     "greyArmorMin": 22,
@@ -597,13 +596,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "1 Knowledge"
+    "stats": "1 Knowledge",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Padded Tunic",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/6/6d/Padded_Tunic.png/60px-Padded_Tunic.png",
-    "armorType": "Chest",
     "blackArmorMin": 10,
     "blackArmorMax": 10,
     "greyArmorMin": 11,
@@ -627,13 +626,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Regal Gambeson",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/b/bc/Regal_Gambeson.png/60px-Regal_Gambeson.png",
-    "armorType": "Chest",
     "blackArmorMin": 35,
     "blackArmorMax": 35,
     "greyArmorMin": 36,
@@ -657,13 +656,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -15,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Templar Armor",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/2/20/Templar_Armor.png/60px-Templar_Armor.png",
-    "armorType": "Chest",
     "blackArmorMin": 45,
     "blackArmorMax": 45,
     "greyArmorMin": 46,
@@ -687,13 +686,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -20,
-    "stats": "20 Magic Resistance"
+    "stats": "20 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Warden Outfit",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/77/Warden_Outfit.png/60px-Warden_Outfit.png",
-    "armorType": "Chest",
     "blackArmorMin": 30,
     "blackArmorMax": 30,
     "greyArmorMin": 31,
@@ -717,13 +716,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 0
   },
   {
     "id": 0,
     "name": "Cloth Pants",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/6/69/Cloth_Pants.png/60px-Cloth_Pants.png",
-    "armorType": "Legs",
     "blackArmorMin": 8,
     "blackArmorMax": 8,
     "greyArmorMin": 9,
@@ -747,13 +746,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": ""
+    "stats": "",
+    "armorType": 4
   },
   {
     "id": 0,
     "name": "Heavy Leather Leggings",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/c/c5/Heavy_Leather_Leggings.png/60px-Heavy_Leather_Leggings.png",
-    "armorType": "Legs",
     "blackArmorMin": 19,
     "blackArmorMax": 19,
     "greyArmorMin": 20,
@@ -777,13 +776,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "1 Strength"
+    "stats": "1 Strength",
+    "armorType": 4
   },
   {
     "id": 0,
     "name": "Leather Leggings",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/d1/Leather_Leggings.png/60px-Leather_Leggings.png",
-    "armorType": "Legs",
     "blackArmorMin": 15,
     "blackArmorMax": 15,
     "greyArmorMin": 16,
@@ -807,13 +806,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 4
   },
   {
     "id": 0,
     "name": "Loose Trousers",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/0/02/Loose_Trousers.png/60px-Loose_Trousers.png",
-    "armorType": "Legs",
     "blackArmorMin": 5,
     "blackArmorMax": 5,
     "greyArmorMin": 6,
@@ -837,13 +836,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -3,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 4
   },
   {
     "id": 0,
     "name": "Padded Leggings",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/e/ea/Padded_Leggings.png/60px-Padded_Leggings.png",
-    "armorType": "Legs",
     "blackArmorMin": 12,
     "blackArmorMax": 12,
     "greyArmorMin": 13,
@@ -867,13 +866,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E"
+    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E",
+    "armorType": 4
   },
   {
     "id": 0,
     "name": "Plate Pants",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/3/36/Plate_Pants.png/60px-Plate_Pants.png",
-    "armorType": "Legs",
     "blackArmorMin": 26,
     "blackArmorMax": 26,
     "greyArmorMin": 27,
@@ -897,13 +896,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -18,
-    "stats": "9% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "9% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 4
   },
   {
     "id": 0,
     "name": "Heavy Gauntlet",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/e/e7/Heavy_Gauntlet.png/60px-Heavy_Gauntlet.png",
-    "armorType": "Hands",
     "blackArmorMin": 12,
     "blackArmorMax": 12,
     "greyArmorMin": 13,
@@ -927,13 +926,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -3,
-    "stats": "4% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "4% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 2
   },
   {
     "id": 0,
     "name": "Leather Gloves",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/f/ff/Leather_Gloves.png/60px-Leather_Gloves.png",
-    "armorType": "Hands",
     "blackArmorMin": 3,
     "blackArmorMax": 3,
     "greyArmorMin": 4,
@@ -957,13 +956,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 2
   },
   {
     "id": 0,
     "name": "Rawhide Gloves",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/de/Rawhide_Gloves.png/60px-Rawhide_Gloves.png",
-    "armorType": "Hands",
     "blackArmorMin": 3,
     "blackArmorMax": 3,
     "greyArmorMin": 4,
@@ -987,13 +986,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E"
+    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E",
+    "armorType": 2
   },
   {
     "id": 0,
     "name": "Reinforced Gloves",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/4/43/Reinforced_Gloves.png/60px-Reinforced_Gloves.png",
-    "armorType": "Hands",
     "blackArmorMin": 6,
     "blackArmorMax": 6,
     "greyArmorMin": 7,
@@ -1017,13 +1016,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 2
   },
   {
     "id": 0,
     "name": "Riveted Gloves",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/4/4c/Riveted_Gloves.png/60px-Riveted_Gloves.png",
-    "armorType": "Hands",
     "blackArmorMin": 6,
     "blackArmorMax": 6,
     "greyArmorMin": 7,
@@ -1047,13 +1046,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "1 Strength"
+    "stats": "1 Strength",
+    "armorType": 2
   },
   {
     "id": 0,
     "name": "Adventurer Boots",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/3/30/Adventurer_Boots.png/60px-Adventurer_Boots.png",
-    "armorType": "Feet",
     "blackArmorMin": 6,
     "blackArmorMax": 6,
     "greyArmorMin": 7,
@@ -1077,13 +1076,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "5 Magic Resistance"
+    "stats": "5 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Heavy Boots",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/5/51/Heavy_Boots.png/60px-Heavy_Boots.png",
-    "armorType": "Feet",
     "blackArmorMin": 10,
     "blackArmorMax": 10,
     "greyArmorMin": 11,
@@ -1107,13 +1106,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "5 Magic Resistance"
+    "stats": "5 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Laced Turnshoe",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/df/Laced_Turnshoe.png/60px-Laced_Turnshoe.png",
-    "armorType": "Feet",
     "blackArmorMin": 5,
     "blackArmorMax": 5,
     "greyArmorMin": 6,
@@ -1137,13 +1136,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 3,
-    "stats": "5 Magic Resistance"
+    "stats": "5 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Lightfoot Boots",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9e/Lightfoot_Boots.png/60px-Lightfoot_Boots.png",
-    "armorType": "Feet",
     "blackArmorMin": 6,
     "blackArmorMax": 6,
     "greyArmorMin": 7,
@@ -1167,13 +1166,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": null
+    "stats": null,
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Old Shoes",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9a/Old_Shoes.png/60px-Old_Shoes.png",
-    "armorType": "Feet",
     "blackArmorMin": 2,
     "blackArmorMax": 2,
     "greyArmorMin": 3,
@@ -1197,13 +1196,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 3,
-    "stats": ""
+    "stats": "",
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Plate Boots",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/8/8a/Plate_Boots.png/60px-Plate_Boots.png",
-    "armorType": "Feet",
     "blackArmorMin": 16,
     "blackArmorMax": 17,
     "greyArmorMin": 18,
@@ -1227,13 +1226,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 2,
-    "stats": "5% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E1 Strength\n\u003C/p\u003E"
+    "stats": "5% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E1 Strength\n\u003C/p\u003E",
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Rugged Boots",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/d/de/Rugged_Boots.png/60px-Rugged_Boots.png",
-    "armorType": "Feet",
     "blackArmorMin": 6,
     "blackArmorMax": 6,
     "greyArmorMin": 7,
@@ -1257,13 +1256,13 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
     "name": "Wizard Shoes",
     "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/7/7d/Wizard_Shoes.png/60px-Wizard_Shoes.png",
-    "armorType": "Feet",
     "blackArmorMin": 1,
     "blackArmorMax": 1,
     "greyArmorMin": 2,
@@ -1287,6 +1286,7 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 1
   }
 ]

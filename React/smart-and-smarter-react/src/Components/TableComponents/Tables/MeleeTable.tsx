@@ -21,6 +21,7 @@ export default function MeleeTable(props: Props) {
                 <th className="Th" tabIndex={0} title="Sort ascending">Sweet/Sour Spot</th>
                 <th className="Th" tabIndex={0} title="Sort ascending">Weapon Reach/Hitbox</th>
                 <th className="Th" tabIndex={0} title="Sort ascending">Action Movement Speed</th>
+                <th className="Th" tabIndex={0} title="Sort ascending">Slow Down On Hit</th>
                 <th className="Th" tabIndex={0} title="Sort ascending">Unique</th>
             </tr>
         </thead>

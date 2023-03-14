@@ -7,6 +7,7 @@ import WeaponDamage from '../Cells/DamageCell'
 import '../../../CSS/CompleteTable.css';
 import TableImage from '../Cells/ImageCell'
 import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
+import SDOHCell from '../Cells/SDOHCell'
 
 
 type Props = {
@@ -103,6 +104,7 @@ export default function MeleeWeaponRecord(props: Props) {
             <td key={props.weapon.name + " sweet spot"}> {props.weapon.sweetSpot} </td>
             <td key={props.weapon.name + " reach"}> {ParseSpaceSplit(props.weapon.reach)} </td>
             <td key={props.weapon.name + " action movement speed"}> {ParsePercentSplit(props.weapon.actionMovementSpeed)} </td>
+            <td key={props.weapon.name + " slow down on hit"}><SDOHCell text={props.weapon.slowDownOnHit} /></td>
             <td key={props.weapon.name + " unique"}> 
             {
                 !props.weapon.uniqueName ? "None"

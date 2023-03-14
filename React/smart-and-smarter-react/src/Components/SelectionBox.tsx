@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import '../CSS/SelectionBox.css'
 import Item from '../images/Item.png'
-import Weapon_1 from '../images/Weapon_1.png'
-import Weapon_2 from '../images/Weapon_2.png'
+import Weapon_1 from '../images/Weapon_1.png';
+import Weapon_2 from '../images/Weapon_2.png';
 import '../CSS/ItemBox.css';
 import SelectionBoxItem from './SelectionBoxComponents/SelectionBoxItem'
 import GearPopOut, { GearPopUpData } from './SelectionBoxComponents/GearPopUp'

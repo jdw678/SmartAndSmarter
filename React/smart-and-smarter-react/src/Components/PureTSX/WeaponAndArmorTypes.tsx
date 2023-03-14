@@ -67,7 +67,8 @@ export type Weapon = {
     hand?: Hand,
     sweetSpot?: string,
     quiverSize?: bigint,
-    reloadSpeed?: number
+    reloadSpeed?: number,
+    slowDownOnHit?: string
 }
 
 export type WeaponList = {

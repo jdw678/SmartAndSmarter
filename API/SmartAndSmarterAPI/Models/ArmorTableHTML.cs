@@ -33,8 +33,16 @@ namespace SmartAndSmaterAPI.Models
 
             List<Armor> armors = new List<Armor>();
 
-            foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table/tbody").ToList())
+            foreach (HtmlNode article in doc.DocumentNode.SelectNodes("//article").ToList())
             {
+                //get the right tables
+                string armorTypeStr = article.GetAttributeValue<string>("data-title", "");
+                if (!armorTypeStr.Contains("Head") && !armorTypeStr.Contains("Chest") && !armorTypeStr.Contains("Foot") && !armorTypeStr.Contains("Legs") && !armorTypeStr.Contains("Hands"))
+                    continue;
+
+
+                HtmlNode table = article.SelectSingleNode("table").SelectSingleNode("tbody");
+
                 File.WriteAllText(folder + "HTML.txt", table.InnerHtml);
 
                 foreach (HtmlNode row in table.SelectNodes("tr"))
@@ -59,6 +67,26 @@ namespace SmartAndSmaterAPI.Models
                     //name cell of the table, innerText is name and has <img> tag with the image
                     armor.Name = name.InnerText.Trim().TrimEnd();
                     armor.ImageLocation = wikiUrl + name.Descendants("img").First().GetAttributeValue("src", "");
+
+                    //set armor type based on table data-title
+                    #region ArmorType
+
+                    if (armorTypeStr.Contains("Hands"))
+                        armor.ArmorType = ArmorType.Hands;
+
+                    if (armorTypeStr.Contains("Legs"))
+                        armor.ArmorType = ArmorType.Legs;
+
+                    if (armorTypeStr.Contains("Head"))
+                        armor.ArmorType = ArmorType.Head;
+
+                    if (armorTypeStr.Contains("Foot"))
+                        armor.ArmorType = ArmorType.Feet;
+
+                    if (armorTypeStr.Contains("Chest"))
+                        armor.ArmorType = ArmorType.Chest;
+
+                    #endregion
 
                     //wiki table is messed up for lightfoot boots, enter this record manually
                     if (armor.Name.Contains("Lightfoot"))
@@ -274,7 +302,6 @@ namespace SmartAndSmaterAPI.Models
 
             File.AppendAllText($"{folder}Armors.json", JsonSerializer.Serialize(armors, options));
             File.AppendAllText($"{reactFolder}Armors.json", JsonSerializer.Serialize(armors, options));
-            Console.WriteLine(reactFolder);
 
 
             return armors;

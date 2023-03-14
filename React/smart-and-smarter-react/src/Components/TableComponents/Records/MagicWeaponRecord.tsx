@@ -8,6 +8,7 @@ import '../../../CSS/CompleteTable.css';
 import TableImage from '../Cells/ImageCell'
 import { ParsePercentSplit, ParseSpaceSplit } from './MeleeWeaponRecord'
 import { Weapon } from '../../PureTSX/WeaponAndArmorTypes'
+import SDOHCell from '../Cells/SDOHCell'
 
 
 type Props = {
@@ -74,6 +75,7 @@ export default function MagicWeaponRecord(props: Props) {
             <td> {props.weapon.sweetSpot} </td>
             <td> {ParseSpaceSplit(props.weapon.reach)} </td>
             <td> {ParsePercentSplit(props.weapon.actionMovementSpeed)} </td>
+            <td key={props.weapon.name + "slow down on hit"}><SDOHCell text={props.weapon.slowDownOnHit}/></td>
             <td> 
             {
                 !props.weapon.uniqueName ? "None"

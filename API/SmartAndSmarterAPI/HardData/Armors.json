@@ -26,7 +26,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -12,
-    "stats": "18.0% Headshot Reduction\n\u003Cp\u003E7% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "18.0% Headshot Reduction\n\u003Cp\u003E7% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -55,7 +56,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -84,7 +86,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -113,7 +116,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "5.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "5.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -142,7 +146,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E15 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E15 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -171,7 +176,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "10.0% Headshot Reduction\n\u003Cp\u003E2% Projectile Reduction\n\u003C/p\u003E\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -200,7 +206,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "7.0% Headshot Reduction"
+    "stats": "7.0% Headshot Reduction",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -229,7 +236,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "4.0% Headshot Reduction"
+    "stats": "4.0% Headshot Reduction",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -258,7 +266,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "4.0% Headshot Reduction"
+    "stats": "4.0% Headshot Reduction",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -287,7 +296,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E"
+    "stats": "12.0% Headshot Reduction\n\u003Cp\u003E10 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E4% Projectile Reduction\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -316,7 +326,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "13.0% Headshot Reduction\n\u003Cp\u003E6% Projectile Reduction\n\u003C/p\u003E"
+    "stats": "13.0% Headshot Reduction\n\u003Cp\u003E6% Projectile Reduction\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -345,7 +356,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "2.5% Headshot Reduction\n\u003Cp\u003E5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "2.5% Headshot Reduction\n\u003Cp\u003E5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 3
   },
   {
     "id": 0,
@@ -374,7 +386,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -30,
-    "stats": "12% Projectile Reduction\n\u003Cp\u003E40 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12% Projectile Reduction\n\u003Cp\u003E40 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -403,7 +416,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": ""
+    "stats": "",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -432,7 +446,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -35,
-    "stats": "12% Projectile Reduction\n\u003Cp\u003E-10 Magic Resistance\n\u003C/p\u003E"
+    "stats": "12% Projectile Reduction\n\u003Cp\u003E-10 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -461,7 +476,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "20 Magic Resistance"
+    "stats": "20 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -490,7 +506,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -519,7 +536,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "1 Will"
+    "stats": "1 Will",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -548,7 +566,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -15,
-    "stats": "20 Magic Resistance"
+    "stats": "20 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -577,7 +596,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "1 Knowledge"
+    "stats": "1 Knowledge",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -606,7 +626,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -635,7 +656,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -15,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -664,7 +686,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -20,
-    "stats": "20 Magic Resistance"
+    "stats": "20 Magic Resistance",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -693,7 +716,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -10,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 0
   },
   {
     "id": 0,
@@ -722,7 +746,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": ""
+    "stats": "",
+    "armorType": 4
   },
   {
     "id": 0,
@@ -751,7 +776,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -8,
-    "stats": "1 Strength"
+    "stats": "1 Strength",
+    "armorType": 4
   },
   {
     "id": 0,
@@ -780,7 +806,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 4
   },
   {
     "id": 0,
@@ -809,7 +836,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -3,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 4
   },
   {
     "id": 0,
@@ -838,7 +866,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -5,
-    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E"
+    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E",
+    "armorType": 4
   },
   {
     "id": 0,
@@ -867,7 +896,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -18,
-    "stats": "9% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "9% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 4
   },
   {
     "id": 0,
@@ -896,7 +926,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": -3,
-    "stats": "4% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E"
+    "stats": "4% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E",
+    "armorType": 2
   },
   {
     "id": 0,
@@ -925,7 +956,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "1 Agility"
+    "stats": "1 Agility",
+    "armorType": 2
   },
   {
     "id": 0,
@@ -954,7 +986,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E"
+    "stats": "1 Will\n\u003Cp\u003E1 Knowledge\n\u003C/p\u003E",
+    "armorType": 2
   },
   {
     "id": 0,
@@ -983,7 +1016,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 2
   },
   {
     "id": 0,
@@ -1012,7 +1046,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 0,
-    "stats": "1 Strength"
+    "stats": "1 Strength",
+    "armorType": 2
   },
   {
     "id": 0,
@@ -1041,7 +1076,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "5 Magic Resistance"
+    "stats": "5 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
@@ -1070,7 +1106,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "5 Magic Resistance"
+    "stats": "5 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
@@ -1099,7 +1136,38 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 3,
-    "stats": "5 Magic Resistance"
+    "stats": "5 Magic Resistance",
+    "armorType": 1
+  },
+  {
+    "id": 0,
+    "name": "Lightfoot Boots",
+    "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/9/9e/Lightfoot_Boots.png/60px-Lightfoot_Boots.png",
+    "blackArmorMin": 6,
+    "blackArmorMax": 6,
+    "greyArmorMin": 7,
+    "greyArmorMax": 7,
+    "whiteArmorMin": 8,
+    "whiteArmorMax": 8,
+    "greenArmorMin": 9,
+    "greenArmorMax": 9,
+    "blueArmorMin": 10,
+    "blueArmorMax": 10,
+    "purpleArmorMin": 11,
+    "purpleArmorMax": 11,
+    "orangeArmorMin": 12,
+    "orangeArmorMax": 12,
+    "goldArmorMin": 13,
+    "goldArmorMax": 13,
+    "barbarianCanUse": false,
+    "fighterCanUse": false,
+    "clericCanUse": false,
+    "rangerCanUse": false,
+    "rogueCanUse": false,
+    "wizardCanUse": false,
+    "movementSpeed": 5,
+    "stats": null,
+    "armorType": 1
   },
   {
     "id": 0,
@@ -1128,7 +1196,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 3,
-    "stats": ""
+    "stats": "",
+    "armorType": 1
   },
   {
     "id": 0,
@@ -1157,7 +1226,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 2,
-    "stats": "5% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E1 Strength\n\u003C/p\u003E"
+    "stats": "5% Projectile Reduction\n\u003Cp\u003E-5 Magic Resistance\n\u003C/p\u003E\u003Cp\u003E1 Strength\n\u003C/p\u003E",
+    "armorType": 1
   },
   {
     "id": 0,
@@ -1186,7 +1256,8 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "10 Magic Resistance"
+    "stats": "10 Magic Resistance",
+    "armorType": 1
   },
   {
     "id": 0,
@@ -1215,35 +1286,7 @@
     "rogueCanUse": false,
     "wizardCanUse": false,
     "movementSpeed": 5,
-    "stats": "10 Magic Resistance"
-  },
-  {
-    "id": 0,
-    "name": "Lightfoot Boots",
-    "imageLocation": "https://darkanddarker.wiki.spellsandguns.com/images/thumb/5/54/Cobalt_Lightfoot_Boots.png/60px-Cobalt_Lightfoot_Boots.png",
-    "blackArmorMin": 6,
-    "blackArmorMax": 6,
-    "greyArmorMin": 7,
-    "greyArmorMax": 7,
-    "whiteArmorMin": 8,
-    "whiteArmorMax": 8,
-    "greenArmorMin": 9,
-    "greenArmorMax": 9,
-    "blueArmorMin": 10,
-    "blueArmorMax": 10,
-    "purpleArmorMin": 11,
-    "purpleArmorMax": 11,
-    "orangeArmorMin": 12,
-    "orangeArmorMax": 12,
-    "goldArmorMin": 13,
-    "goldArmorMax": 13,
-    "barbarianCanUse": false,
-    "fighterCanUse": false,
-    "clericCanUse": false,
-    "rangerCanUse": false,
-    "rogueCanUse": false,
-    "wizardCanUse": false,
-    "movementSpeed": 5,
-    "stats": null
+    "stats": "10 Magic Resistance",
+    "armorType": 1
   }
 ]

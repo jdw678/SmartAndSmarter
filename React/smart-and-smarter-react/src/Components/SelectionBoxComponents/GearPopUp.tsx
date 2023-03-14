@@ -3,7 +3,6 @@ import { Armor, ArmorList, ArmorType, ItemClass, SpecificWeaponType, Weapon, Wea
 import '../../CSS/GearPopUp.css';
 import GearPopUpItem from './GearPopUpItem';
 import GearPopUpCondensedItem from './GearPopUpCondensedItem';
-import Arrow from '../../images/Arrow.png';
 
 //data expected
 //possibly null if item has not been set yet, but returnData must always be not null
