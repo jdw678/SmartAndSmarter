@@ -1,10 +1,10 @@
 
 .Background {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -13,23 +13,28 @@
 }
 
 .MainContainer {
+    padding: 1%;
     left: 25vw;
     top: 20vh;
-    width: 25%;
-    min-width: 200px;
-    max-width: 700px;
+    width: auto;
     position: absolute;
+    min-width: 300px;
+    max-width: 1400px;
     background-color: rgba(20, 20, 20, 0.836);
     box-shadow: 0 0px 8px 6px var(--dropdown-background-color);
-    color: black;
-    text-align: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(var(--text-orange));
+}
+
+.ListContainer {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 1%;
-    color: rgb(var(--text-orange));
     text-align: left;
+    min-width: 300px;
     
 }
 
@@ -66,7 +71,7 @@
 /*the ul list of drop down items*/
 .GearDropDownList{
     position: absolute;
-    left: 90%;
+    left: 280px;
     margin-bottom: 4%;
     margin-left: 2%;
     padding: 2%;
@@ -78,10 +83,11 @@
     display: none;
     flex-direction: column;
     grid-column: 2;
+    z-index: 1;
 }
 
 .GearDropDownList ul {
-    left: 90%;
+    left: 82%;
 }
 
 .GearDropDownContainer:hover{
@@ -110,4 +116,16 @@
 .GearFont {
     font-size: 30px;
     font-weight: 400;
+    color: rgb(var(--text-orange));
+}
+
+.GearHr {
+    position: absolute;
+    width: 1px;
+    height: 96%;
+    top: 2%;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--dropdown-background-color);
+    margin-right: 10px;
 }

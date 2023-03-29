@@ -1,0 +1,154 @@
+
+
+.ItemEditorMainContainer{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-items: start;
+}
+
+.ItemBackground {
+    width: 150px;
+}
+
+.ItemContainer{
+    position: absolute;
+    height: 172px;
+    width: 68px;
+    top: 28px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Item{
+    max-height: 172px;
+    max-width: 68px;
+}
+
+.ReturnButton {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(var(--text-orange));
+    padding: 2px;
+    font-weight: 400;
+    font-size: large;
+    color: var(--text-white);
+    cursor: var(--cursor-blue);
+}
+
+.RarityMainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+}
+
+.RarityDropDownButton {
+    background-color: rgba(114, 114, 114, 0.39);
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    min-width: 93px;
+}
+
+.LightMode {
+    --text: rgba(255, 255, 255, 0.575);
+    --blur: 8px;
+    /*background-color: var(--text);*/
+    text-shadow:
+                 2px 2px var(--blur) var(--text), -2px 2px var(--blur) var(--text), 2px -2px var(--blur) var(--text), -2px -2px var(--blur) var(--text),
+                 1px 1px var(--blur) var(--text), -1px 1px var(--blur) var(--text), 1px -1px var(--blur) var(--text), -1px -1px var(--blur) var(--text);
+}
+
+.DarkMode {
+    --text: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0 var(--text), -1px 1px 0 var(--text), 1px -1px 0 var(--text), -1px -1px 0 var(--text);
+}
+
+.RarityDropDownList{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(58, 58, 58);
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.RarityDropDownList li {
+    padding: 5px;
+}
+
+
+.RarityDropDownList li:hover {
+    background-color: var(--dropdown-background-color);
+}
+
+.Attribute {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+.AttributeInput {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.DamageWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.DamageInputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.DamageInput {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.DamageRarityWrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 5px;
+    align-items: center;
+    justify-content: space-between;
+    top: 80px;
+    width: 95%;
+    margin-left: 5px;
+}
+
+.DamageRarity {
+    white-space: nowrap;
+}
+
+.DamageRarity.LightMode {
+    --text: rgb(255, 255, 255);
+    --blur: 5px;
+    /*background-color: var(--text);*/
+    text-shadow: 3px 3px var(--blur) var(--text), -3px 3px var(--blur) var(--text), 3px -3px var(--blur) var(--text), -3px -3px var(--blur) var(--text), 
+                 2px 2px var(--blur) var(--text), -2px 2px var(--blur) var(--text), 2px -2px var(--blur) var(--text), -2px -2px var(--blur) var(--text),
+                 1px 1px var(--blur) var(--text), -1px 1px var(--blur) var(--text), 1px -1px var(--blur) var(--text), -1px -1px var(--blur) var(--text);
+}

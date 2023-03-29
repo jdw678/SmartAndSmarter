@@ -9,7 +9,8 @@ type Props = {
     itemClass: ItemClass,
     name: string,
     children?: Props[],
-    returnData: (data?: GearPopUpData) => void    
+    style: React.CSSProperties,
+    returnItem: (item: Armor | Weapon) => void
 }
 
 export default function GearPopUpCondensedItem(props: Props) {
@@ -29,13 +30,13 @@ export default function GearPopUpCondensedItem(props: Props) {
             props.itemList && !props.children ?
                 props.itemList.map((item: Weapon | Armor) =>
                 {
-                    return <GearPopUpItem itemClass={props.itemClass} returnData={props.returnData} item={item} key={item.name}/>
+                    return <GearPopUpItem itemClass={props.itemClass} returnItem={props.returnItem} item={item} key={item.name} style={props.style}/>
                 })
             : null}
             {!props.itemList && props.children ?
                 props.children.map((prop: Props) =>
                 {
-                    return <GearPopUpCondensedItem itemClass={props.itemClass} returnData={props.returnData} name={prop.name} itemList={prop.itemList} children={prop.children} key={prop.name}/>
+                    return <GearPopUpCondensedItem itemClass={props.itemClass} returnItem={props.returnItem} name={prop.name} itemList={prop.itemList} children={prop.children} key={prop.name}  style={props.style}/>
                 })
             : null}
         </ul>

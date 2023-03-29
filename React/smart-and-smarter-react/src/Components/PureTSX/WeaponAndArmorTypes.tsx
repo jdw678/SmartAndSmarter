@@ -78,7 +78,9 @@ export type WeaponList = {
     bows: Weapon[]
 }
 
-
+export type UserItem = {
+    item: Weapon | Armor
+}
 
 export type Armor = {
     id: bigint,
@@ -140,14 +142,14 @@ export enum ArmorType {
 //all possible rarities
 export enum Rarity
 {
-    Black,
-    Grey,
-    White,
-    Green,
-    Blue,
-    Purple,
-    Orange,
-    Gold
+    Black = "Junk",
+    Grey = "Poor",
+    White = "Common",
+    Green = "Uncommon",
+    Blue = "Rare",
+    Purple = "Epic",
+    Orange = "Legendary",
+    Gold = "Unique"
 }
 
 //helps to break apart items into more descriptive tables
@@ -163,4 +165,3 @@ export enum SpecificWeaponType
     Magical = "Magical",
     Shield = "Shield"
 }
-

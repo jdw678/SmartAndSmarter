@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { Armor, ArmorList, ArmorType, ItemClass, SpecificWeaponType, Weapon, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
+import { Armor, ArmorList, ArmorType, ItemClass, SpecificWeaponType, UserItem, Weapon, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
 import '../../CSS/GearPopUp.css';
 import GearPopUpItem from './GearPopUpItem';
 import GearPopUpCondensedItem from './GearPopUpCondensedItem';
+import ItemEditor from './ItemEditor';
 
 //data expected
 //possibly null if item has not been set yet, but returnData must always be not null
 export type GearPopUpData = {
     itemClass: ItemClass,
-    item?: Armor | Weapon,
+    item?: UserItem,
     armorType?: ArmorType,
-    returnData: (data?: GearPopUpData) => void
+    returnData: (item?: UserItem) => void
 }
+
 
 
 type Props = {
@@ -23,6 +25,14 @@ type Props = {
 
 export default function GearPopUp(props: Props) {
 
+  const [userItem, setUserItem] = useState<UserItem>();
+
+  const [hoverable, setHoverable] = useState<React.CSSProperties>({display:'inherit'});
+
+  if(props.data.item && !userItem)
+  {
+    setUserItem(props.data.item);
+  }
   
   //check if weapon is of specific weapon type passed
   function isWeaponType(weapon: Weapon, type: SpecificWeaponType)
@@ -37,9 +47,16 @@ export default function GearPopUp(props: Props) {
     {
       name: name,
       itemList: props.weaponList.meleeWeapons.filter(weapon => isWeaponType(weapon, type)),
-      returnData: props.data.returnData,
+      returnItem: setItem,
+      style: hoverable,
       itemClass: props.data.itemClass
     })
+  }
+
+  function setItem(item: Armor | Weapon)
+  {
+    setUserItem({...userItem, item: item});
+    setHoverable({display:'none'});
   }
 
   //create array of meleeprop objs to be passed to the condenseditem for melee weapons
@@ -53,39 +70,57 @@ export default function GearPopUp(props: Props) {
     
   ]
 
-  function ReturnDataAndClose(data?: GearPopUpData)
+  function ReturnDataAndClose(item?: UserItem)
   {
-    props.data.returnData(data);
+    props.data.returnData(item);
     props.togglePopUp(false);
 
   }
 
+  
+
   return (
     <div className='Background'>
-        <div className='MainContainer'>
-          {props.data.itemClass == ItemClass.Weapon ? 
+      <div className='MainContainer'>
+        <div className='ListContainer' onMouseEnter={() => setHoverable({display:'inherit'})}>
+          
+          {//this is the drop down list of items
+          props.data.itemClass == ItemClass.Weapon ? 
           <>
             <div className='GearDropDownContainer'>
-              <h1 className='GearDropDownHeader GearFont' onClick={() => ReturnDataAndClose()}>None</h1>
+              <h1 className='GearDropDownHeader GearFont' onClick={() => { ReturnDataAndClose() }}>None</h1>
             </div>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Bows' itemList={props.weaponList.bows}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Shields' itemList={props.weaponList.shields}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Melee Weapons' children={meleeProps}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnData={ReturnDataAndClose} name='Magic Weapons' itemList={props.weaponList.magicWeapons}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Bows' itemList={props.weaponList.bows} style={hoverable}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Shields' itemList={props.weaponList.shields} style={hoverable}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Melee Weapons' children={meleeProps} style={hoverable}/>
+            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Magic Weapons' itemList={props.weaponList.magicWeapons} style={hoverable}/>
           </>
           :
           <ul>
-            <li className='GearLI GearFont' onClick={() => ReturnDataAndClose()}>None</li>
+            <li className='GearLI GearFont' onClick={() => { ReturnDataAndClose() }}>None</li>
             {props.armorList.filter(armor => armor.armorType == props.data.armorType).map(armor =>
               {
                 return(
-                  <GearPopUpItem itemClass={ItemClass.Armor} item={armor} returnData={ReturnDataAndClose}/>
+                  <GearPopUpItem itemClass={ItemClass.Armor} item={armor} returnItem={setItem} style={hoverable}/>
                 )
               })
             }
           </ul>
           }
         </div>
+          {
+            userItem ? 
+            (
+            <>
+              <div style={{width:'10px'}}>
+                <hr className='GearHr'/>
+              </div>
+              <ItemEditor itemClass={props.data.itemClass} item={userItem} returnItem={ReturnDataAndClose} key={userItem.item.name + " item editor"}/>
+            </>
+            )
+            : null
+          }
+      </div>
     </div>
   )
 }

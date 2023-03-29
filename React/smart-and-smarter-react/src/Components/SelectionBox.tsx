@@ -115,7 +115,7 @@ export default function SelectionBox(props: Props) {
         </div>
         
         {popUpActive && gearData ? //the pop up
-        <GearPopUp data={gearData} togglePopUp={setPopUpActive} weaponList={props.weaponList} armorList={props.armorList} key={gearData.item?.name}/>
+        <GearPopUp data={gearData} togglePopUp={setPopUpActive} weaponList={props.weaponList} armorList={props.armorList} key={gearData.item?.item.name}/>
         :
         null
         }

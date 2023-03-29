@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { ArmorType, ItemClass, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
+import { ArmorType, ItemClass, UserItem, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
 import GearPopOut, { GearPopUpData } from './GearPopUp';
 
 type Props = {
     img: string,
-    backgroundImgStyle: React.CSSProperties,
+    backgroundImgStyle?: React.CSSProperties,
     itemImgSize?: "small" | "medium" | "large",
-    text: string,
+    text?: string,
     useOverlay: boolean,
     armorType?: ArmorType,
     itemClass: ItemClass,
@@ -20,18 +20,16 @@ export default function SelectionBoxItem(props: Props) {
     const className = props.useOverlay ? "overlay" : "";
 
     //state to hold gear pop up data
-    const [gearData, setGearData] = useState<GearPopUpData>();
+    const [item, setItem] = useState<UserItem>();
 
     //toggle the GearPopUp component and pass it any stored data
     function togglePopUp() {
-        props.setPopUpActive({...gearData, itemClass: props.itemClass, returnData: saveUpdatedGearData, armorType: props.armorType});
+        props.setPopUpActive({item, itemClass: props.itemClass, returnData: saveUpdatedGearData, armorType: props.armorType});
     }
 
     //save data passed from the GearPopUp component
-    function saveUpdatedGearData(data?: GearPopUpData) {
-        setGearData(data);
-        console.log("Data Got!");
-        console.log(data);
+    function saveUpdatedGearData(item?: UserItem) {
+        setItem(item);
     }
 
     function getItemImageSize()
@@ -50,12 +48,34 @@ export default function SelectionBoxItem(props: Props) {
         return "";
     }
 
+    function getItemImageContainer()
+    {
+        if(props.itemImgSize === 'small')
+            return "SmallSelectionBoxContainer";
+        
+        
+        if(props.itemImgSize === 'medium')
+            return "MediumSelectionBoxContainer";
+
+    
+        if(props.itemImgSize === 'large')
+            return "LargeSelectionBoxContainer";
+
+        return "";
+    }
+
   return (
     <>
-    <button onClick={togglePopUp} style={{background: 'transparent'}}>
+    <button onClick={togglePopUp} style={{background: 'transparent'}} className='SelectionButton'>
         <div>
             <img src={props.img} alt={props.text} style={props.backgroundImgStyle}/>
-            {gearData ? <img src={gearData.item?.imageLocation} className={getItemImageSize()} style={{position:'absolute'}}/> : null}
+            <div className={getItemImageContainer()} style={{position:'absolute'}}>
+                
+                {item ?
+                        <img src={item.item.imageLocation} className={getItemImageSize()} key={item.item.name} />
+                : null
+                }
+            </div>
         </div>
         <div className={className}>
             <span style={{color:"white"}}>{props.text}</span>

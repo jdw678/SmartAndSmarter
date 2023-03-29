@@ -140,13 +140,13 @@ Responsive Image gallery Style rules
   background-position: center;
 }
 
-button{
+.SelectionButton{
   cursor:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;;
   box-shadow: 0 0 5px whitesmoke,
   0 0 25px whitesmoke; 
   }
   
-  button:hover {
+  .SelectionButton:hover {
    
   cursor:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;;
   box-shadow: 0 0 5px black,
@@ -157,22 +157,34 @@ button{
 
 .SmallSelectionBoxItem {
   position: absolute;
-  left: 57px;
+  left: 2px;
   width: 50px;
   top: 4px;
 }
 
 .MediumSelectionBoxItem {
   position: absolute;
-  left: 57px;
+  left: 2px;
   width: 50px;
-  top: 6px;
+  top: 4px;
 }
 
+
 .LargeSelectionBoxItem {
+  max-height: 98px;
+  max-width: 40px;
+}
+
+
+.LargeSelectionBoxContainer {
   position: absolute;
-  left: 36px;
-  top: 12px;
-  height: 10px;
-  width: 50px;
+  height: 98px;
+  width: 40px;
+  top: 15px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  
 }

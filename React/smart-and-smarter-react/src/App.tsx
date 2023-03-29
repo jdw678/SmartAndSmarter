@@ -6,6 +6,7 @@ import { ApiCalls} from './Components/PureTSX/ApiCalls';
 import CompleteTable from './Components/CompleteTable';
 import { Armor, ArmorList, Weapon, WeaponList, WeaponType } from './Components/PureTSX/WeaponAndArmorTypes';
 import React from 'react';
+import HomePage from './Components/HomePage';
 
 
 
@@ -95,16 +96,23 @@ function App() {
   }
 
 
+  var toggle = true;
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+    {
+      toggle ?
+      <div className="App">
         
         {!isWeaponLoading && !isArmorLoading && weaponListParsed && armorList ? <SelectionBox armorList={armorList} weaponList={weaponListParsed}/> : null}
         <Temptop/>
         {(!isWeaponLoading && weaponListParsed) ? <CompleteTable weaponList={weaponListParsed}/> : null }
         
-      </header>
     </div>
+    : <HomePage />
+    }
+
+    </>
   );
   
 }
