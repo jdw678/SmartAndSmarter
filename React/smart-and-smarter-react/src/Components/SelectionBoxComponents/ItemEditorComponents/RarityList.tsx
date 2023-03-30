@@ -4,23 +4,25 @@ import '../../../CSS/ItemEditor.css';
 
 type Props = {
     style?: React.CSSProperties,
-    setAttributeCount: (attributeCount: number) => void
+    rarity: Rarity,
+    autoUpdate: boolean,
+    updateRarity: (rarity: Rarity) => void,
+    updateAutoUpdate: (autoUpdate: boolean) => void
 }
 
 export default function RarityList(props: Props) {
 
-  const [rarity, setRarity] = useState<Rarity>(Rarity.Black);
   const [hoverable, setHoverable] = useState<boolean>(false);
 
 
   function getColorFromRarity()
   {
-    return "var(--" + rarity.toLowerCase() + ")";
+    return "var(--" + props.rarity.toLowerCase() + ")";
   }
 
   function useLightMode() : boolean
   {
-    if(rarity == Rarity.Black)
+    if(props.rarity == Rarity.Black)
       return true;
 
     return false;
@@ -29,42 +31,25 @@ export default function RarityList(props: Props) {
   //update the rarity and set how many attributes are available on the weapon based on the rarity set
   function updateRarity(rarity: Rarity)
   {
-    setRarity(rarity);
-    setHoverable(false)
-    switch(rarity)
-    {
-      case Rarity.Black:
-        props.setAttributeCount(0);
-        break;
-      case Rarity.Grey:
-        props.setAttributeCount(0);
-        break;
-      case Rarity.White:
-        props.setAttributeCount(0);
-        break;
-      case Rarity.Green:
-        props.setAttributeCount(1);
-        break;
-      case Rarity.Blue:
-        props.setAttributeCount(2);
-        break;
-      case Rarity.Purple:
-        props.setAttributeCount(3);
-        break;
-      case Rarity.Orange:
-        props.setAttributeCount(4);
-        break;
-      case Rarity.Gold:
-        props.setAttributeCount(5);
-        break;
-    }
+    props.updateRarity(rarity);
+    setHoverable(false);
+    
   }
+
+  function updateAutoUpdate(autoUpdate: boolean)
+  {
+    props.updateAutoUpdate(autoUpdate);
+  }
+  
   return (
     <div style={props.style}>
       <div className='RarityMainContainer'>
         <h1 className='GearFont' style={{margin:'0'}}>Rarity:</h1>
-        <div className='RarityDropDownButton ' style={{marginLeft:'30px', boxShadow:'0 0px 10px 6px ' + getColorFromRarity()}} onMouseEnter={() => setHoverable(true)} onMouseLeave={() => setHoverable(false)}>
-          <h1 className={'GearFont ' + (useLightMode() ? 'LightMode' : 'DarkMode')} style={{color: getColorFromRarity(), textAlign:'center'}} key={rarity.length + " "}>{rarity}</h1>
+        <div className='RarityDropDownButton '
+          style={{marginLeft:'30px', boxShadow:'0 0px 10px 6px ' + getColorFromRarity(), cursor: !props.autoUpdate ? 'var(--cursor-blue)' : 'var(--cursor-orange)'}}
+          onMouseEnter={() => {if(!props.autoUpdate) setHoverable(true)}} onMouseLeave={() => setHoverable(false)}
+        >
+          <h1 className={'GearFont ' + (useLightMode() ? 'LightMode' : 'DarkMode')} style={{color: getColorFromRarity(), textAlign:'center'}} key={props.rarity.length + " "}>{props.rarity}</h1>
           <ul className='RarityDropDownList' style={{display: hoverable ? 'inherit' : 'none', position: 'absolute'}}>
               <li className='LightMode' style={{color: 'var(--junk)'}} key='junk' onClick={() => updateRarity(Rarity.Black)}>Junk</li>
               <li className='DarkMode' style={{color: 'var(--poor)'}} key='poor'  onClick={() => updateRarity(Rarity.Grey)}>Poor</li>
@@ -77,6 +62,9 @@ export default function RarityList(props: Props) {
 
           </ul>
         </div>
+        <h1 className='GearFont AutoUpdateText' >Auto Update 
+          <input className='AutoUpdateCheckBox' type='checkbox' checked={props.autoUpdate} onChange={(e) => updateAutoUpdate(e.target.checked)}></input>
+        </h1>
       </div>
     </div>
   )

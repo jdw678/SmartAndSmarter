@@ -79,7 +79,10 @@ export type WeaponList = {
 }
 
 export type UserItem = {
-    item: Weapon | Armor
+    item: Weapon | Armor,
+    rarity: Rarity,
+    attributes: Attribute[],
+    damage: number
 }
 
 export type Armor = {
@@ -164,4 +167,28 @@ export enum SpecificWeaponType
     Crossbow = "Crossbow",
     Magical = "Magical",
     Shield = "Shield"
+}
+
+export type Attribute = {
+    value: number,
+    valueType: AttributeValueType,
+    type: AttributeType
+}
+
+export enum AttributeType
+{
+    Strength = "Strength",
+    Agility = "Agility",
+    Will = "Will",
+    Knowledge = "Knowledge",
+    Resourcefulness = "Resourcefulness",
+    PhysicalDamageReduction = "PhysicalDamageReduction",
+    WeaponDamage = "WeaponDamage"
+}
+
+export enum AttributeValueType
+{
+    Percent = "Percent",
+    True = "True",
+    Default = "Default"
 }

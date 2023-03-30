@@ -6,12 +6,12 @@ type Props = {
     img: string,
     backgroundImgStyle?: React.CSSProperties,
     itemImgSize?: "small" | "medium" | "large",
-    text?: string,
+    text: string,
     useOverlay: boolean,
     armorType?: ArmorType,
-    itemClass: ItemClass,
+    itemClass: ItemClass
     
-    setPopUpActive: (gearData?: GearPopUpData) => void
+    setPopUpActive: (gearData: GearPopUpData) => void
 }
 
 export default function SelectionBoxItem(props: Props) {
@@ -20,16 +20,17 @@ export default function SelectionBoxItem(props: Props) {
     const className = props.useOverlay ? "overlay" : "";
 
     //state to hold gear pop up data
-    const [item, setItem] = useState<UserItem>();
+    const [item, setItem] = useState<UserItem>(localStorage.getItem(props.text) ? JSON.parse(localStorage.getItem(props.text) as string) : undefined);
 
     //toggle the GearPopUp component and pass it any stored data
     function togglePopUp() {
-        props.setPopUpActive({item, itemClass: props.itemClass, returnData: saveUpdatedGearData, armorType: props.armorType});
+        props.setPopUpActive({item, itemClass: props.itemClass, returnData: saveUpdatedGearData, armorType: props.armorType, itemSlot: props.text});
     }
 
     //save data passed from the GearPopUp component
     function saveUpdatedGearData(item?: UserItem) {
-        setItem(item);
+        if(item)
+            setItem(item);
     }
 
     function getItemImageSize()

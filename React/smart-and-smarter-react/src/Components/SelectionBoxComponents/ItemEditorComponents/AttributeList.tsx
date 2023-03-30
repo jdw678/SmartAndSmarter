@@ -1,24 +1,34 @@
 import React from 'react'
-import { Rarity } from '../../PureTSX/WeaponAndArmorTypes';
-import Attribute from './Attribute';
+import { Attribute, Rarity } from '../../PureTSX/WeaponAndArmorTypes';
+import AttributeItem from './AttributeItem';
 
 type Props = {
-    attributeCount: number
+    attributes: Attribute[],
+    updateAttributes: (attributes: Attribute[]) => void
 }
 
 export default function AttributeList(props: Props) {
 
-    const attributes = []
-    const rarities = [Rarity.Green, Rarity.Blue, Rarity.Purple, Rarity.Orange, Rarity.Gold]
+    
+  const attributes = []
+  const rarities = [Rarity.Green, Rarity.Blue, Rarity.Purple, Rarity.Orange, Rarity.Gold]
 
-    for(let i = 0; i < props.attributeCount; i++)
-    {
-      attributes.push(
-        <Attribute attributeCount={i} key={"Attribute Component " + i} rarity={rarities[i]}/>
-        );
-    }
-    return (
-      <>{attributes}</>
-    )
+  //let the mapped attributes pass their index (attributeCount) and update their values
+  function updateAttribute(attribute: Attribute, index: number)
+  {
+    var attributes = props.attributes;
+    attributes[index] = attribute;
+    props.updateAttributes(attributes)
+  }
+
+  for(let i = 0; i < props.attributes.length; i++)
+  {
+    attributes.push(
+      <AttributeItem attributeCount={i} key={"Attribute Component " + i} rarity={rarities[i]} attribute={props.attributes[i]} updateAttribute={updateAttribute}/>
+      );
+  }
+  return (
+    <>{attributes}</>
+  )
   
 }

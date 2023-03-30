@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Armor, ArmorList, ArmorType, ItemClass, SpecificWeaponType, UserItem, Weapon, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
+import { Armor, ArmorList, ArmorType, ItemClass, Rarity, SpecificWeaponType, UserItem, Weapon, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
 import '../../CSS/GearPopUp.css';
 import GearPopUpItem from './GearPopUpItem';
 import GearPopUpCondensedItem from './GearPopUpCondensedItem';
@@ -11,6 +11,7 @@ export type GearPopUpData = {
     itemClass: ItemClass,
     item?: UserItem,
     armorType?: ArmorType,
+    itemSlot: string,
     returnData: (item?: UserItem) => void
 }
 
@@ -55,7 +56,12 @@ export default function GearPopUp(props: Props) {
 
   function setItem(item: Armor | Weapon)
   {
-    setUserItem({...userItem, item: item});
+    setUserItem({
+      item: item,
+      attributes: userItem?.attributes ? userItem.attributes : [],
+      damage: userItem?.damage ? userItem.damage : 0,
+      rarity: userItem?.rarity ? userItem.rarity : Rarity.Black
+    });
     setHoverable({display:'none'});
   }
 
@@ -115,7 +121,7 @@ export default function GearPopUp(props: Props) {
               <div style={{width:'10px'}}>
                 <hr className='GearHr'/>
               </div>
-              <ItemEditor itemClass={props.data.itemClass} item={userItem} returnItem={ReturnDataAndClose} key={userItem.item.name + " item editor"}/>
+              <ItemEditor itemSlot={props.data.itemSlot} itemClass={props.data.itemClass} item={userItem} returnItem={ReturnDataAndClose} key={userItem.item.name + " item editor"}/>
             </>
             )
             : null

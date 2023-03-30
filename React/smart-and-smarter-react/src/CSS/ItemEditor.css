@@ -63,10 +63,9 @@
 
 .LightMode {
     --text: rgba(255, 255, 255, 0.575);
-    --blur: 8px;
+    --blur: 4px;
     /*background-color: var(--text);*/
-    text-shadow:
-                 2px 2px var(--blur) var(--text), -2px 2px var(--blur) var(--text), 2px -2px var(--blur) var(--text), -2px -2px var(--blur) var(--text),
+    text-shadow: 2px 2px var(--blur) var(--text), -2px 2px var(--blur) var(--text), 2px -2px var(--blur) var(--text), -2px -2px var(--blur) var(--text),
                  1px 1px var(--blur) var(--text), -1px 1px var(--blur) var(--text), 1px -1px var(--blur) var(--text), -1px -1px var(--blur) var(--text);
 }
 
@@ -91,6 +90,18 @@
 
 .RarityDropDownList li:hover {
     background-color: var(--dropdown-background-color);
+}
+
+.AutoUpdateText {
+    font-size: medium;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.AutoUpdateCheckBox {
+    margin-left: 5px;
+    margin-top: 3px;
+    cursor: var(--cursor-blue);
 }
 
 .Attribute {

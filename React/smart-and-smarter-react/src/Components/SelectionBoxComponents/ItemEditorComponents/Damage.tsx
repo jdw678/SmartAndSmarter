@@ -2,12 +2,15 @@ import React, { useState } from 'react'
 import { Armor, Rarity, UserItem, Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 
 type Props = {
-    item: UserItem
+    item: UserItem,
+    damage: number,
+    updateDamage: (damage: number, rarity?: Rarity) => void
 }
 
 export default function Damage(props: Props) {
     
-    const [input, setInput] = useState<number>(0)
+    const [input, setInput] = useState<number>(props.damage);
+    const [inputAsStr, setInputAsStr] = useState<string>(props.damage.toString());
     const itemIsArmor = isArmor(props.item.item);
     const itemDamages = getDamages();
 
@@ -41,15 +44,16 @@ export default function Damage(props: Props) {
         return min.toString();
     }
 
-    //get the color from the damage passed in for use in box shadow
-    function getColorFromDamage()
+    //get the color from the rarity calculated from the damage passed in (below)
+    function getColorFromRarity(rarity: Rarity)
     {
-        var damage = input;
-        //get the color from the rarity calculated from the damage passed in (below)
-        function getColorFromRarity(rarity: Rarity)
-        {
-        return "var(--" + rarity.toLowerCase() + ")";
-        }
+    return "var(--" + rarity.toLowerCase() + ")";
+    }
+
+    //get the color from the damage passed in for use in box shadow
+    function getRarityFromDamage(damage: number)
+    {
+
 
         //loop through the item damage / armor array and check each pair to see which range the damage value falls between
         var damageIndex = 0;
@@ -69,32 +73,50 @@ export default function Damage(props: Props) {
         switch(damageIndex)
         {
             case 0:
-                return getColorFromRarity(Rarity.Black);
+                return Rarity.Black;
             case 1:
-                return getColorFromRarity(Rarity.Grey);
+                return Rarity.Grey;
             case 2:
-                return getColorFromRarity(Rarity.White);
+                return Rarity.White;
             case 3:
-                return getColorFromRarity(Rarity.Green);
+                return Rarity.Green;
             case 4:
-                return getColorFromRarity(Rarity.Blue);
+                return Rarity.Blue;
             case 5:
-                return getColorFromRarity(Rarity.Purple);
+                return Rarity.Purple;
             case 6:
-                return getColorFromRarity(Rarity.Orange);
+                return Rarity.Orange;
             case 7:
-                return getColorFromRarity(Rarity.Gold);
-                
+                return Rarity.Gold;
+            default:
+                return Rarity.Black;
         }
     }
+
+    function getColorFromDamage()
+    {
+        getColorFromRarity(getRarityFromDamage(input));
+    }
+
+    function updateInput(input: string)
+    {
+        var inputNum = Number(input);
+        props.updateDamage(inputNum, getRarityFromDamage(inputNum));
+        setInput(inputNum);
+        setInputAsStr(input);
+    }
+
 
   return (
     <div className='DamageWrapper' style={{boxShadow:'0 0 4px 4px ' + getColorFromDamage()}}>
         <h1 className='GearFont DamageInputWrapper' style={{justifyItems:'center'}} key={"Damage "}>Damage:
             <input
             className='DamageInput'
-            onChange={(event) => setInput(Number(event.target.value.replace(/\D/g,'')))}
-            key="Damage Input" value={input.toString() == 'NaN' ? 0 : input}
+            type='number'
+            step='.1'
+            onChange={(event) => updateInput(event.target.value)}
+            onKeyDown={(e) => {if(["e", "E", "+", "-"].includes(e.key)) e.preventDefault()}}
+            key="Damage Input" value={inputAsStr}
             />
         </h1>
         <div key="Damage Rarity Range Wrapper" className='DamageRarityWrapper'>

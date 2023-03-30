@@ -45,8 +45,9 @@ export default function SelectionBox(props: Props) {
   const [gearData, setGearData] = useState<GearPopUpData>();
 
   //called by SelectionBoxItem(s), passes any stored data from the selection box to the pop up
-  function togglePopUp(data?: GearPopUpData) {
-    if(data) setGearData({...data});
+  function togglePopUp(data: GearPopUpData) {
+
+    setGearData({...data});
     setPopUpActive(!popUpActive);
   }
 
