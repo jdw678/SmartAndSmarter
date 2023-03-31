@@ -1,4 +1,10 @@
 
+:root
+{
+    --button-color: rgb(58, 58, 58);
+}
+
+/*--- Item Editor --- */
 
 .ItemEditorMainContainer{
     position: relative;
@@ -44,6 +50,9 @@
     cursor: var(--cursor-blue);
 }
 
+
+/*--- Rarity List --- */
+
 .RarityMainContainer {
     display: flex;
     flex-direction: row;
@@ -51,7 +60,7 @@
 }
 
 .RarityDropDownButton {
-    background-color: rgba(114, 114, 114, 0.39);
+    background-color: var(--button-color);
     border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
@@ -75,12 +84,12 @@
 }
 
 .RarityDropDownList{
-    display: none;
     flex-direction: column;
-    background-color: rgb(58, 58, 58);
+    background-color: var(--button-color);
     position: absolute;
     width: 100%;
     left: 0;
+    z-index: 1;
 }
 
 .RarityDropDownList li {
@@ -104,20 +113,9 @@
     cursor: var(--cursor-blue);
 }
 
-.Attribute {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 5px;
-    width: 95%;
-    margin-bottom: 15px;
-}
 
-.AttributeInput {
-    margin-left: 5px;
-    margin-top: 8px;
-}
+
+/*--- Damage --- */
 
 .DamageWrapper {
     display: flex;
@@ -125,7 +123,6 @@
     width: 95%;
     margin: 10px;
     margin-bottom: 15px;
-    padding: 5px;
 }
 
 .DamageInputWrapper {
@@ -162,4 +159,84 @@
     text-shadow: 3px 3px var(--blur) var(--text), -3px 3px var(--blur) var(--text), 3px -3px var(--blur) var(--text), -3px -3px var(--blur) var(--text), 
                  2px 2px var(--blur) var(--text), -2px 2px var(--blur) var(--text), 2px -2px var(--blur) var(--text), -2px -2px var(--blur) var(--text),
                  1px 1px var(--blur) var(--text), -1px 1px var(--blur) var(--text), 1px -1px var(--blur) var(--text), -1px -1px var(--blur) var(--text);
+}
+
+
+/*--- Attribute Item --- */
+
+.Attribute {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    margin: 10px;
+    padding: 8px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+.AttributeInput {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 70px;
+    text-align: right;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+    appearance: textfield;
+}
+
+/*--- Attribute Type Input --- */
+
+.AttributeTypeWrapper {
+    display: flex;
+    flex-direction: row;
+    cursor: var(--cursor-blue);
+}
+
+.AttributeTypeButton {
+    background-color: var(--button-color);
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 175px;
+}
+
+.AttributeTypeButtonText {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.AttributeTypeList {
+    position: absolute;
+    background-color: var(--button-color);
+    font-size: 15px;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.AttributeTypeLI {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.AttributeTypeLI:hover {
+    background-color: var(--dropdown-background-color);
 }

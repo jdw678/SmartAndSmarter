@@ -89,22 +89,22 @@ export type Armor = {
     id: bigint,
     name: string,
     imageLocation: string,
-    blackArmourMin: number,
-    blackArmourMax: number,
-    greyArmourMin: number,
-    greyArmourMax: number,
-    whiteArmourMin: number,
-    whiteArmourMax: number,
-    greenArmourMin: number,
-    greenArmourMax: number,
-    blueArmourMin: number,
-    blueArmourMax: number,
-    purpleArmourMin: number,
-    purpleArmourMax: number,
-    orangeArmourMin: number,
-    orangeArmourMax: number,
-    goldArmourMin: number,
-    goldArmourMax: number,
+    blackArmorMin: number,
+    blackArmorMax: number,
+    greyArmorMin: number,
+    greyArmorMax: number,
+    whiteArmorMin: number,
+    whiteArmorMax: number,
+    greenArmorMin: number,
+    greenArmorMax: number,
+    blueArmorMin: number,
+    blueArmorMax: number,
+    purpleArmorMin: number,
+    purpleArmorMax: number,
+    orangeArmorMin: number,
+    orangeArmorMax: number,
+    goldArmorMin: number,
+    goldArmorMax: number,
     barbarianCanUse: boolean,
     fighterCanUse: boolean,
     clericCanUse: boolean,
@@ -183,7 +183,8 @@ export enum AttributeType
     Knowledge = "Knowledge",
     Resourcefulness = "Resourcefulness",
     PhysicalDamageReduction = "PhysicalDamageReduction",
-    WeaponDamage = "WeaponDamage"
+    WeaponDamage = "WeaponDamage",
+    MagicDamage = "MagicDamage"
 }
 
 export enum AttributeValueType
@@ -191,4 +192,10 @@ export enum AttributeValueType
     Percent = "Percent",
     True = "True",
     Default = "Default"
+}
+
+//power is either Strength or Magic power
+export function damageCalculation(baseWeaponDamage: number, additionalWeaponDamage: number, additionalDamage: number, power: number) : number
+{
+    return 999;
 }

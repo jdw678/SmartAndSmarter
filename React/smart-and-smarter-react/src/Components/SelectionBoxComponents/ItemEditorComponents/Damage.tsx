@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { Armor, Rarity, UserItem, Weapon } from '../../PureTSX/WeaponAndArmorTypes'
+import React, { useEffect, useState } from 'react'
+import { Armor, ItemClass, Rarity, UserItem, Weapon } from '../../PureTSX/WeaponAndArmorTypes'
 
 type Props = {
     item: UserItem,
     damage: number,
+    itemClass: ItemClass,
     updateDamage: (damage: number, rarity?: Rarity) => void
 }
 
@@ -11,22 +12,24 @@ export default function Damage(props: Props) {
     
     const [input, setInput] = useState<number>(props.damage);
     const [inputAsStr, setInputAsStr] = useState<string>(props.damage.toString());
-    const itemIsArmor = isArmor(props.item.item);
+    const itemIsArmor = isArmor();
     const itemDamages = getDamages();
 
-    function isArmor(item: Weapon | Armor) : item is Armor
+    function isArmor()
     {
-        return (item as Armor).blackArmourMin !== undefined;
+        return props.itemClass == ItemClass.Armor;
     }
 
-    //set item damages array = all weapon damages or armour ratings from the item passed in
+
+    //set item damages array = all weapon damages or armor ratings from the item passed in
     //used because figuring out type over and over is a headache
     function getDamages()
     {
+        console.log(itemIsArmor);
         if(itemIsArmor)
         {
             const armor = props.item.item as Armor
-            return [armor.blackArmourMin, armor.blackArmourMax, armor.greyArmourMin, armor.greyArmourMax, armor.whiteArmourMin, armor.whiteArmourMax, armor.greenArmourMin, armor.greenArmourMax, armor.blueArmourMin, armor.blueArmourMax, armor.purpleArmourMin, armor.purpleArmourMax, armor.orangeArmourMin, armor.orangeArmourMax, armor.goldArmourMin, armor.goldArmourMax]
+            return [armor.blackArmorMin, armor.blackArmorMax, armor.greyArmorMin, armor.greyArmorMax, armor.whiteArmorMin, armor.whiteArmorMax, armor.greenArmorMin, armor.greenArmorMax, armor.blueArmorMin, armor.blueArmorMax, armor.purpleArmorMin, armor.purpleArmorMax, armor.orangeArmorMin, armor.orangeArmorMax, armor.goldArmorMin, armor.goldArmorMax]
         }
         else
         {
@@ -109,7 +112,7 @@ export default function Damage(props: Props) {
 
   return (
     <div className='DamageWrapper' style={{boxShadow:'0 0 4px 4px ' + getColorFromDamage()}}>
-        <h1 className='GearFont DamageInputWrapper' style={{justifyItems:'center'}} key={"Damage "}>Damage:
+        <h1 className='GearFont DamageInputWrapper' style={{justifyItems:'center'}} key={"Damage "}>{itemIsArmor ? "Armor Rating:" : "Damage:"}
             <input
             className='DamageInput'
             type='number'

@@ -146,13 +146,13 @@ Responsive Image gallery Style rules
   0 0 25px whitesmoke; 
   }
   
-  .SelectionButton:hover {
+.SelectionButton:hover {
    
   cursor:  url(https://darkanddarker.wiki.spellsandguns.com/skins/ScratchWikiSkin2/resources/custom-cursorlink.webp?45785)4 4,auto;;
   box-shadow: 0 0 5px black,
   0 0 25px green, 0 0 50px blue, 
   0 0 100px violet, 0 0 200px orange; 
-  }
+}
 
 
 .SmallSelectionBoxItem {

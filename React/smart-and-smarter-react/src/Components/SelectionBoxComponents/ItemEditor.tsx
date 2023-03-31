@@ -26,7 +26,7 @@ export default function ItemEditor(props: Props) {
     ////then update the attributes list, deleting old values and adding default values where necissary
 
     const [item, setItem] = useState<UserItem>(props.item);
-    const [autoUpdate, setAutoUpdate] = useState<boolean>(localStorage.getItem("AutoUpdate") ? localStorage.getItem("AutoUpdate") == "true" : true);
+    const [autoUpdate, setAutoUpdate] = useState<boolean>(localStorage.getItem(getAutoUpdateString()) ? localStorage.getItem(getAutoUpdateString()) == "true" : true);
 
     useEffect(() => {
         initItem();
@@ -104,13 +104,23 @@ export default function ItemEditor(props: Props) {
                 console.log("len < count")
                 var len = attributes.length;
                 var newAttributes = [];
+
+                //attributes in local storage
+                var storedAttributes: Attribute[] = localStorage.getItem(getAttributesString()) ? JSON.parse(localStorage.getItem(getAttributesString()) as string) : []
+
                 for(let i = 0; i < count; i++)
                 {
                     if(i < len)
                         newAttributes.push(attributes[i]);
                     
                     else
-                        newAttributes.push({value: 0, valueType: AttributeValueType.Default, type: AttributeType.WeaponDamage})
+                    {
+                        if(storedAttributes[i])
+                        {
+                            newAttributes.push(storedAttributes[i])
+                        }
+                        else newAttributes.push({value: 0, valueType: AttributeValueType.Default, type: AttributeType.WeaponDamage})
+                    }
                 }
 
                 return newAttributes;
@@ -137,14 +147,24 @@ export default function ItemEditor(props: Props) {
     function updateAttributes(attributes: Attribute[])
     {
         setItem({...item, attributes});
+        localStorage.setItem(getAttributesString(), JSON.stringify(attributes));
     }
 
     function updateAutoUpdate(autoUpdate: boolean)
     {
         setAutoUpdate(autoUpdate);
-        localStorage.setItem("AutoUpdate", autoUpdate.toString());
+        localStorage.setItem(getAutoUpdateString(), autoUpdate.toString());
     }
 
+    function getAutoUpdateString()
+    {
+        return "AutoUpdate " + props.itemSlot;
+    }
+
+    function getAttributesString()
+    {
+        return "Attributes " + props.itemSlot;
+    }
 
   return (
     <div className='ItemEditorMainContainer'>
@@ -156,7 +176,7 @@ export default function ItemEditor(props: Props) {
 
         <div>
             <RarityList style={{marginLeft: '10px', justifyItems:'center'}} rarity={item.rarity} updateRarity={updateRarity} updateAutoUpdate={updateAutoUpdate} autoUpdate={autoUpdate}/>
-            <Damage item={item} updateDamage={updateDamage} damage={item.damage}/>
+            <Damage item={item} updateDamage={updateDamage} damage={item.damage} itemClass={props.itemClass}/>
             <AttributeList attributes={item.attributes} key={"Attributes List Size of " + item.attributes.length} updateAttributes={updateAttributes}/>
         </div>
 

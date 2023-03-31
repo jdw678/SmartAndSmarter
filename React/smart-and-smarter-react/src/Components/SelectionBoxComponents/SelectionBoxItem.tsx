@@ -20,7 +20,7 @@ export default function SelectionBoxItem(props: Props) {
     const className = props.useOverlay ? "overlay" : "";
 
     //state to hold gear pop up data
-    const [item, setItem] = useState<UserItem>(localStorage.getItem(props.text) ? JSON.parse(localStorage.getItem(props.text) as string) : undefined);
+    const [item, setItem] = useState<UserItem | undefined>(localStorage.getItem(props.text) ? JSON.parse(localStorage.getItem(props.text) as string) : undefined);
 
     //toggle the GearPopUp component and pass it any stored data
     function togglePopUp() {
@@ -29,8 +29,8 @@ export default function SelectionBoxItem(props: Props) {
 
     //save data passed from the GearPopUp component
     function saveUpdatedGearData(item?: UserItem) {
-        if(item)
-            setItem(item);
+        
+        setItem(item);
     }
 
     function getItemImageSize()
@@ -65,9 +65,36 @@ export default function SelectionBoxItem(props: Props) {
         return "";
     }
 
+    function getBoxShadowFromRarity() : string
+    {
+        var boxShadow = '';
+        function addToShadow(left: number, right: number, blur?: number, color?: string)
+        {
+            if(item != undefined)
+            {
+                    
+                if(!color) color = 'var(--' + item.rarity.toLocaleLowerCase() + ')';
+                if(!blur) blur = 10;
+                
+                if(boxShadow != '') boxShadow += ', '
+                boxShadow += left + 'px ' + right + 'px ' + blur + 'px ' + color;
+            }
+        }
+
+        addToShadow(1, 1);
+        addToShadow(1, -1);
+        addToShadow(-1, 1);
+        addToShadow(-1, -1);
+
+
+
+        //remove the last comma and return
+        return boxShadow;
+    }
+
   return (
     <>
-    <button onClick={togglePopUp} style={{background: 'transparent'}} className='SelectionButton'>
+    <button onClick={togglePopUp} style={{background: 'transparent', boxShadow: getBoxShadowFromRarity()}} className='SelectionButton'>
         <div>
             <img src={props.img} alt={props.text} style={props.backgroundImgStyle}/>
             <div className={getItemImageContainer()} style={{position:'absolute'}}>

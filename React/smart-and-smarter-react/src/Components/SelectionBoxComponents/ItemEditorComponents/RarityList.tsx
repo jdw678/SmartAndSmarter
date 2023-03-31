@@ -50,6 +50,7 @@ export default function RarityList(props: Props) {
           onMouseEnter={() => {if(!props.autoUpdate) setHoverable(true)}} onMouseLeave={() => setHoverable(false)}
         >
           <h1 className={'GearFont ' + (useLightMode() ? 'LightMode' : 'DarkMode')} style={{color: getColorFromRarity(), textAlign:'center'}} key={props.rarity.length + " "}>{props.rarity}</h1>
+          <hr  style={{display: hoverable ? '' : 'none', border:'solid 1px var(--button-color)', borderTop:'solid 1px black'}}/>
           <ul className='RarityDropDownList' style={{display: hoverable ? 'inherit' : 'none', position: 'absolute'}}>
               <li className='LightMode' style={{color: 'var(--junk)'}} key='junk' onClick={() => updateRarity(Rarity.Black)}>Junk</li>
               <li className='DarkMode' style={{color: 'var(--poor)'}} key='poor'  onClick={() => updateRarity(Rarity.Grey)}>Poor</li>
@@ -58,7 +59,7 @@ export default function RarityList(props: Props) {
               <li className='DarkMode' style={{color: 'var(--rare)'}} key='rare'  onClick={() => updateRarity(Rarity.Blue)}>Rare</li>
               <li className='DarkMode' style={{color: 'var(--epic)'}} key='epic'  onClick={() => updateRarity(Rarity.Purple)}>Epic</li>
               <li className='DarkMode' style={{color: 'var(--legendary)'}} key='legendary'  onClick={() => updateRarity(Rarity.Orange)}>Legendary</li>
-              <li className='DarkMode' style={{color: 'var(--unique)'}} key='unique'  onClick={() => updateRarity(Rarity.Gold)}>Unique</li>
+              <li className='DarkMode' style={{color: 'var(--unique)', paddingBottom:'5px'}} key='unique'  onClick={() => updateRarity(Rarity.Gold)}>Unique</li>
 
           </ul>
         </div>
