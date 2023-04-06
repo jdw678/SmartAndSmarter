@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Rarity } from '../../PureTSX/WeaponAndArmorTypes';
+import { Rarity, UserItem } from '../../PureTSX/WeaponAndArmorTypes';
 import '../../../CSS/ItemEditor.css';
 
 type Props = {

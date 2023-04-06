@@ -25,7 +25,6 @@ export default function Damage(props: Props) {
     //used because figuring out type over and over is a headache
     function getDamages()
     {
-        console.log(itemIsArmor);
         if(itemIsArmor)
         {
             const armor = props.item.item as Armor

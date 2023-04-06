@@ -4,10 +4,11 @@ import Item from '../images/Item.png'
 import Weapon_1 from '../images/Weapon_1.png';
 import Weapon_2 from '../images/Weapon_2.png';
 import '../CSS/ItemBox.css';
-import SelectionBoxItem from './SelectionBoxComponents/SelectionBoxItem'
-import GearPopOut, { GearPopUpData } from './SelectionBoxComponents/GearPopUp'
+import SelectionBoxItem from './SelectionBoxComponents/SelectionBoxItemSelector'
+import { GearPopUpData } from './SelectionBoxComponents/GearPopUp'
 import { ArmorList, ArmorType, ItemClass, Weapon, WeaponList, WeaponType } from './PureTSX/WeaponAndArmorTypes';
 import GearPopUp from './SelectionBoxComponents/GearPopUp'
+import SelectionBoxItemSelector from './SelectionBoxComponents/SelectionBoxItemSelector';
 
 type Props = {
   armorList: ArmorList,
@@ -47,12 +48,12 @@ export default function SelectionBox(props: Props) {
   //called by SelectionBoxItem(s), passes any stored data from the selection box to the pop up
   function togglePopUp(data: GearPopUpData) {
 
-    setGearData({...data});
+    setGearData(data);
     setPopUpActive(!popUpActive);
   }
 
   return (
-    <div className="BoxBorder" style={{height:'550px', margin: '1%', backgroundColor: 'rgba(0,0,0,.5)', border:'solid', borderColor:'#000000', width: '85%', maxWidth: '400px', float: 'left', padding:'16px', display:'block', textAlign:'center'}}>
+    <div className="BoxBorder" style={{height:'560px', margin: '1%', backgroundColor: 'rgba(0,0,0,.5)', border:'solid', borderColor:'#000000', width: '85%', maxWidth: '400px', float: 'left', padding:'16px', display:'block', textAlign:'center'}}>
 
         <h2 className="heading-text">Item <span>Selection</span></h2>
 
@@ -62,23 +63,23 @@ export default function SelectionBox(props: Props) {
             <ul className="image-gallery">
                 
             <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Head} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left'}} itemImgSize={"small"}  text="Head"/>
+                <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Head} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left'}} itemImgSize={"small"}  text="Head"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Neck} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left'}}  text="Neck"/>
+              <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Neck} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left'}}  text="Neck"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Chest} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left', height:'80px', width:'54px'}} itemImgSize={"medium"}  text="Chest"/>
+              <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Chest} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left', height:'80px', width:'54px'}} itemImgSize={"medium"}  text="Chest"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Hands} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left'}} itemImgSize={"small"}  text="Hands"/>
+              <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Hands} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'left'}} itemImgSize={"small"}  text="Hands"/>
             </li>
 
             <li>
-              <SelectionBoxItem itemClass={ItemClass.Weapon} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_1} backgroundImgStyle={{float: 'left'}} itemImgSize={"large"}  text="Weapon 1"/>
+              <SelectionBoxItemSelector itemClass={ItemClass.Weapon} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_1} backgroundImgStyle={{float: 'left'}} itemImgSize={"large"}  text="Weapon 1"/>
             </li>
 
             </ul>
@@ -91,23 +92,23 @@ export default function SelectionBox(props: Props) {
             <ul className="image-gallery">
               
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right'}}  text="Ring 1"/>
+                <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right'}}  text="Ring 1"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right'}}  text="Ring 2"/>
+                <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Ring} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right'}}  text="Ring 2"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Legs} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right', height:'80px', width:'54px'}} itemImgSize={"medium"}  text="Legs"/>
+                <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Legs} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right', height:'80px', width:'54px'}} itemImgSize={"medium"}  text="Legs"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Armor} armorType={ArmorType.Feet} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right'}}  itemImgSize={"small"}  text="Boots"/>
+                <SelectionBoxItemSelector itemClass={ItemClass.Armor} armorType={ArmorType.Feet} setPopUpActive={togglePopUp} useOverlay={true} img={Item} backgroundImgStyle={{float: 'right'}}  itemImgSize={"small"}  text="Boots"/>
               </li>
 
               <li>
-                <SelectionBoxItem itemClass={ItemClass.Weapon} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_2} backgroundImgStyle={{float: 'right'}} itemImgSize={'large'}  text="Weapon 2"/>
+                <SelectionBoxItemSelector itemClass={ItemClass.Weapon} setPopUpActive={togglePopUp} useOverlay={false} img={Weapon_2} backgroundImgStyle={{float: 'right'}} itemImgSize={'large'}  text="Weapon 2"/>
               </li>
               
             </ul>
@@ -115,8 +116,11 @@ export default function SelectionBox(props: Props) {
           </div>
         </div>
         
-        {popUpActive && gearData ? //the pop up
-        <GearPopUp data={gearData} togglePopUp={setPopUpActive} weaponList={props.weaponList} armorList={props.armorList} key={gearData.item?.item.name}/>
+        {popUpActive && gearData ? 
+        //the pop up
+        <>
+        <GearPopUp gearData={gearData} togglePopUp={setPopUpActive} weaponList={props.weaponList} armorList={props.armorList} key={gearData.mainHand?.item.name}/>
+        </>
         :
         null
         }

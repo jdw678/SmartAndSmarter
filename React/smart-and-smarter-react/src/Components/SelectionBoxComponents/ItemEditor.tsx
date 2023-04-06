@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Armor, Attribute, AttributeType, AttributeValueType, ItemClass, Rarity, UserItem, Weapon } from '../PureTSX/WeaponAndArmorTypes'
-import SelectionBoxItem from './SelectionBoxItem'
+import SelectionBoxItem from './SelectionBoxItemSelector'
 import WeaponInventoryImage from '../../images/Weapon_1.png';
 import '../../CSS/ItemEditor.css';
 import { GearPopUpData } from './GearPopUp';
@@ -13,7 +13,9 @@ type Props = {
     itemClass: ItemClass,
     item: UserItem,
     itemSlot: string,
-    returnItem: (item: UserItem) => void
+    autoUpdate: boolean,
+    updateItem: (item: UserItem) => void,
+    setAutoUpdate: (autoUpdate: boolean) => void
 }
 
 
@@ -25,18 +27,10 @@ export default function ItemEditor(props: Props) {
     //if the attributelist is not the size expected based upon the rarity (ex legendary has 5 attributes, junk has 0)
     ////then update the attributes list, deleting old values and adding default values where necissary
 
-    const [item, setItem] = useState<UserItem>(props.item);
-    const [autoUpdate, setAutoUpdate] = useState<boolean>(localStorage.getItem(getAutoUpdateString()) ? localStorage.getItem(getAutoUpdateString()) == "true" : true);
 
     useEffect(() => {
         initItem();
     },[])
-
-    function returnItem()
-    {
-        localStorage.setItem(props.itemSlot, JSON.stringify(item));
-        props.returnItem(item);
-    }
 
     //initialize the attributes array, ensuring it is the correct size on load
     function initItem() : UserItem
@@ -45,7 +39,7 @@ export default function ItemEditor(props: Props) {
         var expectedCount = item.rarity ? calculateAttributeCount(item.rarity) : 0;
 
         if(item.attributes.length != expectedCount)
-            setItem({...item, attributes: updateAttributesByCount(item.attributes, expectedCount)});
+            props.updateItem({...props.item, attributes: updateAttributesByCount(item.attributes, expectedCount)});
 
             
         return item;
@@ -77,18 +71,16 @@ export default function ItemEditor(props: Props) {
     
     function updateRarity(rarity: Rarity)
     {
-        setItem({...item, rarity, attributes: updateAttributesByCount(item.attributes, calculateAttributeCount( rarity))});
+        props.updateItem({...props.item, rarity, attributes: updateAttributesByCount(props.item.attributes, calculateAttributeCount( rarity))});
     }
 
     //update the attributes array based strictly on a length
     function updateAttributesByCount(attributes: Attribute[], count: number) : Attribute[]
     {
-        console.log(attributes);
 
         //array is not correct size if true
         if(attributes.length != count)
         {
-            console.log("len != count")
             //if the array is too large, shrink it
             if(attributes.length > count)
             {
@@ -101,7 +93,6 @@ export default function ItemEditor(props: Props) {
             //if the array is too small, add default items to it
             if(attributes.length < count)
             {
-                console.log("len < count")
                 var len = attributes.length;
                 var newAttributes = [];
 
@@ -129,30 +120,29 @@ export default function ItemEditor(props: Props) {
             
         }
 
-        return item.attributes;
+        return props.item.attributes;
     }
 
     function updateDamage(damage: number, rarity?: Rarity)
     {
-        if(autoUpdate && rarity)
+        if(props.autoUpdate && rarity)
         {
-            setItem({...item, damage, rarity, attributes: updateAttributesByCount(item.attributes, calculateAttributeCount( rarity))});
+            props.updateItem({...props.item, damage, rarity, attributes: updateAttributesByCount(props.item.attributes, calculateAttributeCount( rarity))});
         }
         else{
             
-            setItem({...item, damage});
+            props.updateItem({...props.item, damage});
         }
     }
 
     function updateAttributes(attributes: Attribute[])
     {
-        setItem({...item, attributes});
-        localStorage.setItem(getAttributesString(), JSON.stringify(attributes));
+        props.updateItem({...props.item, attributes});
     }
 
     function updateAutoUpdate(autoUpdate: boolean)
     {
-        setAutoUpdate(autoUpdate);
+        props.setAutoUpdate(autoUpdate);
         localStorage.setItem(getAutoUpdateString(), autoUpdate.toString());
     }
 
@@ -166,18 +156,22 @@ export default function ItemEditor(props: Props) {
         return "Attributes " + props.itemSlot;
     }
 
+    function getDamageString()
+    {
+        return "Damage " + props.itemSlot;
+    }
+
   return (
     <div className='ItemEditorMainContainer'>
-        <button onClick={returnItem} className='ReturnButton'>Accept Changes</button>
         <img src={WeaponInventoryImage} className='ItemBackground' />
         <div className='ItemContainer' style={{position:'absolute'}}>
-            <img src={item.item.imageLocation} className={'Item'} />
+            <img src={props.item.item.imageLocation} className={'Item'} />
         </div>
 
         <div>
-            <RarityList style={{marginLeft: '10px', justifyItems:'center'}} rarity={item.rarity} updateRarity={updateRarity} updateAutoUpdate={updateAutoUpdate} autoUpdate={autoUpdate}/>
-            <Damage item={item} updateDamage={updateDamage} damage={item.damage} itemClass={props.itemClass}/>
-            <AttributeList attributes={item.attributes} key={"Attributes List Size of " + item.attributes.length} updateAttributes={updateAttributes}/>
+            <RarityList style={{marginLeft: '10px', justifyItems:'center'}} rarity={props.item.rarity} updateRarity={updateRarity} updateAutoUpdate={updateAutoUpdate} autoUpdate={props.autoUpdate}/>
+            <Damage item={props.item} updateDamage={updateDamage} damage={props.item.damage} itemClass={props.itemClass}/>
+            <AttributeList attributes={props.item.attributes} key={"Attributes List Size of " + props.item.attributes.length} updateAttributes={updateAttributes}/>
         </div>
 
     </div>

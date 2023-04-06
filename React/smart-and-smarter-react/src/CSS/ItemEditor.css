@@ -40,14 +40,15 @@
     height: 50px;
     border-radius: 5px;
     border-width: 0px;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 325px;
     background-color: rgb(var(--text-orange));
     padding: 2px;
     font-weight: 400;
     font-size: large;
     color: var(--text-white);
     cursor: var(--cursor-blue);
+    z-index: 1;
 }
 
 

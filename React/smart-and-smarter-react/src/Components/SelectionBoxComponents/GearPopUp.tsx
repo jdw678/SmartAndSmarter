@@ -1,131 +1,91 @@
-import React, { useState } from 'react';
-import { Armor, ArmorList, ArmorType, ItemClass, Rarity, SpecificWeaponType, UserItem, Weapon, WeaponList, WeaponType } from '../PureTSX/WeaponAndArmorTypes';
-import '../../CSS/GearPopUp.css';
-import GearPopUpItem from './GearPopUpItem';
-import GearPopUpCondensedItem from './GearPopUpCondensedItem';
-import ItemEditor from './ItemEditor';
-
-//data expected
-//possibly null if item has not been set yet, but returnData must always be not null
-export type GearPopUpData = {
-    itemClass: ItemClass,
-    item?: UserItem,
-    armorType?: ArmorType,
-    itemSlot: string,
-    returnData: (item?: UserItem) => void
-}
-
-
+import React, { useState } from 'react'
+import GearPopUpMenu from './GearPopUpMenu'
+import { ArmorList, ArmorType, ItemClass, UserItem, WeaponList } from '../PureTSX/WeaponAndArmorTypes'
+import { json } from 'stream/consumers'
 
 type Props = {
-    data: GearPopUpData,
+    gearData: GearPopUpData
     togglePopUp: (state: boolean) => void,
     weaponList: WeaponList,
     armorList: ArmorList
 }
 
+
+//data expected
+//possibly null if item has not been set yet, but returnData must always be not null
+export type GearPopUpData = {
+  itemClass: ItemClass,
+  mainHand?: UserItem,
+  offHand?: UserItem,
+  armorType?: ArmorType,
+  itemSlot: string,
+  returnData: (items?: (UserItem|undefined)[]) => void
+}
+
+
+
 export default function GearPopUp(props: Props) {
 
-  const [userItem, setUserItem] = useState<UserItem>();
+  const [mainHand, setMainHand] = useState<UserItem | undefined>(props.gearData.mainHand);
 
-  const [hoverable, setHoverable] = useState<React.CSSProperties>({display:'inherit'});
+  const [offHand, setOffHand] = useState<UserItem | undefined>(props.gearData.offHand);
 
-  if(props.data.item && !userItem)
+  const [mainHandAutoUpdate, setMainHandAutoUpdate] = useState<boolean>(localStorage.getItem(props.gearData.itemSlot.toString() + "AutoUpdateMainHand") !== 'undefined' ? JSON.parse(localStorage.getItem(props.gearData.itemSlot.toString() + "AutoUpdateMainHand") as string) : undefined);
+  const [offHandAutoUpdate, setOffHandAutoUpdate] = useState<boolean>(localStorage.getItem(props.gearData.itemSlot.toString() + "AutoUpdateOffHand") !== 'undefined' ? JSON.parse(localStorage.getItem(props.gearData.itemSlot.toString() + "AutoUpdateOffHand") as string) : undefined);
+
+  const [isOffHand, toggleOffHand] = useState(false);
+
+  function returnItems()
   {
-    setUserItem(props.data.item);
-  }
-  
-  //check if weapon is of specific weapon type passed
-  function isWeaponType(weapon: Weapon, type: SpecificWeaponType)
-  {
-    if(weapon.specificWeaponType === type) return weapon;
-  }
-
-  //create meleeprop obj based on string passed and specific weapon type passed
-  function CreateMeleeProp(name: string, type: SpecificWeaponType)
-  {
-    return(
-    {
-      name: name,
-      itemList: props.weaponList.meleeWeapons.filter(weapon => isWeaponType(weapon, type)),
-      returnItem: setItem,
-      style: hoverable,
-      itemClass: props.data.itemClass
-    })
-  }
-
-  function setItem(item: Armor | Weapon)
-  {
-    setUserItem({
-      item: item,
-      attributes: userItem?.attributes ? userItem.attributes : [],
-      damage: userItem?.damage ? userItem.damage : 0,
-      rarity: userItem?.rarity ? userItem.rarity : Rarity.Black
-    });
-    setHoverable({display:'none'});
-  }
-
-  //create array of meleeprop objs to be passed to the condenseditem for melee weapons
-  const meleeProps =
-  [
-    CreateMeleeProp('Axes', SpecificWeaponType.Axe),
-    CreateMeleeProp('Maces', SpecificWeaponType.Mace),
-    CreateMeleeProp('Daggers', SpecificWeaponType.Dagger),
-    CreateMeleeProp('Swords', SpecificWeaponType.Sword),
-    CreateMeleeProp('Polearms', SpecificWeaponType.Polearm),
-    
-  ]
-
-  function ReturnDataAndClose(item?: UserItem)
-  {
-    props.data.returnData(item);
+    props.gearData.returnData([mainHand, offHand]);
     props.togglePopUp(false);
+  }
 
+  function updateMainHand(item: UserItem | undefined)
+  {
+    setMainHand(item);
+    localStorage.setItem(props.gearData.itemSlot + " MainHand", JSON.stringify(item));
+  }
+
+  function updateOffHand(item: UserItem | undefined)
+  {
+    setOffHand(item);
+    localStorage.setItem(props.gearData.itemSlot + " OffHand", JSON.stringify(item));
+  }
+
+  function updateMainHandAutoUpdate(autoUpdate: boolean)
+  {
+    setMainHandAutoUpdate(autoUpdate);
+    localStorage.setItem(props.gearData.itemSlot + "AutoUpdateMainHand", autoUpdate.toString());
   }
 
   
+  function updateOffHandAutoUpdate(autoUpdate: boolean)
+  {
+    setOffHandAutoUpdate(autoUpdate);
+    localStorage.setItem(props.gearData.itemSlot + "AutoUpdateOffHand", autoUpdate.toString());
+  }
 
   return (
+    
     <div className='Background'>
-      <div className='MainContainer'>
-        <div className='ListContainer' onMouseEnter={() => setHoverable({display:'inherit'})}>
-          
-          {//this is the drop down list of items
-          props.data.itemClass == ItemClass.Weapon ? 
-          <>
-            <div className='GearDropDownContainer'>
-              <h1 className='GearDropDownHeader GearFont' onClick={() => { ReturnDataAndClose() }}>None</h1>
-            </div>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Bows' itemList={props.weaponList.bows} style={hoverable}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Shields' itemList={props.weaponList.shields} style={hoverable}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Melee Weapons' children={meleeProps} style={hoverable}/>
-            <GearPopUpCondensedItem itemClass={props.data.itemClass} returnItem={setItem} name='Magic Weapons' itemList={props.weaponList.magicWeapons} style={hoverable}/>
-          </>
-          :
-          <ul>
-            <li className='GearLI GearFont' onClick={() => { ReturnDataAndClose() }}>None</li>
-            {props.armorList.filter(armor => armor.armorType == props.data.armorType).map(armor =>
-              {
-                return(
-                  <GearPopUpItem itemClass={ItemClass.Armor} item={armor} returnItem={setItem} style={hoverable}/>
-                )
-              })
+      <div className='MainContainerWrapper'>
+        <div className='MainContainer'>
+          <button onClick={returnItems} className='ReturnButton'>Accept Changes</button>
+            {props.gearData.itemClass == ItemClass.Weapon && isOffHand ? 
+              <GearPopUpMenu autoUpdate={mainHandAutoUpdate} setAutoUpdate={updateMainHandAutoUpdate} item={offHand} data={props.gearData} weaponList={props.weaponList} armorList={props.armorList} updateUserItem={updateOffHand}/>
+              :
+              <GearPopUpMenu autoUpdate={offHandAutoUpdate}  setAutoUpdate={updateOffHandAutoUpdate}  item={mainHand} data={props.gearData} weaponList={props.weaponList} armorList={props.armorList} updateUserItem={updateMainHand}/>
             }
-          </ul>
-          }
         </div>
-          {
-            userItem ? 
-            (
-            <>
-              <div style={{width:'10px'}}>
-                <hr className='GearHr'/>
-              </div>
-              <ItemEditor itemSlot={props.data.itemSlot} itemClass={props.data.itemClass} item={userItem} returnItem={ReturnDataAndClose} key={userItem.item.name + " item editor"}/>
-            </>
-            )
-            : null
-          }
+        <div className='TabSelector'>
+            <div className='Tab' style={{boxShadow: isOffHand ? '0 0 0 0' : '', zIndex: isOffHand ? '0' : '1'}} onClick={() => toggleOffHand(false)}>
+              <div className={isOffHand ? 'UnselectedTab' : 'SelectedTab'}>Main Hand</div>
+            </div>
+            <div className='Tab' style={{marginLeft: '0px', boxShadow: !isOffHand ? '0 0 0 0' : '', zIndex: !isOffHand ? '0' : '1'}} onClick={() => toggleOffHand(true)}>
+              <div className={!isOffHand ? 'UnselectedTab' : 'SelectedTab'}>Off Hand</div>
+            </div>
+          </div>
       </div>
     </div>
   )

@@ -12,20 +12,25 @@
     --dropdown-background-color: rgb(77, 77, 77);
 }
 
-.MainContainer {
-    padding: 1%;
+.MainContainerWrapper {
     left: 25vw;
     top: 20vh;
     width: auto;
     position: absolute;
-    min-width: 300px;
+    min-width: 450px;
     max-width: 1400px;
+    color: rgb(var(--text-orange));
+}
+
+.MainContainer {
+    padding: 1%;
     background-color: rgba(20, 20, 20, 0.836);
     box-shadow: 0 0px 8px 6px var(--dropdown-background-color);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    color: rgb(var(--text-orange));
+    z-index: unset;
+    position: relative;
 }
 
 .ListContainer {
@@ -35,6 +40,8 @@
     align-items: left;
     text-align: left;
     min-width: 300px;
+    position: relative;
+    z-index: 2;
     
 }
 
@@ -128,4 +135,41 @@
     border-width: 1px;
     border-color: var(--dropdown-background-color);
     margin-right: 10px;
+}
+
+.TabSelector {
+    top: 18px;
+    width: 300px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-top: -50px;
+    position: absolute;
+}
+
+.Tab {
+    background-color: rgba(20, 20, 20, 1);
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0px 8px 6px var(--dropdown-background-color);
+    position: relative;
+}
+
+.SelectedTab {
+    background-color: rgb(20, 20, 20, 1);
+    border-radius: 10px 10px 0px 0px;
+    z-index: 1;
+    position: relative;
+    height: 150%;
+}
+
+.UnselectedTab {
+    
+    height: 250%;
+    background-color: rgb(20, 20, 20, 1);
+    border-radius: 10px 10px 0px 0px;
+    z-index: 0;
+    position: relative;
+
 }
