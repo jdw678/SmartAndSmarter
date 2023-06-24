@@ -1,0 +1,9 @@
+fighter - 32 damage viking sword
++1 physical power
++1 true physical damage
++1.8% physical damage bonus
++1 weapon damage +1 strength (16 total)
+
+hit chest for 35
+52 head
+magical damage changed nothing

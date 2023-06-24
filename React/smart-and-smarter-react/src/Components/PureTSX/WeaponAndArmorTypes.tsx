@@ -1,3 +1,4 @@
+import { json } from "stream/consumers"
 
 export enum AttackType {
     Slash = "Slash",
@@ -194,8 +195,143 @@ export enum AttributeValueType
     Default = "Default"
 }
 
-//power is either Strength or Magic power
-export function damageCalculation(baseWeaponDamage: number, additionalWeaponDamage: number, additionalDamage: number, power: number) : number
+export class GenericClass {
+    strength: number;
+    will: number;
+    knowledge: number;
+    agility: number;
+    resourcefulness: number;
+
+    constructor(strength: number, will: number, knowledge: number, agility: number, resourcefulness: number)
+    {
+        this.strength = strength;
+        this.agility = agility;
+        this.will = will;
+        this.knowledge = knowledge;
+        this.resourcefulness = resourcefulness;
+    }
+
+    //based on https://darkanddarker.wiki.spellsandguns.com/Stats#Strength
+    CalculateStrength(additionalStrength?: number, additionalStrengthMultiplier?: number) : number
+    {
+        if(!additionalStrength) additionalStrength = 0;
+        if(!additionalStrengthMultiplier) additionalStrengthMultiplier = 1;
+        if(additionalStrengthMultiplier) additionalStrengthMultiplier = 1 + additionalStrengthMultiplier / 100;
+
+        var strength = Math.round((this.strength + additionalStrength) * additionalStrengthMultiplier);
+        var calculatedStrength = -.8;
+
+        if(strength > 5)
+            calculatedStrength += (5 * 10) / 100;
+        else return calculatedStrength + (strength * 10) / 100;
+
+        if(strength > 7)
+            calculatedStrength += (2 * 5) / 100
+        else return calculatedStrength + (strength - 5) * 5 / 100;
+
+        if(strength > 11)
+            calculatedStrength += (4 * 3) / 100;
+        else return calculatedStrength + (strength - 7) * 3 / 100;
+
+        if(strength > 15)
+            calculatedStrength += (4 * 2) / 100;
+        else return calculatedStrength + (strength - 11) * 2 / 100;
+
+        if(strength > 50)
+            calculatedStrength += strength * 1 / 100;
+        else return calculatedStrength + (strength - 15) * 1 / 100;
+
+        return calculatedStrength + (strength - 50) * .5 / 100;
+
+    }
+
+    //based on https://darkanddarker.wiki.spellsandguns.com/Stats#Will
+    CalculateMagicPower(additionalMagicPower?: number, additionalMagicPowerMultiplier?: number) : number
+    {
+        if(!additionalMagicPower) additionalMagicPower = 0;
+        if(!additionalMagicPowerMultiplier) additionalMagicPowerMultiplier = 0;
+        else additionalMagicPowerMultiplier = 1 + additionalMagicPowerMultiplier / 100;
+
+        var power = Math.round((this.will + additionalMagicPower) * additionalMagicPowerMultiplier);
+        var calculatedPower = -.9;
+
+        //0 power for first point, so skip it
+        if(power > 5)
+            calculatedPower += (4 * 10) / 100;
+        else return (power - 1) * 10 / 100;
+
+        if(power > 15)
+            calculatedPower += (10 * 5) / 100;
+        else return calculatedPower + (power - 5) * 5 / 100; 
+
+        if(power > 25)
+            calculatedPower += (10 * 3) / 100;
+        else return calculatedPower + (power - 15) * 3 / 100;
+
+        if(power > 40)
+            calculatedPower += (15 * 2) / 100;
+        else return calculatedPower + (power - 25) * 2 / 100;
+
+        if(power > 50)
+            calculatedPower += (10 * 1) / 100;
+        else return calculatedPower + (power - 40) * 1 / 100;
+
+        return calculatedPower + (power - 50) * .5 / 100;
+    }
+}
+
+export const Classes =
 {
-    return 999;
+    barbarian: new GenericClass(30, 18, 6, 11, 10),
+    cleric: new GenericClass(13, 30, 12, 12, 8),
+    fighter: new GenericClass(15, 15, 15, 15, 15),
+    ranger: new GenericClass(10, 10, 10, 20, 25),
+    rogue: new GenericClass(8, 5, 12, 35, 15),
+    wizard: new GenericClass(5, 25, 20, 20, 5)
+}
+
+export type DamageCalculationParams = {
+    
+    class: GenericClass,
+    powerType: "strength" | "magic",
+    baseWeaponDamage: number,
+    weaponDamage?: number,
+    weaponDamagePercent?: number,
+    damage?: number,
+    damagePercent?: number,
+    strength?: number,
+    strengthPercent?: number,
+    magicPower?: number
+    magicPowerPercent?: number,
+    trueDamage?: number,
+    trueDamagePercent?: number
+}
+
+//power is either Strength or Magic power
+//the calculation is base damage * strength multiplier
+//base damage = sum(all damages) * sum(all damage multipliers)
+export function damageCalculation(params: DamageCalculationParams) : number
+{
+    if(!params.damage) params.damage = 0;
+    if(!params.weaponDamage) params.weaponDamage = 0;
+    if(!params.strength) params.strength = 0;
+    if(!params.damagePercent) params.damagePercent = 0;
+    if(!params.weaponDamagePercent) params.weaponDamagePercent = 0;
+    if(!params.strengthPercent) params.strengthPercent = 0;
+    if(!params.magicPowerPercent) params.magicPowerPercent = 0;
+    if(!params.trueDamage) params.trueDamage = 0;
+    if(!params.trueDamagePercent) params.trueDamagePercent = 0;
+
+    var baseDamage = (params.baseWeaponDamage + params.weaponDamage + params.damage);
+    var baseDamageMultiplier = 1 + (params.weaponDamagePercent + params.damagePercent) / 100;
+    var strengthMultiplier = (params.powerType == "strength" ?
+                            params.class.CalculateStrength(params.strength, params.strengthPercent)
+                            : params.class.CalculateMagicPower(params.magicPower, params.magicPowerPercent)
+                            )
+    var damage = (baseDamage * baseDamageMultiplier);
+    damage *= strengthMultiplier;
+    damage += params.trueDamage;
+    damage *= params.trueDamagePercent;
+
+    return damage;
 }

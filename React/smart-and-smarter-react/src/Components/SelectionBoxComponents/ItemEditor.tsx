@@ -12,6 +12,7 @@ import { json } from 'stream/consumers';
 type Props = {
     itemClass: ItemClass,
     item: UserItem,
+    secondaryItemImageLocation?: string,
     itemSlot: string,
     autoUpdate: boolean,
     updateItem: (item: UserItem) => void,
@@ -156,10 +157,7 @@ export default function ItemEditor(props: Props) {
         return "Attributes " + props.itemSlot;
     }
 
-    function getDamageString()
-    {
-        return "Damage " + props.itemSlot;
-    }
+
 
   return (
     <div className='ItemEditorMainContainer'>
@@ -167,6 +165,14 @@ export default function ItemEditor(props: Props) {
         <div className='ItemContainer' style={{position:'absolute'}}>
             <img src={props.item.item.imageLocation} className={'Item'} />
         </div>
+        {props.secondaryItemImageLocation ? 
+        
+            <div className='ItemContainer' style={{position:'absolute'}}>
+                <img src={props.secondaryItemImageLocation} className={'Item'} />
+            </div>
+            :
+            null
+        }
 
         <div>
             <RarityList style={{marginLeft: '10px', justifyItems:'center'}} rarity={props.item.rarity} updateRarity={updateRarity} updateAutoUpdate={updateAutoUpdate} autoUpdate={props.autoUpdate}/>

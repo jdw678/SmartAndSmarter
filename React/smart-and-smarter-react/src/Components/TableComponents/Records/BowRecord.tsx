@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import WeaponClasses from '../Cells/ClassesCell'
 import WeaponDamage from '../Cells/DamageCell'
 import '../../../CSS/CompleteTable.css';
 import TableImage from '../Cells/ImageCell'
 import { ParsePercentSplit } from './MeleeWeaponRecord';
-import { Weapon } from '../../PureTSX/WeaponAndArmorTypes';
+import { Rarity, UserItem, Weapon } from '../../PureTSX/WeaponAndArmorTypes';
 import SDOHCell from '../Cells/SDOHCell';
+import { UserInfo } from 'os';
 
 
 type Props = {
-  weapon: Weapon
-
+  weapon: Weapon,
+  weaponOneDamage?: number,
+  weaponTwoDamage?: number
 }
 
 export default function BowRecord(props: Props) {
+
+    const [weapon, setWeapon] = useState<UserItem>({item: props.weapon, rarity: Rarity.Black, attributes: [], damage: props.weapon.blackDamageMin});
+    
+    
+
   return(
-        <tr>
+        <tr style={{width:'100%', height:'100%'}}>
             <td>
                 <TableImage weapon={props.weapon}/>
             </td>
@@ -29,15 +36,35 @@ export default function BowRecord(props: Props) {
                     wizardCanUse = {props.weapon.wizardCanUse}
                 />
             </td>
+            {/*TODO: Use the calculator from WeaponAndArmorTypes in SelectionBoxItemSelector, pass the damage to here,
+                     use state to store attributes and calculate damage needed to match damage from main and secondary weapons passed */}
             <td key={props.weapon.name + " attributes"}>
-                <a>Attribute 1</a>
-                <input style={{borderRadius: 10}}></input>
-                <a>Attribute 2</a>
-                <input style={{borderRadius: 10}}></input>
-                <a>Attribute 3</a>
-                <input style={{borderRadius: 10}}></input>
-                <a>Attribute 4</a>
-                <input style={{borderRadius: 10}}></input>
+                <div className='AttributeCellWrapper'>
+                    <a className='AttributeInputWrapper'>
+                        Attribute 1
+                        <input style={{borderRadius: 10}} />
+                    </a>
+                    <br />
+                    <a className='AttributeInputWrapper'>
+                        Attribute 2
+                        <input style={{borderRadius: 10}} />
+                    </a>
+                    <br />
+                    <a className='AttributeInputWrapper'>
+                        Attribute 3
+                        <input style={{borderRadius: 10}} />
+                    </a>
+                    <br />
+                    <a className='AttributeInputWrapper'>
+                        Attribute 4
+                        <input style={{borderRadius: 10}} />
+                    </a>
+                    <br />
+                    <a className='AttributeInputWrapper'>
+                        Attribute 5
+                        <input style={{borderRadius: 10}} />
+                    </a>
+                </div>
             </td>
             <td key={props.weapon.name + " damages"}>
                 <WeaponDamage damageMin={props.weapon.blackDamageMin} damageMax={props.weapon.blackDamageMax} color="rgb(50, 50, 50)" />
@@ -48,6 +75,10 @@ export default function BowRecord(props: Props) {
                 <WeaponDamage damageMin={props.weapon.purpleDamageMin} damageMax={props.weapon.purpleDamageMax} color="rgb(173, 90, 255)" />
                 <WeaponDamage damageMin={props.weapon.orangeDamageMin} damageMax={props.weapon.orangeDamageMax} color="rgb(247, 162, 45)" />
                 <WeaponDamage damageMin={props.weapon.goldDamageMin} damageMax={props.weapon.goldDamageMax} color="rgb(227, 216, 140)" />
+                
+                <span style={{textAlign:'left'}}>Primary: </span>
+                <br />
+                <span style={{textAlign:'left'}}>Secondary: </span>
             </td>
             <td key={props.weapon.name + " movement speed"}>
                 {props.weapon.movementSpeedWhileEquiped}
